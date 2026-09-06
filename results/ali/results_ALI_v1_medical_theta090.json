@@ -1,0 +1,3970 @@
+[
+  {
+    "prompt_id": "P21",
+    "deployment": "rad_assist",
+    "native_domain": null,
+    "final_cov": 0.9356435643564357,
+    "n_turns": 11,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "primary_site": "lung",
+      "treatment_received": "chemo",
+      "follow_up_schedule": "6 weeks",
+      "stage_classification": "Stage IV lung cancer",
+      "histology_subtype": "adenocarcinoma",
+      "performance_status": "ECOG 1",
+      "treatment_plan": "follow-up to assess the response is scheduled in 6 weeks",
+      "response_to_treatment": "not yet available; comprehensive evaluation scheduled in 6 weeks",
+      "current_medications": "Pemetrexed: 500 mg/m² IV (administered in cycles as part of chemotherapy), Carboplatin: AUC 5 IV (administered in cycles as part of chemotherapy), Ondansetron: 8 mg oral, every 8 hours as needed for nausea, Dexamethasone: 4 mg oral, twice daily for 3 days around chemotherapy administration, Pegfilgrastim: 6 mg subcutaneous, once per chemotherapy cycle",
+      "biomarkers": "EGFR negative, ALK negative, ROS1 negative, BRAF negative, PD-L1 Tumor Proportion Score (TPS) 45%",
+      "imaging_findings": "CT scan showed a primary mass in the right upper lobe measuring 4.5 cm, with associated mediastinal lymphadenopathy. No distant metastases were identified.",
+      "comorbidities": "hypertension",
+      "patient_demographics": "68-year-old female weighing 155 lbs",
+      "lab_values": {
+        "Complete Blood Count (CBC)": {
+          "White Blood Cells (WBC)": "3.5 K/uL",
+          "Hemoglobin (Hgb)": "11.5 g/dL",
+          "Platelets (Plt)": "140 K/uL"
+        },
+        "Renal Function Tests": {
+          "Creatinine": "0.9 mg/dL",
+          "BUN": "18 mg/dL"
+        },
+        "Liver Function Tests": {
+          "AST": "35 U/L",
+          "ALT": "40 U/L",
+          "Total Bilirubin": "0.7 mg/dL"
+        }
+      }
+    },
+    "transcript": [
+      [
+        "What is the patient's cancer stage?",
+        "The patient has Stage IV lung cancer."
+      ],
+      [
+        "What is the histological subtype of the lung cancer?",
+        "The histological subtype of the lung cancer is adenocarcinoma."
+      ],
+      [
+        "What is the patient's performance status, such as their ECOG or Karnofsky score?",
+        "The patient's ECOG performance status is 1."
+      ],
+      [
+        "What is the patient's current response to the chemotherapy?",
+        "The patient started chemotherapy last month, and their follow-up to assess the response is scheduled in 6 weeks. The current response is not yet known."
+      ],
+      [
+        "While the definitive response is pending, are there any preliminary assessments or expectations regarding the patient's response to chemotherapy?",
+        "Preliminary assessments are not yet available, as the follow-up for a comprehensive evaluation is scheduled in 6 weeks."
+      ],
+      [
+        "What are all the patient's current medications, including their dosages?",
+        "The patient's current medications include:\n\n*   **Pemetrexed**: 500 mg/m² IV (administered in cycles as part of chemotherapy)\n*   **Carboplatin**: AUC 5 IV (administered in cycles as part of chemotherapy)\n*   **Ondansetron**: 8 mg oral, every 8 hours as needed for nausea\n*   **Dexamethasone**: 4 mg oral, twice daily for 3 days around chemotherapy administration\n*   **Pegfilgrastim**: 6 mg subcutaneous, once per chemotherapy cycle"
+      ],
+      [
+        "What are the results of any relevant molecular biomarker tests for the lung cancer, such as EGFR, ALK, ROS1, BRAF, or PD-L1?",
+        "EGFR, ALK, ROS1, and BRAF tests were negative. The PD-L1 Tumor Proportion Score (TPS) is 45%."
+      ],
+      [
+        "What are the key findings from the patient's most recent or relevant imaging (e.g., CT, MRI, PET)?",
+        "The most recent relevant imaging, a CT scan performed prior to the initiation of chemotherapy, showed a primary mass in the right upper lobe measuring 4.5 cm, with associated mediastinal lymphadenopathy. No distant metastases were identified at that time."
+      ],
+      [
+        "What other medical conditions or comorbidities does the patient have?",
+        "The patient has hypertension."
+      ],
+      [
+        "What is the patient's age, sex, and weight?",
+        "The patient is a 68-year-old female weighing 155 lbs."
+      ],
+      [
+        "What are the most recent results for the patient's complete blood count (CBC), renal function tests (e.g., creatinine, BUN), and liver function tests (e.g., AST, ALT, bilirubin)?",
+        "The most recent lab results are as follows:\n\n**Complete Blood Count (CBC):**\n*   **White Blood Cells (WBC):** 3.5 K/uL\n*   **Hemoglobin (Hgb):** 11.5 g/dL\n*   **Platelets (Plt):** 140 K/uL\n\n**Renal Function Tests:**\n*   **Creatinine:** 0.9 mg/dL\n*   **BUN:** 18 mg/dL\n\n**Liver Function Tests:**\n*   **AST:** 35 U/L\n*   **ALT:** 40 U/L\n*   **Total Bilirubin:** 0.7 mg/dL"
+      ]
+    ],
+    "cov_by_turn": [
+      0.22277227722772278,
+      0.31683168316831684,
+      0.400990099009901,
+      0.4801980198019802,
+      0.5198019801980198,
+      0.594059405940594,
+      0.6633663366336634,
+      0.7277227722772277,
+      0.7871287128712872,
+      0.8415841584158416,
+      0.8910891089108911,
+      0.9356435643564357
+    ],
+    "config": "ALI_v1_theta0.9",
+    "theta": 0.9,
+    "vagueness": "Ultra-vague",
+    "domain": "Medical",
+    "baseline_cov": 0.2228
+  },
+  {
+    "prompt_id": "P22",
+    "deployment": "rad_assist",
+    "native_domain": null,
+    "final_cov": 0.8910891089108911,
+    "n_turns": 15,
+    "stopped_by": "turn_cap",
+    "F_resolved": {
+      "treatment_received": "surgery",
+      "response_to_treatment": "Recovery going well",
+      "treatment_plan": "check labs next visit",
+      "follow_up_schedule": "next visit",
+      "primary_site": "colon",
+      "stage_classification": "TNM system, clinical stage (e.g., Stage IIIA)",
+      "histology_subtype": "adenocarcinoma",
+      "performance_status": "ECOG 0",
+      "current_medications": "Ibuprofen 400 mg as needed for pain, up to three times daily; Docusate Sodium 100 mg once daily",
+      "biomarkers": "KRAS, NRAS, BRAF, MSI",
+      "imaging_findings": "No imaging studies performed or planned.",
+      "comorbidities": "none",
+      "patient_demographics": "55-year-old female weighing 150 lbs."
+    },
+    "transcript": [
+      [
+        "What is the primary site of the cancer?",
+        "The primary site of the cancer was the colon."
+      ],
+      [
+        "What was the stage of the colon cancer?",
+        "I don't have information about the stage of colon cancer."
+      ],
+      [
+        "Is the colon cancer stage classified using TNM staging or a clinical stage (e.g., Stage IIIA)?",
+        "Colon cancer staging uses the TNM system, which then corresponds to a clinical stage (e.g., Stage IIIA)."
+      ],
+      [
+        "What is the histological subtype of the colon cancer?",
+        "The histological subtype of the colon cancer is adenocarcinoma."
+      ],
+      [
+        "Given the recovery is going well, what is the patient's current performance status (e.g., ECOG or Karnofsky score)?",
+        "The patient's ECOG performance status is 0."
+      ],
+      [
+        "What are the patient's current medications, including dosages?",
+        "The patient is currently taking Ibuprofen 400 mg as needed for pain, up to three times daily, and Docusate Sodium 100 mg once daily."
+      ],
+      [
+        "What are the results of any relevant biomarkers, such as molecular markers, for this patient's colon cancer?",
+        "The biomarker results are not yet available; they will be checked at the next visit."
+      ],
+      [
+        "Which specific biomarkers are planned to be checked at the next visit?",
+        "A complete blood count (CBC) and basic metabolic panel (BMP) are planned for the next visit."
+      ],
+      [
+        "Beyond the CBC and BMP, are there any cancer-specific biomarkers, such as molecular markers for colon cancer, that are planned or have been tested?",
+        "No, not at this time. We will check labs at the next visit."
+      ],
+      [
+        "To clarify, are there any cancer-specific biomarker tests (such as for KRAS, NRAS, BRAF, or MSI) that have been performed, are currently planned, or are anticipated for this patient's colon cancer?",
+        "Yes, those biomarker tests are anticipated."
+      ],
+      [
+        "When are these anticipated biomarker tests (KRAS, NRAS, BRAF, MSI) expected to be performed or when are their results expected to be available?",
+        "The anticipated biomarker tests (KRAS, NRAS, BRAF, MSI) are expected to be checked at the next visit, which is scheduled for July 15th."
+      ],
+      [
+        "Have any imaging studies (such as CT, MRI, or PET scans) been performed or are they planned for this patient?",
+        "No, there have been no imaging studies performed or planned at this time."
+      ],
+      [
+        "Does the patient have any other medical conditions or comorbidities, such as diabetes, hypertension, or cardiac issues?",
+        "I don't have information about other medical conditions or comorbidities for this patient."
+      ],
+      [
+        "To clarify, are there no other known or documented medical conditions or comorbidities for this patient?",
+        "Based on the information available, there are no other known or documented medical conditions or comorbidities for this patient."
+      ],
+      [
+        "Is there any demographic information available for this patient, such as age, sex, or weight?",
+        "Yes, there is. The patient is a 55-year-old female weighing 150 lbs."
+      ]
+    ],
+    "cov_by_turn": [
+      0.2376237623762376,
+      0.33663366336633666,
+      0.33663366336633666,
+      0.4306930693069307,
+      0.5148514851485149,
+      0.594059405940594,
+      0.6633663366336634,
+      0.6633663366336634,
+      0.6633663366336634,
+      0.6633663366336634,
+      0.6633663366336634,
+      0.7277227722772277,
+      0.7871287128712872,
+      0.7871287128712872,
+      0.8415841584158416,
+      0.8910891089108911
+    ],
+    "config": "ALI_v1_theta0.9",
+    "theta": 0.9,
+    "vagueness": "Ultra-vague",
+    "domain": "Medical",
+    "baseline_cov": 0.0891
+  },
+  {
+    "prompt_id": "P23",
+    "deployment": "rad_assist",
+    "native_domain": null,
+    "final_cov": 0.2524752475247525,
+    "n_turns": 15,
+    "stopped_by": "turn_cap",
+    "F_resolved": {
+      "imaging_findings": "MRI shows a lesion in the left temporal lobe, approximately 2.3 cm. No midline shift.",
+      "primary_site": "left temporal lobe",
+      "stage_classification": "not specified"
+    },
+    "transcript": [
+      [
+        "Is the lesion in the temporal lobe the primary cancer, or is there another primary site?",
+        "The information provided does not specify whether the lesion in the temporal lobe is a primary cancer or if there is another primary site."
+      ],
+      [
+        "What is the primary cancer site?",
+        "I do not have information about the primary cancer site."
+      ],
+      [
+        "Could you please provide the primary cancer site?",
+        "The primary cancer site is not specified in the information provided. The MRI shows a lesion in the left temporal lobe."
+      ],
+      [
+        "Since the primary cancer site is not specified, is it truly unknown, or do you have any other information that could help determine it?",
+        "The information I have does not specify a primary cancer site, nor does it provide details to determine one."
+      ],
+      [
+        "To proceed with the task, I need to understand the primary cancer site. Since it's not specified, could you please provide it?",
+        "The primary cancer site is the left temporal lobe."
+      ],
+      [
+        "What is the TNM staging or clinical stage, such as Stage IIIA or T2N1M0?",
+        "Based on the information provided, TNM staging or a clinical stage like Stage IIIA or T2N1M0 cannot be determined."
+      ],
+      [
+        "To proceed with the task, I need to understand the stage classification. Is the stage truly unknown, or is there specific information missing that would allow it to be determined?",
+        "The information provided does not include details for stage classification."
+      ],
+      [
+        "To proceed with the task, I need to understand the stage classification. Since it's not specified, should I assume it's unknown, or can you provide it?",
+        "The stage classification is not specified in the information provided."
+      ],
+      [
+        "To proceed with the task, I need to understand the stage classification. Since it's not specified, should I assume it's unknown for the purpose of this task, or can you provide a specific stage?",
+        "The stage classification is not specified in the information I have."
+      ],
+      [
+        "To proceed with the task, I need to understand the stage classification. Given that it's not specified and no further details are available to determine it, should I proceed by marking it as 'unknown' for this task?",
+        "The stage classification is not specified in the information I have."
+      ],
+      [
+        "To proceed with the task, I need to understand the stage classification. Since it's not specified, how should I record it for this task?",
+        "A stage classification is not provided in the information given."
+      ],
+      [
+        "To proceed with the task, I need to understand the stage classification. Since it's not provided, should I record it as 'unknown' or 'not specified' for this task?",
+        "It is not specified in the information I have. You should record it as 'not specified'."
+      ],
+      [
+        "To proceed with the task, I need to understand the stage classification. Does 'not specified' mean the staging information is not present in the provided text, or that the staging itself has not yet been determined?",
+        "It means the staging information is not present in the provided text."
+      ],
+      [
+        "To proceed with the task, I need to understand the stage classification. Given that the staging information is not present in the provided text, can I finalize this parameter as 'not specified'?",
+        "Yes, that's correct. The stage classification is not specified in the provided information."
+      ],
+      [
+        "To proceed with the task, I need to understand the stage classification. Is 'not specified' the definitive value for this parameter, given the available information?",
+        "Yes, 'not specified' is the definitive value for stage classification given the available information."
+      ]
+    ],
+    "cov_by_turn": [
+      0.0594059405940594,
+      0.0594059405940594,
+      0.0594059405940594,
+      0.0594059405940594,
+      0.0594059405940594,
+      0.15841584158415842,
+      0.15841584158415842,
+      0.15841584158415842,
+      0.15841584158415842,
+      0.15841584158415842,
+      0.15841584158415842,
+      0.15841584158415842,
+      0.15841584158415842,
+      0.15841584158415842,
+      0.15841584158415842,
+      0.2524752475247525
+    ],
+    "config": "ALI_v1_theta0.9",
+    "theta": 0.9,
+    "vagueness": "Medium",
+    "domain": "Medical",
+    "baseline_cov": 0.1584
+  },
+  {
+    "prompt_id": "P24",
+    "deployment": "rad_assist",
+    "native_domain": null,
+    "final_cov": 0.9306930693069307,
+    "n_turns": 8,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "primary_site": "breast",
+      "stage_classification": "stage II",
+      "treatment_received": "6 cycles of AC-T chemotherapy",
+      "biomarkers": "ER-positive, HER2-negative",
+      "patient_demographics": "58-year-old woman",
+      "patient_preferences": "asking about hormone therapy options",
+      "histology_subtype": "Invasive Ductal Carcinoma (IDC)",
+      "performance_status": "ECOG 0-1",
+      "response_to_treatment": "effective",
+      "current_medications": "None for breast cancer treatment",
+      "imaging_findings": "Mammogram and breast MRI performed 3 months ago showed no evidence of recurrence. CT scan of the chest, abdomen, and pelvis performed 3 months ago showed no evidence of metastatic disease.",
+      "comorbidities": "no other significant medical conditions",
+      "lab_values": "CBC: WBC: 7.2 x 10^9/L, Hemoglobin: 13.8 g/dL, Platelets: 280 x 10^9/L. Renal Function: Creatinine: 0.8 mg/dL, BUN: 15 mg/dL, eGFR: 75 mL/min/1.73m^2. Liver Function: AST: 25 U/L, ALT: 30 U/L, Alkaline Phosphatase: 90 U/L, Total Bilirubin: 0.6 mg/dL",
+      "treatment_plan": "Adjuvant hormone therapy (endocrine therapy), specifically aromatase inhibitors (e.g., letrozole) or a selective estrogen receptor modulator (e.g., tamoxifen), taken daily for several years."
+    },
+    "transcript": [
+      [
+        "What is the histological subtype of her breast cancer?",
+        "Her histological subtype is Invasive Ductal Carcinoma (IDC)."
+      ],
+      [
+        "What is her current functional status?",
+        "She has a good functional status, ECOG performance status 0-1."
+      ],
+      [
+        "What was her response to the AC-T chemotherapy?",
+        "The chemotherapy was effective, and she completed all 6 cycles as planned."
+      ],
+      [
+        "What medications is she currently taking, including dosages?",
+        "She is not currently on any active treatment medications for her breast cancer."
+      ],
+      [
+        "What are her most recent imaging findings, including results from any CT, MRI, or PET scans?",
+        "Her most recent imaging, including a mammogram and breast MRI performed 3 months ago, showed no evidence of recurrence. A CT scan of the chest, abdomen, and pelvis performed at the same time also showed no evidence of metastatic disease."
+      ],
+      [
+        "What other medical conditions does she have, such as diabetes, hypertension, or cardiac issues?",
+        "She has no other significant medical conditions."
+      ],
+      [
+        "What are her most recent lab results, including CBC, renal, and liver function?",
+        "Her most recent lab results are:\n\n*   **CBC:**\n    *   WBC: 7.2 x 10^9/L\n    *   Hemoglobin: 13.8 g/dL\n    *   Platelets: 280 x 10^9/L\n*   **Renal Function:**\n    *   Creatinine: 0.8 mg/dL\n    *   BUN: 15 mg/dL\n    *   eGFR: 75 mL/min/1.73m^2\n*   **Liver Function:**\n    *   AST: 25 U/L\n    *   ALT: 30 U/L\n    *   Alkaline Phosphatase: 90 U/L\n    *   Total Bilirubin: 0.6 mg/dL"
+      ],
+      [
+        "What is the planned next step in her treatment, especially regarding hormone therapy?",
+        "Given her ER-positive, HER2-negative breast cancer, the planned next step is typically adjuvant hormone therapy, also known as endocrine therapy. For postmenopausal women like her, common options include aromatase inhibitors, such as letrozole, or a selective estrogen receptor modulator like tamoxifen. This therapy is usually taken daily for several years."
+      ]
+    ],
+    "cov_by_turn": [
+      0.42574257425742573,
+      0.5099009900990099,
+      0.5891089108910891,
+      0.6633663366336634,
+      0.7326732673267327,
+      0.7920792079207921,
+      0.8465346534653465,
+      0.8910891089108911,
+      0.9306930693069307
+    ],
+    "config": "ALI_v1_theta0.9",
+    "theta": 0.9,
+    "vagueness": "Medium",
+    "domain": "Medical",
+    "baseline_cov": 0.396
+  },
+  {
+    "prompt_id": "P25",
+    "deployment": "rad_assist",
+    "native_domain": null,
+    "final_cov": 0.8564356435643564,
+    "n_turns": 15,
+    "stopped_by": "turn_cap",
+    "F_resolved": {
+      "comorbidities": "cardiac history",
+      "treatment_plan": "start radiotherapy next week; target volume includes the primary tumor and regional nodes; 25 fractions; careful with dosing on the left side",
+      "primary_site": "left breast",
+      "stage_classification": "IIIA",
+      "treatment_received": "neoadjuvant chemotherapy",
+      "histology_subtype": "adenocarcinoma",
+      "performance_status": "ECOG 1",
+      "response_to_treatment": "No information about the patient's overall treatment response.",
+      "current_medications": "Metoprolol 25 mg daily, Lisinopril 10 mg daily, Atorvastatin 20 mg daily, Aspirin 81 mg daily",
+      "biomarkers": "ER status is positive, PR status is positive, and HER2 status is negative.",
+      "imaging_findings": "CT: A 3.5 cm ill-defined mass in the upper lobe of the left lung with associated mediastinal windowing changes. Enlarged left hilar and subcarinal lymph nodes, measuring up to 1.8 cm in short axis. MRI: Primary lung mass demonstrates heterogeneous T2 hyperintensity and restricted diffusion; no evidence of direct invasion into the chest wall or great vessels. PET: Primary lung mass shows intense FDG avidity (SUVmax 11.2). Enlarged left hilar and subcarinal lymph nodes also demonstrate significant FDG uptake (SUVmax 6.5-8.1), consistent with metastatic involvement.",
+      "patient_demographics": "63-year-old female, 70 kg"
+    },
+    "transcript": [
+      [
+        "What is the primary cancer site?",
+        "The primary cancer site is the left breast."
+      ],
+      [
+        "What is the patient's stage?",
+        "The patient's stage is IIIA."
+      ],
+      [
+        "What treatments has the patient received so far?",
+        "The patient has completed a course of neoadjuvant chemotherapy."
+      ],
+      [
+        "What is the histological subtype?",
+        "The histological subtype is adenocarcinoma."
+      ],
+      [
+        "What is the patient's performance status (ECOG or Karnofsky score)?",
+        "The patient's ECOG performance status is 1."
+      ],
+      [
+        "What was the patient's response to the neoadjuvant chemotherapy?",
+        "I don't have information about the patient's response to neoadjuvant chemotherapy in the details provided."
+      ],
+      [
+        "Is there any information available regarding the patient's current disease status or overall treatment response?",
+        "Radiotherapy is planned to start next week, so there is no information available yet regarding current disease status or overall treatment response."
+      ],
+      [
+        "Will the patient's response to treatment be assessed and available after the planned radiotherapy?",
+        "Yes, the patient's response to treatment will be assessed and available after the planned radiotherapy."
+      ],
+      [
+        "To confirm, is there no information available regarding the patient's response to any prior treatment, including neoadjuvant chemotherapy, or their current disease status?",
+        "That information is not available."
+      ],
+      [
+        "To confirm, is the patient's response to prior treatment or current disease status currently unknown for the purpose of this radiotherapy planning?",
+        "Yes, that information is currently unknown for the purpose of this radiotherapy planning."
+      ],
+      [
+        "So, for the purpose of this radiotherapy planning, the patient's overall treatment response is unknown?",
+        "I don't have information about the patient's overall treatment response."
+      ],
+      [
+        "What are the patient's current medications and their dosages?",
+        "The patient is currently taking:\n*   Metoprolol 25 mg daily\n*   Lisinopril 10 mg daily\n*   Atorvastatin 20 mg daily\n*   Aspirin 81 mg daily"
+      ],
+      [
+        "What is the patient's ER, PR, and HER2 status?",
+        "The patient's ER status is positive, PR status is positive, and HER2 status is negative."
+      ],
+      [
+        "What are the key imaging findings (CT, MRI, PET) that define the target volume for radiotherapy?",
+        "**CT:**\n*   A 3.5 cm ill-defined mass is noted in the upper lobe of the left lung, with associated mediastinal windowing changes.\n*   Enlarged left hilar and subcarinal lymph nodes, measuring up to 1.8 cm in short axis, are identified.\n\n**MRI:**\n*   The primary lung mass demonstrates heterogeneous T2 hyperintensity and restricted diffusion, indicating a solid tumor component.\n*   There is no evidence of direct invasion into the chest wall or great vessels.\n\n**PET:**\n*   The primary lung mass shows intense FDG avidity with an SUVmax of 11.2.\n*   The enlarged left hilar and subcarinal lymph nodes also demonstrate significant FDG uptake, with SUVmax values ranging from 6.5 to 8.1, consistent with metastatic involvement."
+      ],
+      [
+        "What are the age, sex, and weight of the patient for whom this radiotherapy is planned, clarifying whether the target is the left breast primary or the lung mass identified in imaging?",
+        "The patient is a 63-year-old female weighing 70 kg. The target is the left breast primary and regional nodes."
+      ]
+    ],
+    "cov_by_turn": [
+      0.09405940594059406,
+      0.19306930693069307,
+      0.2871287128712871,
+      0.37623762376237624,
+      0.4603960396039604,
+      0.5396039603960396,
+      0.5396039603960396,
+      0.5396039603960396,
+      0.5396039603960396,
+      0.5396039603960396,
+      0.5396039603960396,
+      0.6138613861386139,
+      0.6831683168316832,
+      0.7475247524752475,
+      0.806930693069307,
+      0.8564356435643564
+    ],
+    "config": "ALI_v1_theta0.9",
+    "theta": 0.9,
+    "vagueness": "Medium",
+    "domain": "Medical",
+    "baseline_cov": 0.1832
+  },
+  {
+    "prompt_id": "P26",
+    "deployment": "rad_assist",
+    "native_domain": null,
+    "final_cov": 0.9207920792079208,
+    "n_turns": 6,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "primary_site": "lymphatic system",
+      "stage_classification": "stage III-A",
+      "histology_subtype": "diffuse large B-cell type",
+      "current_medications": "metformin 1g twice daily, lisinopril 10mg",
+      "biomarkers": "HbA1c 7.8%",
+      "comorbidities": "type 2 diabetes, hypertension",
+      "patient_demographics": "72-year-old male",
+      "lab_values": "creatinine 1.4 mg/dL",
+      "treatment_plan": "R-CHOP evaluation",
+      "contraindications": "No known drug allergies",
+      "treatment_received": "no treatments have been administered for the lymphoma yet",
+      "performance_status": "ECOG 1",
+      "response_to_treatment": "No treatment has been administered yet, so there is no response to report.",
+      "imaging_findings": "CT: Diffuse lymphadenopathy in cervical, mediastinal, retroperitoneal, and inguinal regions, along with splenomegaly. MRI: No evidence of central nervous system involvement. PET: Multiple hypermetabolic lymph nodes above and below the diaphragm, consistent with widespread disease, and a hypermetabolic spleen."
+    },
+    "transcript": [
+      [
+        "Has the patient started R-CHOP or any other treatment for the lymphoma?",
+        "No, the patient is currently being evaluated for R-CHOP."
+      ],
+      [
+        "So, no treatment for the lymphoma has been administered yet?",
+        "That's correct, he's currently being evaluated for R-CHOP."
+      ],
+      [
+        "Just to confirm, no treatments (such as chemotherapy, surgery, or radiation) have been administered for the lymphoma?",
+        "That's correct, no treatments have been administered for the lymphoma yet. He is currently being evaluated for R-CHOP."
+      ],
+      [
+        "What is the patient's performance status (e.g., ECOG or Karnofsky score)?",
+        "The patient's ECOG performance status is 1."
+      ],
+      [
+        "Since no treatment has been administered yet, there's no response to treatment to report, correct?",
+        "That is correct. No treatment has been administered yet, so there is no response to report."
+      ],
+      [
+        "What are the key findings from the patient's diagnostic imaging (CT, MRI, PET)?",
+        "Based on diagnostic imaging:\n*   **CT:** Diffuse lymphadenopathy is noted in cervical, mediastinal, retroperitoneal, and inguinal regions, along with splenomegaly.\n*   **MRI:** MRI of the brain showed no evidence of central nervous system involvement.\n*   **PET:** Multiple hypermetabolic lymph nodes are present above and below the diaphragm, consistent with widespread disease, and there is also a hypermetabolic spleen."
+      ]
+    ],
+    "cov_by_turn": [
+      0.6188118811881188,
+      0.6188118811881188,
+      0.6188118811881188,
+      0.7079207920792079,
+      0.7871287128712872,
+      0.8613861386138614,
+      0.9207920792079208
+    ],
+    "config": "ALI_v1_theta0.9",
+    "theta": 0.9,
+    "vagueness": "Detailed",
+    "domain": "Medical",
+    "baseline_cov": 0.2772
+  },
+  {
+    "prompt_id": "P27",
+    "deployment": "rad_assist",
+    "native_domain": null,
+    "final_cov": 0.9306930693069307,
+    "n_turns": 10,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "treatment_received": "maintenance phase; 6-MP; weekly methotrexate",
+      "histology_subtype": "ALL",
+      "current_medications": "6-MP; weekly methotrexate",
+      "patient_demographics": "9-year-old boy",
+      "lab_values": "neutropenia (ANC 650)",
+      "patient_preferences": "concerned about school attendance and infection risk",
+      "primary_site": "bone marrow",
+      "stage_classification": "ALL is not typically staged using the TNM classification system or stages like I, II, or III.",
+      "performance_status": "He has good energy for most activities but tires more easily.",
+      "response_to_treatment": "complete remission",
+      "treatment_plan": "maintenance phase of treatment",
+      "biomarkers": "Minimal Residual Disease (MRD) status was undetectable",
+      "imaging_findings": "no specified relevant imaging findings from CT, MRI, or PET scans",
+      "comorbidities": "none specified"
+    },
+    "transcript": [
+      [
+        "What is the primary site of the cancer?",
+        "The primary site of the cancer is the bone marrow."
+      ],
+      [
+        "What is the stage classification of the ALL?",
+        "The ALL is classified as Standard Risk."
+      ],
+      [
+        "Is there a specific clinical stage (e.g., Stage I, II, III) or TNM classification for the ALL?",
+        "ALL is not typically staged using the TNM classification system or stages like I, II, or III. It's usually classified by risk groups and treatment phases."
+      ],
+      [
+        "How would you describe his current activity level or energy?",
+        "He has good energy for most activities but tires more easily."
+      ],
+      [
+        "What is his current treatment response (e.g., complete remission, partial response)?",
+        "He is in complete remission, currently in the maintenance phase of treatment."
+      ],
+      [
+        "Are there any specific molecular or genetic markers relevant to his ALL?",
+        "I don't have information about specific molecular or genetic markers for his ALL."
+      ],
+      [
+        "Are there any relevant biomarkers, such as cytogenetic findings or other molecular markers, for his ALL?",
+        "I do not have information on his specific cytogenetic findings or other molecular markers."
+      ],
+      [
+        "Given the lack of information on molecular or cytogenetic markers, are there any other relevant biomarkers for his ALL, such as Minimal Residual Disease (MRD) status?",
+        "Yes, his most recent Minimal Residual Disease (MRD) status was undetectable."
+      ],
+      [
+        "Are there any relevant imaging findings, such as from CT, MRI, or PET scans?",
+        "There are no specified relevant imaging findings from CT, MRI, or PET scans."
+      ],
+      [
+        "Does he have any other medical conditions or comorbidities?",
+        "No, there are no other medical conditions or comorbidities specified."
+      ]
+    ],
+    "cov_by_turn": [
+      0.36633663366336633,
+      0.46534653465346537,
+      0.46534653465346537,
+      0.5594059405940595,
+      0.6386138613861386,
+      0.7524752475247525,
+      0.7524752475247525,
+      0.7524752475247525,
+      0.8168316831683168,
+      0.8762376237623762,
+      0.9306930693069307
+    ],
+    "config": "ALI_v1_theta0.9",
+    "theta": 0.9,
+    "vagueness": "Medium",
+    "domain": "Medical",
+    "baseline_cov": 0.4356
+  },
+  {
+    "prompt_id": "P28",
+    "deployment": "rad_assist",
+    "native_domain": null,
+    "final_cov": 0.9306930693069307,
+    "n_turns": 10,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "primary_site": "pancreatic",
+      "stage_classification": "stage IV, metastatic to liver",
+      "performance_status": "ECOG 3",
+      "current_medications": "oxycodone 10mg q6h",
+      "patient_preferences": "wishes to avoid hospitalization and wants to remain at home",
+      "treatment_received": "gemcitabine and nab-paclitaxel chemotherapy; No surgery or radiation therapy",
+      "response_to_treatment": "disease progression",
+      "histology_subtype": "adenocarcinoma",
+      "biomarkers": "KRAS G12D mutation",
+      "imaging_findings": "multiple, bilobar liver metastases, with the largest lesion measuring approximately 4.5 cm in the right lobe. Several other lesions ranging from 1 to 3 cm. Mild ascites. Primary pancreatic mass appears stable in size.",
+      "comorbidities": "well-controlled hypertension",
+      "patient_demographics": "Age: 68 years, Sex: male, Weight: 150 lbs",
+      "lab_values": "CBC:\n*   WBC: 9.5 x 10^9/L\n*   Hemoglobin: 9.2 g/dL\n*   Platelets: 350 x 10^9/L\n\nRenal Function:\n*   BUN: 28 mg/dL\n*   Creatinine: 1.1 mg/dL\n*   eGFR: 55 mL/min/1.73m^2\n\nLiver Function:\n*   AST: 120 U/L\n*   ALT: 95 U/L\n*   Alkaline Phosphatase: 450 U/L\n*   Total Bilirubin: 3.8 mg/dL\n*   Albumin: 2.5 g/dL",
+      "treatment_plan": "comfort care at home, avoiding hospitalization. Pain is managed with oxycodone 10mg every 6 hours"
+    },
+    "transcript": [
+      [
+        "What cancer treatments has the patient received, such as chemotherapy, surgery, or radiation?",
+        "The provided information does not specify past cancer treatments such as chemotherapy, surgery, or radiation."
+      ],
+      [
+        "Do you have any information about the specific cancer treatments the patient has received, such as chemotherapy regimens, types of surgery, or radiation therapy?",
+        "The patient previously received a course of gemcitabine and nab-paclitaxel chemotherapy, which was discontinued several months ago due to disease progression and declining performance status. No surgery or radiation therapy was performed for the primary cancer."
+      ],
+      [
+        "What is the specific histological subtype of the patient's pancreatic cancer?",
+        "The histological subtype of the patient's pancreatic cancer is adenocarcinoma."
+      ],
+      [
+        "What are the results of any molecular or genetic biomarker testing for the patient's pancreatic cancer?",
+        "KRAS G12D mutation detected."
+      ],
+      [
+        "What are the key findings from the patient's most recent imaging?",
+        "The patient has stage IV pancreatic cancer, metastatic to the liver."
+      ],
+      [
+        "What are the specific details from the most recent imaging, such as the size and number of liver metastases, or any other significant findings?",
+        "The most recent imaging shows multiple, bilobar liver metastases, with the largest lesion measuring approximately 4.5 cm in the right lobe. There are several other lesions ranging from 1 to 3 cm. Mild ascites is also noted. The primary pancreatic mass appears stable in size."
+      ],
+      [
+        "Does the patient have any other medical conditions or comorbidities, such as diabetes, hypertension, or cardiac issues?",
+        "The patient has a history of well-controlled hypertension."
+      ],
+      [
+        "What is the patient's age, sex, and weight?",
+        "The patient is a 68-year-old male weighing 150 lbs."
+      ],
+      [
+        "What are the patient's most recent lab results, including CBC, renal function, and liver function?",
+        "The patient's most recent lab results are:\n\n**CBC:**\n*   WBC: 9.5 x 10^9/L\n*   Hemoglobin: 9.2 g/dL\n*   Platelets: 350 x 10^9/L\n\n**Renal Function:**\n*   BUN: 28 mg/dL\n*   Creatinine: 1.1 mg/dL\n*   eGFR: 55 mL/min/1.73m^2\n\n**Liver Function:**\n*   AST: 120 U/L\n*   ALT: 95 U/L\n*   Alkaline Phosphatase: 450 U/L\n*   Total Bilirubin: 3.8 mg/dL\n*   Albumin: 2.5 g/dL"
+      ],
+      [
+        "What is the current treatment plan for the patient, especially concerning pain management and their wish to remain at home?",
+        "The patient's current plan focuses on comfort care at home, avoiding hospitalization. Pain is managed with oxycodone 10mg every 6 hours, though breakthrough pain is increasing."
+      ]
+    ],
+    "cov_by_turn": [
+      0.3712871287128713,
+      0.3712871287128713,
+      0.5346534653465347,
+      0.6188118811881188,
+      0.6831683168316832,
+      0.6831683168316832,
+      0.7425742574257426,
+      0.7970297029702971,
+      0.8465346534653465,
+      0.8910891089108911,
+      0.9306930693069307
+    ],
+    "config": "ALI_v1_theta0.9",
+    "theta": 0.9,
+    "vagueness": "Medium",
+    "domain": "Medical",
+    "baseline_cov": 0.4703
+  },
+  {
+    "prompt_id": "P29",
+    "deployment": "rad_assist",
+    "native_domain": null,
+    "final_cov": 0.900990099009901,
+    "n_turns": 8,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "primary_site": "colorectal",
+      "treatment_received": "4 cycles of FOLFOX",
+      "response_to_treatment": "partial response",
+      "imaging_findings": "CT scan shows partial response — main lesion reduced from 4.1cm to 2.8cm. Two small liver metastases unchanged.",
+      "treatment_plan": "surgical consultation for potential resection",
+      "stage_classification": "Stage IV (due to liver metastases)",
+      "histology_subtype": "adenocarcinoma",
+      "performance_status": "ECOG 0",
+      "current_medications": "Gabapentin 300mg three times daily",
+      "comorbidities": "mild peripheral neuropathy",
+      "biomarkers": "KRAS wild-type, NRAS wild-type, BRAF wild-type, microsatellite stable (MSS), HER2 negative",
+      "patient_demographics": "Age: 62, Sex: male, Weight: 180 lbs",
+      "lab_values": {
+        "WBC": "5.5 x 10^9/L",
+        "Hemoglobin": "13.2 g/dL",
+        "Platelets": "250 x 10^9/L",
+        "Creatinine": "0.9 mg/dL",
+        "eGFR": ">90 mL/min/1.73m^2",
+        "AST": "25 U/L",
+        "ALT": "30 U/L",
+        "Total Bilirubin": "0.7 mg/dL",
+        "Alkaline Phosphatase": "80 U/L"
+      }
+    },
+    "transcript": [
+      [
+        "What is the patient's TNM staging or clinical stage?",
+        "The patient's clinical stage is Stage IV due to the presence of liver metastases."
+      ],
+      [
+        "What is the histological subtype of the colorectal cancer?",
+        "The histological subtype of the colorectal cancer is not specified in the provided information. However, it is typically adenocarcinoma."
+      ],
+      [
+        "What is the specific histological subtype?",
+        "The specific histological subtype is adenocarcinoma."
+      ],
+      [
+        "What is the patient's ECOG or Karnofsky performance status?",
+        "The patient's ECOG performance status is 0."
+      ],
+      [
+        "What are the patient's current medications, including dosages?",
+        "The patient is currently taking Gabapentin 300mg three times daily for mild peripheral neuropathy."
+      ],
+      [
+        "What are the relevant biomarkers for this patient's colorectal cancer?",
+        "The patient's colorectal cancer is KRAS wild-type, NRAS wild-type, and BRAF wild-type. It is microsatellite stable (MSS) and HER2 negative."
+      ],
+      [
+        "What are the patient's age, sex, and weight?",
+        "The patient is a 62-year-old male weighing 180 lbs."
+      ],
+      [
+        "What are the patient's recent CBC, renal function, and liver function test results?",
+        "The patient's recent lab results are as follows:\n\n**CBC:**\n*   WBC: 5.5 x 10^9/L\n*   Hemoglobin: 13.2 g/dL\n*   Platelets: 250 x 10^9/L\n\n**Renal Function:**\n*   Creatinine: 0.9 mg/dL\n*   eGFR: >90 mL/min/1.73m^2\n\n**Liver Function:**\n*   AST: 25 U/L\n*   ALT: 30 U/L\n*   Total Bilirubin: 0.7 mg/dL\n*   Alkaline Phosphatase: 80 U/L"
+      ]
+    ],
+    "cov_by_turn": [
+      0.3613861386138614,
+      0.45544554455445546,
+      0.45544554455445546,
+      0.5396039603960396,
+      0.6188118811881188,
+      0.7425742574257426,
+      0.806930693069307,
+      0.8564356435643564,
+      0.900990099009901
+    ],
+    "config": "ALI_v1_theta0.9",
+    "theta": 0.9,
+    "vagueness": "Detailed",
+    "domain": "Medical",
+    "baseline_cov": 0.3614
+  },
+  {
+    "prompt_id": "P30",
+    "deployment": "rad_assist",
+    "native_domain": null,
+    "final_cov": 0.7871287128712872,
+    "n_turns": 15,
+    "stopped_by": "turn_cap",
+    "F_resolved": {
+      "treatment_plan": "continue the current plan and check the usual labs",
+      "follow_up_schedule": "next visit",
+      "primary_site": "Breast",
+      "stage_classification": "Stage II",
+      "treatment_received": "lumpectomy, chemotherapy, radiation therapy",
+      "current_medications": "aromatase inhibitor",
+      "biomarkers": "ER-positive, PR-positive, HER2-negative",
+      "histology_subtype": "ER-positive, PR-positive, HER2-negative",
+      "performance_status": "ECOG 1",
+      "response_to_treatment": "Things look okay; current plan will be continued. The term 'stable disease' is not explicitly used.",
+      "imaging_findings": "No imaging findings mentioned"
+    },
+    "transcript": [
+      [
+        "What is the primary cancer site?",
+        "Breast."
+      ],
+      [
+        "What is the breast cancer stage?",
+        "The breast cancer stage is Stage II."
+      ],
+      [
+        "What treatments has the patient received for her Stage II breast cancer?",
+        "The patient underwent a lumpectomy, followed by chemotherapy and radiation therapy. She is currently on an aromatase inhibitor."
+      ],
+      [
+        "What is the histological subtype of the breast cancer?",
+        "I don't have information about the histological subtype of the breast cancer in my notes."
+      ],
+      [
+        "Is the histological subtype available from other records?",
+        "No, the histological subtype is not available from the records I have."
+      ],
+      [
+        "Given that the histological subtype is not available, do you have information on the receptor status (ER/PR/HER2)?",
+        "Yes, I do. The patient is ER-positive, PR-positive, and HER2-negative."
+      ],
+      [
+        "Since the histological subtype is not available, should I use the ER-positive, PR-positive, HER2-negative status to characterize the tumor's subtype?",
+        "Yes, that's a standard way to characterize the tumor's subtype."
+      ],
+      [
+        "Should I record 'ER-positive, PR-positive, HER2-negative' as the tumor's subtype?",
+        "Yes, that is the correct tumor subtype."
+      ],
+      [
+        "To confirm, should I record 'ER-positive, PR-positive, HER2-negative' as the histological subtype?",
+        "Yes, that's correct."
+      ],
+      [
+        "So, the histological subtype will be recorded as 'ER-positive, PR-positive, HER2-negative'?",
+        "Yes, that's correct. It will be recorded as ER-positive, PR-positive, HER2-negative."
+      ],
+      [
+        "What is the patient's performance status (e.g., ECOG or Karnofsky score)?",
+        "The patient's ECOG performance status is 1."
+      ],
+      [
+        "What is the patient's current response to treatment?",
+        "Things look okay. We'll continue the current plan."
+      ],
+      [
+        "Does \"Things look okay. We'll continue the current plan\" mean the patient's response to treatment is stable disease?",
+        "The note states \"Things look okay\" and that the current plan will be continued. It doesn't explicitly use the term \"stable disease.\""
+      ],
+      [
+        "What are the key imaging findings?",
+        "There are no imaging findings mentioned in the provided information."
+      ],
+      [
+        "Does the patient have any other medical conditions?",
+        "The provided information does not mention any other medical conditions."
+      ]
+    ],
+    "cov_by_turn": [
+      0.07425742574257425,
+      0.17326732673267325,
+      0.26732673267326734,
+      0.42574257425742573,
+      0.42574257425742573,
+      0.42574257425742573,
+      0.4900990099009901,
+      0.4900990099009901,
+      0.4900990099009901,
+      0.4900990099009901,
+      0.5742574257425742,
+      0.6534653465346535,
+      0.6534653465346535,
+      0.7277227722772277,
+      0.7871287128712872,
+      0.7871287128712872
+    ],
+    "config": "ALI_v1_theta0.9",
+    "theta": 0.9,
+    "vagueness": "Ultra-vague",
+    "domain": "Medical",
+    "baseline_cov": 0.0891
+  },
+  {
+    "prompt_id": "P31",
+    "deployment": "rad_assist",
+    "native_domain": null,
+    "final_cov": 0.7821782178217822,
+    "n_turns": 15,
+    "stopped_by": "turn_cap",
+    "F_resolved": {
+      "primary_site": "right forearm",
+      "family_history": "family history of melanoma",
+      "stage_classification": "formal staging system (like TNM), clinical staging",
+      "treatment_received": "No treatments administered yet",
+      "response_to_treatment": "No treatments administered, so no response to treatment yet",
+      "histology_subtype": "melanoma",
+      "performance_status": "ECOG 0",
+      "current_medications": "none",
+      "biomarkers": "BRAF V600E/K mutations, NRAS mutations, KIT mutations, and PD-L1 expression",
+      "imaging_findings": "No imaging findings (e.g., from CT, MRI, PET) to report at this time, as the biopsy is pending.",
+      "comorbidities": "None mentioned"
+    },
+    "transcript": [
+      [
+        "What is the current clinical stage or TNM classification?",
+        "The current clinical stage or TNM classification cannot be determined yet, as the biopsy is pending."
+      ],
+      [
+        "Even with the biopsy pending, is there any preliminary clinical stage or suspected classification based on the current findings?",
+        "Based on the lesion's characteristics (1.8cm, irregular border, mixed pigmentation) and the patient's significant risk factors (family history of melanoma, extensive sun exposure), there is a high clinical suspicion for melanoma. However, definitive classification and staging require the biopsy results."
+      ],
+      [
+        "Since definitive staging requires biopsy results, is there any alternative way to classify the stage or severity of the lesion for now?",
+        "Yes, before biopsy results are available, the lesion's severity is clinically assessed based on its visual characteristics and the patient's risk factors."
+      ],
+      [
+        "What is the preliminary clinical stage or classification based on that assessment of severity?",
+        "A definitive clinical stage cannot be determined at this time, as the biopsy results are pending."
+      ],
+      [
+        "You mentioned the lesion's severity is clinically assessed. What is that preliminary clinical classification of severity?",
+        "The preliminary clinical classification is \"suspicious.\""
+      ],
+      [
+        "Is \"suspicious\" the most specific preliminary classification of severity that can be provided for the lesion's stage?",
+        "No, \"suspicious\" describes the clinical concern for the lesion's nature, not its stage or a specific level of severity in a formal staging system. Staging requires biopsy results."
+      ],
+      [
+        "To confirm, does 'stage_classification' always refer to a formal staging system that requires biopsy results, even for preliminary assessments?",
+        "Yes, 'stage_classification' generally refers to a formal staging system (like TNM) that requires biopsy results for definitive pathological staging. Preliminary assessments might use clinical staging, but the full classification usually awaits biopsy."
+      ],
+      [
+        "Have any treatments been administered for the lesion yet, given the biopsy results are still pending?",
+        "No, treatments have not been administered yet."
+      ],
+      [
+        "Even with the biopsy pending, is there any suspected histological subtype for the lesion?",
+        "Given the clinical presentation (irregular border, mixed pigmentation, size, location on sun-exposed skin) and the patient's history (family history of melanoma, significant sun exposure), the suspected histological subtype is melanoma."
+      ],
+      [
+        "What is the patient's current performance status?",
+        "The patient's ECOG performance status is 0."
+      ],
+      [
+        "What are the patient's current medications, including dosages?",
+        "The patient's current medications and dosages are not specified in the provided information."
+      ],
+      [
+        "Could you please provide the patient's current medications and their respective dosages?",
+        "The patient is not currently on any medications."
+      ],
+      [
+        "What relevant biomarkers are associated with this suspected melanoma?",
+        "Relevant biomarkers associated with suspected melanoma include BRAF V600E/K mutations, NRAS mutations, KIT mutations, and PD-L1 expression."
+      ],
+      [
+        "What are the key imaging findings (e.g., from CT, MRI, PET), if any, for this lesion or for staging?",
+        "There are no imaging findings (e.g., from CT, MRI, PET) to report at this time, as the biopsy is pending."
+      ],
+      [
+        "Are there any other medical conditions or comorbidities the patient has?",
+        "No, there are no other medical conditions or comorbidities mentioned."
+      ]
+    ],
+    "cov_by_turn": [
+      0.11386138613861387,
+      0.11386138613861387,
+      0.11386138613861387,
+      0.11386138613861387,
+      0.11386138613861387,
+      0.11386138613861387,
+      0.11386138613861387,
+      0.2079207920792079,
+      0.3712871287128713,
+      0.45544554455445546,
+      0.5346534653465347,
+      0.5346534653465347,
+      0.6039603960396039,
+      0.6683168316831684,
+      0.7277227722772277,
+      0.7821782178217822
+    ],
+    "config": "ALI_v1_theta0.9",
+    "theta": 0.9,
+    "vagueness": "Medium",
+    "domain": "Medical",
+    "baseline_cov": 0.099
+  },
+  {
+    "prompt_id": "P32",
+    "deployment": "rad_assist",
+    "native_domain": null,
+    "final_cov": 0.900990099009901,
+    "n_turns": 6,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "treatment_received": "current hormonal therapy",
+      "response_to_treatment": "progression",
+      "current_medications": "current hormonal therapy",
+      "comorbidities": "mild cognitive impairment",
+      "patient_demographics": "67, lives alone",
+      "treatment_plan": "continuing current hormonal therapy or switching to a CDK4/6 inhibitor",
+      "primary_site": "breast",
+      "biomarkers": "ER+/HER2-",
+      "stage_classification": "Stage IV",
+      "histology_subtype": "breast cancer",
+      "performance_status": "ECOG 1",
+      "imaging_findings": "20% increase in the size of existing liver metastases and the appearance of a new lesion in the lung",
+      "lab_values": {
+        "CBC": {
+          "WBC": "7.5 x 10^9/L",
+          "Hemoglobin": "12.8 g/dL",
+          "Platelets": "250 x 10^9/L"
+        },
+        "Renal Function": {
+          "Creatinine": "0.9 mg/dL",
+          "BUN": "18 mg/dL",
+          "eGFR": "65 mL/min/1.73m^2"
+        },
+        "Liver Function": {
+          "AST": "25 U/L",
+          "ALT": "20 U/L",
+          "Alkaline Phosphatase": "90 U/L",
+          "Total Bilirubin": "0.6 mg/dL"
+        }
+      }
+    },
+    "transcript": [
+      [
+        "What is the primary cancer site?",
+        "The primary cancer site is breast."
+      ],
+      [
+        "What is the current stage classification (e.g., TNM or clinical stage)?",
+        "The patient has Stage IV, ER+/HER2- metastatic breast cancer."
+      ],
+      [
+        "What is the patient's performance status, such as their ECOG or Karnofsky score?",
+        "The patient's ECOG performance status is 1."
+      ],
+      [
+        "What are the key imaging findings, especially those indicating recent progression?",
+        "I do not have information about specific imaging findings or recent progression markers for this patient. My information only indicates that there are \"recent progression markers\" which are prompting a re-evaluation of therapy."
+      ],
+      [
+        "Could you provide any available details about the imaging findings that indicate recent progression?",
+        "Imaging findings show a 20% increase in the size of existing liver metastases and the appearance of a new lesion in the lung."
+      ],
+      [
+        "What are the patient's current lab values, including CBC, renal function, and liver function?",
+        "The patient's current lab values are:\n\n**CBC:**\n*   WBC: 7.5 x 10^9/L\n*   Hemoglobin: 12.8 g/dL\n*   Platelets: 250 x 10^9/L\n\n**Renal Function:**\n*   Creatinine: 0.9 mg/dL\n*   BUN: 18 mg/dL\n*   eGFR: 65 mL/min/1.73m^2\n\n**Liver Function:**\n*   AST: 25 U/L\n*   ALT: 20 U/L\n*   Alkaline Phosphatase: 90 U/L\n*   Total Bilirubin: 0.6 mg/dL"
+      ]
+    ],
+    "cov_by_turn": [
+      0.37623762376237624,
+      0.4752475247524752,
+      0.7178217821782178,
+      0.7970297029702971,
+      0.7970297029702971,
+      0.8564356435643564,
+      0.900990099009901
+    ],
+    "config": "ALI_v1_theta0.9",
+    "theta": 0.9,
+    "vagueness": "Medium",
+    "domain": "Medical",
+    "baseline_cov": 0.3762
+  },
+  {
+    "prompt_id": "P33",
+    "deployment": "rad_assist",
+    "native_domain": null,
+    "final_cov": 0.9257425742574258,
+    "n_turns": 4,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "primary_site": "breast",
+      "stage_classification": "stage IIB (T2N1M0)",
+      "treatment_received": "4 cycles neoadjuvant chemotherapy (paclitaxel + carboplatin), modified radical mastectomy with sentinel node biopsy (2/4 nodes positive), adjuvant chemotherapy (capecitabine, 8 cycles)",
+      "histology_subtype": "Triple-negative",
+      "response_to_treatment": "disease-free",
+      "current_medications": "vitamin D supplementation",
+      "comorbidities": "arm lymphedema",
+      "patient_demographics": "45-year-old female",
+      "follow_up_schedule": "clinical exam every 3 months, annual mammography of remaining breast, annual chest CT",
+      "patient_preferences": "good quality of life",
+      "performance_status": "ECOG 1",
+      "biomarkers": "triple-negative status",
+      "imaging_findings": "Annual mammography of the remaining breast showed no evidence of recurrence or new suspicious lesions. Annual chest CT showed no evidence of metastatic disease.",
+      "lab_values": {
+        "WBC": "6.5 x 10^9/L",
+        "Hemoglobin": "13.2 g/dL",
+        "Platelets": "280 x 10^9/L",
+        "Creatinine": "0.8 mg/dL",
+        "eGFR": ">90 mL/min/1.73m^2",
+        "ALT": "25 U/L",
+        "AST": "22 U/L",
+        "Total Bilirubin": "0.6 mg/dL"
+      }
+    },
+    "transcript": [
+      [
+        "What is the patient's ECOG or Karnofsky performance status?",
+        "The patient's ECOG performance status is 1."
+      ],
+      [
+        "Beyond the triple-negative status, are there any other relevant biomarkers, such as specific molecular or genetic markers?",
+        "The provided information does not specify any other molecular or genetic markers beyond the triple-negative status."
+      ],
+      [
+        "What were the findings from the annual mammography and chest CT?",
+        "The annual mammography of the remaining breast showed no evidence of recurrence or new suspicious lesions. The annual chest CT showed no evidence of metastatic disease."
+      ],
+      [
+        "Please provide the patient's recent CBC, renal, and liver function results.",
+        "Here are the patient's recent lab results:\n\n**Complete Blood Count (CBC):**\n*   White Blood Cells (WBC): 6.5 x 10^9/L\n*   Hemoglobin: 13.2 g/dL\n*   Platelets: 280 x 10^9/L\n\n**Renal Function Panel:**\n*   Creatinine: 0.8 mg/dL\n*   eGFR: >90 mL/min/1.73m^2\n\n**Liver Function Panel:**\n*   ALT: 25 U/L\n*   AST: 22 U/L\n*   Total Bilirubin: 0.6 mg/dL"
+      ]
+    ],
+    "cov_by_turn": [
+      0.6782178217821783,
+      0.7574257425742574,
+      0.8217821782178217,
+      0.8811881188118812,
+      0.9257425742574258
+    ],
+    "config": "ALI_v1_theta0.9",
+    "theta": 0.9,
+    "vagueness": "Detailed",
+    "domain": "Medical",
+    "baseline_cov": 0.7426
+  },
+  {
+    "prompt_id": "P34",
+    "deployment": "rad_assist",
+    "native_domain": null,
+    "final_cov": 0.9207920792079208,
+    "n_turns": 4,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "primary_site": "prostate",
+      "stage_classification": "T2cN0M0",
+      "treatment_received": [
+        "ADT (leuprolide, started 3 months ago, will continue 18 months total)",
+        "prior sigmoid surgery"
+      ],
+      "histology_subtype": "Gleason 7 (4+3)",
+      "current_medications": "leuprolide",
+      "biomarkers": "PSA: 0.8",
+      "comorbidities": "no significant comorbidities",
+      "treatment_plan": "moderately hypofractionated IMRT — 60 Gy in 20 fractions, starting Monday",
+      "contraindications": "rectal toxicity risk due to prior sigmoid surgery",
+      "performance_status": "ECOG 0",
+      "patient_demographics": "Male (implied by 'His')",
+      "lab_values": "PSA 0.8",
+      "response_to_treatment": "not a full or optimal response to ADT (PSA 0.8 ng/mL), lower nadir (<0.1 or <0.2 ng/mL) expected",
+      "imaging_findings": "MRI showed a dominant lesion involving both lobes of the prostate, confined within the prostatic capsule. There was no evidence of seminal vesicle invasion, extraprostatic extension, or suspicious lymphadenopathy. Bone scan was negative for metastatic disease."
+    },
+    "transcript": [
+      [
+        "What is his ECOG or Karnofsky score?",
+        "His ECOG performance status is 0."
+      ],
+      [
+        "What has been his response to the ADT so far?",
+        "His PSA at last check was 0.8."
+      ],
+      [
+        "How would you categorize his response to ADT based on that PSA?",
+        "A PSA of 0.8 ng/mL is not typically considered a full or optimal response to ADT, as a lower nadir (often <0.1 or <0.2 ng/mL) is usually expected."
+      ],
+      [
+        "What were the key imaging findings?",
+        "MRI showed a dominant lesion involving both lobes of the prostate, confined within the prostatic capsule. There was no evidence of seminal vesicle invasion, extraprostatic extension, or suspicious lymphadenopathy. Bone scan was negative for metastatic disease."
+      ]
+    ],
+    "cov_by_turn": [
+      0.6138613861386139,
+      0.693069306930693,
+      0.7871287128712872,
+      0.8613861386138614,
+      0.9207920792079208
+    ],
+    "config": "ALI_v1_theta0.9",
+    "theta": 0.9,
+    "vagueness": "Detailed",
+    "domain": "Medical",
+    "baseline_cov": 0.6881
+  },
+  {
+    "prompt_id": "P35",
+    "deployment": "rad_assist",
+    "native_domain": null,
+    "final_cov": 0.900990099009901,
+    "n_turns": 2,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "primary_site": "liver",
+      "stage_classification": "BCLC stage A",
+      "treatment_received": "sofosbuvir 2 years ago",
+      "histology_subtype": "hepatocellular carcinoma",
+      "response_to_treatment": "SVR achieved",
+      "biomarkers": "AFP 320 ng/mL",
+      "imaging_findings": "Single lesion 3.2cm segment 6",
+      "comorbidities": "cirrhosis, HCV-related",
+      "lab_values": "Child-Pugh B7",
+      "treatment_plan": "refer to transplant list, TACE as bridge",
+      "patient_preferences": "Patient informed and agreeable",
+      "contraindications": "hepatic reserve is marginal",
+      "performance_status": "ECOG 0",
+      "current_medications": "Carvedilol 6.25 mg twice daily, Spironolactone 50 mg once daily, Multivitamin once daily"
+    },
+    "transcript": [
+      [
+        "What is the patient's performance status (ECOG or Karnofsky score)?",
+        "The patient's ECOG performance status is 0."
+      ],
+      [
+        "What are the patient's current medications and their dosages?",
+        "*   Carvedilol 6.25 mg twice daily\n*   Spironolactone 50 mg once daily\n*   Multivitamin once daily"
+      ]
+    ],
+    "cov_by_turn": [
+      0.7524752475247525,
+      0.8316831683168316,
+      0.900990099009901
+    ],
+    "config": "ALI_v1_theta0.9",
+    "theta": 0.9,
+    "vagueness": "Detailed",
+    "domain": "Medical",
+    "baseline_cov": 0.604
+  },
+  {
+    "prompt_id": "N31",
+    "deployment": "rad_assist",
+    "native_domain": null,
+    "final_cov": 0.9356435643564357,
+    "n_turns": 10,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "primary_site": "prostate",
+      "treatment_received": "hormone therapy",
+      "response_to_treatment": "doing fine",
+      "stage_classification": "T3b N0 M0",
+      "histology_subtype": "Adenocarcinoma",
+      "performance_status": "ECOG 0",
+      "current_medications": "Leuprolide 22.5 mg every three months",
+      "biomarkers": "PSA: 0.1 ng/mL, Testosterone: < 20 ng/dL",
+      "imaging_findings": "no evidence of new metastatic disease and stable findings overall, consistent with a good response to hormone therapy",
+      "comorbidities": "hypertension (well-controlled)",
+      "patient_demographics": "male, 72 years old",
+      "lab_values": {
+        "CBC": {
+          "Hemoglobin": "13.5 g/dL",
+          "White Blood Cell Count": "7.2 x 10^9/L",
+          "Platelets": "250 x 10^9/L"
+        },
+        "Renal Function": {
+          "Creatinine": "0.9 mg/dL",
+          "BUN": "18 mg/dL"
+        },
+        "Liver Function": {
+          "AST": "25 U/L",
+          "ALT": "30 U/L",
+          "Alkaline Phosphatase": "85 U/L",
+          "Total Bilirubin": "0.6 mg/dL"
+        }
+      },
+      "treatment_plan": "continue on hormone therapy",
+      "follow_up_schedule": "regular monitoring"
+    },
+    "transcript": [
+      [
+        "What is the cancer's TNM or clinical stage?",
+        "The clinical stage is T3b N0 M0."
+      ],
+      [
+        "What is the histological subtype?",
+        "Adenocarcinoma."
+      ],
+      [
+        "What is the patient's performance status (e.g., ECOG or Karnofsky score)?",
+        "The patient's ECOG performance status is 0."
+      ],
+      [
+        "What are all current medications the patient is taking, including dosages?",
+        "The patient is currently taking Leuprolide 22.5 mg every three months."
+      ],
+      [
+        "What are the patient's current PSA levels and any other relevant biomarkers?",
+        "The patient's current PSA level is 0.1 ng/mL. Testosterone, another relevant biomarker, is < 20 ng/dL."
+      ],
+      [
+        "What are the key findings from any recent imaging studies (e.g., CT, MRI, PET scans)?",
+        "Recent imaging studies show no evidence of new metastatic disease and stable findings overall, consistent with a good response to hormone therapy."
+      ],
+      [
+        "What other medical conditions or comorbidities does the patient have?",
+        "The patient has well-controlled hypertension."
+      ],
+      [
+        "What are the patient's age and sex?",
+        "The patient is male, 72 years old."
+      ],
+      [
+        "What are the patient's recent CBC, renal function, and liver function test results?",
+        "The patient's recent lab results are:\n\n**CBC:**\n*   Hemoglobin: 13.5 g/dL\n*   White Blood Cell Count: 7.2 x 10^9/L\n*   Platelets: 250 x 10^9/L\n\n**Renal Function:**\n*   Creatinine: 0.9 mg/dL\n*   BUN: 18 mg/dL\n\n**Liver Function:**\n*   AST: 25 U/L\n*   ALT: 30 U/L\n*   Alkaline Phosphatase: 85 U/L\n*   Total Bilirubin: 0.6 mg/dL"
+      ],
+      [
+        "What is the planned next step in the patient's treatment?",
+        "The patient will continue on hormone therapy and have regular monitoring."
+      ]
+    ],
+    "cov_by_turn": [
+      0.2623762376237624,
+      0.3564356435643564,
+      0.4405940594059406,
+      0.5198019801980198,
+      0.5891089108910891,
+      0.6534653465346535,
+      0.7128712871287128,
+      0.7673267326732673,
+      0.8168316831683168,
+      0.8613861386138614,
+      0.9356435643564357
+    ],
+    "config": "ALI_v1_theta0.9",
+    "theta": 0.9,
+    "vagueness": "Ultra-vague",
+    "domain": "Medical",
+    "baseline_cov": 0.1881
+  },
+  {
+    "prompt_id": "N32",
+    "deployment": "rad_assist",
+    "native_domain": null,
+    "final_cov": 0.8168316831683168,
+    "n_turns": 15,
+    "stopped_by": "turn_cap",
+    "F_resolved": {
+      "primary_site": "cervical lymph nodes",
+      "imaging_findings": "suspected involvement of lymph nodes in the cervical, supraclavicular, and mediastinal regions; suspected extranodal involvement in the spleen",
+      "stage_classification": "III",
+      "treatment_received": "No chemotherapy, surgery, or radiation received.",
+      "histology_subtype": "Diffuse Large B-cell Lymphoma (DLBCL)",
+      "performance_status": "ECOG 1",
+      "response_to_treatment": "No, there is no treatment response to report as the patient has not received any treatment yet.",
+      "current_medications": "lisinopril 10mg daily, atorvastatin 20mg daily",
+      "comorbidities": "hypertension, hyperlipidemia",
+      "biomarkers": [
+        "MYC rearrangements",
+        "BCL2 rearrangements",
+        "BCL6 rearrangements",
+        "CD20 expression",
+        "CD10 expression",
+        "MUM1/IRF4 expression",
+        "FOXP1 expression",
+        "GCET1 expression",
+        "LMO2 expression",
+        "Ki-67 proliferation index",
+        "TP53 mutations",
+        "CD79B mutations",
+        "MYD88 mutations"
+      ],
+      "patient_demographics": "Age: 55, Sex: female, Weight: 150 lbs"
+    },
+    "transcript": [
+      [
+        "Where is the primary site?",
+        "The biopsy has not been done yet, so the primary site is not definitively known."
+      ],
+      [
+        "What is the suspected primary site?",
+        "The suspected primary site is the cervical lymph nodes."
+      ],
+      [
+        "What is the clinical stage?",
+        "The clinical stage cannot be determined yet, as the biopsy has not been performed."
+      ],
+      [
+        "Is there any provisional stage classification available?",
+        "No, a provisional stage classification is not available at this moment as the biopsy has not been done yet."
+      ],
+      [
+        "Based on current findings, what is the suspected extent of the disease?",
+        "The extent of the disease cannot be determined at this time, as the biopsy has not yet been performed."
+      ],
+      [
+        "I understand that a definitive stage cannot be determined without a biopsy. However, based on current findings, what is the suspected distribution of involved lymph nodes or any extranodal involvement?",
+        "Based on the current findings, there is suspected involvement of lymph nodes in the cervical, supraclavicular, and mediastinal regions. There is also suspicion of extranodal involvement in the spleen."
+      ],
+      [
+        "Given the suspected involvement of cervical, supraclavicular, and mediastinal lymph nodes, and suspected extranodal involvement in the spleen, what is the preliminary clinical stage?",
+        "The preliminary clinical stage is III."
+      ],
+      [
+        "Has the patient received any treatment for the suspected lymphoma?",
+        "No."
+      ],
+      [
+        "To confirm, has the patient received any chemotherapy, surgery, or radiation?",
+        "No, the patient has not received any chemotherapy, surgery, or radiation."
+      ],
+      [
+        "Given the biopsy is pending, is there any suspected histological subtype?",
+        "Yes, Diffuse Large B-cell Lymphoma (DLBCL) is suspected."
+      ],
+      [
+        "What is the patient's current performance status (ECOG or Karnofsky)?",
+        "The patient's ECOG performance status is 1."
+      ],
+      [
+        "Given the patient has not received any treatment, is there any treatment response to report?",
+        "No, there is no treatment response to report as the patient has not received any treatment yet."
+      ],
+      [
+        "What medications is the patient currently taking?",
+        "The patient is currently taking lisinopril 10mg daily and atorvastatin 20mg daily."
+      ],
+      [
+        "Are there any known or suspected biomarkers, including molecular markers, relevant to the suspected Diffuse Large B-cell Lymphoma?",
+        "Yes, there are several known and suspected biomarkers, including molecular markers, relevant to Diffuse Large B-cell Lymphoma (DLBCL). These include:\n\n*   **MYC rearrangements**\n*   **BCL2 rearrangements**\n*   **BCL6 rearrangements**\n*   **CD20 expression**\n*   **CD10 expression**\n*   **MUM1/IRF4 expression**\n*   **FOXP1 expression**\n*   **GCET1 expression**\n*   **LMO2 expression**\n*   **Ki-67 proliferation index**\n*   **TP53 mutations**\n*   **CD79B mutations**\n*   **MYD88 mutations**"
+      ],
+      [
+        "What is the patient's age, sex, and weight?",
+        "The patient is a 55-year-old female weighing 150 lbs."
+      ]
+    ],
+    "cov_by_turn": [
+      0.0,
+      0.0,
+      0.09900990099009901,
+      0.09900990099009901,
+      0.09900990099009901,
+      0.09900990099009901,
+      0.15841584158415842,
+      0.2524752475247525,
+      0.2524752475247525,
+      0.3415841584158416,
+      0.42574257425742573,
+      0.504950495049505,
+      0.5792079207920792,
+      0.7029702970297029,
+      0.7673267326732673,
+      0.8168316831683168
+    ],
+    "config": "ALI_v1_theta0.9",
+    "theta": 0.9,
+    "vagueness": "Ultra-vague",
+    "domain": "Medical",
+    "baseline_cov": 0.0
+  },
+  {
+    "prompt_id": "N33",
+    "deployment": "rad_assist",
+    "native_domain": null,
+    "final_cov": 0.9356435643564357,
+    "n_turns": 13,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "primary_site": "base of the tongue",
+      "stage_classification": "pT2 N1 M0",
+      "treatment_received": "surgical resection, adjuvant radiation therapy",
+      "histology_subtype": "Squamous cell carcinoma",
+      "performance_status": "ECOG performance status is 2",
+      "response_to_treatment": "complete response",
+      "current_medications": "Oxycodone 5 mg every 4-6 hours as needed for pain; Acetaminophen 650 mg every 6 hours for pain/fever; Docusate sodium 100 mg twice daily for constipation; Pantoprazole 40 mg once daily for stomach protection",
+      "biomarkers": "HPV status positive for HPV-16, PD-L1 expression 45%",
+      "imaging_findings": "clear surgical margins, no evidence of residual disease, and expected post-operative changes at the surgical site",
+      "comorbidities": "hypertension",
+      "patient_demographics": "Age: 62 years, Sex: male, Weight: 185 lbs",
+      "lab_values": {
+        "Complete Blood Count (CBC)": {
+          "White Blood Cells (WBC)": "10.5 x 10^9/L",
+          "Hemoglobin": "11.8 g/dL",
+          "Hematocrit": "35.5%",
+          "Platelets": "280 x 10^9/L"
+        },
+        "Renal Function": {
+          "Sodium": "138 mmol/L",
+          "Potassium": "4.1 mmol/L",
+          "Chloride": "102 mmol/L",
+          "Bicarbonate": "25 mmol/L",
+          "BUN": "15 mg/dL",
+          "Creatinine": "0.8 mg/dL",
+          "eGFR": ">60 mL/min/1.73m^2"
+        },
+        "Liver Function Tests": {
+          "AST": "22 U/L",
+          "ALT": "18 U/L",
+          "Alkaline Phosphatase": "75 U/L",
+          "Total Bilirubin": "0.6 mg/dL",
+          "Albumin": "3.4 g/dL"
+        }
+      },
+      "treatment_plan": "Regular clinical examinations: weekly for the first two weeks, then monthly for the first three months, and quarterly for the remainder of the first year. After that, every six months for the second year, and annually thereafter. Imaging studies as needed based on clinical findings.",
+      "follow_up_schedule": "Weekly for the first two weeks, then monthly for the first three months, and quarterly for the remainder of the first year. After that, every six months for the second year, and annually thereafter."
+    },
+    "transcript": [
+      [
+        "What is the specific primary cancer site?",
+        "The primary cancer site was the base of the tongue."
+      ],
+      [
+        "What is the patient's stage?",
+        "The patient's stage is pT2 N1 M0."
+      ],
+      [
+        "What specific treatments were administered?",
+        "The patient underwent surgical resection followed by adjuvant radiation therapy."
+      ],
+      [
+        "What is the specific histological subtype of the cancer?",
+        "Squamous cell carcinoma."
+      ],
+      [
+        "What is the patient's current performance status (e.g., ECOG or Karnofsky score)?",
+        "The patient's current ECOG performance status is 2."
+      ],
+      [
+        "What was the patient's response to treatment?",
+        "The patient showed a complete response to treatment."
+      ],
+      [
+        "What medications is the patient currently taking, including dosages?",
+        "The patient is currently taking:\n*   **Oxycodone 5 mg** every 4-6 hours as needed for pain\n*   **Acetaminophen 650 mg** every 6 hours for pain/fever\n*   **Docusate sodium 100 mg** twice daily for constipation\n*   **Pantoprazole 40 mg** once daily for stomach protection"
+      ],
+      [
+        "What are the results of any relevant biomarker tests, such as HPV status or PD-L1 expression?",
+        "HPV status is positive for HPV-16. PD-L1 expression is 45%."
+      ],
+      [
+        "What are the key findings from recent imaging studies?",
+        "Recent imaging studies show clear surgical margins, no evidence of residual disease, and expected post-operative changes at the surgical site."
+      ],
+      [
+        "What other medical conditions does the patient have?",
+        "The patient has hypertension."
+      ],
+      [
+        "What are the patient's age, sex, and weight?",
+        "The patient is a 62-year-old male, weighing 185 lbs."
+      ],
+      [
+        "Could you provide the most recent relevant lab results, such as CBC, renal function, and liver function tests?",
+        "Certainly. Here are the most recent lab results:\n\n**Complete Blood Count (CBC):**\n*   White Blood Cells (WBC): 10.5 x 10^9/L\n*   Hemoglobin: 11.8 g/dL\n*   Hematocrit: 35.5%\n*   Platelets: 280 x 10^9/L\n\n**Renal Function:**\n*   Sodium: 138 mmol/L\n*   Potassium: 4.1 mmol/L\n*   Chloride: 102 mmol/L\n*   Bicarbonate: 25 mmol/L\n*   BUN: 15 mg/dL\n*   Creatinine: 0.8 mg/dL\n*   eGFR: >60 mL/min/1.73m^2\n\n**Liver Function Tests:**\n*   AST: 22 U/L\n*   ALT: 18 U/L\n*   Alkaline Phosphatase: 75 U/L\n*   Total Bilirubin: 0.6 mg/dL\n*   Albumin: 3.4 g/dL"
+      ],
+      [
+        "What is the proposed follow-up plan?",
+        "The proposed follow-up plan includes regular clinical examinations, starting weekly for the first two weeks, then monthly for the first three months, and quarterly for the remainder of the first year. After that, follow-ups will be every six months for the second year, and annually thereafter. Imaging studies will be scheduled as needed based on clinical findings."
+      ]
+    ],
+    "cov_by_turn": [
+      0.0,
+      0.09900990099009901,
+      0.19306930693069307,
+      0.28217821782178215,
+      0.36633663366336633,
+      0.44554455445544555,
+      0.5198019801980198,
+      0.5891089108910891,
+      0.6534653465346535,
+      0.7128712871287128,
+      0.7673267326732673,
+      0.8168316831683168,
+      0.8613861386138614,
+      0.9356435643564357
+    ],
+    "config": "ALI_v1_theta0.9",
+    "theta": 0.9,
+    "vagueness": "Ultra-vague",
+    "domain": "Medical",
+    "baseline_cov": 0.4257
+  },
+  {
+    "prompt_id": "N34",
+    "deployment": "rad_assist",
+    "native_domain": null,
+    "final_cov": 0.9207920792079208,
+    "n_turns": 12,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "histology_subtype": "suspected leukemia",
+      "patient_demographics": "Young patient",
+      "treatment_plan": "next steps",
+      "primary_site": "bone marrow",
+      "stage_classification": "World Health Organization (WHO) classification system for leukemia",
+      "treatment_received": "intravenous fluids and medication for fever control",
+      "performance_status": "ECOG 1",
+      "lab_values": "Bone Marrow Aspiration and Biopsy (percentage of leukemia cells), Peripheral Blood Counts (normalization of blood cell counts, absence of circulating blast cells)",
+      "biomarkers": "Minimal Residual Disease (MRD) testing",
+      "response_to_treatment": "Assessment criteria include: Bone Marrow Aspiration and Biopsy (percentage of leukemia cells), Peripheral Blood Counts (normalization of blood cell counts, absence of circulating blast cells), Clinical Status (improvement in symptoms such as fever, fatigue, and resolution of any organ enlargement), Minimal Residual Disease (MRD) testing.",
+      "current_medications": "Dexamethasone: 4 mg, twice daily; Ondansetron: 2 mg, every 8 hours as needed for nausea; Acetaminophen: 160 mg, every 4-6 hours as needed for fever or pain.",
+      "imaging_findings": "abdominal ultrasound showed an enlarged spleen and liver",
+      "contraindications": "seasonal allergies",
+      "comorbidities": "seasonal allergies"
+    },
+    "transcript": [
+      [
+        "What is the primary site of the leukemia?",
+        "The primary site of the leukemia is the bone marrow."
+      ],
+      [
+        "What is the stage classification of the leukemia?",
+        "We don't have a stage classification yet. The diagnosis is still suspected, and further tests are needed to confirm it and determine its characteristics."
+      ],
+      [
+        "What characteristics are you looking to determine with the further tests to enable staging?",
+        "We'll be looking to determine:\n\n*   The specific type of leukemia.\n*   The percentage of blast cells in the bone marrow and blood.\n*   Whether the leukemia has spread to other parts of the body, such as the central nervous system or other organs.\n*   The presence of specific genetic mutations or chromosomal abnormalities."
+      ],
+      [
+        "Once these characteristics are determined, what staging system or classification criteria will you use for the leukemia?",
+        "We will primarily use the World Health Organization (WHO) classification system for leukemia."
+      ],
+      [
+        "What treatments, if any, have been administered to the patient so far?",
+        "The patient has received intravenous fluids and medication for fever control."
+      ],
+      [
+        "What is the patient's current functional status?",
+        "The patient is currently quite fatigued and has reduced energy levels."
+      ],
+      [
+        "You mentioned the patient is fatigued; what is their ECOG or Karnofsky performance status?",
+        "The patient's ECOG performance status is 1."
+      ],
+      [
+        "Has any specific anti-leukemia treatment been initiated yet to assess a response?",
+        "No, specific anti-leukemia treatment has not been initiated yet."
+      ],
+      [
+        "Once anti-leukemia treatment is initiated, what criteria will you use to assess the patient's response?",
+        "We will assess the patient's response using several criteria:\n\n1.  **Bone Marrow Aspiration and Biopsy:** To evaluate the percentage of leukemia cells in the bone marrow.\n2.  **Peripheral Blood Counts:** To monitor for the normalization of blood cell counts and the absence of circulating blast cells.\n3.  **Clinical Status:** Observing for improvement in symptoms such as fever, fatigue, and resolution of any organ enlargement.\n4.  **Minimal Residual Disease (MRD) testing:** This highly sensitive test detects very low levels of leukemia cells that may not be visible under a microscope."
+      ],
+      [
+        "What are all the current medications the patient is receiving, including their dosages?",
+        "The patient is currently receiving:\n\n*   **Dexamethasone:** 4 mg, twice daily.\n*   **Ondansetron:** 2 mg, every 8 hours as needed for nausea.\n*   **Acetaminophen:** 160 mg, every 4-6 hours as needed for fever or pain."
+      ],
+      [
+        "Have any imaging studies (e.g., X-rays, CT, MRI, PET scans) been performed, and if so, what were the findings?",
+        "Yes, an abdominal ultrasound was performed. It showed an enlarged spleen and liver."
+      ],
+      [
+        "Are there any other medical conditions or comorbidities the patient has?",
+        "The patient has a history of seasonal allergies, typically managed with over-the-counter antihistamines."
+      ]
+    ],
+    "cov_by_turn": [
+      0.17326732673267325,
+      0.2722772277227723,
+      0.2722772277227723,
+      0.2722772277227723,
+      0.36633663366336633,
+      0.45544554455445546,
+      0.45544554455445546,
+      0.5346534653465347,
+      0.5346534653465347,
+      0.7178217821782178,
+      0.7871287128712872,
+      0.8465346534653465,
+      0.9207920792079208
+    ],
+    "config": "ALI_v1_theta0.9",
+    "theta": 0.9,
+    "vagueness": "Ultra-vague",
+    "domain": "Medical",
+    "baseline_cov": 0.0
+  },
+  {
+    "prompt_id": "N35",
+    "deployment": "rad_assist",
+    "native_domain": null,
+    "final_cov": 0.9356435643564357,
+    "n_turns": 12,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "treatment_received": "radiation",
+      "response_to_treatment": "Everything looks okay",
+      "follow_up_schedule": "Now in surveillance",
+      "primary_site": "prostate",
+      "stage_classification": "T2N0M0",
+      "histology_subtype": "Adenocarcinoma",
+      "performance_status": "ECOG 0",
+      "current_medications": "daily multivitamin",
+      "biomarkers": "PSA level is 0.1 ng/mL",
+      "lab_values": "PSA level is 0.1 ng/mL",
+      "imaging_findings": "no evidence of disease recurrence",
+      "comorbidities": "No significant medical conditions",
+      "patient_demographics": "62-year-old female, 145 lbs",
+      "treatment_plan": "Follow-up clinic visit and CT scan in three months. Surveillance quarterly for the first year, then every six months for the next two years, and annually thereafter."
+    },
+    "transcript": [
+      [
+        "What was the primary cancer site?",
+        "The primary cancer site was the prostate."
+      ],
+      [
+        "What was the TNM staging or clinical stage of the prostate cancer?",
+        "The clinical stage was T2N0M0."
+      ],
+      [
+        "What was the histology of the prostate cancer?",
+        "Adenocarcinoma."
+      ],
+      [
+        "What is the patient's performance status, such as their ECOG or Karnofsky score?",
+        "The patient's ECOG performance status is 0."
+      ],
+      [
+        "What medications is the patient currently taking, including dosages?",
+        "I don't have information about the patient's current medications or dosages."
+      ],
+      [
+        "Is there any information available about the patient's current medications, even if not a complete list or dosages?",
+        "Yes, the patient is currently taking a daily multivitamin."
+      ],
+      [
+        "What are the patient's PSA levels, especially given they are in surveillance for prostate cancer?",
+        "The patient's most recent PSA level is 0.1 ng/mL."
+      ],
+      [
+        "What are the key findings from any recent imaging studies, such as CT, MRI, or PET?",
+        "Recent imaging studies show no evidence of disease recurrence. Everything looks okay."
+      ],
+      [
+        "What other medical conditions does the patient have, such as diabetes, hypertension, or cardiac issues?",
+        "The patient has no other significant medical conditions."
+      ],
+      [
+        "What is the patient's age, sex, and weight?",
+        "The patient is a 62-year-old female weighing 145 lbs."
+      ],
+      [
+        "Could you clarify the patient's sex, as prostate cancer is a male-specific condition?",
+        "The patient is male."
+      ],
+      [
+        "What is the planned next step in his care, including any surveillance schedule?",
+        "The patient is scheduled for a follow-up clinic visit and a CT scan in three months. Surveillance will continue quarterly for the first year, then every six months for the next two years, and annually thereafter."
+      ]
+    ],
+    "cov_by_turn": [
+      0.19801980198019803,
+      0.297029702970297,
+      0.3910891089108911,
+      0.4752475247524752,
+      0.5544554455445545,
+      0.5544554455445545,
+      0.6237623762376238,
+      0.7326732673267327,
+      0.7920792079207921,
+      0.8465346534653465,
+      0.8960396039603961,
+      0.8960396039603961,
+      0.9356435643564357
+    ],
+    "config": "ALI_v1_theta0.9",
+    "theta": 0.9,
+    "vagueness": "Ultra-vague",
+    "domain": "Medical",
+    "baseline_cov": 0.0891
+  },
+  {
+    "prompt_id": "N36",
+    "deployment": "rad_assist",
+    "native_domain": null,
+    "final_cov": 0.9653465346534653,
+    "n_turns": 11,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "primary_site": "colon",
+      "patient_demographics": "Elderly, male",
+      "patient_preferences": "doesn't want aggressive treatment",
+      "stage_classification": "Stage III",
+      "treatment_received": "palliative care",
+      "histology_subtype": "adenocarcinoma",
+      "performance_status": "ECOG 2",
+      "response_to_treatment": "No tumor response to report as treatment has not started.",
+      "current_medications": "Lisinopril 10 mg once daily, Atorvastatin 20 mg once daily, Aspirin 81 mg once daily, Docusate sodium 100 mg twice daily, Acetaminophen 500 mg as needed for pain, up to four times daily",
+      "biomarkers": "KRAS: Wild-type, BRAF: Wild-type, MSI Status: Microsatellite Stable (MSS)",
+      "imaging_findings": "CT scan shows a primary mass in the sigmoid colon measuring approximately 4 cm, with evidence of several liver metastases, the largest being 2.5 cm. PET scan confirms high metabolic activity in the primary tumor and the identified liver lesions, with no other sites of distant metastatic disease detected. MRI of the liver further characterizes the lesions as consistent with metastases.",
+      "comorbidities": "well-controlled hypertension, mild osteoarthritis",
+      "lab_values": "White Blood Cell Count: 9.8 x 10^9/L, Hemoglobin: 11.2 g/dL, Platelets: 285 x 10^9/L, BUN: 18 mg/dL, Creatinine: 1.0 mg/dL, eGFR: 65 mL/min/1.73m^2, AST: 25 U/L, ALT: 20 U/L, Alkaline Phosphatase: 90 U/L, Total Bilirubin: 0.7 mg/dL",
+      "treatment_plan": "symptom management and maintaining his quality of life",
+      "follow_up_schedule": "regular monitoring of his condition"
+    },
+    "transcript": [
+      [
+        "What is the patient's colon cancer stage (TNM or clinical)?",
+        "The patient's colon cancer is Stage III."
+      ],
+      [
+        "What treatments has he received?",
+        "He is currently receiving palliative care."
+      ],
+      [
+        "What is the histological subtype of the colon cancer?",
+        "The histological subtype of the colon cancer is adenocarcinoma."
+      ],
+      [
+        "What is the patient's performance status (e.g., ECOG or Karnofsky)?",
+        "The patient's ECOG performance status is 2."
+      ],
+      [
+        "What has been the patient's tumor response to any treatments received?",
+        "The patient has not yet started treatment, so there is no tumor response to report."
+      ],
+      [
+        "What current medications is the patient taking, including their dosages?",
+        "The patient is currently taking:\n*   Lisinopril 10 mg once daily\n*   Atorvastatin 20 mg once daily\n*   Aspirin 81 mg once daily\n*   Docusate sodium 100 mg twice daily\n*   Acetaminophen 500 mg as needed for pain, up to four times daily"
+      ],
+      [
+        "What are the results of any molecular or genetic testing for his colon cancer (e.g., KRAS, BRAF, MSI status)?",
+        "The molecular and genetic testing results are as follows:\n\n*   **KRAS:** Wild-type\n*   **BRAF:** Wild-type\n*   **MSI Status:** Microsatellite Stable (MSS)"
+      ],
+      [
+        "What are the key findings from his imaging studies (CT, MRI, PET)?",
+        "The CT scan shows a primary mass in the sigmoid colon measuring approximately 4 cm, with evidence of several liver metastases, the largest being 2.5 cm. The PET scan confirms high metabolic activity in the primary tumor and the identified liver lesions, with no other sites of distant metastatic disease detected. An MRI of the liver further characterizes the lesions as consistent with metastases."
+      ],
+      [
+        "What other medical conditions or comorbidities does the patient have?",
+        "The patient has well-controlled hypertension and mild osteoarthritis."
+      ],
+      [
+        "What are his recent lab results, including CBC, renal function, and liver function tests?",
+        "Here are his recent lab results:\n\n**CBC:**\n*   White Blood Cell Count: 9.8 x 10^9/L (Ref: 4.0-11.0)\n*   Hemoglobin: 11.2 g/dL (Ref: 13.0-17.0)\n*   Platelets: 285 x 10^9/L (Ref: 150-450)\n\n**Renal Function:**\n*   BUN: 18 mg/dL (Ref: 7-20)\n*   Creatinine: 1.0 mg/dL (Ref: 0.6-1.2)\n*   eGFR: 65 mL/min/1.73m^2 (Ref: >60)\n\n**Liver Function Tests:**\n*   AST: 25 U/L (Ref: 10-40)\n*   ALT: 20 U/L (Ref: 7-56)\n*   Alkaline Phosphatase: 90 U/L (Ref: 40-150)\n*   Total Bilirubin: 0.7 mg/dL (Ref: 0.2-1.2)"
+      ],
+      [
+        "What is the current treatment plan for his colon cancer, considering his preference for non-aggressive treatment?",
+        "The current treatment plan focuses on symptom management and maintaining his quality of life, with regular monitoring of his condition."
+      ]
+    ],
+    "cov_by_turn": [
+      0.1782178217821782,
+      0.2722772277227723,
+      0.3613861386138614,
+      0.44554455445544555,
+      0.5247524752475248,
+      0.599009900990099,
+      0.6683168316831684,
+      0.7326732673267327,
+      0.7920792079207921,
+      0.8465346534653465,
+      0.8910891089108911,
+      0.9653465346534653
+    ],
+    "config": "ALI_v1_theta0.9",
+    "theta": 0.9,
+    "vagueness": "Ultra-vague",
+    "domain": "Medical",
+    "baseline_cov": 0.2178
+  },
+  {
+    "prompt_id": "N37",
+    "deployment": "rad_assist",
+    "native_domain": null,
+    "final_cov": 0.900990099009901,
+    "n_turns": 10,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "treatment_received": "myeloma treatment, monthly infusions ongoing",
+      "histology_subtype": "myeloma",
+      "response_to_treatment": "Bone pain is better",
+      "primary_site": "bone marrow",
+      "stage_classification": "Stage II",
+      "performance_status": "ECOG 1",
+      "current_medications": "Daratumumab 16 mg/kg IV, monthly; Ixazomib 4 mg orally, once weekly; Lenalidomide 15 mg orally, daily (21 days on, 7 days off); Dexamethasone 20 mg orally, twice weekly; Aspirin 81 mg orally, daily; Acyclovir 400 mg orally, twice daily; Zoledronic acid 4 mg IV, monthly",
+      "biomarkers": "M-protein 0.5 g/dL, kappa/lambda free light chain ratio 1.5",
+      "imaging_findings": "CT: stable lytic lesions throughout the axial and appendicular skeleton. MRI: reduced bone marrow infiltration in the spine and pelvis. PET: decreased metabolic activity in previously identified lesions, with a maximum SUV of 3.5.",
+      "comorbidities": "no other major medical conditions",
+      "patient_demographics": "Age: 65 years, Sex: female, Weight: 150 lbs",
+      "lab_values": "Complete Blood Count (CBC): White Blood Cells (WBC): 5.2 K/uL, Hemoglobin: 13.8 g/dL, Platelets: 245 K/uL. Renal Function: Creatinine: 0.9 mg/dL, BUN: 16 mg/dL. Liver Function: AST: 28 U/L, ALT: 32 U/L.",
+      "treatment_plan": "Monthly infusions"
+    },
+    "transcript": [
+      [
+        "What is the primary site of the myeloma?",
+        "The primary site of the myeloma is the bone marrow."
+      ],
+      [
+        "What is the stage classification of the myeloma?",
+        "The myeloma is classified as Stage II."
+      ],
+      [
+        "What is the patient's current functional status (e.g., ECOG or Karnofsky score)?",
+        "The patient's ECOG performance status is 1."
+      ],
+      [
+        "What are the patient's current medications, including their dosages?",
+        "The patient is currently taking:\n*   Daratumumab 16 mg/kg IV, monthly\n*   Ixazomib 4 mg orally, once weekly\n*   Lenalidomide 15 mg orally, daily (21 days on, 7 days off)\n*   Dexamethasone 20 mg orally, twice weekly\n*   Aspirin 81 mg orally, daily\n*   Acyclovir 400 mg orally, twice daily\n*   Zoledronic acid 4 mg IV, monthly"
+      ],
+      [
+        "What are the patient's current myeloma-specific biomarker results?",
+        "The patient's M-protein is 0.5 g/dL, and the kappa/lambda free light chain ratio is 1.5."
+      ],
+      [
+        "What are the key imaging findings (CT, MRI, PET) related to the myeloma?",
+        "On CT, there are stable lytic lesions throughout the axial and appendicular skeleton. MRI shows reduced bone marrow infiltration in the spine and pelvis. PET scans indicate decreased metabolic activity in previously identified lesions, with a maximum SUV of 3.5."
+      ],
+      [
+        "What other medical conditions does the patient have, such as diabetes, hypertension, or cardiac issues?",
+        "The patient has no other major medical conditions."
+      ],
+      [
+        "What are the patient's age, sex, and weight?",
+        "The patient is a 65-year-old female weighing 150 lbs."
+      ],
+      [
+        "What are the patient's most recent complete blood count (CBC), renal function, and liver function test results?",
+        "The patient's most recent lab results are:\n\n*   **Complete Blood Count (CBC):**\n    *   White Blood Cells (WBC): 5.2 K/uL\n    *   Hemoglobin: 13.8 g/dL\n    *   Platelets: 245 K/uL\n*   **Renal Function:**\n    *   Creatinine: 0.9 mg/dL\n    *   BUN: 16 mg/dL\n*   **Liver Function:**\n    *   AST: 28 U/L\n    *   ALT: 32 U/L"
+      ],
+      [
+        "What is the planned next step in the patient's myeloma treatment?",
+        "Monthly infusions are ongoing."
+      ]
+    ],
+    "cov_by_turn": [
+      0.24752475247524752,
+      0.3465346534653465,
+      0.4405940594059406,
+      0.5198019801980198,
+      0.5891089108910891,
+      0.6534653465346535,
+      0.7128712871287128,
+      0.7673267326732673,
+      0.8168316831683168,
+      0.8613861386138614,
+      0.900990099009901
+    ],
+    "config": "ALI_v1_theta0.9",
+    "theta": 0.9,
+    "vagueness": "Ultra-vague",
+    "domain": "Medical",
+    "baseline_cov": 0.2624
+  },
+  {
+    "prompt_id": "N38",
+    "deployment": "rad_assist",
+    "native_domain": null,
+    "final_cov": 0.900990099009901,
+    "n_turns": 11,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "primary_site": "thyroid",
+      "stage_classification": "very early stage",
+      "lab_values": "all normal",
+      "treatment_received": "None",
+      "histology_subtype": "Papillary thyroid carcinoma",
+      "performance_status": "ECOG 0",
+      "response_to_treatment": "No current response to treatment to assess as patient hasn't received any treatment yet.",
+      "current_medications": "None",
+      "biomarkers": "BRAF V600E and RAS mutations were tested and were negative.",
+      "imaging_findings": "Thyroid Ultrasound: A small, suspicious nodule is identified. For example, a 0.8 cm hypoechoic nodule with irregular margins and microcalcifications in the right lobe. No suspicious lymphadenopathy in the central or lateral neck compartments. CT/MRI/PET Scans: These are often not indicated for very early stage disease. If performed, they would typically show no evidence of local invasion or distant metastasis.",
+      "comorbidities": "none",
+      "patient_demographics": "Age: 35 years, Sex: female",
+      "treatment_plan": "surgery to remove the thyroid gland"
+    },
+    "transcript": [
+      [
+        "What treatments, if any, has the patient received so far?",
+        "The patient has not received any treatments yet."
+      ],
+      [
+        "What is the histological subtype?",
+        "Papillary thyroid carcinoma."
+      ],
+      [
+        "What is the patient's performance status (e.g., ECOG or Karnofsky score)?",
+        "The patient's ECOG performance status is 0."
+      ],
+      [
+        "Since the patient hasn't received any treatment yet, what is their current response to treatment?",
+        "Since the patient hasn't received any treatment yet, there is no current response to treatment to assess."
+      ],
+      [
+        "What medications is the patient currently taking, including dosages?",
+        "None."
+      ],
+      [
+        "Just to confirm, is the patient currently taking absolutely no medications, including over-the-counter drugs or supplements?",
+        "Yes, that's correct. The patient is not currently taking any medications, including over-the-counter drugs or supplements."
+      ],
+      [
+        "Have any molecular or other relevant biomarkers been tested, and what were the results?",
+        "Yes, BRAF V600E and RAS mutations were tested and were negative."
+      ],
+      [
+        "What are the key imaging findings, including results from any ultrasound, CT, MRI, or PET scans?",
+        "For very early stage thyroid cancer, the key imaging findings are typically:\n\n*   **Thyroid Ultrasound:** A small, suspicious nodule is identified. For example, a 0.8 cm hypoechoic nodule with irregular margins and microcalcifications in the right lobe. No suspicious lymphadenopathy in the central or lateral neck compartments.\n*   **CT/MRI/PET Scans:** These are often not indicated for very early stage disease. If performed, they would typically show no evidence of local invasion or distant metastasis."
+      ],
+      [
+        "What other medical conditions does the patient have?",
+        "The patient has no other medical conditions."
+      ],
+      [
+        "What is the patient's age and sex?",
+        "The patient is a 35-year-old female."
+      ],
+      [
+        "What is the proposed treatment plan?",
+        "The proposed treatment plan is surgery to remove the thyroid gland."
+      ]
+    ],
+    "cov_by_turn": [
+      0.2376237623762376,
+      0.32673267326732675,
+      0.41089108910891087,
+      0.4900990099009901,
+      0.5643564356435643,
+      0.5643564356435643,
+      0.6336633663366337,
+      0.698019801980198,
+      0.7574257425742574,
+      0.8118811881188119,
+      0.8613861386138614,
+      0.900990099009901
+    ],
+    "config": "ALI_v1_theta0.9",
+    "theta": 0.9,
+    "vagueness": "Ultra-vague",
+    "domain": "Medical",
+    "baseline_cov": 0.1436
+  },
+  {
+    "prompt_id": "N39",
+    "deployment": "rad_assist",
+    "native_domain": null,
+    "final_cov": 0.900990099009901,
+    "n_turns": 9,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "primary_site": "brain",
+      "response_to_treatment": "stable",
+      "current_medications": "steroids",
+      "treatment_plan": "Follow-up needed",
+      "stage_classification": "Clinical Stage II",
+      "treatment_received": "steroids",
+      "histology_subtype": "Glioblastoma",
+      "performance_status": "ECOG 1",
+      "biomarkers": "IDH mutation status is wild-type, MGMT promoter methylation is present, EGFR amplification, TERT promoter mutation",
+      "imaging_findings": "presence of a brain tumor",
+      "comorbidities": "hypertension",
+      "patient_demographics": "Age: 55, Sex: female",
+      "lab_values": "Complete Blood Count (CBC): White Blood Cells (WBC): 7.2 x 10^9/L, Hemoglobin: 14.1 g/dL, Platelets: 250 x 10^9/L. Renal Function Panel: Sodium: 139 mmol/L, Potassium: 4.0 mmol/L, BUN: 15 mg/dL, Creatinine: 0.9 mg/dL. Liver Function Tests (LFTs): AST: 28 U/L, ALT: 22 U/L, Alkaline Phosphatase: 105 U/L, Total Bilirubin: 0.6 mg/dL."
+    },
+    "transcript": [
+      [
+        "What is the tumor's TNM or clinical stage?",
+        "The tumor is Clinical Stage II."
+      ],
+      [
+        "What treatments has the patient received for the brain tumor?",
+        "The patient is currently stable on steroids."
+      ],
+      [
+        "What is the histological subtype of the brain tumor?",
+        "The histological subtype of the brain tumor is Glioblastoma."
+      ],
+      [
+        "What is the patient's performance status, such as their ECOG or Karnofsky score?",
+        "The patient's ECOG performance status is 1."
+      ],
+      [
+        "What are the relevant molecular or genetic markers for this glioblastoma, such as IDH mutation status or MGMT promoter methylation?",
+        "The IDH mutation status is wild-type. MGMT promoter methylation is present. EGFR amplification and TERT promoter mutation are also observed."
+      ],
+      [
+        "What are the key findings from the patient's CT, MRI, or PET scans?",
+        "The scans indicate the presence of a brain tumor."
+      ],
+      [
+        "What other medical conditions or comorbidities does the patient have, such as diabetes, hypertension, or cardiac issues?",
+        "The patient has well-controlled hypertension."
+      ],
+      [
+        "What is the patient's age and sex?",
+        "The patient is a 55-year-old female."
+      ],
+      [
+        "What are the relevant lab results, such as CBC, renal function, or liver function?",
+        "Relevant lab results are as follows:\n\n**Complete Blood Count (CBC):**\n*   White Blood Cells (WBC): 7.2 x 10^9/L (Normal range: 4.0-11.0)\n*   Hemoglobin: 14.1 g/dL (Normal range: 13.5-17.5)\n*   Platelets: 250 x 10^9/L (Normal range: 150-450)\n\n**Renal Function Panel:**\n*   Sodium: 139 mmol/L (Normal range: 135-145)\n*   Potassium: 4.0 mmol/L (Normal range: 3.5-5.0)\n*   BUN: 15 mg/dL (Normal range: 7-20)\n*   Creatinine: 0.9 mg/dL (Normal range: 0.6-1.2)\n\n**Liver Function Tests (LFTs):**\n*   AST: 28 U/L (Normal range: 10-40)\n*   ALT: 22 U/L (Normal range: 7-56)\n*   Alkaline Phosphatase: 105 U/L (Normal range: 40-150)\n*   Total Bilirubin: 0.6 mg/dL (Normal range: 0.2-1.2)"
+      ]
+    ],
+    "cov_by_turn": [
+      0.28217821782178215,
+      0.37623762376237624,
+      0.46534653465346537,
+      0.5495049504950495,
+      0.6287128712871287,
+      0.693069306930693,
+      0.7524752475247525,
+      0.806930693069307,
+      0.8564356435643564,
+      0.900990099009901
+    ],
+    "config": "ALI_v1_theta0.9",
+    "theta": 0.9,
+    "vagueness": "Ultra-vague",
+    "domain": "Medical",
+    "baseline_cov": 0.599
+  },
+  {
+    "prompt_id": "N40",
+    "deployment": "rad_assist",
+    "native_domain": null,
+    "final_cov": 0.900990099009901,
+    "n_turns": 11,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "primary_site": "ovarian",
+      "stage_classification": "Stage IIIC",
+      "treatment_received": "no treatment received yet",
+      "response_to_treatment": "no treatment received, so no response to treatment",
+      "histology_subtype": "high-grade serous carcinoma",
+      "performance_status": "ECOG 1",
+      "current_medications": "Acetaminophen 500 mg, as needed for pain; Ondansetron 4 mg, as needed for nausea; Multivitamin, once daily; Lorazepam 0.5 mg, as needed for anxiety",
+      "biomarkers": "Pathogenic germline mutation in BRCA1; HRD (Homologous Recombination Deficiency) test positive; TP53 mutation",
+      "imaging_findings": "CT scan of the abdomen and pelvis revealed a large, complex mass in the right adnexa measuring approximately 12 cm, with both solid and cystic components; moderate ascites; several peritoneal implants on the omentum and pelvic sidewalls; enlarged pelvic and para-aortic lymph nodes (largest 1.8 cm); no definitive distant metastases in liver or lungs.",
+      "comorbidities": "hypertension",
+      "patient_demographics": "Age: 62, Sex: Female",
+      "lab_values": {
+        "WBC": "9.5 x 10^9/L",
+        "Hemoglobin": "11.8 g/dL",
+        "Hematocrit": "35.4%",
+        "Platelets": "320 x 10^9/L",
+        "Creatinine": "0.8 mg/dL",
+        "BUN": "15 mg/dL",
+        "AST": "25 U/L",
+        "ALT": "20 U/L",
+        "Total Bilirubin": "0.7 mg/dL"
+      },
+      "treatment_plan": "further staging tests, consultations with a gynecologic oncologist and a medical oncologist, and then a multidisciplinary team meeting to finalize a personalized treatment plan"
+    },
+    "transcript": [
+      [
+        "Could you provide the stage of the ovarian cancer, such as a clinical stage (e.g., IIIA) or a TNM classification (e.g., T2N1M0)?",
+        "The ovarian cancer is Stage IIIC."
+      ],
+      [
+        "What treatments has the patient received so far?",
+        "The patient has not received any treatment yet. The family was just informed of the diagnosis, and next steps are currently being determined."
+      ],
+      [
+        "What is the histological subtype of the ovarian cancer?",
+        "The histological subtype is high-grade serous carcinoma."
+      ],
+      [
+        "What is the patient's current functional status, such as an ECOG or Karnofsky score?",
+        "The patient's current ECOG performance status is 1."
+      ],
+      [
+        "What medications is the patient currently taking, including their dosages?",
+        "The patient is currently taking:\n*   Acetaminophen 500 mg, as needed for pain\n*   Ondansetron 4 mg, as needed for nausea\n*   Multivitamin, once daily\n*   Lorazepam 0.5 mg, as needed for anxiety"
+      ],
+      [
+        "What are the results of any relevant biomarker tests, such as for BRCA1/2, HRD, or other molecular markers?",
+        "The genetic testing revealed a pathogenic germline mutation in BRCA1. The HRD (Homologous Recombination Deficiency) test was positive. TP53 was also found to be mutated."
+      ],
+      [
+        "What are the key findings from any recent imaging studies, such as CT, MRI, or PET scans?",
+        "The recent CT scan of the abdomen and pelvis revealed a large, complex mass in the right adnexa measuring approximately 12 cm, with both solid and cystic components. There is also evidence of moderate ascites and several peritoneal implants, particularly on the omentum and pelvic sidewalls. Additionally, a few enlarged pelvic and para-aortic lymph nodes were noted, with the largest measuring 1.8 cm. No definitive distant metastases were identified in the liver or lungs on this scan."
+      ],
+      [
+        "What other medical conditions does the patient have?",
+        "The patient also has hypertension."
+      ],
+      [
+        "What is the patient's age and sex?",
+        "The patient is a 62-year-old female."
+      ],
+      [
+        "Could you provide the most recent results for the patient's complete blood count (CBC), renal function tests (e.g., creatinine, BUN), and liver function tests (e.g., AST, ALT, bilirubin)?",
+        "Certainly. Here are the most recent lab results from yesterday, October 26th:\n\n**Complete Blood Count (CBC):**\n*   White Blood Cell Count (WBC): 9.5 x 10^9/L (Normal range: 4.0-11.0)\n*   Hemoglobin: 11.8 g/dL (Normal range: 12.0-16.0)\n*   Hematocrit: 35.4% (Normal range: 36.0-48.0)\n*   Platelets: 320 x 10^9/L (Normal range: 150-450)\n\n**Renal Function Tests:**\n*   Creatinine: 0.8 mg/dL (Normal range: 0.6-1.2)\n*   Blood Urea Nitrogen (BUN): 15 mg/dL (Normal range: 7-20)\n\n**Liver Function Tests:**\n*   AST (Aspartate Aminotransferase): 25 U/L (Normal range: 10-40)\n*   ALT (Alanine Aminotransferase): 20 U/L (Normal range: 7-56)\n*   Total Bilirubin: 0.7 mg/dL (Normal range: 0.2-1.2)"
+      ],
+      [
+        "What are the planned next steps for treatment?",
+        "The next steps typically involve further staging tests, consultations with a gynecologic oncologist and a medical oncologist, and then a multidisciplinary team meeting to finalize a personalized treatment plan."
+      ]
+    ],
+    "cov_by_turn": [
+      0.09900990099009901,
+      0.19306930693069307,
+      0.3564356435643564,
+      0.4405940594059406,
+      0.5198019801980198,
+      0.5891089108910891,
+      0.6534653465346535,
+      0.7128712871287128,
+      0.7673267326732673,
+      0.8168316831683168,
+      0.8613861386138614,
+      0.900990099009901
+    ],
+    "config": "ALI_v1_theta0.9",
+    "theta": 0.9,
+    "vagueness": "Ultra-vague",
+    "domain": "Medical",
+    "baseline_cov": 0.099
+  },
+  {
+    "prompt_id": "N41",
+    "deployment": "rad_assist",
+    "native_domain": null,
+    "final_cov": 0.9356435643564357,
+    "n_turns": 7,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "primary_site": "colon",
+      "stage_classification": "stage III colon cancer (T3N2M0)",
+      "treatment_received": "8 cycles of FOLFOX adjuvant chemotherapy",
+      "performance_status": "No current symptoms",
+      "biomarkers": "CEA",
+      "patient_demographics": "55-year-old male",
+      "follow_up_schedule": "CT every 6 months, CEA monthly",
+      "histology_subtype": "adenocarcinoma",
+      "response_to_treatment": "no evidence of disease",
+      "current_medications": "not currently taking any specified medications",
+      "imaging_findings": "no findings to report from the surveillance CT scans",
+      "comorbidities": "None specified",
+      "lab_values": {
+        "CBC": {
+          "WBC": "7.2 K/uL",
+          "Hemoglobin": "14.8 g/dL",
+          "Platelets": "285 K/uL"
+        },
+        "Renal Function": {
+          "Creatinine": "0.9 mg/dL",
+          "BUN": "15 mg/dL"
+        },
+        "Liver Function": {
+          "AST": "28 U/L",
+          "ALT": "32 U/L",
+          "Alkaline Phosphatase": "85 U/L",
+          "Total Bilirubin": "0.6 mg/dL"
+        }
+      },
+      "treatment_plan": "surveillance with CT scans every 6 months and CEA blood tests monthly"
+    },
+    "transcript": [
+      [
+        "What is the specific histological subtype of the colon cancer?",
+        "The histological subtype of the colon cancer is adenocarcinoma."
+      ],
+      [
+        "What was the response to the adjuvant FOLFOX chemotherapy?",
+        "The adjuvant FOLFOX chemotherapy was completed as planned, and there is currently no evidence of disease."
+      ],
+      [
+        "What medications is the patient currently taking, along with their dosages?",
+        "The patient is not currently taking any specified medications."
+      ],
+      [
+        "What are the findings from the surveillance CT scans?",
+        "There are no findings to report from the surveillance CT scans at this time."
+      ],
+      [
+        "Does the patient have any other medical conditions, such as diabetes, hypertension, or heart disease?",
+        "No other medical conditions are specified."
+      ],
+      [
+        "What are the patient's most recent lab results, including CBC, renal function, and liver function?",
+        "The patient's most recent lab results are:\n\n*   **CBC:**\n    *   WBC: 7.2 K/uL\n    *   Hemoglobin: 14.8 g/dL\n    *   Platelets: 285 K/uL\n*   **Renal Function:**\n    *   Creatinine: 0.9 mg/dL\n    *   BUN: 15 mg/dL\n*   **Liver Function:**\n    *   AST: 28 U/L\n    *   ALT: 32 U/L\n    *   Alkaline Phosphatase: 85 U/L\n    *   Total Bilirubin: 0.6 mg/dL"
+      ],
+      [
+        "What is the patient's overall treatment plan moving forward?",
+        "The patient's treatment plan moving forward involves surveillance with CT scans every 6 months and CEA blood tests monthly."
+      ]
+    ],
+    "cov_by_turn": [
+      0.5099009900990099,
+      0.594059405940594,
+      0.6683168316831684,
+      0.7376237623762376,
+      0.7970297029702971,
+      0.8514851485148515,
+      0.8960396039603961,
+      0.9356435643564357
+    ],
+    "config": "ALI_v1_theta0.9",
+    "theta": 0.9,
+    "vagueness": "Medium",
+    "domain": "Medical",
+    "baseline_cov": 0.2822
+  },
+  {
+    "prompt_id": "N42",
+    "deployment": "rad_assist",
+    "native_domain": null,
+    "final_cov": 0.9356435643564357,
+    "n_turns": 4,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "primary_site": "lung",
+      "stage_classification": "stage IVB",
+      "treatment_received": "osimertinib 80mg daily",
+      "histology_subtype": "NSCLC",
+      "performance_status": "Tolerating treatment well",
+      "response_to_treatment": "stable disease",
+      "current_medications": "osimertinib 80mg daily",
+      "biomarkers": "EGFR-mutant (exon 19 deletion)",
+      "imaging_findings": "6-month restaging CT shows stable disease, no new lesions",
+      "follow_up_schedule": "6-month restaging CT",
+      "comorbidities": "None specified",
+      "patient_demographics": "Age: 62, Sex: female, Weight: 145 lbs",
+      "lab_values": {
+        "CBC": {
+          "WBC": "6.5 K/uL",
+          "Hemoglobin": "13.8 g/dL",
+          "Platelets": "250 K/uL"
+        },
+        "Renal Function": {
+          "Creatinine": "0.8 mg/dL",
+          "BUN": "15 mg/dL",
+          "eGFR": ">90 mL/min/1.73m^2"
+        },
+        "Liver Function": {
+          "AST": "25 U/L",
+          "ALT": "28 U/L",
+          "Alkaline Phosphatase": "80 U/L",
+          "Total Bilirubin": "0.6 mg/dL"
+        }
+      },
+      "treatment_plan": "continue osimertinib 80mg daily"
+    },
+    "transcript": [
+      [
+        "What other medical conditions does the patient have?",
+        "The patient has EGFR-mutant NSCLC (exon 19 deletion), stage IVB. No other medical conditions are specified."
+      ],
+      [
+        "What are the patient's age, sex, and weight?",
+        "The patient is a 62-year-old female weighing 145 lbs."
+      ],
+      [
+        "What are the patient's recent lab results, including CBC, renal, and liver function?",
+        "The patient's recent lab results are as follows:\n\n**CBC:**\n*   WBC: 6.5 K/uL\n*   Hemoglobin: 13.8 g/dL\n*   Platelets: 250 K/uL\n\n**Renal Function:**\n*   Creatinine: 0.8 mg/dL\n*   BUN: 15 mg/dL\n*   eGFR: >90 mL/min/1.73m^2\n\n**Liver Function:**\n*   AST: 25 U/L\n*   ALT: 28 U/L\n*   Alkaline Phosphatase: 80 U/L\n*   Total Bilirubin: 0.6 mg/dL"
+      ],
+      [
+        "What is the planned next step in the patient's treatment?",
+        "The patient is planned to continue osimertinib 80mg daily."
+      ]
+    ],
+    "cov_by_turn": [
+      0.7475247524752475,
+      0.801980198019802,
+      0.8514851485148515,
+      0.8960396039603961,
+      0.9356435643564357
+    ],
+    "config": "ALI_v1_theta0.9",
+    "theta": 0.9,
+    "vagueness": "Medium",
+    "domain": "Medical",
+    "baseline_cov": 0.7178
+  },
+  {
+    "prompt_id": "N43",
+    "deployment": "rad_assist",
+    "native_domain": null,
+    "final_cov": 0.900990099009901,
+    "n_turns": 7,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "primary_site": "cervical",
+      "stage_classification": "IB2",
+      "treatment_received": "No prior treatment",
+      "biomarkers": "HPV-positive",
+      "patient_demographics": "48-year-old female",
+      "treatment_plan": "concurrent chemoradiation: cisplatin weekly + pelvic EBRT (45 Gy/25 fractions) followed by brachytherapy boost",
+      "histology_subtype": "squamous cell carcinoma",
+      "performance_status": "ECOG 0",
+      "response_to_treatment": "complete response",
+      "current_medications": "multivitamin daily, ibuprofen 200 mg as needed",
+      "imaging_findings": "cervical mass measuring approximately 4.5 cm, no evidence of parametrial invasion, no suspicious pelvic or para-aortic lymphadenopathy, no evidence of distant metastatic disease",
+      "comorbidities": "no other specified medical conditions",
+      "lab_values": {
+        "WBC": "7.2 x 10^9/L",
+        "Hemoglobin": "11.5 g/dL",
+        "Platelets": "245 x 10^9/L",
+        "Creatinine": "0.8 mg/dL",
+        "BUN": "14 mg/dL",
+        "eGFR": "88 mL/min/1.73m^2",
+        "AST": "22 U/L",
+        "ALT": "18 U/L",
+        "Total Bilirubin": "0.5 mg/dL"
+      }
+    },
+    "transcript": [
+      [
+        "What is the specific histology of the cervical cancer?",
+        "The specific histology of the cervical cancer is squamous cell carcinoma."
+      ],
+      [
+        "What is the patient's ECOG or Karnofsky performance status?",
+        "The patient's ECOG performance status is 0."
+      ],
+      [
+        "What was the patient's response to the chemoradiation and brachytherapy?",
+        "The patient achieved a complete response to the chemoradiation and brachytherapy."
+      ],
+      [
+        "What medications is the patient currently taking, including dosages?",
+        "The patient is currently taking a daily multivitamin and ibuprofen 200 mg as needed for mild pain."
+      ],
+      [
+        "What were the key findings from the initial staging imaging (CT, MRI, or PET)?",
+        "Initial staging imaging revealed a cervical mass measuring approximately 4.5 cm, with no evidence of parametrial invasion. There was no suspicious pelvic or para-aortic lymphadenopathy, and no evidence of distant metastatic disease."
+      ],
+      [
+        "Does the patient have any other medical conditions, such as diabetes, hypertension, or cardiac issues?",
+        "No, the patient has no other specified medical conditions."
+      ],
+      [
+        "What were the patient's relevant lab results, including CBC, renal function, and liver function?",
+        "The patient's relevant lab results were:\n\n*   **CBC:**\n    *   WBC: 7.2 x 10^9/L\n    *   Hemoglobin: 11.5 g/dL\n    *   Platelets: 245 x 10^9/L\n*   **Renal Function:**\n    *   Creatinine: 0.8 mg/dL\n    *   BUN: 14 mg/dL\n    *   eGFR: 88 mL/min/1.73m^2\n*   **Liver Function:**\n    *   AST: 22 U/L\n    *   ALT: 18 U/L\n    *   Total Bilirubin: 0.5 mg/dL"
+      ]
+    ],
+    "cov_by_turn": [
+      0.43564356435643564,
+      0.5198019801980198,
+      0.599009900990099,
+      0.6732673267326733,
+      0.7425742574257426,
+      0.801980198019802,
+      0.8564356435643564,
+      0.900990099009901
+    ],
+    "config": "ALI_v1_theta0.9",
+    "theta": 0.9,
+    "vagueness": "Medium",
+    "domain": "Medical",
+    "baseline_cov": 0.4356
+  },
+  {
+    "prompt_id": "N44",
+    "deployment": "rad_assist",
+    "native_domain": null,
+    "final_cov": 0.900990099009901,
+    "n_turns": 14,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "histology_subtype": "AML",
+      "treatment_received": "allogeneic stem cell transplant",
+      "current_medications": "tacrolimus and methylprednisolone",
+      "biomarkers": "CMV monitoring negative, Chimerism 98%",
+      "primary_site": "bone marrow",
+      "lab_values": "intermediate risk cytogenetics",
+      "stage_classification": "no TNM or clinical stage classification",
+      "performance_status": "ECOG 1",
+      "response_to_treatment": "complete remission",
+      "imaging_findings": "No specific imaging findings on CT, MRI, or PET are typically associated with mild skin GVHD.",
+      "comorbidities": "none specified",
+      "patient_demographics": "45-year-old male, weighing 75 kg",
+      "treatment_plan": "initiate topical corticosteroid treatment for the skin GVHD"
+    },
+    "transcript": [
+      [
+        "Given AML is a blood cancer, what primary site should I use?",
+        "For AML, the primary site is the **bone marrow**."
+      ],
+      [
+        "What was the AML's clinical stage at diagnosis?",
+        "De novo AML, intermediate risk cytogenetics."
+      ],
+      [
+        "For the AML, was a specific clinical stage (e.g., Stage IIIA) or TNM staging assigned, or is the intermediate risk cytogenetics the appropriate stage classification?",
+        "I do not have information on a specific clinical stage, TNM staging, or the cytogenetic risk classification for the AML."
+      ],
+      [
+        "You previously mentioned 'intermediate risk cytogenetics' for the AML. Is this the stage classification, or is no staging information available?",
+        "Intermediate risk cytogenetics is a prognostic classification for AML, not a stage classification. AML is not typically staged in the same way as solid tumors."
+      ],
+      [
+        "Given AML is not typically staged like solid tumors, can I assume there is no TNM or clinical stage classification for this patient's AML?",
+        "Yes, you can assume there is no TNM or clinical stage classification for this patient's AML."
+      ],
+      [
+        "What is the patient's performance status?",
+        "The patient's ECOG performance status is 1."
+      ],
+      [
+        "What was the patient's response to treatment for their AML?",
+        "The patient achieved complete remission after the allogeneic stem cell transplant."
+      ],
+      [
+        "Are there any key imaging findings (CT, MRI, PET)?",
+        "There are no key imaging findings (CT, MRI, PET) mentioned."
+      ],
+      [
+        "Does \"no key imaging findings mentioned\" mean there are no significant findings, or that the information is unavailable?",
+        "It means that information is unavailable in the provided context."
+      ],
+      [
+        "To clarify, does \"information is unavailable\" mean that no imaging studies (CT, MRI, PET) were performed, or that the results of any such studies are simply not provided?",
+        "I don't use the phrase \"information is unavailable\" when providing patient data. If a specific detail is not part of the provided patient information, I will invent a plausible value consistent with the case."
+      ],
+      [
+        "What are the key imaging findings (CT, MRI, PET)?",
+        "No specific imaging findings on CT, MRI, or PET are typically associated with mild skin GVHD."
+      ],
+      [
+        "Are there any other significant medical conditions or comorbidities the patient has?",
+        "No, there are no other significant medical conditions or comorbidities specified."
+      ],
+      [
+        "What is the patient's age, sex, and weight?",
+        "The patient is a 45-year-old male weighing 75 kg."
+      ],
+      [
+        "What are the planned next steps in the patient's treatment?",
+        "The next step is to initiate topical corticosteroid treatment for the skin GVHD."
+      ]
+    ],
+    "cov_by_turn": [
+      0.3069306930693069,
+      0.40594059405940597,
+      0.4504950495049505,
+      0.4504950495049505,
+      0.4504950495049505,
+      0.5445544554455446,
+      0.6237623762376238,
+      0.698019801980198,
+      0.698019801980198,
+      0.698019801980198,
+      0.698019801980198,
+      0.7574257425742574,
+      0.8118811881188119,
+      0.8613861386138614,
+      0.900990099009901
+    ],
+    "config": "ALI_v1_theta0.9",
+    "theta": 0.9,
+    "vagueness": "Medium",
+    "domain": "Medical",
+    "baseline_cov": 0.3366
+  },
+  {
+    "prompt_id": "N45",
+    "deployment": "rad_assist",
+    "native_domain": null,
+    "final_cov": 0.900990099009901,
+    "n_turns": 4,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "primary_site": "bladder",
+      "stage_classification": "pT3N1",
+      "treatment_received": "radical cystectomy, adjuvant nivolumab",
+      "histology_subtype": "urothelial carcinoma",
+      "response_to_treatment": "no evidence of recurrence, tolerating immunotherapy",
+      "current_medications": "nivolumab",
+      "biomarkers": "PSA undetectable",
+      "imaging_findings": "Recent CT: no evidence of recurrence",
+      "patient_demographics": "67-year-old male",
+      "performance_status": "ECOG 0",
+      "comorbidities": "hypertension, hyperlipidemia",
+      "lab_values": {
+        "CBC": {
+          "White Blood Cell Count": "6.5 x 10^9/L",
+          "Hemoglobin": "14.2 g/dL",
+          "Platelets": "250 x 10^9/L"
+        },
+        "Renal Function": {
+          "Creatinine": "1.0 mg/dL",
+          "eGFR": "75 mL/min/1.73m^2"
+        },
+        "Liver Function": {
+          "AST": "25 U/L",
+          "ALT": "28 U/L",
+          "Total Bilirubin": "0.6 mg/dL"
+        }
+      },
+      "treatment_plan": "continue adjuvant nivolumab"
+    },
+    "transcript": [
+      [
+        "What is the patient's performance status (ECOG or Karnofsky)?",
+        "The patient's ECOG performance status is 0."
+      ],
+      [
+        "Does the patient have any other medical conditions, such as diabetes, hypertension, or cardiac issues?",
+        "Yes, the patient has hypertension and hyperlipidemia."
+      ],
+      [
+        "What are the patient's recent lab results, including CBC, renal function, and liver function?",
+        "The patient's recent lab results are as follows:\n\n**CBC:**\n*   White Blood Cell Count: 6.5 x 10^9/L\n*   Hemoglobin: 14.2 g/dL\n*   Platelets: 250 x 10^9/L\n\n**Renal Function:**\n*   Creatinine: 1.0 mg/dL\n*   eGFR: 75 mL/min/1.73m^2\n\n**Liver Function:**\n*   AST: 25 U/L\n*   ALT: 28 U/L\n*   Total Bilirubin: 0.6 mg/dL"
+      ],
+      [
+        "What is the planned next step in the patient's treatment?",
+        "The patient will continue adjuvant nivolumab."
+      ]
+    ],
+    "cov_by_turn": [
+      0.6831683168316832,
+      0.7623762376237624,
+      0.8168316831683168,
+      0.8613861386138614,
+      0.900990099009901
+    ],
+    "config": "ALI_v1_theta0.9",
+    "theta": 0.9,
+    "vagueness": "Medium",
+    "domain": "Medical",
+    "baseline_cov": 0.6089
+  },
+  {
+    "prompt_id": "N46",
+    "deployment": "rad_assist",
+    "native_domain": null,
+    "final_cov": 0.900990099009901,
+    "n_turns": 6,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "stage_classification": "stage IIA",
+      "treatment_received": "2 cycles ABVD",
+      "histology_subtype": "classical Hodgkin lymphoma",
+      "response_to_treatment": "complete metabolic response",
+      "imaging_findings": "Mid-treatment PET after 2 cycles ABVD shows Deauville score 2",
+      "patient_demographics": "35-year-old female",
+      "treatment_plan": "Planning 2 more cycles then restaging",
+      "primary_site": "cervical and mediastinal lymph nodes",
+      "performance_status": "ECOG 0",
+      "current_medications": "ABVD chemotherapy. Each dose, administered twice per 28-day cycle, consists of: Adriamycin (Doxorubicin): 45 mg, Bleomycin: 18 units, Vinblastine: 10.8 mg, Dacarbazine: 675 mg.",
+      "biomarkers": "CD30 positive, CD15 positive, EBV status positive",
+      "comorbidities": "No other significant medical conditions or comorbidities",
+      "lab_values": "Complete Blood Count (CBC):\n*   White Blood Cells (WBC): 3.8 x 10^9/L\n*   Absolute Neutrophil Count (ANC): 2.1 x 10^9/L\n*   Hemoglobin: 11.2 g/dL\n*   Platelets: 185 x 10^9/L\n\nRenal Function:\n*   Creatinine: 0.7 mg/dL\n*   Blood Urea Nitrogen (BUN): 15 mg/dL\n*   eGFR: >90 mL/min/1.73m^2\n\nLiver Function:\n*   AST: 45 U/L\n*   ALT: 52 U/L\n*   Alkaline Phosphatase: 90 U/L\n*   Total Bilirubin: 0.6 mg/dL\n*   Albumin: 4.0 g/dL"
+    },
+    "transcript": [
+      [
+        "What is the primary site or organ where the Hodgkin lymphoma originated?",
+        "The Hodgkin lymphoma originated in the cervical and mediastinal lymph nodes."
+      ],
+      [
+        "What is the patient's performance status (e.g., ECOG or Karnofsky score)?",
+        "The patient's ECOG performance status is 0."
+      ],
+      [
+        "What medications is the patient currently taking, including dosages?",
+        "The patient is currently receiving ABVD chemotherapy. Each dose, administered twice per 28-day cycle, consists of:\n\n*   **Adriamycin (Doxorubicin):** 45 mg\n*   **Bleomycin:** 18 units\n*   **Vinblastine:** 10.8 mg\n*   **Dacarbazine:** 675 mg"
+      ],
+      [
+        "Are there any relevant biomarkers for this patient's Hodgkin lymphoma, such as CD30, CD15, or EBV status?",
+        "Yes, CD30 and CD15 are positive, and EBV status is positive."
+      ],
+      [
+        "Does the patient have any other significant medical conditions or comorbidities?",
+        "No, the patient has no other significant medical conditions or comorbidities."
+      ],
+      [
+        "Could you provide the relevant lab results, including CBC, renal function, and liver function?",
+        "Here are the requested lab results:\n\n**Complete Blood Count (CBC):**\n*   White Blood Cells (WBC): 3.8 x 10^9/L\n*   Absolute Neutrophil Count (ANC): 2.1 x 10^9/L\n*   Hemoglobin: 11.2 g/dL\n*   Platelets: 185 x 10^9/L\n\n**Renal Function:**\n*   Creatinine: 0.7 mg/dL\n*   Blood Urea Nitrogen (BUN): 15 mg/dL\n*   eGFR: >90 mL/min/1.73m^2\n\n**Liver Function:**\n*   AST: 45 U/L\n*   ALT: 52 U/L\n*   Alkaline Phosphatase: 90 U/L\n*   Total Bilirubin: 0.6 mg/dL\n*   Albumin: 4.0 g/dL"
+      ]
+    ],
+    "cov_by_turn": [
+      0.4900990099009901,
+      0.5891089108910891,
+      0.6683168316831684,
+      0.7376237623762376,
+      0.801980198019802,
+      0.8564356435643564,
+      0.900990099009901
+    ],
+    "config": "ALI_v1_theta0.9",
+    "theta": 0.9,
+    "vagueness": "Medium",
+    "domain": "Medical",
+    "baseline_cov": 0.5149
+  },
+  {
+    "prompt_id": "N47",
+    "deployment": "rad_assist",
+    "native_domain": null,
+    "final_cov": 0.900990099009901,
+    "n_turns": 11,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "stage_classification": "metastatic",
+      "histology_subtype": "melanoma",
+      "current_medications": "pembrolizumab 200mg Q3W",
+      "biomarkers": "BRAF V600E mutated",
+      "lab_values": "Stool calprotectin elevated",
+      "primary_site": "not specified, but metastatic; plausible primary site: cutaneous",
+      "treatment_received": "pembrolizumab",
+      "performance_status": "ECOG 1",
+      "response_to_treatment": "not assessed yet",
+      "imaging_findings": "CT scan of the abdomen and pelvis performed, showing mild colonic wall thickening consistent with colitis.",
+      "comorbidities": "None",
+      "patient_demographics": "62-year-old male weighing 80 kg",
+      "treatment_plan": "initiating corticosteroids for the immune-related colitis and holding pembrolizumab treatment"
+    },
+    "transcript": [
+      [
+        "Where did the melanoma originate?",
+        "The origin of the melanoma is not specified."
+      ],
+      [
+        "What is the primary site of the melanoma?",
+        "The primary site of the melanoma is not specified, but it is metastatic. A plausible primary site would be cutaneous."
+      ],
+      [
+        "What treatments has the patient received for their metastatic melanoma?",
+        "The patient has received pembrolizumab for metastatic melanoma."
+      ],
+      [
+        "What is the patient's ECOG or Karnofsky performance status?",
+        "The patient's ECOG performance status is 1."
+      ],
+      [
+        "What is the patient's response to pembrolizumab?",
+        "The patient's response to pembrolizumab is not specified."
+      ],
+      [
+        "Is the patient's response to pembrolizumab unknown, or has it not been assessed yet?",
+        "The patient's response to pembrolizumab has not been assessed yet."
+      ],
+      [
+        "What are the key imaging findings, including any baseline staging or recent scans for the colitis?",
+        "I do not have information regarding specific imaging findings, baseline staging, or recent scans for the colitis in the provided patient details."
+      ],
+      [
+        "To clarify, are there any imaging findings available for the colitis, or have no such studies been performed?",
+        "A CT scan of the abdomen and pelvis was performed, showing mild colonic wall thickening consistent with colitis."
+      ],
+      [
+        "To clarify, does the patient have any other medical conditions or comorbidities?",
+        "No, the patient has no other significant medical conditions or comorbidities."
+      ],
+      [
+        "What is the patient's age, sex, and weight?",
+        "The patient is a 62-year-old male weighing 80 kg."
+      ],
+      [
+        "What are the planned next steps for managing the patient's immune-related colitis and their pembrolizumab treatment?",
+        "The planned next steps include initiating corticosteroids for the immune-related colitis and holding pembrolizumab treatment."
+      ]
+    ],
+    "cov_by_turn": [
+      0.3564356435643564,
+      0.3564356435643564,
+      0.45544554455445546,
+      0.5445544554455446,
+      0.6237623762376238,
+      0.6237623762376238,
+      0.698019801980198,
+      0.698019801980198,
+      0.7574257425742574,
+      0.8118811881188119,
+      0.8613861386138614,
+      0.900990099009901
+    ],
+    "config": "ALI_v1_theta0.9",
+    "theta": 0.9,
+    "vagueness": "Medium",
+    "domain": "Medical",
+    "baseline_cov": 0.3218
+  },
+  {
+    "prompt_id": "N48",
+    "deployment": "rad_assist",
+    "native_domain": null,
+    "final_cov": 0.900990099009901,
+    "n_turns": 5,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "primary_site": "CLL",
+      "stage_classification": "Rai stage III",
+      "treatment_received": "ibrutinib 420mg daily",
+      "histology_subtype": "CLL",
+      "response_to_treatment": "WBC down from 142k to 38k, Hb stable at 10.2g/dL. No significant side effects.",
+      "current_medications": "ibrutinib 420mg daily",
+      "patient_demographics": "71-year-old female",
+      "lab_values": "WBC down from 142k to 38k, Hb stable at 10.2g/dL",
+      "treatment_plan": "Surveillance CT scheduled",
+      "performance_status": "ECOG 1",
+      "biomarkers": "IGHV mutation status unmutated, FISH analysis showed del(11q), TP53 mutation testing negative",
+      "imaging_findings": "no recent imaging findings available yet; a surveillance CT is scheduled",
+      "comorbidities": "none specified other than CLL"
+    },
+    "transcript": [
+      [
+        "What is the patient's functional status, such as their ECOG or Karnofsky score?",
+        "The patient's ECOG performance status is 1."
+      ],
+      [
+        "What are the results of any relevant molecular or cytogenetic markers for her CLL?",
+        "Her IGHV mutation status is unmutated, and FISH analysis showed del(11q). TP53 mutation testing was negative."
+      ],
+      [
+        "What were the findings of the surveillance CT?",
+        "The surveillance CT is scheduled, so the findings are not yet available."
+      ],
+      [
+        "Are there any other recent imaging findings available?",
+        "No, a surveillance CT is scheduled, so there are no recent imaging findings available yet."
+      ],
+      [
+        "What are the patient's comorbidities?",
+        "No comorbidities are specified other than CLL."
+      ]
+    ],
+    "cov_by_turn": [
+      0.6435643564356436,
+      0.7227722772277227,
+      0.7871287128712872,
+      0.7871287128712872,
+      0.8465346534653465,
+      0.900990099009901
+    ],
+    "config": "ALI_v1_theta0.9",
+    "theta": 0.9,
+    "vagueness": "Medium",
+    "domain": "Medical",
+    "baseline_cov": 0.4851
+  },
+  {
+    "prompt_id": "N49",
+    "deployment": "rad_assist",
+    "native_domain": null,
+    "final_cov": 0.900990099009901,
+    "n_turns": 10,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "primary_site": "right kidney",
+      "imaging_findings": "Staging CT shows no pulmonary metastases, left kidney normal",
+      "patient_demographics": "7-year-old boy",
+      "treatment_plan": "pre-operative chemotherapy (vincristine + actinomycin-D) per SIOP protocol",
+      "stage_classification": "Clinical Stage III (SIOP staging)",
+      "treatment_received": "No treatments received yet",
+      "histology_subtype": "favorable histology",
+      "performance_status": "Lansky Play-Performance Scale score is 90",
+      "response_to_treatment": "No response to report as pre-operative chemotherapy has not started yet; it is currently being planned.",
+      "current_medications": "None",
+      "biomarkers": "Wilms tumor-associated genetic markers, including WT1 mutations and loss of heterozygosity at 1p and 16q",
+      "comorbidities": "none",
+      "lab_values": {
+        "WBC": "8.5 x 10^9/L",
+        "Hemoglobin": "12.8 g/dL",
+        "Platelets": "320 x 10^9/L",
+        "Creatinine": "0.4 mg/dL",
+        "BUN": "12 mg/dL",
+        "AST": "25 U/L",
+        "ALT": "18 U/L",
+        "Total Bilirubin": "0.5 mg/dL"
+      }
+    },
+    "transcript": [
+      [
+        "What is the clinical stage or TNM staging?",
+        "The clinical stage is **Clinical Stage III** (SIOP staging)."
+      ],
+      [
+        "What treatments has the patient received?",
+        "The patient has not yet received any treatments. Pre-operative chemotherapy is planned."
+      ],
+      [
+        "What is the histological subtype?",
+        "The histological subtype is favorable histology."
+      ],
+      [
+        "What is the patient's performance status?",
+        "The patient's Lansky Play-Performance Scale score is 90."
+      ],
+      [
+        "Has pre-operative chemotherapy started, and if so, what is the response to treatment?",
+        "Pre-operative chemotherapy has not started yet; it is currently being planned. Therefore, there is no response to treatment to report."
+      ],
+      [
+        "What current medications is the patient taking, including dosages?",
+        "The patient is not currently taking any medications."
+      ],
+      [
+        "Are there any relevant biomarkers or genetic test results?",
+        "Genetic test results are pending."
+      ],
+      [
+        "What specific genetic tests or molecular markers are pending?",
+        "We're waiting on results from a panel of Wilms tumor-associated genetic markers, including analysis for WT1 mutations and loss of heterozygosity at 1p and 16q."
+      ],
+      [
+        "Does the patient have any other medical conditions?",
+        "No, the patient does not have any other medical conditions."
+      ],
+      [
+        "What are the most recent relevant lab results, including CBC, renal function, and liver function tests?",
+        "Here are the recent lab results:\n\n**CBC:**\n*   White Blood Cells (WBC): 8.5 x 10^9/L\n*   Hemoglobin: 12.8 g/dL\n*   Platelets: 320 x 10^9/L\n\n**Renal Function:**\n*   Creatinine: 0.4 mg/dL\n*   BUN: 12 mg/dL\n\n**Liver Function:**\n*   AST: 25 U/L\n*   ALT: 18 U/L\n*   Total Bilirubin: 0.5 mg/dL"
+      ]
+    ],
+    "cov_by_turn": [
+      0.24752475247524752,
+      0.3415841584158416,
+      0.4306930693069307,
+      0.5148514851485149,
+      0.594059405940594,
+      0.6683168316831684,
+      0.7376237623762376,
+      0.7376237623762376,
+      0.801980198019802,
+      0.8564356435643564,
+      0.900990099009901
+    ],
+    "config": "ALI_v1_theta0.9",
+    "theta": 0.9,
+    "vagueness": "Medium",
+    "domain": "Medical",
+    "baseline_cov": 0.2475
+  },
+  {
+    "prompt_id": "N50",
+    "deployment": "rad_assist",
+    "native_domain": null,
+    "final_cov": 0.900990099009901,
+    "n_turns": 7,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "primary_site": "esophagus",
+      "stage_classification": "pT3N1",
+      "treatment_received": "esophagectomy, jejunostomy feeds",
+      "histology_subtype": "adenocarcinoma",
+      "response_to_treatment": "R0 resection",
+      "patient_demographics": "60-year-old male",
+      "treatment_plan": "Starting oral diet trials",
+      "performance_status": "ECOG 2",
+      "current_medications": "Pantoprazole 40 mg daily; Acetaminophen 1000 mg three times daily; Oxycodone 5 mg every 4-6 hours as needed for pain; Ondansetron 4 mg every 8 hours as needed for nausea; Docusate Sodium 100 mg twice daily; Multivitamin one tablet daily",
+      "biomarkers": "not performed",
+      "imaging_findings": "Pre-operative imaging showed a mass in the distal esophagus consistent with adenocarcinoma, with no distant metastases identified. Post-operative imaging, performed prior to discharge, showed no evidence of residual disease or complications.",
+      "comorbidities": "well-controlled hypertension",
+      "lab_values": "CBC:\n*   WBC: 7.2 x 10^9/L\n*   Hemoglobin: 12.5 g/dL\n*   Hematocrit: 37.8%\n*   Platelets: 220 x 10^9/L\n\nRenal Function:\n*   Sodium: 138 mmol/L\n*   Potassium: 4.1 mmol/L\n*   Chloride: 102 mmol/L\n*   Bicarbonate: 25 mmol/L\n*   BUN: 18 mg/dL\n*   Creatinine: 0.9 mg/dL\n\nLiver Function:\n*   AST: 25 U/L\n*   ALT: 20 U/L\n*   Alkaline Phosphatase: 85 U/L\n*   Total Bilirubin: 0.7 mg/dL\n*   Albumin: 3.2 g/dL"
+    },
+    "transcript": [
+      [
+        "What is his current performance status, or how well is he able to perform daily activities?",
+        "He has an ECOG performance status of 2."
+      ],
+      [
+        "What medications is he currently taking, including their dosages?",
+        "He is currently taking:\n*   Pantoprazole 40 mg daily\n*   Acetaminophen 1000 mg three times daily\n*   Oxycodone 5 mg every 4-6 hours as needed for pain\n*   Ondansetron 4 mg every 8 hours as needed for nausea\n*   Docusate Sodium 100 mg twice daily\n*   Multivitamin one tablet daily"
+      ],
+      [
+        "What are the results of any molecular or biomarker testing performed on his tumor?",
+        "No molecular or biomarker testing results are available."
+      ],
+      [
+        "You mentioned no molecular or biomarker testing results are available. Were any specific biomarker tests, such as ER/PR/HER2, PSA, or AFP, performed?",
+        "No, those specific biomarker tests were not performed."
+      ],
+      [
+        "What are the key findings from any imaging studies, such as CT, MRI, or PET scans?",
+        "Pre-operative imaging showed a mass in the distal esophagus consistent with adenocarcinoma, with no distant metastases identified. Post-operative imaging, performed prior to discharge, showed no evidence of residual disease or complications."
+      ],
+      [
+        "Does he have any other medical conditions, such as diabetes, hypertension, or cardiac issues?",
+        "He has well-controlled hypertension."
+      ],
+      [
+        "What are his most recent lab results, including CBC, renal function, and liver function tests?",
+        "His most recent lab results are:\n\n**CBC:**\n*   WBC: 7.2 x 10^9/L\n*   Hemoglobin: 12.5 g/dL\n*   Hematocrit: 37.8%\n*   Platelets: 220 x 10^9/L\n\n**Renal Function:**\n*   Sodium: 138 mmol/L\n*   Potassium: 4.1 mmol/L\n*   Chloride: 102 mmol/L\n*   Bicarbonate: 25 mmol/L\n*   BUN: 18 mg/dL\n*   Creatinine: 0.9 mg/dL\n\n**Liver Function:**\n*   AST: 25 U/L\n*   ALT: 20 U/L\n*   Alkaline Phosphatase: 85 U/L\n*   Total Bilirubin: 0.7 mg/dL\n*   Albumin: 3.2 g/dL"
+      ]
+    ],
+    "cov_by_turn": [
+      0.5297029702970297,
+      0.6089108910891089,
+      0.6782178217821783,
+      0.6782178217821783,
+      0.7425742574257426,
+      0.801980198019802,
+      0.8564356435643564,
+      0.900990099009901
+    ],
+    "config": "ALI_v1_theta0.9",
+    "theta": 0.9,
+    "vagueness": "Medium",
+    "domain": "Medical",
+    "baseline_cov": 0.5297
+  },
+  {
+    "prompt_id": "N51",
+    "deployment": "rad_assist",
+    "native_domain": null,
+    "final_cov": 0.900990099009901,
+    "n_turns": 8,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "primary_site": "ovarian",
+      "histology_subtype": "high-grade serous",
+      "response_to_treatment": "platinum-sensitive relapse after 14-month remission",
+      "biomarkers": "BRCA1 mutated",
+      "patient_demographics": "52-year-old female",
+      "treatment_plan": "carboplatin + paclitaxel followed by PARP inhibitor maintenance (olaparib)",
+      "stage_classification": "Stage IIIC",
+      "treatment_received": "platinum-based chemotherapy",
+      "performance_status": "ECOG 1",
+      "current_medications": "Lisinopril 10 mg once daily, Vitamin D3 2000 IU once daily, Ibuprofen 400 mg as needed for pain",
+      "imaging_findings": "moderate volume ascites, multiple new peritoneal implants, with the largest measuring 2.5 cm in the right lower quadrant, and a new 1.8 cm para-aortic lymph node.",
+      "comorbidities": "Hypertension, no other significant medical conditions or comorbidities are specified.",
+      "lab_values": {
+        "CBC": {
+          "WBC": "7.2 x 10^9/L",
+          "Hemoglobin": "11.5 g/dL",
+          "Platelets": "280 x 10^9/L"
+        },
+        "Renal Function": {
+          "Creatinine": "0.8 mg/dL",
+          "BUN": "15 mg/dL",
+          "eGFR": "75 mL/min/1.73m^2"
+        },
+        "Liver Function": {
+          "AST": "25 U/L",
+          "ALT": "20 U/L",
+          "Alkaline Phosphatase": "90 U/L",
+          "Total Bilirubin": "0.6 mg/dL"
+        }
+      }
+    },
+    "transcript": [
+      [
+        "What is her current TNM staging or clinical stage?",
+        "TNM staging is primarily used at the time of initial diagnosis. For recurrent ovarian cancer, the staging system is not typically reapplied. Instead, the focus is on the site and extent of recurrence, and its sensitivity to platinum-based chemotherapy."
+      ],
+      [
+        "What was her initial TNM staging or clinical stage at diagnosis?",
+        "Her initial clinical stage at diagnosis was Stage IIIC."
+      ],
+      [
+        "What treatments has she received for her ovarian cancer since her initial diagnosis?",
+        "She received platinum-based chemotherapy for her initial diagnosis."
+      ],
+      [
+        "What is her current performance status (e.g., ECOG or Karnofsky score)?",
+        "Her ECOG performance status is 1."
+      ],
+      [
+        "What medications is she currently taking, including dosages?",
+        "She is currently taking Lisinopril 10 mg once daily and Vitamin D3 2000 IU once daily. She also takes Ibuprofen 400 mg as needed for pain."
+      ],
+      [
+        "What are the key findings from her recent imaging (CT, MRI, or PET)?",
+        "Recent imaging reveals moderate volume ascites, multiple new peritoneal implants, with the largest measuring 2.5 cm in the right lower quadrant, and a new 1.8 cm para-aortic lymph node."
+      ],
+      [
+        "Beyond hypertension, does she have any other significant medical conditions or comorbidities, such as diabetes or cardiac issues?",
+        "No, beyond hypertension, no other significant medical conditions or comorbidities are specified."
+      ],
+      [
+        "What are her most recent lab results, specifically her CBC, renal function, and liver function tests?",
+        "Her most recent lab results are as follows:\n\n**CBC:**\n*   WBC: 7.2 x 10^9/L\n*   Hemoglobin: 11.5 g/dL\n*   Platelets: 280 x 10^9/L\n\n**Renal Function:**\n*   Creatinine: 0.8 mg/dL\n*   BUN: 15 mg/dL\n*   eGFR: 75 mL/min/1.73m^2\n\n**Liver Function:**\n*   AST: 25 U/L\n*   ALT: 20 U/L\n*   Alkaline Phosphatase: 90 U/L\n*   Total Bilirubin: 0.6 mg/dL"
+      ]
+    ],
+    "cov_by_turn": [
+      0.41089108910891087,
+      0.41089108910891087,
+      0.504950495049505,
+      0.594059405940594,
+      0.6732673267326733,
+      0.7425742574257426,
+      0.801980198019802,
+      0.8564356435643564,
+      0.900990099009901
+    ],
+    "config": "ALI_v1_theta0.9",
+    "theta": 0.9,
+    "vagueness": "Medium",
+    "domain": "Medical",
+    "baseline_cov": 0.4109
+  },
+  {
+    "prompt_id": "N52",
+    "deployment": "rad_assist",
+    "native_domain": null,
+    "final_cov": 0.9356435643564357,
+    "n_turns": 12,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "primary_site": "oropharyngeal",
+      "stage_classification": "T2N2bM0",
+      "treatment_received": "definitive chemoradiation (70 Gy/35 fractions, cisplatin 100mg/m² Q3W)",
+      "biomarkers": "HPV+, p16+",
+      "patient_demographics": "44-year-old male",
+      "follow_up_schedule": "3-month post-treatment PET/CT scheduled",
+      "histology_subtype": "Squamous cell carcinoma",
+      "performance_status": "ECOG 2",
+      "treatment_plan": "3-month post-treatment PET/CT is scheduled",
+      "response_to_treatment": "complete metabolic response",
+      "imaging_findings": "PET/CT results available, showing a complete metabolic response",
+      "current_medications": "Pilocarpine 5mg, three times daily; Omeprazole 20mg, once daily; Lidocaine Viscous 2%, 5mL swish and swallow, as needed",
+      "comorbidities": "none",
+      "lab_values": "WBC: 6.2 K/uL, Hemoglobin: 13.8 g/dL, Platelets: 220 K/uL, Creatinine: 0.9 mg/dL, BUN: 15 mg/dL, ALT: 28 U/L, AST: 22 U/L"
+    },
+    "transcript": [
+      [
+        "What is the histological subtype of the oropharyngeal cancer?",
+        "Squamous cell carcinoma."
+      ],
+      [
+        "What is the patient's current performance status (e.g., ECOG or Karnofsky score)?",
+        "The patient's current ECOG performance status is 2."
+      ],
+      [
+        "What is the current assessment of the patient's response to the definitive chemoradiation?",
+        "The 3-month post-treatment PET/CT, which will assess the response, is scheduled."
+      ],
+      [
+        "Prior to the PET/CT results, what is the current clinical assessment of the patient's response to treatment?",
+        "The definitive assessment of treatment response is pending the 3-month post-treatment PET/CT. Clinically, the patient has completed definitive treatment and is managing expected side effects."
+      ],
+      [
+        "Acknowledging the definitive assessment is pending, is there any preliminary clinical impression or early indication of the patient's response to treatment (e.g., complete response, partial response, stable disease, or progression)?",
+        "A preliminary clinical impression regarding the patient's response to treatment is not yet available. The definitive assessment is pending the scheduled 3-month post-treatment PET/CT."
+      ],
+      [
+        "Since the definitive assessment of treatment response is pending the 3-month post-treatment PET/CT, when are those results expected to be available?",
+        "The results are expected to be available on November 3rd."
+      ],
+      [
+        "Are the PET/CT results, expected on November 3rd, now available to determine the treatment response?",
+        "No, the PET/CT results are not yet available."
+      ],
+      [
+        "Given the PET/CT results expected on November 3rd are not yet available, when are they now anticipated?",
+        "My 3-month post-treatment PET/CT results are anticipated on November 7th."
+      ],
+      [
+        "Are the PET/CT results, anticipated on November 7th, now available, and if so, what is the patient's response to treatment?",
+        "Yes, the PET/CT results are available. The scan shows a complete metabolic response to treatment."
+      ],
+      [
+        "What current medications is the patient taking, including dosages?",
+        "The patient is currently taking:\n*   Pilocarpine 5mg, three times daily\n*   Omeprazole 20mg, once daily\n*   Lidocaine Viscous 2%, 5mL swish and swallow, as needed"
+      ],
+      [
+        "Does the patient have any other significant medical conditions or comorbidities?",
+        "No, there are no other significant medical conditions or comorbidities noted."
+      ],
+      [
+        "What are the most recent relevant lab results, including CBC, renal, and liver function?",
+        "The most recent lab results are:\n\n*   **CBC:**\n    *   WBC: 6.2 K/uL\n    *   Hemoglobin: 13.8 g/dL\n    *   Platelets: 220 K/uL\n*   **Renal Function:**\n    *   Creatinine: 0.9 mg/dL\n    *   BUN: 15 mg/dL\n*   **Liver Function:**\n    *   ALT: 28 U/L\n    *   AST: 22 U/L"
+      ]
+    ],
+    "cov_by_turn": [
+      0.4306930693069307,
+      0.5148514851485149,
+      0.594059405940594,
+      0.6336633663366337,
+      0.6336633663366337,
+      0.6336633663366337,
+      0.6336633663366337,
+      0.6336633663366337,
+      0.6336633663366337,
+      0.7673267326732673,
+      0.8366336633663366,
+      0.8910891089108911,
+      0.9356435643564357
+    ],
+    "config": "ALI_v1_theta0.9",
+    "theta": 0.9,
+    "vagueness": "Medium",
+    "domain": "Medical",
+    "baseline_cov": 0.1931
+  },
+  {
+    "prompt_id": "N53",
+    "deployment": "rad_assist",
+    "native_domain": null,
+    "final_cov": 0.900990099009901,
+    "n_turns": 6,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "primary_site": "multiple myeloma",
+      "treatment_received": "lenalidomide maintenance after ASCT (18 months)",
+      "histology_subtype": "multiple myeloma",
+      "response_to_treatment": "M-protein stable",
+      "current_medications": "lenalidomide",
+      "biomarkers": "M-protein stable",
+      "patient_demographics": "78-year-old male",
+      "lab_values": "Creatinine rising (1.8 → 2.3 mg/dL over 3 months)",
+      "treatment_plan": "Considering lenalidomide dose reduction",
+      "stage_classification": "R-ISS Stage II",
+      "performance_status": "ECOG 1",
+      "imaging_findings": "no evidence of disease progression",
+      "comorbidities": "hypertension"
+    },
+    "transcript": [
+      [
+        "What is the patient's current stage classification (e.g., ISS, R-ISS, or TNM)?",
+        "The patient's current stage classification (ISS, R-ISS, or TNM) is not specified."
+      ],
+      [
+        "Since the stage classification is not specified, was it never determined, or is there any clinical staging information available?",
+        "The clinical staging information for multiple myeloma is not specified in the provided details."
+      ],
+      [
+        "Is the patient's stage classification truly unknown, or is there any other information that could help determine it?",
+        "The patient's multiple myeloma was R-ISS Stage II at diagnosis."
+      ],
+      [
+        "What is the patient's current performance status (e.g., ECOG or Karnofsky score)?",
+        "The patient's ECOG performance status is 1."
+      ],
+      [
+        "What are the key imaging findings (e.g., CT, MRI, or PET results)?",
+        "Recent PET/CT scan showed no evidence of disease progression."
+      ],
+      [
+        "Does the patient have any other significant medical conditions or comorbidities, such as diabetes, hypertension, or cardiac issues?",
+        "Yes, the patient has hypertension."
+      ]
+    ],
+    "cov_by_turn": [
+      0.6138613861386139,
+      0.6138613861386139,
+      0.6138613861386139,
+      0.7079207920792079,
+      0.7871287128712872,
+      0.8465346534653465,
+      0.900990099009901
+    ],
+    "config": "ALI_v1_theta0.9",
+    "theta": 0.9,
+    "vagueness": "Medium",
+    "domain": "Medical",
+    "baseline_cov": 0.4208
+  },
+  {
+    "prompt_id": "N54",
+    "deployment": "rad_assist",
+    "native_domain": null,
+    "final_cov": 0.9356435643564357,
+    "n_turns": 6,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "primary_site": "endometrial",
+      "stage_classification": "stage IA",
+      "treatment_received": "hysterectomy with bilateral salpingo-oophorectomy",
+      "histology_subtype": "grade 1, endometrioid",
+      "biomarkers": "Negative nodes, LVSI absent",
+      "patient_demographics": "63-year-old female",
+      "treatment_plan": "No adjuvant therapy recommended per ESMO guidelines",
+      "follow_up_schedule": "Surveillance every 6 months",
+      "performance_status": "ECOG 0",
+      "response_to_treatment": "no evidence of disease",
+      "current_medications": "daily multivitamin (1 tablet), daily calcium with Vitamin D supplement (600 mg calcium, 400 IU Vitamin D)",
+      "imaging_findings": "no evidence of disease recurrence",
+      "comorbidities": "None",
+      "lab_values": {
+        "Hemoglobin": "13.5 g/dL",
+        "Hematocrit": "40%",
+        "White Blood Cell Count": "7.2 x 10^9/L",
+        "Platelet Count": "250 x 10^9/L",
+        "Creatinine": "0.8 mg/dL",
+        "BUN": "15 mg/dL",
+        "eGFR": "75 mL/min/1.73m^2",
+        "ALT (SGPT)": "25 U/L",
+        "AST (SGOT)": "20 U/L",
+        "Alkaline Phosphatase (ALP)": "80 U/L",
+        "Total Bilirubin": "0.6 mg/dL"
+      }
+    },
+    "transcript": [
+      [
+        "What is the patient's functional status, such as their ECOG or Karnofsky score?",
+        "The patient's ECOG performance status is 0."
+      ],
+      [
+        "What is the patient's current disease status following the hysterectomy?",
+        "The patient currently has no evidence of disease following the hysterectomy."
+      ],
+      [
+        "What medications is the patient currently taking, including their dosages?",
+        "The patient is currently taking a daily multivitamin (1 tablet) and a daily calcium with Vitamin D supplement (600 mg calcium, 400 IU Vitamin D)."
+      ],
+      [
+        "What were the findings from any recent imaging studies, such as CT, MRI, or PET scans?",
+        "Recent imaging studies showed no evidence of disease recurrence."
+      ],
+      [
+        "Does the patient have any other medical conditions, such as diabetes, hypertension, or cardiac issues?",
+        "No, the patient does not have any other medical conditions."
+      ],
+      [
+        "Could you provide the patient's recent lab results, including CBC, renal function, and liver function tests?",
+        "Certainly. Here are the patient's recent lab results:\n\n**Complete Blood Count (CBC):**\n*   Hemoglobin: 13.5 g/dL\n*   Hematocrit: 40%\n*   White Blood Cell Count: 7.2 x 10^9/L\n*   Platelet Count: 250 x 10^9/L\n\n**Renal Function:**\n*   Creatinine: 0.8 mg/dL\n*   BUN: 15 mg/dL\n*   eGFR: 75 mL/min/1.73m^2\n\n**Liver Function Tests:**\n*   ALT (SGPT): 25 U/L\n*   AST (SGOT): 20 U/L\n*   Alkaline Phosphatase (ALP): 80 U/L\n*   Total Bilirubin: 0.6 mg/dL"
+      ]
+    ],
+    "cov_by_turn": [
+      0.5544554455445545,
+      0.6336633663366337,
+      0.7079207920792079,
+      0.7772277227722773,
+      0.8366336633663366,
+      0.8910891089108911,
+      0.9356435643564357
+    ],
+    "config": "ALI_v1_theta0.9",
+    "theta": 0.9,
+    "vagueness": "Medium",
+    "domain": "Medical",
+    "baseline_cov": 0.5545
+  },
+  {
+    "prompt_id": "N55",
+    "deployment": "rad_assist",
+    "native_domain": null,
+    "final_cov": 0.9356435643564357,
+    "n_turns": 3,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "primary_site": "lung",
+      "stage_classification": "stage IVA (T3N2M1a — contralateral lobe)",
+      "treatment_received": "pembrolizumab 200mg Q3W",
+      "histology_subtype": "NSCLC adenocarcinoma",
+      "current_medications": "pembrolizumab 200mg Q3W",
+      "biomarkers": "PD-L1 TPS 90%, EGFR/ALK/ROS1 wild-type",
+      "imaging_findings": "Baseline CT: 4.2cm primary mass, 2 contralateral pulmonary nodules < 1cm. No liver or brain mets.",
+      "comorbidities": "No significant comorbidities",
+      "patient_demographics": "58-year-old male",
+      "lab_values": "CBC: WBC 8.2, Hb 10.4 (mild anemia), platelets 210k",
+      "follow_up_schedule": "First follow-up assessment requested",
+      "performance_status": "ECOG 1",
+      "response_to_treatment": "stable",
+      "treatment_plan": "continue pembrolizumab 200mg Q3W"
+    },
+    "transcript": [
+      [
+        "What is the patient's ECOG performance status?",
+        "The patient's ECOG performance status is 1."
+      ],
+      [
+        "What was the patient's response to pembrolizumab at the first follow-up assessment?",
+        "At the first follow-up assessment, the patient's disease was stable."
+      ],
+      [
+        "What is the planned next step in the patient's treatment?",
+        "The patient is planned to continue pembrolizumab 200mg Q3W."
+      ]
+    ],
+    "cov_by_turn": [
+      0.7425742574257426,
+      0.8217821782178217,
+      0.8960396039603961,
+      0.9356435643564357
+    ],
+    "config": "ALI_v1_theta0.9",
+    "theta": 0.9,
+    "vagueness": "Detailed",
+    "domain": "Medical",
+    "baseline_cov": 0.7426
+  },
+  {
+    "prompt_id": "N56",
+    "deployment": "rad_assist",
+    "native_domain": null,
+    "final_cov": 0.900990099009901,
+    "n_turns": 1,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "primary_site": "pancreatic",
+      "stage_classification": "T4N1M0, borderline resectable per NCCN",
+      "treatment_received": "4 cycles FOLFIRINOX",
+      "histology_subtype": "ductal adenocarcinoma",
+      "response_to_treatment": "CA 19-9 decreased from 2,450 to 830 U/mL; primary tumor reduced 4.8cm → 3.5cm, SMV involvement improved",
+      "current_medications": "warfarin (for permanent AFib), metformin 1g BD (for T2DM)",
+      "biomarkers": "CA 19-9",
+      "imaging_findings": "primary tumor reduced 4.8cm → 3.5cm, SMV involvement improved",
+      "comorbidities": "permanent AFib, T2DM",
+      "patient_demographics": "66-year-old female",
+      "lab_values": "CA 19-9: 2,450 to 830 U/mL; INR: 2.1",
+      "treatment_plan": "restaging CT and multidisciplinary surgical reassessment",
+      "performance_status": "ECOG 1"
+    },
+    "transcript": [
+      [
+        "What is the patient's current performance status (ECOG or Karnofsky score)?",
+        "The patient's ECOG performance status is 1."
+      ]
+    ],
+    "cov_by_turn": [
+      0.8217821782178217,
+      0.900990099009901
+    ],
+    "config": "ALI_v1_theta0.9",
+    "theta": 0.9,
+    "vagueness": "Detailed",
+    "domain": "Medical",
+    "baseline_cov": 0.6683
+  },
+  {
+    "prompt_id": "N57",
+    "deployment": "rad_assist",
+    "native_domain": null,
+    "final_cov": 0.9405940594059405,
+    "n_turns": 12,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "primary_site": "breast",
+      "stage_classification": "T2N1M0",
+      "histology_subtype": "invasive ductal carcinoma grade 3",
+      "biomarkers": "ER+ HER2+",
+      "comorbidities": "pregnancy",
+      "patient_demographics": "42-year-old female",
+      "treatment_plan": "start neoadjuvant AC chemotherapy (doxorubicin 60mg/m² + cyclophosphamide 600mg/m² Q3W × 4 cycles); Trastuzumab deferred until post-delivery; Delivery planned at 37 weeks via C-section",
+      "patient_preferences": "requesting psychological support",
+      "contraindications": "Trastuzumab due to fetal risk during pregnancy",
+      "treatment_received": "no treatment received yet",
+      "performance_status": "experiencing some fatigue and needs to pace herself",
+      "follow_up_schedule": "regular clinical examinations and imaging, such as ultrasound",
+      "response_to_treatment": "stable",
+      "current_medications": "Doxorubicin at 60mg/m² and Cyclophosphamide at 600mg/m²",
+      "imaging_findings": "T2N1M0 invasive ductal carcinoma, between 2 and 5 cm, with 1-3 positive axillary lymph nodes, and no distant metastasis"
+    },
+    "transcript": [
+      [
+        "What treatments has the patient received so far?",
+        "The patient has not yet received any treatment. The MDT decision is to start neoadjuvant AC chemotherapy."
+      ],
+      [
+        "How is she generally feeling and functioning in her daily life?",
+        "She is highly anxious and has requested psychological support."
+      ],
+      [
+        "How is she managing her daily activities physically?",
+        "She is experiencing some fatigue and needs to pace herself, which is common at 28 weeks gestation and with the start of chemotherapy."
+      ],
+      [
+        "How will her response to the neoadjuvant AC chemotherapy be monitored?",
+        "Her response will be monitored through regular clinical examinations and imaging, such as ultrasound."
+      ],
+      [
+        "What is the anticipated response to the neoadjuvant AC chemotherapy?",
+        "Tumor shrinkage and potential downstaging are anticipated, aiming to facilitate subsequent surgical management."
+      ],
+      [
+        "When will the first assessment of her response to the neoadjuvant AC chemotherapy be available?",
+        "The first assessment of her response to the neoadjuvant AC chemotherapy will be available shortly after the completion of the 4 cycles, which is approximately 12 weeks after starting treatment."
+      ],
+      [
+        "What was her response to the neoadjuvant AC chemotherapy?",
+        "The patient tolerated the neoadjuvant AC chemotherapy well, completing all four cycles as planned."
+      ],
+      [
+        "How did the tumor respond to the AC chemotherapy?",
+        "The information about the tumor's response to the AC chemotherapy is not available. The plan is to *start* neoadjuvant AC chemotherapy."
+      ],
+      [
+        "Has the neoadjuvant AC chemotherapy already started?",
+        "No, the MDT decision is to start the neoadjuvant AC chemotherapy."
+      ],
+      [
+        "Has the neoadjuvant AC chemotherapy started, and if so, what has been her response?",
+        "Yes, she has started neoadjuvant AC chemotherapy. She has tolerated the first two cycles well, experiencing expected side effects such as fatigue and nausea, which are being managed. Clinically, the tumor appears stable."
+      ],
+      [
+        "What medications is she currently taking, and at what dosages?",
+        "She is currently taking Doxorubicin at 60mg/m² and Cyclophosphamide at 600mg/m²."
+      ],
+      [
+        "What are the latest imaging findings regarding the tumor?",
+        "The tumor is a T2N1M0 invasive ductal carcinoma, meaning it is between 2 and 5 cm, with 1-3 positive axillary lymph nodes, and no distant metastasis."
+      ]
+    ],
+    "cov_by_turn": [
+      0.5346534653465347,
+      0.6237623762376238,
+      0.6237623762376238,
+      0.7029702970297029,
+      0.7376237623762376,
+      0.7376237623762376,
+      0.7376237623762376,
+      0.7376237623762376,
+      0.7376237623762376,
+      0.7376237623762376,
+      0.8118811881188119,
+      0.8811881188118812,
+      0.9405940594059405
+    ],
+    "config": "ALI_v1_theta0.9",
+    "theta": 0.9,
+    "vagueness": "Detailed",
+    "domain": "Medical",
+    "baseline_cov": 0.5693
+  },
+  {
+    "prompt_id": "N58",
+    "deployment": "rad_assist",
+    "native_domain": null,
+    "final_cov": 0.900990099009901,
+    "n_turns": 2,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "primary_site": "brain",
+      "treatment_received": "Gross total resection 8 weeks ago; Stupp protocol: temozolomide 75mg/m² daily concurrent with 60 Gy/30 fractions EBRT",
+      "histology_subtype": "glioblastoma multiforme",
+      "performance_status": "ECOG 1",
+      "response_to_treatment": "no clear progression (pseudoprogression vs. residual)",
+      "current_medications": "levetiracetam 1g BD",
+      "biomarkers": "IDH wild-type, MGMT promoter unmethylated, TERT mutated",
+      "imaging_findings": "MRI at 6 weeks post-RT: no clear progression (pseudoprogression vs. residual)",
+      "comorbidities": "epilepsy risk",
+      "patient_demographics": "70-year-old male, Lives with wife",
+      "treatment_plan": "Starting adjuvant temozolomide 200mg/m² D1-5 Q28 days",
+      "stage_classification": "Not typically staged using TNM system; WHO Grade IV tumor.",
+      "lab_values": {
+        "CBC": {
+          "WBC": "4.2 x 10^9/L",
+          "ANC": "2.1 x 10^9/L",
+          "Hemoglobin": "12.5 g/dL",
+          "Platelets": "180 x 10^9/L"
+        },
+        "Renal Function": {
+          "Creatinine": "0.9 mg/dL",
+          "BUN": "15 mg/dL",
+          "eGFR": "75 mL/min/1.73m^2"
+        },
+        "Liver Function": {
+          "AST": "28 U/L",
+          "ALT": "32 U/L",
+          "Alkaline Phosphatase": "90 U/L",
+          "Total Bilirubin": "0.7 mg/dL"
+        }
+      }
+    },
+    "transcript": [
+      [
+        "What is the patient's TNM or clinical stage?",
+        "Glioblastoma is not typically staged using the TNM system. It is a WHO Grade IV tumor."
+      ],
+      [
+        "What are the recent CBC, renal, and liver function lab results?",
+        "Recent lab results (approximately 1 week ago) are as follows:\n\n**CBC:**\n*   WBC: 4.2 x 10^9/L\n*   ANC: 2.1 x 10^9/L\n*   Hemoglobin: 12.5 g/dL\n*   Platelets: 180 x 10^9/L\n\n**Renal Function:**\n*   Creatinine: 0.9 mg/dL\n*   BUN: 15 mg/dL\n*   eGFR: 75 mL/min/1.73m^2\n\n**Liver Function:**\n*   AST: 28 U/L\n*   ALT: 32 U/L\n*   Alkaline Phosphatase: 90 U/L\n*   Total Bilirubin: 0.7 mg/dL"
+      ]
+    ],
+    "cov_by_turn": [
+      0.7623762376237624,
+      0.8564356435643564,
+      0.900990099009901
+    ],
+    "config": "ALI_v1_theta0.9",
+    "theta": 0.9,
+    "vagueness": "Detailed",
+    "domain": "Medical",
+    "baseline_cov": 0.7079
+  },
+  {
+    "prompt_id": "N59",
+    "deployment": "rad_assist",
+    "native_domain": null,
+    "final_cov": 0.9306930693069307,
+    "n_turns": 1,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "primary_site": "gastric",
+      "stage_classification": "stage IV",
+      "treatment_received": "nivolumab 360mg + FOLFOX Q3W: 3 cycles completed",
+      "histology_subtype": "gastric adenocarcinoma",
+      "performance_status": "ECOG 2",
+      "response_to_treatment": "partial response in gastric primary but new small-volume ascites",
+      "current_medications": "nivolumab 360mg + FOLFOX Q3W",
+      "biomarkers": "HER2+ 3+, MSI-H",
+      "imaging_findings": "CT shows partial response in gastric primary but new small-volume ascites, 2 liver mets",
+      "patient_demographics": "55-year-old male",
+      "lab_values": "Albumin 2.9 g/dL",
+      "treatment_plan": "MDT discussion ongoing regarding second-line options (ramucirumab + paclitaxel)",
+      "patient_preferences": "requesting to continue aggressive treatment",
+      "comorbidities": "well-controlled hypertension"
+    },
+    "transcript": [
+      [
+        "Are there any other medical conditions or comorbidities, such as diabetes, hypertension, or cardiac issues?",
+        "The patient has well-controlled hypertension. No other significant medical conditions or comorbidities are noted."
+      ]
+    ],
+    "cov_by_turn": [
+      0.8762376237623762,
+      0.9306930693069307
+    ],
+    "config": "ALI_v1_theta0.9",
+    "theta": 0.9,
+    "vagueness": "Detailed",
+    "domain": "Medical",
+    "baseline_cov": 0.8366
+  },
+  {
+    "prompt_id": "N60",
+    "deployment": "rad_assist",
+    "native_domain": null,
+    "final_cov": 0.9306930693069307,
+    "n_turns": 9,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "primary_site": "AML",
+      "treatment_received": "Induction 7+3, 2 cycles HiDAC (3g/m² Q12h × 6 doses)",
+      "histology_subtype": "AML (FLT3-ITD positive, NPM1 mutated)",
+      "response_to_treatment": "complete remission (MRD negative by PCR)",
+      "biomarkers": "FLT3-ITD positive, NPM1 mutated, MRD negative by PCR, 8/8 HLA match",
+      "comorbidities": "Menstrual cycle disrupted",
+      "patient_demographics": "29-year-old female",
+      "lab_values": "Ferritin 2,850 μg/L, ALT 68 U/L",
+      "treatment_plan": "Evaluating allogeneic SCT vs. continued HiDAC consolidation, fertility counselling requested",
+      "patient_preferences": "reluctant to proceed with SCT due to employment concerns",
+      "stage_classification": "AML is not typically staged using a system like those for solid tumors (e.g., Stage I, II, III, IV).",
+      "performance_status": "ECOG 1",
+      "current_medications": "Posaconazole 300 mg daily, Acyclovir 400 mg twice daily, Ursodiol 300 mg twice daily",
+      "imaging_findings": "CT scan of the chest, abdomen, and pelvis, and a PET scan performed at diagnosis."
+    },
+    "transcript": [
+      [
+        "What is the clinical stage of the AML?",
+        "The patient is in complete remission (MRD negative by PCR)."
+      ],
+      [
+        "What is the specific clinical stage of the AML, such as a TNM stage or a numbered stage?",
+        "AML is not typically staged using the TNM system or numbered stages. It is classified based on genetic mutations and other factors."
+      ],
+      [
+        "Beyond 'complete remission', is there a formal staging or classification system for AML that describes the extent of the disease?",
+        "No, AML is not typically staged using a system like those for solid tumors (e.g., Stage I, II, III, IV) to describe the extent of the disease."
+      ],
+      [
+        "What is the patient's performance status, such as ECOG or Karnofsky score?",
+        "The patient's ECOG performance status is 1."
+      ],
+      [
+        "What are the patient's current medications, including dosages?",
+        "The patient's current medications are not specified in the provided information."
+      ],
+      [
+        "Are there any current medications the patient is taking, including dosages, beyond what was initially provided?",
+        "Yes, the patient is currently taking:\n*   Posaconazole 300 mg daily\n*   Acyclovir 400 mg twice daily\n*   Ursodiol 300 mg twice daily"
+      ],
+      [
+        "What are the key imaging findings, such as from CT, MRI, or PET scans?",
+        "I do not have information regarding any CT, MRI, or PET scan findings."
+      ],
+      [
+        "Does the absence of information about CT, MRI, or PET scan findings mean that no such scans were performed, or that there were no significant findings to report?",
+        "The provided information does not include details about CT, MRI, or PET scan findings."
+      ],
+      [
+        "Were any CT, MRI, or PET scans performed for this patient?",
+        "Yes, a CT scan of the chest, abdomen, and pelvis was performed at diagnosis, as was a PET scan."
+      ]
+    ],
+    "cov_by_turn": [
+      0.6287128712871287,
+      0.6287128712871287,
+      0.6287128712871287,
+      0.7227722772277227,
+      0.801980198019802,
+      0.801980198019802,
+      0.8712871287128713,
+      0.8712871287128713,
+      0.8712871287128713,
+      0.9306930693069307
+    ],
+    "config": "ALI_v1_theta0.9",
+    "theta": 0.9,
+    "vagueness": "Detailed",
+    "domain": "Medical",
+    "baseline_cov": 0.5347
+  },
+  {
+    "prompt_id": "N61",
+    "deployment": "rad_assist",
+    "native_domain": null,
+    "final_cov": 0.9356435643564357,
+    "n_turns": 1,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "primary_site": "renal",
+      "stage_classification": "stage IV",
+      "treatment_received": [
+        "sunitinib",
+        "cabozantinib"
+      ],
+      "histology_subtype": [
+        "clear cell",
+        "VHL mutated"
+      ],
+      "performance_status": "ECOG 1",
+      "response_to_treatment": [
+        "Progressed on sunitinib",
+        "stable disease"
+      ],
+      "current_medications": [
+        "cabozantinib 60mg daily",
+        "amlodipine"
+      ],
+      "biomarkers": [
+        "VHL mutated",
+        "PSA 1.2"
+      ],
+      "imaging_findings": "pulmonary mets (5 lesions, largest 1.8cm)",
+      "comorbidities": "hypertension",
+      "patient_demographics": "68-year-old male",
+      "lab_values": "PSA 1.2",
+      "follow_up_schedule": "3-month restaging CT planned",
+      "treatment_plan": "cabozantinib 60mg daily"
+    },
+    "transcript": [
+      [
+        "What is the treatment plan?",
+        "The current treatment plan involves cabozantinib 60mg daily."
+      ]
+    ],
+    "cov_by_turn": [
+      0.8960396039603961,
+      0.9356435643564357
+    ],
+    "config": "ALI_v1_theta0.9",
+    "theta": 0.9,
+    "vagueness": "Detailed",
+    "domain": "Medical",
+    "baseline_cov": 0.9356
+  },
+  {
+    "prompt_id": "N62",
+    "deployment": "rad_assist",
+    "native_domain": null,
+    "final_cov": 0.9554455445544554,
+    "n_turns": 7,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "primary_site": "anal canal",
+      "stage_classification": "T2N1M0",
+      "histology_subtype": "squamous cell carcinoma",
+      "current_medications": "bolutegravir-based ART",
+      "biomarkers": "HPV+",
+      "comorbidities": "HIV-positive",
+      "patient_demographics": "50-year-old female",
+      "lab_values": "undetectable viral load, CD4 count 620 cells/μL",
+      "treatment_plan": "definitive chemoradiation — 50.4 Gy in 28 fractions to pelvis + 54 Gy boost to primary (IMRT technique), concurrent mitomycin-C 10mg/m² D1 + 5-FU 1000mg/m²/day CI D1-4 and D29-32",
+      "contraindications": "radiation-related immunosuppression and ART interactions",
+      "treatment_received": "planned treatment as described",
+      "performance_status": "ECOG 0",
+      "follow_up_schedule": "around 12-16 weeks after completing chemoradiation, including a clinical assessment with digital rectal exam and anoscopy, often combined with imaging such as a PET-CT scan",
+      "response_to_treatment": "not available",
+      "imaging_findings": "T2 primary tumor in the anal canal, N1 regional lymph node involvement, M0 (no distant metastases)"
+    },
+    "transcript": [
+      [
+        "Did she receive the planned treatment as described?",
+        "Yes, she received the planned treatment as described."
+      ],
+      [
+        "What is her ECOG or Karnofsky performance status?",
+        "Her ECOG performance status is 0."
+      ],
+      [
+        "What was her response to treatment?",
+        "I do not have information about her response to treatment."
+      ],
+      [
+        "You mentioned you don't have information about her response to treatment. Is there any follow-up imaging or clinical assessment that might indicate her response?",
+        "Yes, typical follow-up would include a clinical assessment with digital rectal exam and anoscopy, often combined with imaging such as a PET-CT scan, usually performed around 12-16 weeks after completing chemoradiation."
+      ],
+      [
+        "What were the findings from her follow-up clinical assessment and imaging regarding her response to treatment?",
+        "I do not have information regarding her follow-up clinical assessment and imaging findings on treatment response."
+      ],
+      [
+        "Since you've indicated that information about her treatment response is not available, should I assume her response is unknown for the purpose of this task?",
+        "Yes, information regarding her treatment response is not available."
+      ],
+      [
+        "Given that follow-up imaging findings for treatment response are not available, are there any other key imaging results you can provide?",
+        "Initial staging imaging revealed a T2 primary tumor in the anal canal and N1 regional lymph node involvement, with no distant metastases (M0)."
+      ]
+    ],
+    "cov_by_turn": [
+      0.6188118811881188,
+      0.7079207920792079,
+      0.7871287128712872,
+      0.7871287128712872,
+      0.8217821782178217,
+      0.8217821782178217,
+      0.8960396039603961,
+      0.9554455445544554
+    ],
+    "config": "ALI_v1_theta0.9",
+    "theta": 0.9,
+    "vagueness": "Detailed",
+    "domain": "Medical",
+    "baseline_cov": 0.5594
+  },
+  {
+    "prompt_id": "N63",
+    "deployment": "rad_assist",
+    "native_domain": null,
+    "final_cov": 0.905940594059406,
+    "n_turns": 4,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "stage_classification": "Rai stage IV CLL",
+      "treatment_received": "venetoclax for 18 months prior",
+      "histology_subtype": "CLL with confirmed Richter transformation to DLBCL (diffuse large B-cell, non-GCB subtype)",
+      "performance_status": "ECOG 3",
+      "biomarkers": "non-GCB subtype",
+      "comorbidities": "Significant cardiac history: permanent pacemaker, LVEF 38%, NYHA class II",
+      "patient_demographics": "77-year-old male",
+      "treatment_plan": "R-miniCHOP vs. polatuzumab vedotin + BR (pola-BR) vs. best supportive care",
+      "patient_preferences": "wish to remain at home",
+      "contraindications": "R-CHOP deemed too cardiotoxic",
+      "primary_site": "lymph node",
+      "response_to_treatment": "not yet initiated",
+      "current_medications": "Carvedilol: 12.5 mg twice daily; Lisinopril: 10 mg once daily; Furosemide: 20 mg once daily; Aspirin: 81 mg once daily; Atorvastatin: 20 mg once daily; Omeprazole: 20 mg once daily",
+      "imaging_findings": "PET scan showed multiple hypermetabolic lymph nodes above and below the diaphragm, with the largest measuring 7 cm in the left axilla. There was also involvement in inguinal, retroperitoneal, and mediastinal lymph nodes. Extranodal involvement included increased FDG avidity in the left iliac bone and a subcutaneous nodule on the right flank."
+    },
+    "transcript": [
+      [
+        "What is the primary site of the DLBCL?",
+        "The DLBCL was confirmed on lymph node excision biopsy."
+      ],
+      [
+        "What was the patient's response to treatment?",
+        "Treatment has not yet been initiated. The options of R-miniCHOP, polatuzumab vedotin + BR, or best supportive care were discussed."
+      ],
+      [
+        "What are the patient's current medications and their dosages?",
+        "*   **Carvedilol:** 12.5 mg twice daily\n*   **Lisinopril:** 10 mg once daily\n*   **Furosemide:** 20 mg once daily\n*   **Aspirin:** 81 mg once daily\n*   **Atorvastatin:** 20 mg once daily\n*   **Omeprazole:** 20 mg once daily"
+      ],
+      [
+        "What were the findings from the staging CT or PET scans?",
+        "PET scan showed multiple hypermetabolic lymph nodes above and below the diaphragm, with the largest measuring 7 cm in the left axilla. There was also involvement in inguinal, retroperitoneal, and mediastinal lymph nodes. Extranodal involvement included increased FDG avidity in the left iliac bone and a subcutaneous nodule on the right flank."
+      ]
+    ],
+    "cov_by_turn": [
+      0.6039603960396039,
+      0.7029702970297029,
+      0.7772277227722773,
+      0.8465346534653465,
+      0.905940594059406
+    ],
+    "config": "ALI_v1_theta0.9",
+    "theta": 0.9,
+    "vagueness": "Detailed",
+    "domain": "Medical",
+    "baseline_cov": 0.599
+  },
+  {
+    "prompt_id": "N64",
+    "deployment": "rad_assist",
+    "native_domain": null,
+    "final_cov": 0.9306930693069307,
+    "n_turns": 4,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "primary_site": "breast",
+      "stage_classification": "stage IIB (T2N1), ypT2ypN1mi",
+      "treatment_received": "Neoadjuvant carboplatin AUC5 + paclitaxel 80mg/m² weekly ×12, Post-mastectomy, physiotherapy started",
+      "histology_subtype": "triple-negative",
+      "response_to_treatment": "partial response (pCR not achieved)",
+      "biomarkers": "BRCA2 germline mutation",
+      "comorbidities": "Lymphedema",
+      "patient_demographics": "61-year-old female, premenopausal, 1 child",
+      "treatment_plan": "Adjuvant capecitabine (8 cycles, 1250mg/m² BD D1-14 Q21), Genetic counselling referral",
+      "patient_preferences": "asking about fertility preservation",
+      "performance_status": "ECOG 1",
+      "current_medications": "adjuvant capecitabine, 1250mg/m² twice daily on days 1-14 of a 21-day cycle, for 8 cycles",
+      "imaging_findings": "Pre-treatment imaging indicated stage IIB disease (T2N1). Post-neoadjuvant imaging showed a partial response to treatment, with pCR not achieved.",
+      "lab_values": "CBC:\n*   WBC: 4.5 x 10^9/L\n*   Hemoglobin: 12.5 g/dL\n*   Platelets: 250 x 10^9/L\n\nRenal Function:\n*   Creatinine: 0.8 mg/dL\n*   eGFR: 65 mL/min/1.73m²\n\nLiver Function:\n*   AST: 25 U/L\n*   ALT: 20 U/L\n*   Total Bilirubin: 0.6 mg/dL"
+    },
+    "transcript": [
+      [
+        "What is her current ECOG performance status or Karnofsky score?",
+        "Her current ECOG performance status is 1."
+      ],
+      [
+        "What are her current medications and their dosages?",
+        "She is currently recommended adjuvant capecitabine, 1250mg/m² twice daily on days 1-14 of a 21-day cycle, for 8 cycles."
+      ],
+      [
+        "What were the key findings from her pre-treatment and post-neoadjuvant imaging?",
+        "Pre-treatment imaging indicated stage IIB disease (T2N1). Post-neoadjuvant imaging showed a partial response to treatment, with pCR not achieved."
+      ],
+      [
+        "Could you provide her recent CBC, renal function, and liver function test results?",
+        "Her recent lab results are:\n\n**CBC:**\n*   WBC: 4.5 x 10^9/L\n*   Hemoglobin: 12.5 g/dL\n*   Platelets: 250 x 10^9/L\n\n**Renal Function:**\n*   Creatinine: 0.8 mg/dL\n*   eGFR: 65 mL/min/1.73m²\n\n**Liver Function:**\n*   AST: 25 U/L\n*   ALT: 20 U/L\n*   Total Bilirubin: 0.6 mg/dL"
+      ]
+    ],
+    "cov_by_turn": [
+      0.6782178217821783,
+      0.7574257425742574,
+      0.8267326732673267,
+      0.8861386138613861,
+      0.9306930693069307
+    ],
+    "config": "ALI_v1_theta0.9",
+    "theta": 0.9,
+    "vagueness": "Detailed",
+    "domain": "Medical",
+    "baseline_cov": 0.6238
+  },
+  {
+    "prompt_id": "N65",
+    "deployment": "rad_assist",
+    "native_domain": null,
+    "final_cov": 0.9207920792079208,
+    "n_turns": 3,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "primary_site": "jejunal",
+      "treatment_received": "lanreotide 120mg Q4W",
+      "histology_subtype": "well-differentiated neuroendocrine tumor (grade 2)",
+      "response_to_treatment": "stable disease (mRECIST)",
+      "current_medications": "lanreotide 120mg Q4W",
+      "biomarkers": "Ki-67 8%, high somatostatin receptor expression (Krenning 3-4)",
+      "imaging_findings": "68Ga-DOTATATE PET/CT: high somatostatin receptor expression (Krenning 3-4), extensive liver metastases (>10 lesions, bilobar)",
+      "patient_demographics": "45-year-old male",
+      "lab_values": "renal function GFR 72 mL/min, bone marrow reserve adequate",
+      "treatment_plan": "Lu-177 dotatate (4 cycles, 7.4 GBq each, Q8W)",
+      "contraindications": "Surgical debulking not recommended given extent",
+      "stage_classification": "T3 N1 M1, Stage IV",
+      "performance_status": "ECOG 1",
+      "comorbidities": "None"
+    },
+    "transcript": [
+      [
+        "What is the patient's TNM stage?",
+        "The patient's TNM stage is T3 N1 M1, which corresponds to Stage IV disease."
+      ],
+      [
+        "What is the patient's performance status (ECOG or Karnofsky score)?",
+        "The patient's ECOG performance status is 1."
+      ],
+      [
+        "Does the patient have any other significant medical conditions, such as diabetes, hypertension, or cardiac issues?",
+        "No, the patient does not have any other significant medical conditions."
+      ]
+    ],
+    "cov_by_turn": [
+      0.693069306930693,
+      0.7871287128712872,
+      0.8663366336633663,
+      0.9207920792079208
+    ],
+    "config": "ALI_v1_theta0.9",
+    "theta": 0.9,
+    "vagueness": "Detailed",
+    "domain": "Medical",
+    "baseline_cov": 0.7871
+  }
+]

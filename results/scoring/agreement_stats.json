@@ -1,0 +1,65 @@
+{
+  "n_annotations": 516,
+  "n_prompts": 36,
+  "kappa_overall": 0.7488,
+  "agreement_overall": 0.8508,
+  "threshold": 0.65,
+  "passed_threshold": true,
+  "kappa_by_domain": {
+    "Consulting": {
+      "n": 170,
+      "kappa": 0.7577,
+      "agreement": 0.8588,
+      "passed": true
+    },
+    "Medical": {
+      "n": 170,
+      "kappa": 0.9684,
+      "agreement": 0.9824,
+      "passed": true
+    },
+    "Payments": {
+      "n": 176,
+      "kappa": 0.5393,
+      "agreement": 0.7159,
+      "passed": false
+    }
+  },
+  "kappa_by_tier": {
+    "clear": {
+      "n": 181,
+      "kappa": 0.8704,
+      "agreement": 0.9227
+    },
+    "ambiguous": {
+      "n": 170,
+      "kappa": 0.8183,
+      "agreement": 0.9
+    }
+  },
+  "per_class_metrics": {
+    "MENTIONED": {
+      "precision": 0.3086,
+      "recall": 0.9615,
+      "f1": 0.4673
+    },
+    "RESOLVED": {
+      "precision": 1.0,
+      "recall": 0.7024,
+      "f1": 0.8252
+    },
+    "ABSENT": {
+      "precision": 0.9186,
+      "recall": 0.9958,
+      "f1": 0.9556
+    }
+  },
+  "n_disagreements": 77,
+  "disagreement_types": {
+    "MENTIONED\u2192RESOLVED": 55,
+    "ABSENT\u2192RESOLVED": 20,
+    "MENTIONED\u2192ABSENT": 1,
+    "ABSENT\u2192MENTIONED": 1
+  },
+  "disagreement_rate": 0.1492
+}

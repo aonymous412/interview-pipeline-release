@@ -1,0 +1,68 @@
+{
+  "_meta": {
+    "description": "Parameter spaces P_d for 3 domains, with importance weights w_d. Reconstructed from paper Sections 4-6 and FinAgent research report.",
+    "note_consulting": "17 elements from Telos/ALI, weights from intent_system_analysis.md Section 3 walkthrough and paper Section 5",
+    "note_medical": "Clinical parameters from Rad-Assist, weights from paper Section 4 (primary_site=100, stage=95, etc.)",
+    "note_payments": "FinAgent trading domain from finagent_research_report.md Section 3.3, extended with safety-critical params from paper Section 8.4"
+  },
+  "Consulting": {
+    "total_weight": 978,
+    "parameters": {
+      "main_content_purpose": {"weight": 100, "description": "Primary purpose/goal of the project"},
+      "target_audience": {"weight": 95, "description": "Who the project is for (demographics, user type)"},
+      "pages_structure": {"weight": 90, "description": "Key pages, sections, or app screens needed"},
+      "core_features": {"weight": 85, "description": "Main functionality and features required"},
+      "design_style": {"weight": 75, "description": "Visual style, aesthetic direction, branding"},
+      "content_ready": {"weight": 70, "description": "Whether content/copy is ready or needs creation"},
+      "existing_branding": {"weight": 65, "description": "Existing logo, colors, brand guidelines"},
+      "technical_platform": {"weight": 60, "description": "Technology stack, platform preferences (mobile/web/both)"},
+      "integrations": {"weight": 58, "description": "Third-party integrations needed (payments, CRM, analytics)"},
+      "budget_range": {"weight": 55, "description": "Budget or cost constraints"},
+      "timeline": {"weight": 50, "description": "Deadline or launch timeline"},
+      "seo_requirements": {"weight": 45, "description": "SEO, domain, or search visibility needs"},
+      "user_accounts": {"weight": 40, "description": "User registration, authentication, roles"},
+      "content_management": {"weight": 35, "description": "CMS needs, who will update content"},
+      "analytics_needs": {"weight": 30, "description": "Analytics, tracking, reporting requirements"},
+      "multilingual_support": {"weight": 15, "description": "Multiple languages needed"},
+      "accessibility": {"weight": 10, "description": "Accessibility requirements (WCAG, etc.)"}
+    }
+  },
+  "Medical": {
+    "total_weight": 1010,
+    "parameters": {
+      "primary_site": {"weight": 100, "description": "Primary cancer site / organ (lung, breast, prostate, etc.)"},
+      "stage_classification": {"weight": 95, "description": "TNM staging or clinical stage (e.g., stage IIIA, T2N1M0)"},
+      "treatment_received": {"weight": 90, "description": "Treatments administered (chemo regimen, surgery type, radiation)"},
+      "histology_subtype": {"weight": 85, "description": "Histological subtype (e.g., NSCLC adenocarcinoma, DLBCL, triple-negative)"},
+      "performance_status": {"weight": 80, "description": "Patient functional status (ECOG, Karnofsky score)"},
+      "response_to_treatment": {"weight": 75, "description": "Treatment response (complete/partial response, progression, stable)"},
+      "current_medications": {"weight": 70, "description": "Current medications with dosages"},
+      "biomarkers": {"weight": 65, "description": "Relevant biomarkers (ER/PR/HER2, PSA, AFP, molecular markers)"},
+      "imaging_findings": {"weight": 60, "description": "Key imaging results (CT, MRI, PET findings)"},
+      "comorbidities": {"weight": 55, "description": "Other medical conditions (diabetes, hypertension, cardiac)"},
+      "patient_demographics": {"weight": 50, "description": "Age, sex, relevant demographic info"},
+      "lab_values": {"weight": 45, "description": "Relevant lab results (CBC, renal function, liver function)"},
+      "treatment_plan": {"weight": 40, "description": "Planned next steps in treatment"},
+      "follow_up_schedule": {"weight": 35, "description": "Follow-up timeline and monitoring plan"},
+      "patient_preferences": {"weight": 30, "description": "Patient wishes, goals of care, quality of life concerns"},
+      "contraindications": {"weight": 20, "description": "Known allergies, contraindications, drug interactions"},
+      "family_history": {"weight": 15, "description": "Relevant family cancer history"}
+    }
+  },
+  "Payments": {
+    "total_weight": 535,
+    "parameters": {
+      "volume_per_trade": {"weight": 100, "description": "Maximum dollar amount per individual trade/transaction"},
+      "payment_from": {"weight": 90, "description": "Source account/wallet for funds"},
+      "risk_tolerance": {"weight": 85, "description": "Risk level/tolerance (conservative, moderate, aggressive)"},
+      "authorization_controls": {"weight": 80, "description": "Authorization rules, approval requirements, human-in-the-loop"},
+      "daily_limit": {"weight": 80, "description": "Cumulative daily spending/trading cap"},
+      "currency": {"weight": 20, "description": "Base currency for transactions (USD, EUR, BTC)"},
+      "asset_type": {"weight": 25, "description": "Whitelist of allowed assets/instruments to trade"},
+      "exchanges": {"weight": 15, "description": "Whitelist of allowed exchanges/platforms"},
+      "trading_schedule": {"weight": 15, "description": "Time-based restrictions (trading hours, blackout periods)"},
+      "stop_loss": {"weight": 15, "description": "Stop-loss rules or drawdown limits"},
+      "reporting": {"weight": 10, "description": "Reporting, logging, or audit trail requirements"}
+    }
+  }
+}

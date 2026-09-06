@@ -1,0 +1,1981 @@
+[
+  {
+    "prompt_id": "P14",
+    "deployment": "telos",
+    "native_domain": null,
+    "final_cov": 0.9079754601226994,
+    "n_turns": 10,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "main_content_purpose": "email marketing for my online store",
+      "core_features": "welcome sequences, abandoned cart emails, weekly newsletter",
+      "target_audience": "online store owners looking to set up or improve their email marketing efforts",
+      "pages_structure": "Homepage, shop page with product categories, individual product pages, shopping cart, checkout page, 'About Us' section, 'Contact Us' page.",
+      "design_style": "elegant and minimalist, focusing on natural textures and a clean aesthetic",
+      "content_ready": "not ready",
+      "existing_branding": "Logo: A stylized illustration of a coffee bean with a leaf accent. Brand Colors: Primary color #8B4513 (saddle brown), secondary #D2B48C (tan), accent #5F9EA0 (cadet blue). Brand Guidelines: Friendly, approachable, slightly rustic tone, with imagery featuring natural textures and warm lighting.",
+      "technical_platform": "Shopify",
+      "integrations": "Klaviyo",
+      "budget_range": "$50-$100 per month",
+      "timeline": "3-4 weeks",
+      "seo_requirements": "No specific SEO requirements related to this email marketing setup.",
+      "user_accounts": "Customers can register or log in during checkout, directly from the store via a 'Login'/'Account' link, or use guest checkout. Registration involves email and password."
+    },
+    "transcript": [
+      [
+        "Who is your target audience?",
+        "My target audience is online store owners looking to set up or improve their email marketing efforts."
+      ],
+      [
+        "What are the key pages or sections of your online store, and what types of products or services do you offer there?",
+        "My online store features a homepage, a shop page with product categories, individual product pages, a shopping cart, and a checkout page. We also have an \"About Us\" section and a \"Contact Us\" page.\n\nWe offer handmade jewelry, including necklaces, bracelets, earrings, and rings, as well as a small selection of complementary accessories like scarves and hairpins."
+      ],
+      [
+        "To proceed with the task, I need to understand your design style. What is the overall visual style and branding of your handmade jewelry store?",
+        "Our brand style is **elegant and minimalist**, focusing on natural textures and a clean aesthetic."
+      ],
+      [
+        "For your email marketing, do you already have the content (text/copy) written for the welcome sequences, abandoned cart emails, and newsletters, or will I need to assist with copywriting?",
+        "No, I don't have the content written yet."
+      ],
+      [
+        "To proceed with the task, I need to understand your existing branding. Do you have a logo, specific brand colors, or any brand guidelines I should follow?",
+        "Yes, I do.\n\n*   **Logo:** A stylized illustration of a coffee bean with a leaf accent.\n*   **Brand Colors:** Our primary color is a warm #8B4513 (saddle brown), with #D2B48C (tan) as a secondary and #5F9EA0 (cadet blue) as an accent.\n*   **Brand Guidelines:** We aim for a friendly, approachable, and slightly rustic tone. Our imagery often features natural textures and warm lighting."
+      ],
+      [
+        "What e-commerce platform is your online store built on, and do you have a preferred email marketing service you'd like to use?",
+        "My online store is built on **Shopify**, and I'd prefer to use **Klaviyo** for email marketing."
+      ],
+      [
+        "What is your estimated budget or desired cost range for setting up and managing these email marketing efforts?",
+        "I'm looking for a budget in the range of $50-$100 per month for the email marketing platform and associated costs."
+      ],
+      [
+        "To proceed with the task, I need to understand your timeline. What is your desired launch date or deadline for these email marketing efforts?",
+        "I'm aiming to have everything launched and running within the next 3-4 weeks."
+      ],
+      [
+        "To proceed with the task, I need to understand your SEO requirements. Do you have any specific goals or existing strategies for improving your online store's search visibility or domain management?",
+        "For this task, my primary focus is on setting up email marketing sequences (welcome, abandoned cart, newsletter). I don't have specific SEO requirements related to this email marketing setup."
+      ],
+      [
+        "To proceed with the task, I need to understand user accounts. How do customers register or log in to your Shopify store, and are there any specific account features or roles I should consider for email marketing?",
+        "Customers can register or log in to your Shopify store in a few ways:\n\n*   **During checkout:** They can choose to create an account after placing an order, or log in if they already have one.\n*   **Directly from the store:** There's usually a \"Login\" or \"Account\" link where they can register with their email and a password, or log in.\n*   **Guest checkout:** Customers can also complete a purchase without creating an account.\n\nFor email marketing, key account features to consider are:\n\n*   **Email marketing consent:** Whether they've opted in to receive marketing emails.\n*   **Order history:** This is linked to their account and valuable for segmentation.\n*   **Customer tags:** You can add tags to customer accounts in Shopify to segment them further for targeted campaigns."
+      ]
+    ],
+    "cov_by_turn": [
+      0.18916155419222905,
+      0.28629856850715746,
+      0.3783231083844581,
+      0.4550102249488753,
+      0.5265848670756647,
+      0.5930470347648262,
+      0.7137014314928425,
+      0.7699386503067485,
+      0.8210633946830266,
+      0.8670756646216768,
+      0.9079754601226994
+    ],
+    "ablation": "full",
+    "domain": "Consulting",
+    "vagueness": "Medium"
+  },
+  {
+    "prompt_id": "N20",
+    "deployment": "telos",
+    "native_domain": null,
+    "final_cov": 0.9744376278118609,
+    "n_turns": 10,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "main_content_purpose": "online coding bootcamp platform",
+      "target_audience": "students",
+      "core_features": "video lessons, interactive coding exercises, quizzes, a leaderboard, certificate generator",
+      "pages_structure": "Dashboard, Course Catalog/Module List, Lesson Page, Interactive Coding Environment, Quiz Page, Leaderboard, Certificates, Profile/Settings",
+      "design_style": "modern, clean, and professional aesthetic with a focus on readability and functionality. It would feature a dark mode option, clear typography, and subtle use of brand colors to highlight interactive elements.",
+      "content_ready": "needs creation",
+      "existing_branding": "Yes, existing branding includes a stylized 'C' logo resembling a code bracket, primary color #007BFF blue, complemented by #FFFFFF white, accent #28A745 green, and #343A40 for text. Brand guidelines emphasize a clean, modern, and accessible design aesthetic.",
+      "technical_platform": "Primarily web-based. Frontend: React with TypeScript. Backend: Node.js with Express.js. Database: PostgreSQL. Interactive Coding Environment: Docker for isolated code execution, integrated with a custom judge system. Video Hosting: AWS S3 and CloudFront. Real-time Features (Leaderboard): WebSockets (e.g., Socket.IO).",
+      "integrations": "Stripe (payment processing), HubSpot (CRM), Google Analytics (tracking user behavior)",
+      "analytics_needs": "Google Analytics for tracking user behavior",
+      "budget_range": "between $75,000 and $150,000",
+      "timeline": "within the next 6 months",
+      "seo_requirements": "No specific requirements or goals regarding SEO, domain names, or search visibility at this time.",
+      "user_accounts": "Three main types: Student, Instructor, and Administrator, with detailed access and permissions for each role.",
+      "content_management": "Instructors will create, edit, and delete video lessons, coding exercises, and quizzes, and manage module content. Administrators will have full control over content."
+    },
+    "transcript": [
+      [
+        "To proceed with the task, I need to understand the key pages, sections, or app screens needed. Could you outline the main pages or sections users will navigate through on your bootcamp platform?",
+        "The main pages and sections users will navigate through include:\n\n*   **Dashboard:** A personalized overview for the student.\n*   **Course Catalog/Module List:** To browse available courses and modules.\n*   **Lesson Page:** Displays video lessons, associated coding exercises, and quizzes.\n*   **Interactive Coding Environment:** Where students write and test code.\n*   **Quiz Page:** For taking and reviewing quizzes.\n*   **Leaderboard:** Shows student rankings and progress.\n*   **Certificates:** Where students can view and generate their completion certificates.\n*   **Profile/Settings:** For managing user information."
+      ],
+      [
+        "What visual style or aesthetic direction do you envision for your online coding bootcamp platform?",
+        "I envision a modern, clean, and professional aesthetic with a focus on readability and functionality. It would feature a dark mode option, clear typography, and subtle use of brand colors to highlight interactive elements."
+      ],
+      [
+        "Is the course content, such as video lessons, coding exercises, and quizzes, already prepared, or will it need to be created?",
+        "The course content, including video lessons, coding exercises, and quizzes, will need to be created."
+      ],
+      [
+        "Do you have any existing branding, such as a logo, specific colors, or brand guidelines, that we should incorporate into the platform's design?",
+        "Yes, we do have existing branding.\n\nOur logo features a stylized \"C\" resembling a code bracket, and our primary brand colors are a vibrant `#007BFF` blue, complemented by `#FFFFFF` white, an accent of `#28A745` green, and `#343A40` for text. Our brand guidelines emphasize a clean, modern, and accessible design aesthetic."
+      ],
+      [
+        "What technology stack do you envision for the platform, and will it be primarily web-based, mobile-based, or both?",
+        "The platform will be primarily web-based.\n\nFor the technology stack, I envision:\n*   **Frontend:** React with TypeScript\n*   **Backend:** Node.js with Express.js\n*   **Database:** PostgreSQL\n*   **Interactive Coding Environment:** Docker for isolated code execution, integrated with a custom judge system.\n*   **Video Hosting:** AWS S3 and CloudFront\n*   **Real-time Features (Leaderboard):** WebSockets (e.g., Socket.IO)"
+      ],
+      [
+        "Are there any specific third-party services you plan to integrate, such as for payments, CRM, or analytics?",
+        "Yes, we plan to integrate Stripe for payment processing, HubSpot for CRM, and Google Analytics for tracking user behavior."
+      ],
+      [
+        "To proceed with the task, I need to understand the budget. What is the estimated budget range for the development of this platform?",
+        "The estimated budget range for the development of this platform is between \\$75,000 and \\$150,000."
+      ],
+      [
+        "To proceed with the task, I need to understand the timeline. What is your desired deadline or launch timeline for this platform?",
+        "We are aiming for a launch within the next 6 months."
+      ],
+      [
+        "To proceed with the task, I need to understand SEO, domain, or search visibility needs. Do you have any specific requirements or goals regarding SEO, domain names, or how the platform should appear in search results?",
+        "I do not have any specific requirements or goals regarding SEO, domain names, or search visibility at this time."
+      ],
+      [
+        "What types of user accounts will be needed for the platform, and what permissions or access levels should each role have?",
+        "The platform will need three main types of user accounts:\n\n1.  **Student:**\n    *   **Access:** View video lessons, attempt coding exercises, take quizzes, view personal progress, view the leaderboard, generate completion certificates.\n    *   **Permissions:** Interact with course content, manage their own profile.\n\n2.  **Instructor:**\n    *   **Access:** Create, edit, and delete video lessons, coding exercises, and quizzes. Manage module content. View student progress for their assigned modules.\n    *   **Permissions:** Content creation and management, limited student progress oversight.\n\n3.  **Administrator:**\n    *   **Access:** All instructor access, plus platform-wide settings and user management.\n    *   **Permissions:** Full control over content, user accounts (students and instructors), and platform configurations."
+      ]
+    ],
+    "cov_by_turn": [
+      0.28629856850715746,
+      0.3783231083844581,
+      0.4550102249488753,
+      0.5265848670756647,
+      0.5930470347648262,
+      0.65439672801636,
+      0.7443762781186094,
+      0.8006134969325154,
+      0.8517382413087935,
+      0.8977505112474438,
+      0.9744376278118609
+    ],
+    "ablation": "full",
+    "domain": "Consulting",
+    "vagueness": "Medium"
+  },
+  {
+    "prompt_id": "N11",
+    "deployment": "telos",
+    "native_domain": null,
+    "final_cov": 0.9386503067484663,
+    "n_turns": 9,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "main_content_purpose": "fitness coaching app",
+      "pages_structure": "Trainer dashboard",
+      "core_features": "personalized workout plans, track progress with charts, log meals, subscribe monthly",
+      "technical_platform": "app",
+      "integrations": "payment integration (implied by 'subscribe monthly')",
+      "user_accounts": "users, trainers",
+      "analytics_needs": "track progress with charts",
+      "target_audience": "individuals focused on fitness and health who seek personalized workout plans, progress tracking, and meal logging, often looking for professional guidance",
+      "design_style": "clean, modern, and energetic aesthetic, using a vibrant color palette with clear typography and intuitive layouts",
+      "content_ready": "already prepared",
+      "existing_branding": "No existing branding, open to suggestions for logo, colors, and brand guidelines.",
+      "budget_range": "$120,000",
+      "timeline": "6-8 months",
+      "seo_requirements": "fitcoachai.com"
+    },
+    "transcript": [
+      [
+        "Who is the target audience for this app?",
+        "The target audience for this app is individuals focused on fitness and health who seek personalized workout plans, progress tracking, and meal logging, often looking for professional guidance."
+      ],
+      [
+        "What kind of visual style or aesthetic direction are you envisioning for the app?",
+        "I envision a clean, modern, and energetic aesthetic, using a vibrant color palette with clear typography and intuitive layouts to make tracking progress engaging."
+      ],
+      [
+        "Is the app's content, such as workout descriptions and meal plans, already prepared, or will it need to be created?",
+        "The app's base content, such as workout descriptions and meal components, is already prepared."
+      ],
+      [
+        "Do you have any existing branding, such as a logo, specific colors, or brand guidelines, that we should incorporate?",
+        "No, there isn't any existing branding yet. We're open to suggestions for a logo, colors, and brand guidelines."
+      ],
+      [
+        "What is your estimated budget for this project?",
+        "The estimated budget for this project is $120,000."
+      ],
+      [
+        "What is your desired launch date or timeline for this app?",
+        "We are aiming for a launch within 6-8 months."
+      ],
+      [
+        "Do you have any specific requirements for the app's search visibility, such as App Store Optimization (ASO) or a preferred domain name for a potential website?",
+        "No, specific requirements for App Store Optimization (ASO) or a preferred domain name were not provided in the initial request."
+      ],
+      [
+        "Even without specific requirements for App Store Optimization (ASO) or a domain name, would you like us to include general strategies for the app's search visibility in the project?",
+        "No, let's focus on the core app features for now."
+      ],
+      [
+        "Understood. While we're focusing on core features, do you have any initial thoughts on a preferred app name or potential domain name that we should keep in mind?",
+        "For an app name, how about **FitCoach AI**? A potential domain name could be **fitcoachai.com**."
+      ]
+    ],
+    "cov_by_turn": [
+      0.4734151329243354,
+      0.5705521472392638,
+      0.647239263803681,
+      0.7188139059304703,
+      0.7852760736196319,
+      0.8415132924335378,
+      0.8926380368098159,
+      0.8926380368098159,
+      0.8926380368098159,
+      0.9386503067484663
+    ],
+    "ablation": "full",
+    "domain": "Consulting",
+    "vagueness": "Medium"
+  },
+  {
+    "prompt_id": "N26",
+    "deployment": "telos",
+    "native_domain": null,
+    "final_cov": 0.9079754601226994,
+    "n_turns": 6,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "main_content_purpose": "fintech dashboard",
+      "target_audience": "retail investors",
+      "pages_structure": [
+        "Portfolio tracking",
+        "News feed",
+        "Stock screener",
+        "Watchlist"
+      ],
+      "core_features": [
+        "Real-time portfolio tracking with P&L",
+        "Allocation breakdown by sector/geography/asset class",
+        "Integrated news feed filtered by holdings",
+        "Stock screener with 30+ filters",
+        "Watchlist with price alerts"
+      ],
+      "technical_platform": "mobile",
+      "integrations": [
+        "Interactive Brokers (via OAuth)",
+        "Degiro (via OAuth)"
+      ],
+      "user_accounts": [
+        "User authentication with biometrics on mobile",
+        "Free tier (3 portfolios)",
+        "Pro tier (€15/month, unlimited portfolios)",
+        "GDPR compliance",
+        "No data selling"
+      ],
+      "design_style": "clean, modern, and intuitive design with a focus on data visualization",
+      "content_ready": "needs creation",
+      "existing_branding": "Brand name: Quantify. Logo: Stylized 'Q' with an upward trend line. Primary brand colors: Deep professional blue (#003366) and vibrant teal (#00B8D4) as an accent, complemented by clean whites and light greys. Brand guidelines emphasize clarity, modern aesthetics, and intuitive data visualization.",
+      "budget_range": "€250,000 to €750,000",
+      "timeline": "Q4 2024",
+      "seo_requirements": "No specific SEO requirements were provided."
+    },
+    "transcript": [
+      [
+        "What kind of design style are you looking for?",
+        "A clean, modern, and intuitive design with a focus on data visualization."
+      ],
+      [
+        "Is the content and copy for the dashboard already prepared, or will it need to be created?",
+        "It will need to be created."
+      ],
+      [
+        "Do you have any existing branding, such as a logo, specific colors, or brand guidelines?",
+        "Yes, we do. Our brand name is **Quantify**.\n\nOur logo features a stylized 'Q' integrated with an upward trend line, symbolizing growth and data-driven insights.\n\nOur primary brand colors are a deep professional blue (#003366) and a vibrant teal (#00B8D4) as an accent, complemented by clean whites and light greys for readability.\n\nOur brand guidelines emphasize clarity, modern aesthetics, and intuitive data visualization to ensure a user-friendly experience."
+      ],
+      [
+        "To proceed with the task, I need to understand your budget or cost constraints. What is the approximate budget range you have in mind for this project?",
+        "We are looking at an approximate budget range of €250,000 to €750,000 for this project."
+      ],
+      [
+        "To proceed with the task, I need to understand your timeline. What is your desired launch date or project deadline?",
+        "Our desired launch date is Q4 2024."
+      ],
+      [
+        "To proceed with the task, I need to understand your SEO requirements. Do you have any specific strategies or needs for search engine optimization or domain visibility?",
+        "No specific SEO requirements were provided."
+      ]
+    ],
+    "cov_by_turn": [
+      0.5398773006134969,
+      0.6165644171779141,
+      0.6881390593047034,
+      0.754601226993865,
+      0.810838445807771,
+      0.8619631901840491,
+      0.9079754601226994
+    ],
+    "ablation": "full",
+    "domain": "Consulting",
+    "vagueness": "Detailed"
+  },
+  {
+    "prompt_id": "P18",
+    "deployment": "telos",
+    "native_domain": null,
+    "final_cov": 0.9028629856850716,
+    "n_turns": 7,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "main_content_purpose": "complete website redesign",
+      "pages_structure": "5 service lines, team page, 40 case studies, blog, resources section with downloadable white papers",
+      "core_features": "contact forms, downloadable white papers",
+      "design_style": "premium",
+      "integrations": "HubSpot CRM",
+      "content_management": "easy for non-technical team to update",
+      "target_audience": "C-suite executives and senior management in mid-to-large size businesses",
+      "content_ready": "Partially ready; new descriptions for service lines and blog posts need creation.",
+      "existing_branding": "Yes, existing logo, primary color palette, and basic brand guide. Adherence desired.",
+      "technical_platform": "HubSpot CMS Hub",
+      "budget_range": "$75,000 and $150,000",
+      "timeline": "4-5 months",
+      "seo_requirements": "Increase organic search traffic by 30% within 12 months, achieve top 3 rankings for at least 10 key service-related keywords, improve overall domain authority, ensure fast loading times across all devices."
+    },
+    "transcript": [
+      [
+        "Who is the primary target audience for your consulting firm's website?",
+        "Our primary target audience is C-suite executives and senior management in mid-to-large size businesses."
+      ],
+      [
+        "Do you have all the website content (e.g., service line descriptions, case studies, blog posts) already prepared, or will it need to be created?",
+        "Some content is prepared, but new descriptions for service lines and blog posts will need to be created."
+      ],
+      [
+        "Do you have an existing logo, brand colors, and any brand guidelines we should adhere to?",
+        "Yes, we have an existing logo, a primary color palette, and a basic brand guide. We'd like to adhere to those."
+      ],
+      [
+        "Do you have any preferences for the technology platform or content management system we should use for the new website?",
+        "Given our need for easy updates by a non-technical team and seamless integration with HubSpot CRM, we prefer **HubSpot CMS Hub**."
+      ],
+      [
+        "Do you have a budget range in mind for this website redesign project?",
+        "A typical budget range for a project of this scope, considering the premium feel, custom development, and integrations, would likely fall between $75,000 and $150,000."
+      ],
+      [
+        "Do you have a specific deadline or desired launch date for the new website?",
+        "We're aiming for a launch within the next 4-5 months."
+      ],
+      [
+        "What are your specific SEO goals or search visibility expectations for the new website?",
+        "We aim to increase organic search traffic by 30% within the first 12 months post-launch and achieve top 3 rankings for at least 10 key service-related keywords. We also want to improve our overall domain authority and ensure fast loading times across all devices."
+      ]
+    ],
+    "cov_by_turn": [
+      0.45296523517382414,
+      0.5501022494887525,
+      0.621676891615542,
+      0.6881390593047034,
+      0.7494887525562373,
+      0.8057259713701431,
+      0.8568507157464212,
+      0.9028629856850716
+    ],
+    "ablation": "full",
+    "domain": "Consulting",
+    "vagueness": "Detailed"
+  },
+  {
+    "prompt_id": "P34",
+    "deployment": "rad_assist",
+    "native_domain": null,
+    "final_cov": 0.9207920792079208,
+    "n_turns": 4,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "primary_site": "prostate",
+      "stage_classification": "T2cN0M0",
+      "treatment_received": "prior sigmoid surgery",
+      "histology_subtype": "Gleason 7 (4+3)",
+      "current_medications": "leuprolide (started 3 months ago, will continue 18 months total)",
+      "biomarkers": "PSA 0.8",
+      "comorbidities": "no significant comorbidities",
+      "patient_demographics": "male",
+      "treatment_plan": "moderately hypofractionated IMRT — 60 Gy in 20 fractions",
+      "contraindications": "rectal toxicity given prior sigmoid surgery",
+      "performance_status": "ECOG 0",
+      "lab_values": "PSA 0.8",
+      "response_to_treatment": "good response to ADT",
+      "imaging_findings": "MRI showed a lesion confined to the prostate, involving both lobes, with no evidence of extracapsular extension or seminal vesicle invasion. CT scans confirmed no lymphadenopathy or distant metastatic disease, and noted post-surgical changes in the sigmoid colon."
+    },
+    "transcript": [
+      [
+        "What is his ECOG or Karnofsky score?",
+        "His ECOG performance status is 0."
+      ],
+      [
+        "How has his PSA responded to the ADT so far?",
+        "His PSA is 0.8."
+      ],
+      [
+        "Based on a PSA of 0.8, how would you characterize his response to ADT?",
+        "His response to ADT is good."
+      ],
+      [
+        "What were the key findings from his CT, MRI, or PET scans?",
+        "MRI showed a lesion confined to the prostate, involving both lobes, with no evidence of extracapsular extension or seminal vesicle invasion. CT scans confirmed no lymphadenopathy or distant metastatic disease, and noted post-surgical changes in the sigmoid colon."
+      ]
+    ],
+    "cov_by_turn": [
+      0.6633663366336634,
+      0.7425742574257426,
+      0.7871287128712872,
+      0.8613861386138614,
+      0.9207920792079208
+    ],
+    "ablation": "full",
+    "domain": "Medical",
+    "vagueness": "Detailed"
+  },
+  {
+    "prompt_id": "N55",
+    "deployment": "rad_assist",
+    "native_domain": null,
+    "final_cov": 0.9356435643564357,
+    "n_turns": 2,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "primary_site": "lung",
+      "stage_classification": "stage IVA (T3N2M1a — contralateral lobe)",
+      "treatment_received": "pembrolizumab 200mg Q3W started 3 weeks ago",
+      "histology_subtype": "NSCLC adenocarcinoma",
+      "current_medications": "pembrolizumab 200mg Q3W",
+      "biomarkers": "PD-L1 TPS 90%, EGFR/ALK/ROS1 wild-type",
+      "imaging_findings": "Baseline CT: 4.2cm primary mass, 2 contralateral pulmonary nodules < 1cm. No liver or brain mets.",
+      "comorbidities": "No significant comorbidities",
+      "patient_demographics": "58-year-old male",
+      "lab_values": "CBC: WBC 8.2, Hb 10.4 (mild anemia), platelets 210k",
+      "follow_up_schedule": "First follow-up assessment requested",
+      "performance_status": "ECOG 1",
+      "response_to_treatment": "not yet known",
+      "treatment_plan": "first follow-up assessment requested"
+    },
+    "transcript": [
+      [
+        "What is the patient's ECOG performance status?",
+        "ECOG performance status is 1."
+      ],
+      [
+        "What is the patient's response to pembrolizumab treatment?",
+        "The patient's response to pembrolizumab treatment is not yet known, as it has only been 3 weeks since treatment initiation and a first follow-up assessment has been requested."
+      ]
+    ],
+    "cov_by_turn": [
+      0.7425742574257426,
+      0.8217821782178217,
+      0.9356435643564357
+    ],
+    "ablation": "full",
+    "domain": "Medical",
+    "vagueness": "Detailed"
+  },
+  {
+    "prompt_id": "N46",
+    "deployment": "rad_assist",
+    "native_domain": null,
+    "final_cov": 0.9356435643564357,
+    "n_turns": 6,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "stage_classification": "stage IIA",
+      "treatment_received": "2 cycles ABVD",
+      "histology_subtype": "classical Hodgkin lymphoma",
+      "response_to_treatment": "complete metabolic response",
+      "imaging_findings": "Mid-treatment PET after 2 cycles ABVD shows Deauville score 2",
+      "patient_demographics": "35-year-old female",
+      "treatment_plan": "Planning 2 more cycles then restaging",
+      "primary_site": "cervical and mediastinal nodes",
+      "performance_status": "ECOG 0",
+      "current_medications": "ABVD chemotherapy: Adriamycin (Doxorubicin) 41.5 mg IV, Bleomycin 16.5 mg IV, Vinblastine 10 mg IV, Dacarbazine 625 mg IV. Administered on Day 1 and Day 15 of each 28-day cycle.",
+      "lab_values": "EBV-negative",
+      "biomarkers": "EBV-negative, no specific molecular findings currently noted",
+      "comorbidities": "No other significant medical conditions or comorbidities specified.",
+      "follow_up_schedule": "Visits every three months for the first year, then every six months for the next two years, followed by annual check-ups. Monitoring includes regular physical examinations, blood tests, and CT scans at six months, one year, and two years post-treatment."
+    },
+    "transcript": [
+      [
+        "What is considered the primary site of the Hodgkin lymphoma?",
+        "The primary sites of the Hodgkin lymphoma are the cervical and mediastinal nodes."
+      ],
+      [
+        "What is the patient's performance status (e.g., ECOG or Karnofsky score)?",
+        "The patient's ECOG performance status is 0."
+      ],
+      [
+        "What are the patient's current medications, including their dosages?",
+        "The patient is currently receiving ABVD chemotherapy. The medications and their dosages are:\n\n*   **Adriamycin (Doxorubicin):** 41.5 mg IV\n*   **Bleomycin:** 16.5 mg IV\n*   **Vinblastine:** 10 mg IV\n*   **Dacarbazine:** 625 mg IV\n\nThese are administered on Day 1 and Day 15 of each 28-day cycle."
+      ],
+      [
+        "Are there any relevant biomarkers for this patient's Hodgkin lymphoma, such as EBV status or specific molecular findings?",
+        "The patient is EBV-negative. No specific molecular findings are currently noted."
+      ],
+      [
+        "Does the patient have any other significant medical conditions or comorbidities, such as diabetes, hypertension, or cardiac issues?",
+        "No, there are no other significant medical conditions or comorbidities specified."
+      ],
+      [
+        "What is the planned follow-up schedule and monitoring plan after the completion of the remaining treatment cycles?",
+        "After completing the remaining two cycles of ABVD, my follow-up schedule will involve visits every three months for the first year, then every six months for the next two years. After that, it will transition to annual check-ups. Monitoring will include regular physical examinations, blood tests, and CT scans at six months, one year, and two years post-treatment."
+      ]
+    ],
+    "cov_by_turn": [
+      0.4900990099009901,
+      0.5891089108910891,
+      0.6683168316831684,
+      0.7376237623762376,
+      0.8465346534653465,
+      0.900990099009901,
+      0.9356435643564357
+    ],
+    "ablation": "full",
+    "domain": "Medical",
+    "vagueness": "Medium"
+  },
+  {
+    "prompt_id": "N61",
+    "deployment": "rad_assist",
+    "native_domain": null,
+    "final_cov": 0.9356435643564357,
+    "n_turns": 1,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "primary_site": "renal",
+      "stage_classification": "stage IV",
+      "treatment_received": [
+        "sunitinib",
+        "cabozantinib"
+      ],
+      "histology_subtype": [
+        "clear cell",
+        "VHL mutated"
+      ],
+      "performance_status": "ECOG 1",
+      "response_to_treatment": [
+        "Progressed on sunitinib",
+        "stable disease"
+      ],
+      "current_medications": [
+        "cabozantinib 60mg daily",
+        "amlodipine"
+      ],
+      "biomarkers": [
+        "VHL mutated",
+        "PSA 1.2"
+      ],
+      "imaging_findings": "pulmonary mets (5 lesions, largest 1.8cm)",
+      "comorbidities": "hypertension",
+      "patient_demographics": "68-year-old male",
+      "lab_values": "PSA 1.2",
+      "follow_up_schedule": "3-month restaging CT planned",
+      "treatment_plan": "A 3-month restaging CT is planned."
+    },
+    "transcript": [
+      [
+        "What are the planned next steps in treatment?",
+        "A 3-month restaging CT is planned."
+      ]
+    ],
+    "cov_by_turn": [
+      0.8960396039603961,
+      0.9356435643564357
+    ],
+    "ablation": "full",
+    "domain": "Medical",
+    "vagueness": "Detailed"
+  },
+  {
+    "prompt_id": "N33",
+    "deployment": "rad_assist",
+    "native_domain": null,
+    "final_cov": 0.9356435643564357,
+    "n_turns": 14,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "primary_site": "base of the tongue",
+      "stage_classification": "T2 N1 M0",
+      "treatment_received": "surgical resection",
+      "histology_subtype": "Squamous cell carcinoma",
+      "performance_status": "ECOG 2",
+      "response_to_treatment": "Successful surgical resection with clear margins",
+      "current_medications": "Oxycodone: 5mg, every 4-6 hours as needed for pain. Acetaminophen: 650mg, every 6 hours for pain. Ondansetron: 4mg, every 8 hours as needed for nausea. Docusate sodium: 100mg, twice daily. Amoxicillin-clavulanate: 875mg/125mg, twice daily.",
+      "biomarkers": "HPV (p16) status positive, PD-L1 Combined Positive Score (CPS) 25",
+      "imaging_findings": "no evidence of residual tumor at the primary surgical site, expected post-operative inflammatory changes and edema in the surgical bed, no new suspicious lymphadenopathy or distant metastatic disease",
+      "comorbidities": "well-controlled hypertension and Type 2 Diabetes, history of smoking (quit two years ago)",
+      "patient_demographics": "Age: 62 years, Sex: male, Weight: 185 lbs",
+      "lab_values": {
+        "WBC Count": "8.5 x 10^9/L",
+        "Hemoglobin": "12.8 g/dL",
+        "Hematocrit": "38.5%",
+        "Platelet Count": "250 x 10^9/L",
+        "Creatinine": "0.9 mg/dL",
+        "BUN": "18 mg/dL",
+        "eGFR": "95 mL/min/1.73m^2",
+        "ALT": "25 U/L",
+        "AST": "28 U/L",
+        "ALP": "80 U/L",
+        "Total Bilirubin": "0.6 mg/dL"
+      },
+      "treatment_plan": "close surveillance",
+      "follow_up_schedule": "weekly visits for the first month, then bi-weekly for the next two months, followed by monthly visits for the subsequent three months. After that, it transitions to every three months for the remainder of the first year, then every six months for the next two years, and annually thereafter. Monitoring includes clinical examination, symptom review, and imaging (such as CT or MRI) as clinically indicated."
+    },
+    "transcript": [
+      [
+        "Could you specify the primary site of the cancer?",
+        "The primary site of the cancer was the base of the tongue."
+      ],
+      [
+        "What was the clinical stage of the cancer, or its TNM classification?",
+        "The clinical stage was T2 N1 M0."
+      ],
+      [
+        "What treatments did the patient receive?",
+        "The patient underwent surgical resection of a head and neck tumor."
+      ],
+      [
+        "What was the histological subtype of the tumor?",
+        "Squamous cell carcinoma."
+      ],
+      [
+        "What is the patient's current functional status (e.g., ECOG or Karnofsky score)?",
+        "The patient's current ECOG performance status is 2."
+      ],
+      [
+        "What was the patient's response to the surgical resection?",
+        "The surgical resection was successful, and pathology confirmed clear margins."
+      ],
+      [
+        "What medications is the patient currently taking, including dosages?",
+        "The patient is currently taking:\n\n*   **Oxycodone:** 5mg, every 4-6 hours as needed for pain.\n*   **Acetaminophen:** 650mg, every 6 hours for pain.\n*   **Ondansetron:** 4mg, every 8 hours as needed for nausea.\n*   **Docusate sodium:** 100mg, twice daily.\n*   **Amoxicillin-clavulanate:** 875mg/125mg, twice daily."
+      ],
+      [
+        "What were the results of any relevant biomarker testing, such as HPV status (p16) or PD-L1 expression?",
+        "The HPV (p16) status was positive. PD-L1 expression showed a Combined Positive Score (CPS) of 25."
+      ],
+      [
+        "What were the key findings from the most recent post-operative imaging (e.g., CT, MRI, PET)?",
+        "The most recent CT scan showed no evidence of residual tumor at the primary surgical site. There were expected post-operative inflammatory changes and edema in the surgical bed, and no new suspicious lymphadenopathy or distant metastatic disease was identified."
+      ],
+      [
+        "Does the patient have any other significant medical conditions or comorbidities, such as diabetes, hypertension, or cardiac issues?",
+        "Yes, the patient has a history of well-controlled hypertension and Type 2 Diabetes, managed with oral medication. They also have a history of smoking, which they quit two years ago."
+      ],
+      [
+        "What is the patient's age, sex, and current weight?",
+        "The patient is a 62-year-old male, weighing 185 lbs."
+      ],
+      [
+        "Could you provide the most recent relevant lab results, including CBC, renal function, and liver function tests?",
+        "Certainly. Here are the most recent lab results:\n\n**Complete Blood Count (CBC):**\n*   White Blood Cell (WBC) Count: 8.5 x 10^9/L\n*   Hemoglobin: 12.8 g/dL\n*   Hematocrit: 38.5%\n*   Platelet Count: 250 x 10^9/L\n\n**Renal Function Tests:**\n*   Creatinine: 0.9 mg/dL\n*   Blood Urea Nitrogen (BUN): 18 mg/dL\n*   Estimated Glomerular Filtration Rate (eGFR): 95 mL/min/1.73m^2\n\n**Liver Function Tests:**\n*   Alanine Aminotransferase (ALT): 25 U/L\n*   Aspartate Aminotransferase (AST): 28 U/L\n*   Alkaline Phosphatase (ALP): 80 U/L\n*   Total Bilirubin: 0.6 mg/dL"
+      ],
+      [
+        "What is the planned post-operative treatment strategy?",
+        "The planned post-operative treatment strategy is close surveillance."
+      ],
+      [
+        "What is the specific follow-up schedule and monitoring plan for this close surveillance?",
+        "The follow-up schedule involves weekly visits for the first month, then bi-weekly for the next two months, followed by monthly visits for the subsequent three months. After that, it transitions to every three months for the remainder of the first year, then every six months for the next two years, and annually thereafter.\n\nMonitoring includes clinical examination, symptom review, and imaging (such as CT or MRI) as clinically indicated."
+      ]
+    ],
+    "cov_by_turn": [
+      0.0,
+      0.09900990099009901,
+      0.19306930693069307,
+      0.28217821782178215,
+      0.36633663366336633,
+      0.44554455445544555,
+      0.5198019801980198,
+      0.5891089108910891,
+      0.6534653465346535,
+      0.7128712871287128,
+      0.7673267326732673,
+      0.8168316831683168,
+      0.8613861386138614,
+      0.900990099009901,
+      0.9356435643564357
+    ],
+    "ablation": "full",
+    "domain": "Medical",
+    "vagueness": "Ultra-vague"
+  },
+  {
+    "prompt_id": "P49",
+    "deployment": "finagent",
+    "native_domain": "trading",
+    "final_cov": 0.897196261682243,
+    "n_turns": 4,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "payment_from": "SEPA bank transfer",
+      "authorization_controls": "2FA, withdrawal email confirmation, IP whitelisting",
+      "currency": "EUR",
+      "asset_type": "BTC, ETH, USDC, USDT",
+      "volume_per_trade": "$100,000",
+      "risk_tolerance": "conservative",
+      "daily_limit": "€5,000"
+    },
+    "transcript": [
+      [
+        "What's the maximum dollar amount you anticipate for a single trade?",
+        "For a single trade, we anticipate a maximum dollar amount of $100,000."
+      ],
+      [
+        "How would you describe your approach to risk for this exchange?",
+        "Our approach to risk for this exchange is comprehensive and multi-layered, focusing on proactive identification, robust mitigation, and continuous monitoring. We prioritize regulatory compliance, asset security, and operational resilience to protect both user funds and the platform's integrity."
+      ],
+      [
+        "Given your comprehensive approach to risk, would you classify your overall risk tolerance as conservative, moderate, or aggressive?",
+        "Based on the comprehensive security measures, strict regulatory compliance (KYC/AML for EU), and controlled beta launch, I would classify the overall risk tolerance as **conservative**."
+      ],
+      [
+        "What cumulative daily spending or trading limit do you envision for users?",
+        "For users, I envision a cumulative daily spending or trading limit of €5,000."
+      ]
+    ],
+    "cov_by_turn": [
+      0.40186915887850466,
+      0.5887850467289719,
+      0.5887850467289719,
+      0.7476635514018691,
+      0.897196261682243
+    ],
+    "ablation": "full",
+    "domain": "Payments",
+    "vagueness": "Detailed"
+  },
+  {
+    "prompt_id": "N90",
+    "deployment": "finagent",
+    "native_domain": "trading",
+    "final_cov": 0.822429906542056,
+    "n_turns": 5,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "currency": "USD",
+      "asset_type": "US T-bills (3-6 month), investment-grade corporate bond ETF (LQD)",
+      "exchanges": "TreasuryDirect API, Schwab",
+      "trading_schedule": "Quarterly rebalancing, auto-roll at maturity",
+      "reporting": "Monthly PDF report for my accountant showing yield, duration, and unrealised P&L",
+      "volume_per_trade": "$20,000",
+      "payment_from": "Schwab brokerage account",
+      "risk_tolerance": "conservative",
+      "authorization_controls": "Explicit authorization is required for modifying strategy parameters, pausing execution, or stopping it entirely."
+    },
+    "transcript": [
+      [
+        "What is the maximum dollar amount you'd like for any single trade?",
+        "The maximum dollar amount for any single trade will be $20,000."
+      ],
+      [
+        "Which account should the funds for these investments be drawn from?",
+        "The funds should be drawn from your Schwab brokerage account."
+      ],
+      [
+        "How would you describe your risk tolerance for this strategy (conservative, moderate, or aggressive)?",
+        "This strategy is **conservative**."
+      ],
+      [
+        "Will trades be executed automatically, or do they require your approval before execution?",
+        "Trades will be executed automatically according to the strategy's rules."
+      ],
+      [
+        "Beyond automatic trade execution, are there any other actions related to this strategy that require your approval or specific authorization, such as modifying or pausing it?",
+        "Yes, modifying the strategy's parameters, pausing its execution, or stopping it entirely would all require your explicit authorization."
+      ]
+    ],
+    "cov_by_turn": [
+      0.1588785046728972,
+      0.34579439252336447,
+      0.514018691588785,
+      0.6728971962616822,
+      0.6728971962616822,
+      0.822429906542056
+    ],
+    "ablation": "full",
+    "domain": "Payments",
+    "vagueness": "Detailed"
+  },
+  {
+    "prompt_id": "N81",
+    "deployment": "finagent",
+    "native_domain": "payroll",
+    "final_cov": 0.8504672897196262,
+    "n_turns": 5,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "currency": "USD",
+      "volume_per_trade": "$1,000",
+      "payment_from": "major credit and debit cards (Visa, Mastercard, American Express, Discover)",
+      "risk_tolerance": "moderate",
+      "authorization_controls": "For standard tips and withdrawals, no manual platform approval is required. Tips are processed immediately by the payment processor. Withdrawals are processed instantly to the creator's Stripe connected account, provided they meet a minimum $10 payout and have no security flags. Manual review or human intervention is triggered by suspected fraudulent activity, payment processor flags/errors, disputes/chargebacks (for tips), or security flags, unusual withdrawal patterns, or technical issues with the Stripe payout process (for withdrawals).",
+      "daily_limit": "$1,000"
+    },
+    "transcript": [
+      [
+        "What's the maximum amount a user can tip in a single transaction?",
+        "A user can tip a maximum of $1,000 in a single transaction."
+      ],
+      [
+        "What payment methods will users be able to use to make tips?",
+        "Users will be able to tip using major credit and debit cards (Visa, Mastercard, American Express, Discover)."
+      ],
+      [
+        "What is your platform's risk tolerance regarding financial operations, such as fraud and chargebacks?",
+        "Our platform has a **moderate** risk tolerance regarding financial operations. We implement robust fraud detection and prevention measures to protect both our platform and creators from chargebacks and fraudulent activity, while also ensuring a smooth experience for users and timely payouts for creators."
+      ],
+      [
+        "What are the authorization rules or approval requirements for tips and withdrawals, and under what conditions would a transaction require manual review or human intervention?",
+        "*   **Authorization Rules & Approval Requirements:**\n    *   **Tips:** Users authorize tips via their chosen payment method. These transactions are processed immediately by our payment processor; no manual platform approval is required for standard tips.\n    *   **Withdrawals:** Creators initiate withdrawals from their dashboard. As long as the withdrawal meets the minimum $10 payout and there are no security flags, it is processed instantly to their Stripe connected account. No manual platform approval is required for standard withdrawals.\n\n*   **Conditions for Manual Review or Human Intervention:**\n    *   **Tips:** Suspected fraudulent activity, payment processor flags or errors, or disputes/chargebacks initiated by the tipper.\n    *   **Withdrawals:** Suspected fraudulent activity related to the creator's account or withdrawal patterns, security flags on the creator's account or connected Stripe account, or technical issues with the Stripe payout process."
+      ],
+      [
+        "Is there a cumulative daily limit on the total amount a user can tip across multiple transactions?",
+        "Yes, there is a cumulative daily limit of $1,000 on the total amount a user can tip across multiple transactions."
+      ]
+    ],
+    "cov_by_turn": [
+      0.037383177570093455,
+      0.22429906542056074,
+      0.3925233644859813,
+      0.5514018691588785,
+      0.7009345794392523,
+      0.8504672897196262
+    ],
+    "ablation": "full",
+    "domain": "Payments",
+    "vagueness": "Medium"
+  },
+  {
+    "prompt_id": "N96",
+    "deployment": "finagent",
+    "native_domain": "trading",
+    "final_cov": 0.8504672897196262,
+    "n_turns": 4,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "currency": "ETH, USDC",
+      "asset_type": "ETH, stETH, USDC",
+      "exchanges": "Lido, Aave, Curve 3pool",
+      "trading_schedule": "full derisking within 4h",
+      "stop_loss": "Aave LTV > 65% (deleverage), ETH drops >25% in 24h (full derisking within 4h)",
+      "reporting": "Daily report: yield breakdown, LTV, estimated APY. Alerts via Telegram",
+      "volume_per_trade": "$200,000",
+      "payment_from": "0x742d35Cc6634C05329c31a86bFf019B7a2c88fE7",
+      "risk_tolerance": "moderate",
+      "authorization_controls": "Two main authorization processes: 1. Token Approvals: Initial approval transaction for each token and new protocol interaction to grant permission to spend tokens. 2. Transaction Signatures: Every individual transaction (deposits, borrows, withdrawals, repayments, rebalancing) must be signed and confirmed through a connected Web3 wallet."
+    },
+    "transcript": [
+      [
+        "What's the maximum dollar amount you'd like to set for any single trade or transaction?",
+        "The maximum dollar amount for any single trade or transaction is $200,000."
+      ],
+      [
+        "What is the source wallet for the 100 ETH capital?",
+        "The source wallet for the 100 ETH capital is `0x742d35Cc6634C05329c31a86bFf019B7a2c88fE7`."
+      ],
+      [
+        "What is your overall risk tolerance for this strategy (e.g., conservative, moderate, aggressive)?",
+        "The overall risk tolerance for this strategy is **moderate**."
+      ],
+      [
+        "What authorization or approval processes are required for transactions and rebalancing?",
+        "Transactions and rebalancing operations require two main authorization processes:\n\n1.  **Token Approvals:** For each token (e.g., ETH, USDC) and each new protocol interaction (e.g., Lido, Aave, Curve), an initial approval transaction is needed to grant the protocol's smart contract permission to spend your tokens.\n2.  **Transaction Signatures:** Every individual transaction, including deposits, borrows, withdrawals, repayments, and rebalancing actions, must be signed and confirmed through your connected Web3 wallet."
+      ]
+    ],
+    "cov_by_turn": [
+      0.18691588785046728,
+      0.37383177570093457,
+      0.5420560747663551,
+      0.7009345794392523,
+      0.8504672897196262
+    ],
+    "ablation": "full",
+    "domain": "Payments",
+    "vagueness": "Detailed"
+  },
+  {
+    "prompt_id": "N68",
+    "deployment": "finagent",
+    "native_domain": "generic",
+    "final_cov": 0.8504672897196262,
+    "n_turns": 5,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "volume_per_trade": "$5,000",
+      "payment_from": "paycheck or primary income",
+      "risk_tolerance": "moderate",
+      "daily_limit": "5000",
+      "currency": "USD",
+      "authorization_controls": "no per-transaction approval needed"
+    },
+    "transcript": [
+      [
+        "What's the maximum amount you'd want to put into a single transaction?",
+        "I'd be comfortable with a maximum of $5,000 in a single transaction."
+      ],
+      [
+        "Where should the money come from?",
+        "The money can come directly from your paycheck or primary income."
+      ],
+      [
+        "What's your comfort level with investment risk?",
+        "I'm comfortable with a moderate level of investment risk."
+      ],
+      [
+        "What's the maximum total amount you'd want to move or invest in a single day?",
+        "I'd want to move or invest a maximum of $5,000 in a single day."
+      ],
+      [
+        "Do you need to approve each transfer or investment before it happens?",
+        "No, once you set up your rules and preferences, transfers and investments happen automatically without needing your approval for each one."
+      ]
+    ],
+    "cov_by_turn": [
+      0.0,
+      0.18691588785046728,
+      0.35514018691588783,
+      0.514018691588785,
+      0.7009345794392523,
+      0.8504672897196262
+    ],
+    "ablation": "full",
+    "domain": "Payments",
+    "vagueness": "Ultra-vague"
+  },
+  {
+    "prompt_id": "N29",
+    "deployment": "telos",
+    "native_domain": null,
+    "final_cov": 0.9386503067484663,
+    "n_turns": 5,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "main_content_purpose": "K-12 learning platform",
+      "target_audience": "K-12 private schools, Teachers, Students, Parents",
+      "pages_structure": "Teacher dashboard, Student interface, Parent portal",
+      "core_features": "create assignments, track completion, grade, gamified progress (XP, badges, leaderboard), follow child's progress, message teachers, Curriculum aligned to French national curriculum (CP to Terminale), GDPR for minors (parental consent flows)",
+      "integrations": "LTI integration with existing school SIS (Pronote)",
+      "budget_range": "B2B annual license per school (€2,000-€20,000 depending on size)",
+      "user_accounts": "Teacher, Student, Parent roles; GDPR for minors (parental consent flows)",
+      "content_management": "Teachers create assignments",
+      "analytics_needs": "track completion, follow child's progress",
+      "design_style": "clean, modern design with a vibrant, engaging color palette, intuitive iconography, and playful, yet sophisticated, illustrations",
+      "content_ready": "needs creation",
+      "existing_branding": "Logo features a stylized 'E' resembling an open book with an upward arrow. Primary brand colors: friendly blue (#4A90E2) and vibrant green (#7ED321). Accent color: warm yellow (#F8E71C). Greys for text and backgrounds. Brand guidelines emphasize clarity, accessibility, a positive/encouraging tone, and clean sans-serif typography.",
+      "accessibility": "Emphasized in brand guidelines.",
+      "technical_platform": "Web application; Frontend: React; Backend: Node.js with Express.js; Database: PostgreSQL; Hosting: AWS",
+      "timeline": "September 2025"
+    },
+    "transcript": [
+      [
+        "Can you describe the desired visual style, aesthetic, or branding for the platform?",
+        "A clean, modern design with a vibrant, engaging color palette. It should feature intuitive iconography and incorporate playful, yet sophisticated, illustrations to enhance the gamified student experience."
+      ],
+      [
+        "Is the platform's content and copy already prepared, or will it need to be created?",
+        "The platform's content and copy will need to be created to align with the French national curriculum."
+      ],
+      [
+        "Do you have an existing logo, specific colors, or brand guidelines?",
+        "Yes, we do.\n\nOur logo features a stylized \"E\" that also resembles an open book, with an upward arrow subtly integrated to signify progress.\n\nOur primary brand colors are a friendly blue (#4A90E2) and a vibrant green (#7ED321). We use a warm yellow (#F8E71C) for accents and a range of greys for text and backgrounds.\n\nOur brand guidelines emphasize clarity, accessibility, and a positive, encouraging tone, using clean sans-serif typography."
+      ],
+      [
+        "What are your technical preferences for the platform, specifically regarding the technology stack and whether it should be a web, mobile, or hybrid application?",
+        "The platform should be a web application, built with a responsive design to ensure accessibility across devices. For the technology stack, we prefer React for the frontend, Node.js with Express.js for the backend, and PostgreSQL for the database, hosted on AWS."
+      ],
+      [
+        "What is your desired deadline or launch timeline for this platform?",
+        "We aim to launch the platform by September 2025."
+      ]
+    ],
+    "cov_by_turn": [
+      0.6012269938650306,
+      0.6779141104294478,
+      0.7494887525562373,
+      0.8261758691206544,
+      0.8875255623721882,
+      0.9386503067484663
+    ],
+    "ablation": "full",
+    "domain": "Consulting",
+    "vagueness": "Detailed"
+  },
+  {
+    "prompt_id": "N07",
+    "deployment": "telos",
+    "native_domain": null,
+    "final_cov": 0.9386503067484663,
+    "n_turns": 14,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "main_content_purpose": "redesign company website",
+      "target_audience": "potential clients looking for our services",
+      "pages_structure": [
+        "Home",
+        "About Us",
+        "Services",
+        "Portfolio",
+        "Blog",
+        "Contact Us"
+      ],
+      "core_features": "interactive product configurator, a live chat support system, a searchable resource library with filters for articles and whitepapers, an integrated customer testimonial section with video capabilities",
+      "design_style": "clean, modern, and professional aesthetic with a focus on user experience, minimalist layout, fresh color palette, and high-quality imagery",
+      "timeline": "December 15th, 2023",
+      "content_ready": "not fully finalized, requires further work",
+      "existing_branding": "Existing logo, a defined color palette, and brand guidelines",
+      "technical_platform": "Frontend: React; Backend: Node.js with Express; Database: PostgreSQL; Platform: Fully responsive web, no dedicated mobile app for now.",
+      "analytics_needs": "Google Analytics 4 (GA4)",
+      "integrations": "Payment Gateway: Stripe, CRM: Salesforce, Analytics: Google Analytics 4 (GA4), Live Chat: Intercom, Email Marketing: Mailchimp",
+      "budget_range": "$30,000 - $80,000",
+      "seo_requirements": "Increase organic traffic by 30% within the first year, improve rankings for core service keywords, enhance local search visibility, ensure smooth transition for `innovatechsolutions.com` to preserve and improve existing authority.",
+      "user_accounts": "Yes, user accounts and roles will be implemented for specific features and content, but not for general website browsing."
+    },
+    "transcript": [
+      [
+        "Who is the primary audience for your website?",
+        "Our primary audience is potential clients looking for our services."
+      ],
+      [
+        "What are the key pages and sections you envision for the new website?",
+        "I envision the following key pages and sections for the new website:\n\n*   Home\n*   About Us\n*   Services\n*   Portfolio\n*   Blog\n*   Contact Us"
+      ],
+      [
+        "What specific functionalities or interactive features do you envision for the website, beyond just the page names you've listed?",
+        "I envision features such as an interactive product configurator, a live chat support system, a searchable resource library with filters for articles and whitepapers, and an integrated customer testimonial section with video capabilities."
+      ],
+      [
+        "What kind of visual style or aesthetic direction are you envisioning for the new website?",
+        "We're envisioning a clean, modern, and professional aesthetic with a focus on user experience. This includes a minimalist layout, a fresh color palette, and high-quality imagery."
+      ],
+      [
+        "What is the current status of the content (text, images, videos) for the new website?",
+        "The text content is currently being reviewed and updated, with about 60% of the core pages drafted. For images, we have identified key areas requiring new photography and are compiling a list of necessary stock images. Video content is in the conceptualization phase, with scripts for our main explainer videos in progress."
+      ],
+      [
+        "When do you anticipate all content (text, images, videos) will be fully finalized and ready for implementation?",
+        "We anticipate all content will be fully finalized by **December 15th, 2023**."
+      ],
+      [
+        "Are there any potential challenges or dependencies that could affect the December 15th content finalization date?",
+        "Yes, a potential challenge could be the availability of key stakeholders for content review and approval, especially given the proximity to the holiday season. Delays in their feedback could push back the finalization date."
+      ],
+      [
+        "So, to confirm, no content is currently fully finalized and ready for immediate implementation, and all of it requires further work before December 15th, correct?",
+        "That's correct. No content is fully finalized, and all of it requires further work before December 15th."
+      ],
+      [
+        "Do you have existing branding, such as a logo, color palette, or brand guidelines, that we need to incorporate?",
+        "Yes, we do. We have an existing logo, a defined color palette, and brand guidelines that should be incorporated."
+      ],
+      [
+        "What are your preferences for the website's technology stack, and will it need to be a responsive website, a dedicated mobile app, or both?",
+        "For the technology stack, we prefer a modern JavaScript framework like **React** for the frontend, **Node.js with Express** for the backend, and **PostgreSQL** for the database.\n\nRegarding mobile, the website will absolutely need to be **fully responsive**. A dedicated mobile app is not a primary requirement for this redesign phase, but it could be considered in the future."
+      ],
+      [
+        "What third-party integrations, such as payment gateways, CRM, or analytics tools, will the new website require?",
+        "The new website will require the following third-party integrations:\n\n*   **Payment Gateway:** Stripe\n*   **CRM:** Salesforce\n*   **Analytics:** Google Analytics 4 (GA4)\n*   **Live Chat:** Intercom\n*   **Email Marketing:** Mailchimp"
+      ],
+      [
+        "What is your estimated budget range for this website redesign project?",
+        "Our estimated budget range for this website redesign project is between $30,000 and $80,000."
+      ],
+      [
+        "What are your specific SEO requirements or goals for the new website, and are there any existing domain or search visibility considerations?",
+        "Our primary SEO goals are to increase organic traffic by 30% within the first year, improve rankings for our core service keywords, and enhance local search visibility.\n\nOur current domain is `innovatechsolutions.com`. We have some existing search visibility, but it's declining, and we want to ensure a smooth transition to preserve any existing authority and improve upon it."
+      ],
+      [
+        "Will the new website require user accounts, user registration, or different user roles for accessing specific content or features?",
+        "Yes, user accounts and roles will be implemented for specific features and content, but not for general website browsing."
+      ]
+    ],
+    "cov_by_turn": [
+      0.10224948875255624,
+      0.19938650306748465,
+      0.29141104294478526,
+      0.3783231083844581,
+      0.4550102249488753,
+      0.4550102249488753,
+      0.5061349693251533,
+      0.5061349693251533,
+      0.5777096114519428,
+      0.6441717791411042,
+      0.7055214723926381,
+      0.7955010224948875,
+      0.8517382413087935,
+      0.8977505112474438,
+      0.9386503067484663
+    ],
+    "ablation": "full",
+    "domain": "Consulting",
+    "vagueness": "Ultra-vague"
+  },
+  {
+    "prompt_id": "N06",
+    "deployment": "telos",
+    "native_domain": null,
+    "final_cov": 0.9386503067484663,
+    "n_turns": 10,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "main_content_purpose": "CRM tool",
+      "target_audience": "small sales team",
+      "analytics_needs": "Reports section",
+      "pages_structure": [
+        "Dashboard",
+        "Leads",
+        "Contacts",
+        "Accounts",
+        "Deals/Opportunities",
+        "Activities",
+        "Reports"
+      ],
+      "core_features": [
+        "Dashboard",
+        "Leads management",
+        "Contacts management",
+        "Accounts management",
+        "Deals/Opportunities management",
+        "Activities tracking",
+        "Reporting"
+      ],
+      "design_style": "clean, modern, and intuitive look and feel",
+      "content_ready": "Standard content and templates are available, but custom content specific to the sales process needs to be created.",
+      "existing_branding": "Yes, existing branding assets including a stylized 'SalesFlow' wordmark logo, main brand colors (vibrant blue #007bff, light gray #f8f9fa), and comprehensive brand guidelines.",
+      "technical_platform": "Web and mobile access preferred; cloud-based solution preferred; no specific technology stack requirements or existing infrastructure.",
+      "integrations": "Stripe, PayPal, Mailchimp, HubSpot Marketing, Google Analytics, Tableau, Gmail, Outlook, Google Calendar, Outlook Calendar",
+      "budget_range": "$50 - $150 per user per month",
+      "timeline": "within the next 2-3 months",
+      "seo_requirements": "No specific domain requirements for the CRM itself, nor any direct expectations for it to support external SEO or search visibility efforts.",
+      "user_accounts": "Users register via administrator invitation. Authentication uses email and password. Roles include Administrator (full access, user management, system settings, data), Sales Manager (view/manage team leads, deals, reports, assign tasks), and Sales Representative (view/manage own leads/deals, log activities, update pipeline stages)."
+    },
+    "transcript": [
+      [
+        "What are the main sections or screens you'll need in the CRM?",
+        "You'll need sections for:\n\n*   Dashboard\n*   Leads\n*   Contacts\n*   Accounts\n*   Deals/Opportunities\n*   Activities\n*   Reports"
+      ],
+      [
+        "What kind of look and feel are you aiming for with the CRM?",
+        "We're aiming for a clean, modern, and intuitive look and feel."
+      ],
+      [
+        "Do you have the content and copy for the CRM ready, or will it need to be created?",
+        "Our CRM comes with standard content and templates, but any custom content specific to your sales process would need to be created."
+      ],
+      [
+        "Do you have existing branding assets, such as logos, colors, or brand guidelines, that we should incorporate?",
+        "Yes, we have existing branding assets.\n\nOur primary logo features a stylized \"SalesFlow\" wordmark. Our main brand colors are a vibrant blue (#007bff) and a complementary light gray (#f8f9fa). We also have comprehensive brand guidelines that cover usage and application."
+      ],
+      [
+        "What are your preferred platforms for accessing the CRM (web, mobile, or both), and do you have any specific technology stack requirements or existing infrastructure?",
+        "We prefer both web and mobile access. We don't have specific technology stack requirements or existing infrastructure, but a cloud-based solution is preferred."
+      ],
+      [
+        "What specific third-party integrations, such as payment gateways, marketing automation platforms, or analytics tools, are essential for your CRM?",
+        "For payment gateways, I'd need integrations with Stripe or PayPal. For marketing automation, Mailchimp or HubSpot Marketing would be essential. For analytics, Google Analytics or Tableau would be important.\n\nI'd also consider integrations with Gmail or Outlook for email, and Google Calendar or Outlook Calendar for scheduling."
+      ],
+      [
+        "What is your budget range for this CRM solution?",
+        "Our budget range for this CRM solution is $50 - $150 per user per month."
+      ],
+      [
+        "What is your desired launch timeline or deadline for the CRM?",
+        "We're aiming to have it up and running within the next 2-3 months."
+      ],
+      [
+        "Are there any specific domain requirements for the CRM, or how it might support your external SEO and search visibility efforts?",
+        "No, there are no specific domain requirements for the CRM itself, nor any direct expectations for it to support external SEO or search visibility efforts."
+      ],
+      [
+        "How will users register and authenticate, and what different roles or permission levels will be needed within the CRM?",
+        "Users will register via an invitation sent by an administrator, and authenticate using their email and a password.\n\nFor roles and permission levels, the CRM will include:\n*   **Administrator:** Full access to all features, including user management, system settings, and data.\n*   **Sales Manager:** Can view and manage all leads, deals, and reports for their team, and assign tasks.\n*   **Sales Representative:** Can view and manage their own assigned leads and deals, log activities, and update pipeline stages."
+      ]
+    ],
+    "cov_by_turn": [
+      0.19938650306748465,
+      0.40899795501022496,
+      0.48568507157464214,
+      0.5572597137014315,
+      0.623721881390593,
+      0.6850715746421268,
+      0.7443762781186094,
+      0.8006134969325154,
+      0.8517382413087935,
+      0.8977505112474438,
+      0.9386503067484663
+    ],
+    "ablation": "full",
+    "domain": "Consulting",
+    "vagueness": "Ultra-vague"
+  },
+  {
+    "prompt_id": "N13",
+    "deployment": "telos",
+    "native_domain": null,
+    "final_cov": 0.943762781186094,
+    "n_turns": 9,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "main_content_purpose": "corporate intranet",
+      "target_audience": "Employees",
+      "core_features": "find documents, see the team directory, read announcements, submit IT helpdesk tickets",
+      "pages_structure": [
+        "Documents",
+        "Team Directory",
+        "Announcements",
+        "IT Helpdesk"
+      ],
+      "design_style": "clean, modern, and professional aesthetic, utilizing a primary corporate blue and a secondary accent color, complemented by a neutral palette of grays and whites. Typography will be a clear, sans-serif font for readability, and the layout will be intuitive and responsive.",
+      "existing_branding": "primary corporate blue and a secondary accent color, complemented by a neutral palette of grays and whites. Typography will be a clear, sans-serif font.",
+      "content_ready": "Some content is available, but a portion will need to be created or migrated.",
+      "technical_platform": "Microsoft SharePoint Online, with responsive web design for mobile access",
+      "integrations": "ServiceNow",
+      "budget_range": "$50,000 and $250,000",
+      "timeline": "six months",
+      "seo_requirements": "intranet.ourcompany.com",
+      "user_accounts": "Users will authenticate via Single Sign-On (SSO) integrated with your existing corporate directory, such as Azure Active Directory. User provisioning will be automated based on groups within that directory. User roles include Employee, Content Publisher, IT Helpdesk Agent, and Intranet Administrator, each with specific permission levels.",
+      "content_management": "Content Publishers will create, edit, and publish documents and announcements in designated sections."
+    },
+    "transcript": [
+      [
+        "What are the main pages or sections you envision for the intranet?",
+        "I envision the following main pages or sections:\n\n*   **Documents**\n*   **Team Directory**\n*   **Announcements**\n*   **IT Helpdesk**"
+      ],
+      [
+        "What visual style or branding do you envision for the intranet?",
+        "A clean, modern, and professional aesthetic, utilizing a primary corporate blue and a secondary accent color, complemented by a neutral palette of grays and whites. Typography will be a clear, sans-serif font for readability, and the layout will be intuitive and responsive."
+      ],
+      [
+        "Is the content for the intranet already prepared, or will it need to be created?",
+        "Some content is available, but a portion will need to be created or migrated."
+      ],
+      [
+        "Do you have any preferred technical platforms or technologies for the intranet, and what are your expectations for mobile access (e.g., responsive web, dedicated app)?",
+        "For technical platforms, we prefer **Microsoft SharePoint Online**. Regarding mobile access, we expect a **responsive web design** that works well on various devices."
+      ],
+      [
+        "Are there any third-party systems or applications that the intranet needs to integrate with, such as HR, CRM, or analytics tools?",
+        "Yes, the intranet needs to integrate with our existing IT helpdesk system, ServiceNow."
+      ],
+      [
+        "Do you have a budget range in mind for this intranet project?",
+        "A typical budget range for a corporate intranet project of this scope would be between $50,000 and $250,000."
+      ],
+      [
+        "What is your desired launch date or project completion timeline for the intranet?",
+        "We are aiming for a project completion timeline of six months."
+      ],
+      [
+        "What are your requirements for the intranet's domain name and its internal search capabilities?",
+        "For the intranet's domain name, we require it to be `intranet.ourcompany.com`, easily accessible from within the corporate network.\n\nRegarding internal search capabilities, the intranet must allow employees to perform keyword searches across all content types, including documents, announcements, and the team directory. Search results should be relevant, fast, and offer filtering options such as by document type, author, or date."
+      ],
+      [
+        "How will users authenticate and be provisioned for the intranet, and what different user roles or permission levels are required?",
+        "Users will authenticate via Single Sign-On (SSO) integrated with your existing corporate directory, such as Azure Active Directory. User provisioning will be automated based on groups within that directory.\n\nRegarding user roles, the following permission levels are required:\n\n*   **Employee:** Can view all public documents, the team directory, and announcements, and submit IT helpdesk tickets.\n*   **Content Publisher:** Can create, edit, and publish documents and announcements in designated sections.\n*   **IT Helpdesk Agent:** Can view, manage, and respond to submitted IT helpdesk tickets.\n*   **Intranet Administrator:** Has full administrative control over the intranet platform."
+      ]
+    ],
+    "cov_by_turn": [
+      0.28629856850715746,
+      0.3783231083844581,
+      0.5214723926380368,
+      0.5930470347648262,
+      0.65439672801636,
+      0.7137014314928425,
+      0.7699386503067485,
+      0.8210633946830266,
+      0.8670756646216768,
+      0.943762781186094
+    ],
+    "ablation": "full",
+    "domain": "Consulting",
+    "vagueness": "Medium"
+  },
+  {
+    "prompt_id": "P20",
+    "deployment": "telos",
+    "native_domain": null,
+    "final_cov": 0.9079754601226994,
+    "n_turns": 6,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "main_content_purpose": "Build a website and a mobile app for a home cleaning service. The website is to explain the service and allow customer bookings. The app is for cleaners to manage schedules, mark jobs complete, and track payments.",
+      "target_audience": "Customers (for booking and rating), Cleaners (for managing jobs and payments)",
+      "pages_structure": "Website: Service explanation pages, Booking page/flow. Mobile App: Daily schedule screen, Job completion screen, Payment/Earnings screen.",
+      "core_features": "Website: Service explanation, Customer booking. Mobile App: Cleaner daily schedule viewing, Job completion marking, Weekly payment tracking. General: Customer rating of cleaners, Push notifications for booking confirmations and reminders.",
+      "technical_platform": "Website, Mobile App",
+      "integrations": "Payment processing (for weekly cleaner payments), Push notification service",
+      "user_accounts": "Customer accounts (for booking and rating), Cleaner accounts (for job management and payments)",
+      "design_style": "clean, modern, and friendly aesthetic, using a palette of soft blues, greens, and whites",
+      "content_ready": "needs creation",
+      "existing_branding": "from scratch",
+      "budget_range": "$30,000 - $70,000",
+      "timeline": "October 15, 2024",
+      "seo_requirements": "Domain name easy to remember, relevant to home cleaning, ideally .com. Focus on local keywords (e.g., \"home cleaning [your city]\", \"house cleaning service [your city]\"), mobile-friendly site, and a Google My Business profile."
+    },
+    "transcript": [
+      [
+        "What visual style or aesthetic do you have in mind for the website and app?",
+        "For the website and app, I envision a clean, modern, and friendly aesthetic, using a palette of soft blues, greens, and whites."
+      ],
+      [
+        "Is the content for the website and app already prepared, or will it need to be created?",
+        "The content for both the website and the app will need to be created."
+      ],
+      [
+        "Do you have an existing logo or any brand guidelines, or will we be creating the branding from scratch based on the aesthetic you described?",
+        "We will be creating the branding from scratch."
+      ],
+      [
+        "Do you have a budget range in mind for the development of the website and app?",
+        "A typical budget range for a project of this scope would be between $30,000 and $70,000."
+      ],
+      [
+        "When would you ideally like to launch the website and app?",
+        "Ideally, I'd like to launch both the website and the app by October 15, 2024."
+      ],
+      [
+        "What are your SEO and domain name requirements for the website?",
+        "For the website, the domain name should be easy to remember, relevant to home cleaning, and ideally end in .com. For SEO, we'll focus on local keywords like \"home cleaning [your city]\" and \"house cleaning service [your city]\", ensuring the site is mobile-friendly and has a Google My Business profile."
+      ]
+    ],
+    "cov_by_turn": [
+      0.5398773006134969,
+      0.6165644171779141,
+      0.6881390593047034,
+      0.754601226993865,
+      0.810838445807771,
+      0.8619631901840491,
+      0.9079754601226994
+    ],
+    "ablation": "full",
+    "domain": "Consulting",
+    "vagueness": "Detailed"
+  },
+  {
+    "prompt_id": "N64",
+    "deployment": "rad_assist",
+    "native_domain": null,
+    "final_cov": 0.9306930693069307,
+    "n_turns": 4,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "primary_site": "breast",
+      "stage_classification": "stage IIB (T2N1), ypT2ypN1mi",
+      "treatment_received": "Neoadjuvant carboplatin AUC5 + paclitaxel 80mg/m² weekly ×12, Post-mastectomy, physiotherapy started",
+      "histology_subtype": "triple-negative",
+      "response_to_treatment": "partial response (pCR not achieved)",
+      "biomarkers": "BRCA2 germline mutation",
+      "comorbidities": "Lymphedema",
+      "patient_demographics": "61-year-old female, premenopausal, 1 child",
+      "treatment_plan": "Adjuvant capecitabine (8 cycles, 1250mg/m² BD D1-14 Q21), Genetic counselling referral",
+      "patient_preferences": "asking about fertility preservation",
+      "performance_status": "ECOG 1",
+      "current_medications": "adjuvant capecitabine, 1250 mg/m² twice daily on days 1-14 of a 21-day cycle, for a total of 8 cycles",
+      "imaging_findings": "CT scan of the chest, abdomen, and pelvis showed no evidence of distant metastatic disease.",
+      "lab_values": {
+        "CBC": {
+          "WBC": "4.5 x 10^9/L",
+          "Hemoglobin": "11.8 g/dL",
+          "Platelets": "200 x 10^9/L"
+        },
+        "Renal Function": {
+          "Creatinine": "0.8 mg/dL",
+          "eGFR": "75 mL/min/1.73m²"
+        },
+        "Liver Function": {
+          "AST": "25 U/L",
+          "ALT": "28 U/L",
+          "Alkaline Phosphatase": "80 U/L",
+          "Total Bilirubin": "0.6 mg/dL"
+        }
+      }
+    },
+    "transcript": [
+      [
+        "What is her current ECOG performance status or Karnofsky score?",
+        "Her ECOG performance status is 1."
+      ],
+      [
+        "What medications is she currently taking, including their dosages?",
+        "She is currently taking adjuvant capecitabine, 1250 mg/m² twice daily on days 1-14 of a 21-day cycle, for a total of 8 cycles."
+      ],
+      [
+        "What were the findings of her most recent imaging studies (e.g., CT, MRI, PET)?",
+        "A recent CT scan of the chest, abdomen, and pelvis showed no evidence of distant metastatic disease."
+      ],
+      [
+        "What are her most recent lab results, including CBC, renal function, and liver function?",
+        "Her most recent lab results are:\n\n**CBC:**\n*   WBC: 4.5 x 10^9/L\n*   Hemoglobin: 11.8 g/dL\n*   Platelets: 200 x 10^9/L\n\n**Renal Function:**\n*   Creatinine: 0.8 mg/dL\n*   eGFR: 75 mL/min/1.73m²\n\n**Liver Function:**\n*   AST: 25 U/L\n*   ALT: 28 U/L\n*   Alkaline Phosphatase: 80 U/L\n*   Total Bilirubin: 0.6 mg/dL"
+      ]
+    ],
+    "cov_by_turn": [
+      0.6782178217821783,
+      0.7574257425742574,
+      0.8267326732673267,
+      0.8861386138613861,
+      0.9306930693069307
+    ],
+    "ablation": "full",
+    "domain": "Medical",
+    "vagueness": "Detailed"
+  },
+  {
+    "prompt_id": "N42",
+    "deployment": "rad_assist",
+    "native_domain": null,
+    "final_cov": 0.9356435643564357,
+    "n_turns": 5,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "primary_site": "lung",
+      "stage_classification": "stage IVB",
+      "treatment_received": "osimertinib 80mg daily",
+      "histology_subtype": "NSCLC",
+      "performance_status": "Tolerating treatment well",
+      "response_to_treatment": "stable disease",
+      "current_medications": "osimertinib 80mg daily",
+      "biomarkers": "EGFR-mutant (exon 19 deletion)",
+      "imaging_findings": "6-month restaging CT shows stable disease, no new lesions",
+      "follow_up_schedule": "6-month restaging CT",
+      "comorbidities": "No other medical conditions are specified.",
+      "patient_demographics": "Age: 68, Sex: female, Weight: 150 lbs",
+      "lab_values": {
+        "CBC": {
+          "WBC": "6.5 K/uL",
+          "Hemoglobin": "13.2 g/dL",
+          "Platelets": "250 K/uL"
+        },
+        "Renal Function": {
+          "Creatinine": "0.8 mg/dL",
+          "BUN": "15 mg/dL"
+        },
+        "Liver Function": {
+          "AST": "25 U/L",
+          "ALT": "28 U/L",
+          "Total Bilirubin": "0.6 mg/dL"
+        }
+      },
+      "treatment_plan": "continue osimertinib 80mg daily"
+    },
+    "transcript": [
+      [
+        "What other medical conditions does the patient have?",
+        "No other medical conditions are specified."
+      ],
+      [
+        "What is the patient's age, sex, and weight?",
+        "The patient is a 68-year-old female weighing 150 lbs."
+      ],
+      [
+        "What are the patient's recent CBC, renal function, and liver function lab results?",
+        "The recent lab results are as follows:\n\n*   **CBC:**\n    *   WBC: 6.5 K/uL\n    *   Hemoglobin: 13.2 g/dL\n    *   Platelets: 250 K/uL\n*   **Renal Function:**\n    *   Creatinine: 0.8 mg/dL\n    *   BUN: 15 mg/dL\n*   **Liver Function:**\n    *   AST: 25 U/L\n    *   ALT: 28 U/L\n    *   Total Bilirubin: 0.6 mg/dL"
+      ],
+      [
+        "What is the current treatment plan for this patient?",
+        "The patient is currently on osimertinib 80mg daily."
+      ],
+      [
+        "What are the planned next steps in her treatment?",
+        "Given the stable disease and good tolerability, the plan is to continue osimertinib 80mg daily."
+      ]
+    ],
+    "cov_by_turn": [
+      0.7475247524752475,
+      0.801980198019802,
+      0.8514851485148515,
+      0.8960396039603961,
+      0.8960396039603961,
+      0.9356435643564357
+    ],
+    "ablation": "full",
+    "domain": "Medical",
+    "vagueness": "Medium"
+  },
+  {
+    "prompt_id": "N41",
+    "deployment": "rad_assist",
+    "native_domain": null,
+    "final_cov": 0.9356435643564357,
+    "n_turns": 9,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "primary_site": "colon",
+      "stage_classification": "stage III colon cancer (T3N2M0)",
+      "treatment_received": "8 cycles of FOLFOX adjuvant chemotherapy",
+      "performance_status": "No current symptoms",
+      "biomarkers": "CEA",
+      "patient_demographics": "55-year-old male",
+      "follow_up_schedule": "CT every 6 months, CEA monthly",
+      "histology_subtype": "adenocarcinoma",
+      "response_to_treatment": "Primary tumor surgically removed",
+      "current_medications": "Aspirin 81 mg daily",
+      "imaging_findings": "CT scan showed no evidence of recurrent disease",
+      "comorbidities": "none",
+      "lab_values": {
+        "CBC": {
+          "WBC": "7.2 x 10^9/L",
+          "Hemoglobin": "14.8 g/dL",
+          "Platelets": "285 x 10^9/L"
+        },
+        "Renal Function": {
+          "Creatinine": "0.9 mg/dL",
+          "BUN": "15 mg/dL"
+        },
+        "Liver Function": {
+          "AST": "28 U/L",
+          "ALT": "35 U/L",
+          "Alkaline Phosphatase": "85 U/L",
+          "Total Bilirubin": "0.6 mg/dL"
+        }
+      },
+      "treatment_plan": "Surveillance, including CT scans every 6 months and CEA blood tests monthly."
+    },
+    "transcript": [
+      [
+        "What is the specific histological subtype of the colon cancer?",
+        "The histological subtype of the colon cancer is adenocarcinoma."
+      ],
+      [
+        "What was the response to the adjuvant FOLFOX chemotherapy?",
+        "The adjuvant FOLFOX chemotherapy was completed as planned."
+      ],
+      [
+        "What was the treatment response to the FOLFOX chemotherapy?",
+        "The FOLFOX chemotherapy was completed as planned."
+      ],
+      [
+        "After the FOLFOX chemotherapy, what was the status of the cancer? Did it shrink, disappear, stay the same, or grow?",
+        "The primary tumor was surgically removed before you started FOLFOX adjuvant chemotherapy."
+      ],
+      [
+        "What medications is the patient currently taking, including their dosages?",
+        "The patient is currently taking Aspirin 81 mg daily."
+      ],
+      [
+        "What were the findings of the imaging performed after the completion of adjuvant chemotherapy?",
+        "The CT scan performed after the completion of adjuvant chemotherapy showed no evidence of recurrent disease."
+      ],
+      [
+        "What other medical conditions does the patient have?",
+        "The patient has no other specified medical conditions."
+      ],
+      [
+        "What are the most recent lab results, including CBC, renal, and liver function?",
+        "The most recent lab results are:\n\n*   **CBC:**\n    *   WBC: 7.2 x 10^9/L\n    *   Hemoglobin: 14.8 g/dL\n    *   Platelets: 285 x 10^9/L\n*   **Renal Function:**\n    *   Creatinine: 0.9 mg/dL\n    *   BUN: 15 mg/dL\n*   **Liver Function:**\n    *   AST: 28 U/L\n    *   ALT: 35 U/L\n    *   Alkaline Phosphatase: 85 U/L\n    *   Total Bilirubin: 0.6 mg/dL"
+      ],
+      [
+        "What are the complete planned next steps in the patient's treatment?",
+        "The patient is starting surveillance, which includes CT scans every 6 months and CEA blood tests monthly."
+      ]
+    ],
+    "cov_by_turn": [
+      0.5099009900990099,
+      0.594059405940594,
+      0.594059405940594,
+      0.594059405940594,
+      0.6683168316831684,
+      0.7376237623762376,
+      0.7970297029702971,
+      0.8514851485148515,
+      0.8960396039603961,
+      0.9356435643564357
+    ],
+    "ablation": "full",
+    "domain": "Medical",
+    "vagueness": "Medium"
+  },
+  {
+    "prompt_id": "N48",
+    "deployment": "rad_assist",
+    "native_domain": null,
+    "final_cov": 0.9356435643564357,
+    "n_turns": 5,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "primary_site": "CLL",
+      "stage_classification": "Rai stage III",
+      "treatment_received": "ibrutinib 420mg daily",
+      "histology_subtype": "CLL",
+      "response_to_treatment": "WBC down from 142k to 38k, Hb stable at 10.2g/dL. No significant side effects.",
+      "current_medications": "ibrutinib 420mg daily",
+      "patient_demographics": "71-year-old female",
+      "lab_values": "WBC down from 142k to 38k, Hb stable at 10.2g/dL",
+      "treatment_plan": "Surveillance CT scheduled",
+      "performance_status": "ECOG 1",
+      "biomarkers": "IGHV mutational status unmutated, del(17p) on FISH",
+      "imaging_findings": "No findings to report from surveillance CT yet as it is scheduled.",
+      "comorbidities": "None mentioned",
+      "follow_up_schedule": "clinical visits every 2-3 months, lab tests (including a complete blood count) monthly, a surveillance CT scan scheduled"
+    },
+    "transcript": [
+      [
+        "What is her performance status (e.g., ECOG or Karnofsky score)?",
+        "Her ECOG performance status is 1."
+      ],
+      [
+        "What are the relevant molecular or genetic markers for her CLL?",
+        "Her IGHV mutational status is unmutated, and FISH analysis shows a del(17p)."
+      ],
+      [
+        "What were the key findings from her most recent imaging studies (CT, MRI, or PET)?",
+        "Her surveillance CT is scheduled, so there are no findings to report from it yet."
+      ],
+      [
+        "Does she have any other significant medical conditions or comorbidities, such as diabetes, hypertension, or cardiac issues?",
+        "No, there are no other significant medical conditions or comorbidities mentioned."
+      ],
+      [
+        "What is the planned follow-up schedule for her CLL, including the frequency of visits, lab tests, and imaging?",
+        "Her follow-up includes clinical visits every 2-3 months. Lab tests, including a complete blood count, are performed monthly. A surveillance CT scan is scheduled."
+      ]
+    ],
+    "cov_by_turn": [
+      0.6435643564356436,
+      0.7227722772277227,
+      0.7871287128712872,
+      0.8465346534653465,
+      0.900990099009901,
+      0.9356435643564357
+    ],
+    "ablation": "full",
+    "domain": "Medical",
+    "vagueness": "Medium"
+  },
+  {
+    "prompt_id": "N35",
+    "deployment": "rad_assist",
+    "native_domain": null,
+    "final_cov": 0.9356435643564357,
+    "n_turns": 11,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "treatment_received": "radiation",
+      "response_to_treatment": "Everything looks okay",
+      "follow_up_schedule": "Now in surveillance",
+      "primary_site": "prostate",
+      "stage_classification": "T2c N0 M0, Stage Group IIB",
+      "histology_subtype": "Acinar adenocarcinoma",
+      "performance_status": "ECOG 0",
+      "current_medications": "Lisinopril 10 mg once daily, Aspirin 81 mg once daily, Multivitamin once daily",
+      "biomarkers": "0.07 ng/mL",
+      "imaging_findings": "no evidence of disease recurrence",
+      "comorbidities": "hypertension (well-controlled)",
+      "patient_demographics": "Age: 62 years, Sex: female",
+      "lab_values": {
+        "CBC": {
+          "White Blood Cells": "6.5 x 10^9/L",
+          "Hemoglobin": "14.2 g/dL",
+          "Platelets": "250 x 10^9/L"
+        },
+        "Renal Function": {
+          "Creatinine": "0.8 mg/dL",
+          "BUN": "15 mg/dL",
+          "eGFR": ">90 mL/min/1.73m^2"
+        },
+        "Liver Function": {
+          "ALT": "25 U/L",
+          "AST": "20 U/L",
+          "Total Bilirubin": "0.6 mg/dL"
+        }
+      },
+      "treatment_plan": "follow-up visits every three months for the first year, then every six months for the next two years, and annually thereafter"
+    },
+    "transcript": [
+      [
+        "What was the primary cancer site?",
+        "The primary cancer site was the prostate."
+      ],
+      [
+        "What was the TNM staging or clinical stage of the prostate cancer?",
+        "The clinical stage was T2c N0 M0, which corresponds to Stage Group IIB."
+      ],
+      [
+        "What was the histological subtype of the prostate cancer?",
+        "Acinar adenocarcinoma."
+      ],
+      [
+        "What is the patient's performance status, such as their ECOG or Karnofsky score?",
+        "The patient's ECOG performance status is 0."
+      ],
+      [
+        "What current medications is the patient taking, including dosages?",
+        "The patient is currently taking:\n*   Lisinopril 10 mg once daily\n*   Aspirin 81 mg once daily\n*   Multivitamin once daily"
+      ],
+      [
+        "What is the most recent PSA level?",
+        "The most recent PSA level is 0.07 ng/mL."
+      ],
+      [
+        "What were the findings from the most recent imaging studies, such as CT, MRI, or PET scans?",
+        "The most recent imaging studies showed no evidence of disease recurrence. Everything looks okay."
+      ],
+      [
+        "What other medical conditions or comorbidities does the patient have?",
+        "The patient has well-controlled hypertension."
+      ],
+      [
+        "What is the patient's age and sex?",
+        "The patient is a 62-year-old female."
+      ],
+      [
+        "What are the results of the most recent CBC, renal function, and liver function tests?",
+        "Here are the results from the most recent tests:\n\n**CBC:**\n*   White Blood Cells: 6.5 x 10^9/L\n*   Hemoglobin: 14.2 g/dL\n*   Platelets: 250 x 10^9/L\n\n**Renal Function:**\n*   Creatinine: 0.8 mg/dL\n*   BUN: 15 mg/dL\n*   eGFR: >90 mL/min/1.73m^2\n\n**Liver Function:**\n*   ALT: 25 U/L\n*   AST: 20 U/L\n*   Total Bilirubin: 0.6 mg/dL"
+      ],
+      [
+        "What is the planned follow-up or surveillance schedule for this patient?",
+        "The patient is scheduled for follow-up visits every three months for the first year, then every six months for the next two years, and annually thereafter."
+      ]
+    ],
+    "cov_by_turn": [
+      0.19801980198019803,
+      0.297029702970297,
+      0.3910891089108911,
+      0.4752475247524752,
+      0.5544554455445545,
+      0.6237623762376238,
+      0.6881188118811881,
+      0.7475247524752475,
+      0.801980198019802,
+      0.8514851485148515,
+      0.8960396039603961,
+      0.9356435643564357
+    ],
+    "ablation": "full",
+    "domain": "Medical",
+    "vagueness": "Ultra-vague"
+  },
+  {
+    "prompt_id": "N99",
+    "deployment": "finagent",
+    "native_domain": "trading",
+    "final_cov": 0.794392523364486,
+    "n_turns": 3,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "risk_tolerance": "conservative",
+      "authorization_controls": "multi-sig custody",
+      "currency": "USD, ETH, GOLD",
+      "asset_type": "GOLD, USD, ETH",
+      "exchanges": "Polygon",
+      "reporting": "mandatory KYC (Onfido), AML controls",
+      "volume_per_trade": "$10,000",
+      "payment_from": "credit/debit cards (Visa, Mastercard), bank transfers, digital wallets (PayPal), Web3 wallets (MetaMask, WalletConnect-compatible)"
+    },
+    "transcript": [
+      [
+        "What is the maximum dollar amount allowed for a single transaction?",
+        "The maximum dollar amount allowed for a single transaction is $10,000."
+      ],
+      [
+        "From what accounts or wallets can players make payments to buy GOLD?",
+        "Players can make payments using USD or ETH."
+      ],
+      [
+        "What specific types of accounts or wallets can players use to make USD and ETH payments?",
+        "Players can use credit/debit cards (Visa, Mastercard), bank transfers, and digital wallets like PayPal for USD payments. For ETH payments, they can use Web3 wallets such as MetaMask or any WalletConnect-compatible wallet."
+      ]
+    ],
+    "cov_by_turn": [
+      0.4392523364485981,
+      0.6261682242990654,
+      0.6261682242990654,
+      0.794392523364486
+    ],
+    "ablation": "full",
+    "domain": "Payments",
+    "vagueness": "Detailed"
+  },
+  {
+    "prompt_id": "N77",
+    "deployment": "finagent",
+    "native_domain": "payroll",
+    "final_cov": 0.8504672897196262,
+    "n_turns": 5,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "volume_per_trade": "$480",
+      "currency": "USD",
+      "payment_from": "credit and debit cards",
+      "risk_tolerance": "moderate",
+      "authorization_controls": "No manual approval required; all automated via Stripe Billing.",
+      "daily_limit": "$35,000"
+    },
+    "transcript": [
+      [
+        "What's the highest price a customer might pay for a single subscription payment (like an annual plan) or a single box?",
+        "The highest price a customer might pay for a single subscription payment, such as an annual plan, could be $480."
+      ],
+      [
+        "What payment methods will your customers use?",
+        "Your customers will be able to pay using credit and debit cards."
+      ],
+      [
+        "How would you describe your general approach to business decisions for your subscription box: conservative, moderate, or aggressive?",
+        "My general approach to business decisions for the subscription box would be moderate."
+      ],
+      [
+        "Are there any scenarios where a subscription or payment would require manual approval?",
+        "No, based on your setup, there are no scenarios where a subscription or payment would require manual approval. All processes are automated through Stripe Billing."
+      ],
+      [
+        "What's the highest total amount you expect to process through your subscription box platform in a single day?",
+        "I expect to process up to $35,000 on the highest volume day."
+      ]
+    ],
+    "cov_by_turn": [
+      0.0,
+      0.22429906542056074,
+      0.3925233644859813,
+      0.5514018691588785,
+      0.7009345794392523,
+      0.8504672897196262
+    ],
+    "ablation": "full",
+    "domain": "Payments",
+    "vagueness": "Medium"
+  },
+  {
+    "prompt_id": "N76",
+    "deployment": "finagent",
+    "native_domain": "trading",
+    "final_cov": 0.8037383177570093,
+    "n_turns": 2,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "volume_per_trade": "300 USD",
+      "authorization_controls": "automatic",
+      "currency": "USD",
+      "asset_type": "BTC, ETH",
+      "exchanges": "Coinbase",
+      "stop_loss": "total portfolio drops more than 30% from all-time high",
+      "payment_from": "linked bank account",
+      "risk_tolerance": "Aggressive"
+    },
+    "transcript": [
+      [
+        "Where should the $500/week come from?",
+        "The $500/week will come from a linked bank account."
+      ],
+      [
+        "Would you describe your risk tolerance for this crypto investment as conservative, moderate, or aggressive?",
+        "Aggressive."
+      ]
+    ],
+    "cov_by_turn": [
+      0.4766355140186916,
+      0.6448598130841121,
+      0.8037383177570093
+    ],
+    "ablation": "full",
+    "domain": "Payments",
+    "vagueness": "Medium"
+  },
+  {
+    "prompt_id": "N83",
+    "deployment": "finagent",
+    "native_domain": "payroll",
+    "final_cov": 0.8785046728971962,
+    "n_turns": 5,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "currency": "EUR",
+      "trading_schedule": "No conversion during weekends",
+      "volume_per_trade": "50,000 EUR",
+      "payment_from": "bank transfers (SWIFT, SEPA, ACH, Faster Payments, local AED transfers), Stripe, PayPal",
+      "risk_tolerance": "moderate",
+      "daily_limit": "€100,000",
+      "authorization_controls": "Customizable approval workflows; e.g., two approvers for payments > €5,000. Human review for potentially fraudulent transactions, payments to new beneficiaries > €10,000, unusual activity, or high-risk jurisdictions."
+    },
+    "transcript": [
+      [
+        "What's the maximum amount you anticipate for a single incoming payment or transaction?",
+        "I anticipate a maximum of 50,000 EUR for a single incoming payment or transaction."
+      ],
+      [
+        "From what types of accounts or wallets will you be receiving these payments?",
+        "I will be receiving payments from various sources, including bank transfers (SWIFT, SEPA, ACH, Faster Payments, and local AED transfers) and payment gateways like Stripe and PayPal."
+      ],
+      [
+        "How would you describe your business's risk tolerance regarding currency exchange rates and financial products (e.g., conservative, moderate, aggressive)?",
+        "My business's risk tolerance regarding currency exchange rates is moderate. I aim to optimize conversions by seeking the best available rate at month-end, but I prefer a structured, automated approach rather than active, speculative trading."
+      ],
+      [
+        "What's your anticipated cumulative daily limit for spending or currency exchange?",
+        "The anticipated cumulative daily limit for spending or currency exchange is €100,000."
+      ],
+      [
+        "What are your authorization and approval requirements for transactions, and are there any scenarios that would require human review or approval?",
+        "We offer customizable approval workflows for transactions. For example, you can set up a requirement for two approvers for payments exceeding €5,000.\n\nScenarios that typically require human review or approval include:\n*   Transactions flagged as potentially fraudulent.\n*   Payments to new beneficiaries above a certain threshold, such as €10,000.\n*   Unusual activity or transactions to high-risk jurisdictions."
+      ]
+    ],
+    "cov_by_turn": [
+      0.06542056074766354,
+      0.2523364485981308,
+      0.4205607476635514,
+      0.5794392523364486,
+      0.7289719626168224,
+      0.8785046728971962
+    ],
+    "ablation": "full",
+    "domain": "Payments",
+    "vagueness": "Medium"
+  },
+  {
+    "prompt_id": "N70",
+    "deployment": "finagent",
+    "native_domain": "trading",
+    "final_cov": 0.8598130841121495,
+    "n_turns": 5,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "asset_type": "NFT",
+      "volume_per_trade": "$250",
+      "payment_from": "MetaMask",
+      "risk_tolerance": "conservative",
+      "daily_limit": "$50",
+      "authorization_controls": "The AI does not approve trades as it does not engage in NFT trading."
+    },
+    "transcript": [
+      [
+        "What's the maximum you'd like to spend on a single NFT trade?",
+        "I'd like to keep the maximum spend on a single NFT trade to around $250."
+      ],
+      [
+        "Which wallet or account will you be using for these purchases?",
+        "I recommend using MetaMask."
+      ],
+      [
+        "How comfortable are you with the risks of NFT trading? Are you looking for safer options, or are you willing to take on more risk for potentially bigger gains?",
+        "I'm looking for safer options and want to keep the risk low, especially since I don't want to spend too much."
+      ],
+      [
+        "What's the maximum total amount you'd like to spend on NFTs per day?",
+        "I'd like to keep it to a maximum of $50 per day."
+      ],
+      [
+        "Do you want to manually approve every NFT trade?",
+        "As an AI, I don't engage in NFT trading myself, so I don't approve trades."
+      ]
+    ],
+    "cov_by_turn": [
+      0.04672897196261682,
+      0.2336448598130841,
+      0.40186915887850466,
+      0.5607476635514018,
+      0.7102803738317757,
+      0.8598130841121495
+    ],
+    "ablation": "full",
+    "domain": "Payments",
+    "vagueness": "Ultra-vague"
+  }
+]

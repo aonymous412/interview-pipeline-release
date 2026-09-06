@@ -1,0 +1,19 @@
+Anonymised research release — licence notice
+
+Copyright (c) 2026 the authors of "Knowing When to Stop Asking: A Formal
+Coverage Criterion for Multi-Turn User Intent Understanding"
+(names withheld for double-blind review).
+
+Permission is granted to reviewers and researchers to download, run, inspect
+and modify this code and data for the purpose of evaluating, verifying and
+reproducing the results reported in the paper, and for non-commercial research.
+Redistribution of this anonymised release is not permitted while the paper is
+under review. On acceptance the same material, plus the fine-tuned adapters
+omitted here for size, will be re-published in a permanent public repository
+under a licence permitting free use for research purposes.
+
+Third-party data are subject to their own terms: MIMIC-CXR is not included
+(see DATA_ACCESS.md) and must be obtained under the PhysioNet Credentialed
+Health Data Use Agreement.
+
+THE MATERIAL IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.

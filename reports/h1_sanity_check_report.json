@@ -1,0 +1,154 @@
+{
+  "note": "Contrôle descriptif — ne prouve PAS H1' (confondu par la politique d'interview). Voir docstring.",
+  "domains": {
+    "Consulting": {
+      "n_episodes": 50,
+      "n_params": 17,
+      "n_params_active": 6,
+      "n_params_constant": 11,
+      "n_clusters": 5,
+      "clusters": [
+        [
+          "main_content_purpose",
+          "target_audience",
+          "budget_range",
+          "timeline"
+        ],
+        [
+          "pages_structure",
+          "core_features",
+          "integrations",
+          "seo_requirements",
+          "user_accounts",
+          "analytics_needs",
+          "multilingual_support",
+          "accessibility"
+        ],
+        [
+          "design_style",
+          "existing_branding"
+        ],
+        [
+          "content_ready",
+          "content_management"
+        ],
+        [
+          "technical_platform"
+        ]
+      ],
+      "mean_abs_corr_intra": 0.1611,
+      "mean_abs_corr_inter": 0.2787,
+      "n_pairs_intra": 10,
+      "n_pairs_inter": 5,
+      "permutation_test_brut": {
+        "null_mean_abs_corr_inter": 0.1205,
+        "p_value_inter_gt_chance": 0.0006,
+        "B": 5000,
+        "interpretation": "inter-clusters AU-DESSUS du hasard (p<0.05) → tension avec H1'"
+      },
+      "controle_vaguesse": {
+        "mean_abs_partial_corr_intra": 0.1691,
+        "mean_abs_partial_corr_inter": 0.2846,
+        "null_mean_abs_partial_corr_inter": 0.1259,
+        "p_value_inter_gt_chance": 0.0006,
+        "interpretation": "inter-clusters AU-DESSUS du hasard même en contrôlant la difficulté (p<0.05) → tension persiste"
+      }
+    },
+    "Medical": {
+      "n_episodes": 50,
+      "n_params": 17,
+      "n_params_active": 11,
+      "n_params_constant": 6,
+      "n_clusters": 5,
+      "clusters": [
+        [
+          "primary_site",
+          "histology_subtype",
+          "biomarkers",
+          "family_history"
+        ],
+        [
+          "stage_classification",
+          "treatment_received",
+          "response_to_treatment",
+          "treatment_plan",
+          "follow_up_schedule"
+        ],
+        [
+          "performance_status",
+          "comorbidities",
+          "patient_demographics",
+          "patient_preferences"
+        ],
+        [
+          "current_medications",
+          "contraindications"
+        ],
+        [
+          "imaging_findings",
+          "lab_values"
+        ]
+      ],
+      "mean_abs_corr_intra": 0.2215,
+      "mean_abs_corr_inter": 0.1876,
+      "n_pairs_intra": 8,
+      "n_pairs_inter": 47,
+      "permutation_test_brut": {
+        "null_mean_abs_corr_inter": 0.0854,
+        "p_value_inter_gt_chance": 0.0002,
+        "B": 5000,
+        "interpretation": "inter-clusters AU-DESSUS du hasard (p<0.05) → tension avec H1'"
+      },
+      "controle_vaguesse": {
+        "mean_abs_partial_corr_intra": 0.227,
+        "mean_abs_partial_corr_inter": 0.1788,
+        "null_mean_abs_partial_corr_inter": 0.0701,
+        "p_value_inter_gt_chance": 0.0002,
+        "interpretation": "inter-clusters AU-DESSUS du hasard même en contrôlant la difficulté (p<0.05) → tension persiste"
+      }
+    },
+    "Payments": {
+      "n_episodes": 50,
+      "n_params": 11,
+      "n_params_active": 9,
+      "n_params_constant": 2,
+      "n_clusters": 3,
+      "clusters": [
+        [
+          "volume_per_trade",
+          "payment_from",
+          "daily_limit",
+          "currency"
+        ],
+        [
+          "risk_tolerance",
+          "stop_loss"
+        ],
+        [
+          "authorization_controls",
+          "asset_type",
+          "exchanges",
+          "trading_schedule",
+          "reporting"
+        ]
+      ],
+      "mean_abs_corr_intra": 0.2267,
+      "mean_abs_corr_inter": 0.233,
+      "n_pairs_intra": 12,
+      "n_pairs_inter": 24,
+      "permutation_test_brut": {
+        "null_mean_abs_corr_inter": 0.1151,
+        "p_value_inter_gt_chance": 0.0002,
+        "B": 5000,
+        "interpretation": "inter-clusters AU-DESSUS du hasard (p<0.05) → tension avec H1'"
+      },
+      "controle_vaguesse": {
+        "mean_abs_partial_corr_intra": 0.2082,
+        "mean_abs_partial_corr_inter": 0.2017,
+        "null_mean_abs_partial_corr_inter": 0.1197,
+        "p_value_inter_gt_chance": 0.0002,
+        "interpretation": "inter-clusters AU-DESSUS du hasard même en contrôlant la difficulté (p<0.05) → tension persiste"
+      }
+    }
+  }
+}

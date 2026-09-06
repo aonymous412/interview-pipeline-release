@@ -1,0 +1,35 @@
+{
+  "ALI_v1": {
+    "n": 150,
+    "mean_cov": 0.8905,
+    "std_cov": 0.0529,
+    "ci": [
+      0.8819,
+      0.8988
+    ],
+    "mean_turns": 6.93,
+    "formal_stop": true
+  },
+  "ALI_v2": {
+    "n": 150,
+    "mean_cov": 0.8941,
+    "std_cov": 0.0576,
+    "ci": [
+      0.885,
+      0.9032
+    ],
+    "mean_turns": 6.99,
+    "formal_stop": true
+  },
+  "ALI_v3": {
+    "n": 150,
+    "mean_cov": 0.5156,
+    "std_cov": 0.3252,
+    "ci": [
+      0.4639,
+      0.5698
+    ],
+    "mean_turns": 12.86,
+    "formal_stop": true
+  }
+}

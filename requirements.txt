@@ -1,0 +1,10 @@
+# Pinned to the environment in which the archive was last verified (verify_numbers.py: ALL CHECKS PASSED).
+# Offline verification and analysis need only the first four lines.
+numpy==2.4.2
+scipy==1.17.1
+pandas==3.0.1
+scikit-learn==1.9.0
+# Re-running the pipeline (hosted models) additionally needs:
+sentence-transformers==5.6.0
+google-genai==1.71.0
+anthropic==0.84.0

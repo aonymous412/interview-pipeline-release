@@ -1,0 +1,159 @@
+{
+  "generated_at": "2026-06-30T00:22:56.186822+00:00",
+  "seed": 42,
+  "max_turns": 15,
+  "scorer": "gemini-2.5-flash",
+  "oracle": "gemma3:4b (Ollama) for llama/gemini; llama3.1:8b (Ollama) for gemma",
+  "models": {
+    "llama3.1_8b_multiturn": {
+      "n_total": 50,
+      "n_valid": 50,
+      "overall": {
+        "mean_cov": 0.4748,
+        "std_cov": 0.1727,
+        "median_cov": 0.4785,
+        "min_cov": 0.1308,
+        "max_cov": 0.9208,
+        "mean_turns": 5.9,
+        "done_rate": 1.0
+      },
+      "by_domain": {
+        "Consulting": {
+          "n": 20,
+          "mean_cov": 0.4615,
+          "std_cov": 0.1038,
+          "mean_turns": 6.0
+        },
+        "Medical": {
+          "n": 15,
+          "mean_cov": 0.4964,
+          "std_cov": 0.2033,
+          "mean_turns": 5.8
+        },
+        "Payments": {
+          "n": 15,
+          "mean_cov": 0.471,
+          "std_cov": 0.2074,
+          "mean_turns": 5.9
+        }
+      },
+      "by_vagueness": {
+        "Ultra-vague": {
+          "n": 14,
+          "mean_cov": 0.3473,
+          "std_cov": 0.1289
+        },
+        "Medium": {
+          "n": 22,
+          "mean_cov": 0.4538,
+          "std_cov": 0.1328
+        },
+        "Detailed": {
+          "n": 14,
+          "mean_cov": 0.6354,
+          "std_cov": 0.1395
+        }
+      }
+    },
+    "gemma3_4b_multiturn": {
+      "n_total": 50,
+      "n_valid": 50,
+      "overall": {
+        "mean_cov": 0.422,
+        "std_cov": 0.1803,
+        "median_cov": 0.4141,
+        "min_cov": 0.0374,
+        "max_cov": 0.802,
+        "mean_turns": 4.2,
+        "done_rate": 1.0
+      },
+      "by_domain": {
+        "Consulting": {
+          "n": 20,
+          "mean_cov": 0.4156,
+          "std_cov": 0.1,
+          "mean_turns": 4.1
+        },
+        "Medical": {
+          "n": 15,
+          "mean_cov": 0.505,
+          "std_cov": 0.1866,
+          "mean_turns": 4.3
+        },
+        "Payments": {
+          "n": 15,
+          "mean_cov": 0.3477,
+          "std_cov": 0.2185,
+          "mean_turns": 4.2
+        }
+      },
+      "by_vagueness": {
+        "Ultra-vague": {
+          "n": 14,
+          "mean_cov": 0.3213,
+          "std_cov": 0.1517
+        },
+        "Medium": {
+          "n": 22,
+          "mean_cov": 0.3854,
+          "std_cov": 0.1326
+        },
+        "Detailed": {
+          "n": 14,
+          "mean_cov": 0.5803,
+          "std_cov": 0.1677
+        }
+      }
+    },
+    "gemini-2.5-flash_multiturn": {
+      "n_total": 50,
+      "n_valid": 50,
+      "overall": {
+        "mean_cov": 0.5283,
+        "std_cov": 0.1582,
+        "median_cov": 0.5299,
+        "min_cov": 0.2079,
+        "max_cov": 0.8911,
+        "mean_turns": 7.0,
+        "done_rate": 0.98
+      },
+      "by_domain": {
+        "Consulting": {
+          "n": 20,
+          "mean_cov": 0.4929,
+          "std_cov": 0.1179,
+          "mean_turns": 6.5
+        },
+        "Medical": {
+          "n": 15,
+          "mean_cov": 0.5693,
+          "std_cov": 0.1933,
+          "mean_turns": 7.5
+        },
+        "Payments": {
+          "n": 15,
+          "mean_cov": 0.5346,
+          "std_cov": 0.1555,
+          "mean_turns": 7.1
+        }
+      },
+      "by_vagueness": {
+        "Ultra-vague": {
+          "n": 14,
+          "mean_cov": 0.4435,
+          "std_cov": 0.1323
+        },
+        "Medium": {
+          "n": 22,
+          "mean_cov": 0.5091,
+          "std_cov": 0.1482
+        },
+        "Detailed": {
+          "n": 14,
+          "mean_cov": 0.6434,
+          "std_cov": 0.1279
+        }
+      }
+    }
+  }
+}

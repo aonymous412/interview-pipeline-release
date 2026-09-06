@@ -1,0 +1,2805 @@
+[
+  {
+    "prompt_id": "P36",
+    "deployment": "finagent",
+    "native_domain": "trading",
+    "final_cov": 0.9252336448598131,
+    "n_turns": 6,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "volume_per_trade": "$100",
+      "currency": "USD",
+      "payment_from": "Coinbase account",
+      "exchanges": "Coinbase",
+      "risk_tolerance": "conservative",
+      "daily_limit": "$100",
+      "authorization_controls": "Daily spending limit of $50",
+      "asset_type": "Bitcoin (BTC), Ethereum (ETH)"
+    },
+    "transcript": [
+      [
+        "To clarify \"don't go crazy with the spending,\" what's the maximum dollar amount you'd want to put into a single trade?",
+        "For a single trade, I'd want to put in a maximum of $100."
+      ],
+      [
+        "What account or wallet will you be using to fund these trades?",
+        "I will be using a Coinbase account."
+      ],
+      [
+        "How would you describe your general approach to investing in crypto: conservative, moderate, or aggressive?",
+        "My general approach to investing in crypto would be conservative."
+      ],
+      [
+        "What's the maximum total amount you'd want to trade or spend in a single day?",
+        "I'd want to trade or spend a maximum of $100 in a single day."
+      ],
+      [
+        "Would you like to set up any approval steps or rules for your trades?",
+        "Yes, let's set a rule. How about a daily spending limit of $50?"
+      ],
+      [
+        "Which specific cryptocurrencies would you like to trade?",
+        "I'd suggest starting with Bitcoin (BTC) and Ethereum (ETH)."
+      ]
+    ],
+    "cov_by_turn": [
+      0.0,
+      0.22429906542056074,
+      0.4205607476635514,
+      0.5794392523364486,
+      0.7289719626168224,
+      0.8785046728971962,
+      0.9252336448598131
+    ],
+    "config": "ALI_v1_theta0.9",
+    "theta": 0.9,
+    "vagueness": "Ultra-vague",
+    "domain": "Payments",
+    "baseline_cov": 0.6075
+  },
+  {
+    "prompt_id": "P37",
+    "deployment": "finagent",
+    "native_domain": "payroll",
+    "final_cov": 0.9252336448598131,
+    "n_turns": 8,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "volume_per_trade": "$15,000",
+      "currency": "USD",
+      "payment_from": "credit cards (Visa, Mastercard, American Express, Discover), digital wallets (Apple Pay, Google Pay)",
+      "risk_tolerance": "moderate",
+      "authorization_controls": "automated fraud detection, instant approvals, manual review for flagged transactions based on risk factors like unusually high value or suspicious activity patterns",
+      "daily_limit": "$10,000",
+      "asset_type": "e-books, online courses, software licenses",
+      "exchanges": "own website"
+    },
+    "transcript": [
+      [
+        "What's the maximum amount you expect for a single transaction?",
+        "The maximum amount for a single transaction is $15,000."
+      ],
+      [
+        "What payment methods will your customers use?",
+        "Your customers will be able to pay using credit cards (Visa, Mastercard, American Express, Discover) and digital wallets like Apple Pay and Google Pay."
+      ],
+      [
+        "How concerned are you about potential fraud or chargebacks?",
+        "I am moderately concerned about potential fraud or chargebacks."
+      ],
+      [
+        "Do you have any specific rules or requirements for approving transactions, such as manual review for certain payments?",
+        "Our system uses automated fraud detection. While most transactions are approved instantly, some may be flagged for manual review based on various risk factors, such as unusually high value or suspicious activity patterns."
+      ],
+      [
+        "What is the maximum total amount you expect to process through your website in a single day?",
+        "I expect to process a maximum total amount of $10,000 in a single day."
+      ],
+      [
+        "What types of goods or services will your customers be paying for?",
+        "My customers will be paying for consulting services."
+      ],
+      [
+        "Besides consulting services, what other specific types of goods, services, or digital items will customers be paying for?",
+        "Customers will also be paying for e-books, online courses, and software licenses."
+      ],
+      [
+        "Are you planning to sell your products on any specific third-party platforms or marketplaces?",
+        "No, I'm planning to sell directly on my own website."
+      ]
+    ],
+    "cov_by_turn": [
+      0.0,
+      0.22429906542056074,
+      0.3925233644859813,
+      0.5514018691588785,
+      0.7009345794392523,
+      0.8504672897196262,
+      0.8504672897196262,
+      0.897196261682243,
+      0.9252336448598131
+    ],
+    "config": "ALI_v1_theta0.9",
+    "theta": 0.9,
+    "vagueness": "Ultra-vague",
+    "domain": "Payments",
+    "baseline_cov": 0.2056
+  },
+  {
+    "prompt_id": "P38",
+    "deployment": "finagent",
+    "native_domain": "trading",
+    "final_cov": 0.9532710280373832,
+    "n_turns": 5,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "risk_tolerance": "conservative",
+      "exchanges": "Binance",
+      "volume_per_trade": "$10",
+      "payment_from": "Spot Wallet",
+      "daily_limit": "1% of the trading capital",
+      "authorization_controls": "API Key Permissions: Only enable 'Spot & Margin Trading' for the API key, and explicitly disable 'Enable Withdrawals.' IP Whitelisting: Enable IP whitelisting for the API key to restrict access to specific, trusted IP addresses.",
+      "stop_loss": "Daily loss limit of 1% of the trading capital.",
+      "asset_type": [
+        "BTC/USDT",
+        "ETH/USDT"
+      ],
+      "currency": "USDT"
+    },
+    "transcript": [
+      [
+        "What's the maximum dollar amount you're comfortable with for each individual trade?",
+        "For individual trades, I'm comfortable with a maximum of $10."
+      ],
+      [
+        "Which account or wallet should be used to fund these trades?",
+        "You should use your Spot Wallet to fund these trades."
+      ],
+      [
+        "Should the system automatically execute trades, or do you want to approve them first?",
+        "The system should automatically execute trades."
+      ],
+      [
+        "Beyond automatically executing trades, what other authorization rules or limits would you like to set for the automated trading?",
+        "I would set the following:\n\n*   **API Key Permissions:** Only enable \"Spot & Margin Trading\" for the API key, and explicitly disable \"Enable Withdrawals.\"\n*   **Daily Loss Limit:** A daily loss limit of 1% of the trading capital.\n*   **Maximum Position Size:** A maximum position size of 5% of the trading capital per trade.\n*   **IP Whitelisting:** Enable IP whitelisting for the API key to restrict access to specific, trusted IP addresses."
+      ],
+      [
+        "Which specific cryptocurrencies or trading pairs should the automated system be allowed to trade?",
+        "For low-risk automated trading, consider limiting the system to BTC/USDT and ETH/USDT."
+      ]
+    ],
+    "cov_by_turn": [
+      0.18691588785046728,
+      0.37383177570093457,
+      0.5420560747663551,
+      0.5420560747663551,
+      0.8691588785046729,
+      0.9532710280373832
+    ],
+    "config": "ALI_v1_theta0.9",
+    "theta": 0.9,
+    "vagueness": "Ultra-vague",
+    "domain": "Payments",
+    "baseline_cov": 0.8037
+  },
+  {
+    "prompt_id": "P39",
+    "deployment": "finagent",
+    "native_domain": "trading",
+    "final_cov": 0.9252336448598131,
+    "n_turns": 5,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "risk_tolerance": "conservative",
+      "asset_type": "ETH",
+      "volume_per_trade": "10000",
+      "payment_from": "self-custodial wallet",
+      "daily_limit": "25000",
+      "currency": "USD",
+      "authorization_controls": "human-in-the-loop confirmation via connected wallet after reviewing full transaction details (amount, recipient address)",
+      "exchanges": "Lido, Uniswap, Curve"
+    },
+    "transcript": [
+      [
+        "What's the maximum dollar amount you'd like to allocate to a single trade or transaction?",
+        "I'd like to allocate up to $10,000 to a single trade or transaction."
+      ],
+      [
+        "Which account or wallet should the funds come from?",
+        "Your self-custodial wallet."
+      ],
+      [
+        "What's the maximum total amount you'd like to spend or trade in a single day?",
+        "I'd be comfortable spending or trading up to $25,000 in a single day."
+      ],
+      [
+        "What kind of approval process or authorization steps would you like for these transactions?",
+        "For these transactions, I would like to review the full transaction details, including the amount and recipient address, and then confirm it through my connected wallet."
+      ],
+      [
+        "Which exchanges or platforms would you like to use for staking and providing liquidity?",
+        "For staking, I would suggest Lido. For providing liquidity, Uniswap and Curve are good options."
+      ]
+    ],
+    "cov_by_turn": [
+      0.205607476635514,
+      0.3925233644859813,
+      0.5607476635514018,
+      0.7476635514018691,
+      0.897196261682243,
+      0.9252336448598131
+    ],
+    "config": "ALI_v1_theta0.9",
+    "theta": 0.9,
+    "vagueness": "Ultra-vague",
+    "domain": "Payments",
+    "baseline_cov": 0.1121
+  },
+  {
+    "prompt_id": "P40",
+    "deployment": "finagent",
+    "native_domain": "trading",
+    "final_cov": 0.9252336448598131,
+    "n_turns": 6,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "volume_per_trade": "$5,000",
+      "currency": "USD",
+      "payment_from": "dedicated trading account",
+      "exchanges": "reputable exchange",
+      "risk_tolerance": "Moderate",
+      "daily_limit": "$10,000",
+      "authorization_controls": "Trades are executed automatically by the bot based on its strategy, implying no human authorization or approval is required for individual trades.",
+      "asset_type": "Bitcoin (BTC), Ethereum (ETH)"
+    },
+    "transcript": [
+      [
+        "What's the maximum dollar amount for each individual trade?",
+        "The maximum dollar amount for each individual trade is $5,000."
+      ],
+      [
+        "Which account or wallet should the bot use to fund these trades?",
+        "The bot should use a dedicated trading account linked to a reputable exchange."
+      ],
+      [
+        "How would you describe your risk tolerance for this bot: conservative, moderate, or aggressive?",
+        "Moderate."
+      ],
+      [
+        "What's the total daily trading limit for the bot?",
+        "The total daily trading limit for the bot is $10,000."
+      ],
+      [
+        "Will a human need to approve trades before they are executed?",
+        "No, the bot is designed to execute trades automatically based on its strategy."
+      ],
+      [
+        "What specific assets or instruments should the bot be allowed to trade?",
+        "The bot should be allowed to trade Bitcoin (BTC) and Ethereum (ETH)."
+      ]
+    ],
+    "cov_by_turn": [
+      0.0,
+      0.22429906542056074,
+      0.4205607476635514,
+      0.5794392523364486,
+      0.7289719626168224,
+      0.8785046728971962,
+      0.9252336448598131
+    ],
+    "config": "ALI_v1_theta0.9",
+    "theta": 0.9,
+    "vagueness": "Ultra-vague",
+    "domain": "Payments",
+    "baseline_cov": 0.0935
+  },
+  {
+    "prompt_id": "P41",
+    "deployment": "finagent",
+    "native_domain": "trading",
+    "final_cov": 0.9252336448598131,
+    "n_turns": 3,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "volume_per_trade": "$2,000",
+      "currency": "USD",
+      "asset_type": "Bitcoin, Ethereum",
+      "stop_loss": "$500 daily drawdown",
+      "payment_from": "personal savings account",
+      "risk_tolerance": "moderate",
+      "daily_limit": "$500",
+      "authorization_controls": "Account owner has full authorization to start, stop, or modify the automated trading system. Initial setup and any significant changes to the trading strategy will require the account owner's explicit approval."
+    },
+    "transcript": [
+      [
+        "Where will the funds for your $10,000 portfolio come from?",
+        "My personal savings account."
+      ],
+      [
+        "How would you describe your overall risk tolerance for this account: conservative, moderate, or aggressive?",
+        "Given the daily stop-loss of $500 on a $10,000 portfolio, I would describe the overall risk tolerance as **moderate**."
+      ],
+      [
+        "What authorization rules or approval requirements do you want for this automated account?",
+        "The account owner has full authorization to start, stop, or modify the automated trading system. Initial setup and any significant changes to the trading strategy will require the account owner's explicit approval."
+      ]
+    ],
+    "cov_by_turn": [
+      0.29906542056074764,
+      0.4672897196261682,
+      0.7757009345794392,
+      0.9252336448598131
+    ],
+    "config": "ALI_v1_theta0.9",
+    "theta": 0.9,
+    "vagueness": "Medium",
+    "domain": "Payments",
+    "baseline_cov": 0.4953
+  },
+  {
+    "prompt_id": "P42",
+    "deployment": "finagent",
+    "native_domain": "trading",
+    "final_cov": 0.9252336448598131,
+    "n_turns": 6,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "volume_per_trade": "€15,000",
+      "currency": "EUR",
+      "payment_from": "credit/debit cards or PayPal accounts",
+      "risk_tolerance": "moderate",
+      "authorization_controls": "standard authorization from the card issuer; automated fraud checks",
+      "daily_limit": "€5,000",
+      "asset_type": "handmade crafts and unique artisanal products",
+      "exchanges": "Our marketplace"
+    },
+    "transcript": [
+      [
+        "What's the maximum value for a single transaction on your marketplace?",
+        "The maximum value for a single transaction on our marketplace is €15,000."
+      ],
+      [
+        "What types of accounts or wallets will customers use to pay?",
+        "Customers will use their credit/debit cards or their PayPal accounts to pay."
+      ],
+      [
+        "How would you describe your risk tolerance regarding potential fraud and financial exposure on your marketplace?",
+        "I would describe my risk tolerance as moderate, aiming to balance user experience with robust fraud prevention measures."
+      ],
+      [
+        "Do you have any specific authorization rules or approval requirements for transactions on your marketplace?",
+        "Yes, all card transactions require standard authorization from the card issuer. Additionally, our system performs automated fraud checks on all transactions."
+      ],
+      [
+        "Do you have a cumulative daily spending or trading limit for users?",
+        "Yes, there is a cumulative daily spending limit of €5,000 per user."
+      ],
+      [
+        "What types of goods or services will be traded on your marketplace?",
+        "Our marketplace will facilitate the trade of handmade crafts and unique artisanal products."
+      ]
+    ],
+    "cov_by_turn": [
+      0.0,
+      0.22429906542056074,
+      0.3925233644859813,
+      0.5514018691588785,
+      0.7009345794392523,
+      0.8504672897196262,
+      0.9252336448598131
+    ],
+    "config": "ALI_v1_theta0.9",
+    "theta": 0.9,
+    "vagueness": "Medium",
+    "domain": "Payments",
+    "baseline_cov": 0.2056
+  },
+  {
+    "prompt_id": "P43",
+    "deployment": "finagent",
+    "native_domain": "trading",
+    "final_cov": 0.9532710280373832,
+    "n_turns": 6,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "asset_type": "BTC, ETH, altcoins",
+      "trading_schedule": "rebalance monthly, never sell during a weekend",
+      "stop_loss": "if BTC drops more than 15% in a week, reduce all positions by half",
+      "volume_per_trade": "$50,000",
+      "payment_from": "stablecoin reserve",
+      "risk_tolerance": "conservative",
+      "authorization_controls": "approval required if Bitcoin drops more than 15% in a single week, triggering a significant reduction in all positions",
+      "daily_limit": "$100,000",
+      "currency": "USD"
+    },
+    "transcript": [
+      [
+        "What's the maximum dollar amount you'd like to set for any single trade or transaction?",
+        "I'd like to set the maximum dollar amount for any single trade or transaction at $50,000."
+      ],
+      [
+        "Where should funds for any purchases or rebalancing come from?",
+        "Funds for purchases or rebalancing will come from a stablecoin reserve."
+      ],
+      [
+        "You've outlined specific risk management rules, such as limiting altcoin exposure and reducing positions on a significant BTC drop. To proceed, how would you describe your overall risk tolerance: conservative, moderate, or aggressive?",
+        "Based on the rules, I would describe my overall risk tolerance as **conservative**."
+      ],
+      [
+        "Do you want to manually approve trades, or should they be executed automatically?",
+        "Trades should be executed automatically."
+      ],
+      [
+        "While trades are automatic, are there any specific scenarios where you'd like to be notified or approve an action?",
+        "You would be notified and asked to approve if Bitcoin drops more than 15% in a single week, as this triggers a significant reduction in all positions."
+      ],
+      [
+        "You've set a maximum for individual trades. What is the maximum total dollar amount you'd like to allow for all trades combined within a single day?",
+        "I'd like to set the maximum total dollar amount for all trades combined within a single day at $100,000."
+      ]
+    ],
+    "cov_by_turn": [
+      0.102803738317757,
+      0.2897196261682243,
+      0.45794392523364486,
+      0.616822429906542,
+      0.616822429906542,
+      0.7663551401869159,
+      0.9532710280373832
+    ],
+    "config": "ALI_v1_theta0.9",
+    "theta": 0.9,
+    "vagueness": "Medium",
+    "domain": "Payments",
+    "baseline_cov": 0.1028
+  },
+  {
+    "prompt_id": "P44",
+    "deployment": "finagent",
+    "native_domain": "trading",
+    "final_cov": 0.9813084112149533,
+    "n_turns": 5,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "risk_tolerance": "medium",
+      "asset_type": "liquid large-caps (top 100 by volume)",
+      "exchanges": "Nasdaq",
+      "trading_schedule": "never hold overnight",
+      "stop_loss": "2% of portfolio value",
+      "volume_per_trade": "25,000",
+      "currency": "USD",
+      "payment_from": "personal brokerage account",
+      "authorization_controls": "manual override capability to pause/stop trading; daily human confirmation required to re-enable for next trading session",
+      "daily_limit": "$1,000,000"
+    },
+    "transcript": [
+      [
+        "What's the maximum dollar amount you'd like to allocate to a single trade?",
+        "$25,000."
+      ],
+      [
+        "What's the source account for the trading funds?",
+        "The trading funds will be sourced from a personal brokerage account."
+      ],
+      [
+        "Do you want the AI to execute trades automatically, or should they require your approval first?",
+        "The AI trading agent will execute trades automatically, with built-in safeguards."
+      ],
+      [
+        "Regarding the built-in safeguards for automatic execution, what specific authorization rules or human-in-the-loop controls do you want in place?",
+        "The agent will have a manual override capability, allowing me to pause or stop trading at any time. Additionally, daily human confirmation will be required to re-enable the agent for the next trading session."
+      ],
+      [
+        "What's the maximum total dollar amount you'd like the agent to trade or spend in a single day?",
+        "The agent should limit its total daily trading volume (sum of all buy and sell orders) to $1,000,000."
+      ]
+    ],
+    "cov_by_turn": [
+      0.2897196261682243,
+      0.514018691588785,
+      0.6822429906542056,
+      0.6822429906542056,
+      0.8317757009345794,
+      0.9813084112149533
+    ],
+    "config": "ALI_v1_theta0.9",
+    "theta": 0.9,
+    "vagueness": "Detailed",
+    "domain": "Payments",
+    "baseline_cov": 0.1308
+  },
+  {
+    "prompt_id": "P45",
+    "deployment": "finagent",
+    "native_domain": "generic",
+    "final_cov": 0.9252336448598131,
+    "n_turns": 7,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "currency": "USD",
+      "volume_per_trade": "maximum of $250,000 per single payment",
+      "payment_from": "standard bank accounts, supporting both wire transfers and local bank deposits",
+      "risk_tolerance": "moderate to low",
+      "authorization_controls": "Clients must authorize each payment, requiring two-factor authentication for approval. Payments to new bank accounts or exceeding certain thresholds undergo automated risk assessment, potentially leading to manual review.",
+      "daily_limit": "$50,000 USD equivalent",
+      "asset_type": "USD, EUR, local currencies",
+      "exchanges": "Currencycloud"
+    },
+    "transcript": [
+      [
+        "What's the maximum amount you expect for a single payment?",
+        "We expect a maximum of $250,000 for a single payment."
+      ],
+      [
+        "What kind of accounts will your US and EU clients be using to send payments?",
+        "Your US and EU clients will be able to send payments from their standard bank accounts, supporting both wire transfers and local bank deposits."
+      ],
+      [
+        "How would you describe your platform's risk tolerance, especially concerning international payments and FX?",
+        "We have a moderate to low risk tolerance. We prioritize security and stability in international payments and FX, actively managing risks like volatility and fraud through robust compliance and risk management frameworks."
+      ],
+      [
+        "What authorization rules or approval requirements will be in place for payments on your platform?",
+        "Clients will need to authorize each payment initiated from their account. For security, two-factor authentication will be required for clients to approve transactions. Additionally, payments to new bank accounts or exceeding certain thresholds will undergo an automated risk assessment, potentially triggering a manual review for approval."
+      ],
+      [
+        "What's the cumulative daily limit for payments initiated by clients?",
+        "The cumulative daily limit for payments initiated by clients is $50,000 USD equivalent."
+      ],
+      [
+        "Beyond USD, EUR, and local currencies, will your platform need to support any other types of assets for payments or exchange?",
+        "No, the platform will only need to support USD, EUR, and local currencies."
+      ],
+      [
+        "Do you have any specific currency exchange providers or platforms you plan to use for FX conversion?",
+        "We plan to integrate with **Currencycloud** for our FX conversion needs."
+      ]
+    ],
+    "cov_by_turn": [
+      0.0,
+      0.22429906542056074,
+      0.3925233644859813,
+      0.5514018691588785,
+      0.7009345794392523,
+      0.8504672897196262,
+      0.897196261682243,
+      0.9252336448598131
+    ],
+    "config": "ALI_v1_theta0.9",
+    "theta": 0.9,
+    "vagueness": "Medium",
+    "domain": "Payments",
+    "baseline_cov": 0.4019
+  },
+  {
+    "prompt_id": "P46",
+    "deployment": "finagent",
+    "native_domain": "trading",
+    "final_cov": 0.9532710280373832,
+    "n_turns": 6,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "currency": [
+        "ETH",
+        "USDC"
+      ],
+      "asset_type": [
+        "ETH",
+        "USDC"
+      ],
+      "exchanges": [
+        "Uniswap",
+        "Aave"
+      ],
+      "stop_loss": "65% LTV",
+      "volume_per_trade": "$15,000",
+      "payment_from": "Account 1 in MetaMask wallet",
+      "risk_tolerance": "Moderate",
+      "authorization_controls": "automatically approve all transactions",
+      "daily_limit": "$20,000"
+    },
+    "transcript": [
+      [
+        "What is the maximum dollar amount you'd like to use for any single trade or transaction?",
+        "I'd like to use up to $15,000 for a single trade or transaction."
+      ],
+      [
+        "Which wallet should I use for these operations?",
+        "MetaMask is a good choice for these operations."
+      ],
+      [
+        "Which account in your MetaMask wallet should I use for payments?",
+        "You should use \"Account 1\" in your MetaMask wallet."
+      ],
+      [
+        "How would you describe your risk tolerance for these DeFi activities: conservative, moderate, or aggressive?",
+        "Moderate."
+      ],
+      [
+        "For these automated operations, what are your preferences for transaction approvals? Should I automatically approve them, or do you want to manually confirm each one, or only for transactions exceeding a certain amount?",
+        "I prefer to automatically approve all transactions for these operations to ensure seamless automation."
+      ],
+      [
+        "What is the maximum cumulative dollar amount you'd like to spend or trade within a 24-hour period?",
+        "I'd like to set the maximum cumulative dollar amount for spending or trading within a 24-hour period at $20,000."
+      ]
+    ],
+    "cov_by_turn": [
+      0.14018691588785046,
+      0.32710280373831774,
+      0.32710280373831774,
+      0.4953271028037383,
+      0.6542056074766355,
+      0.8037383177570093,
+      0.9532710280373832
+    ],
+    "config": "ALI_v1_theta0.9",
+    "theta": 0.9,
+    "vagueness": "Detailed",
+    "domain": "Payments",
+    "baseline_cov": 0.4486
+  },
+  {
+    "prompt_id": "P47",
+    "deployment": "finagent",
+    "native_domain": "payroll",
+    "final_cov": 0.9252336448598131,
+    "n_turns": 9,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "authorization_controls": "automatic dunning for failed payments",
+      "currency": "EUR",
+      "volume_per_trade": "€950.40",
+      "payment_from": "credit cards, debit cards, SEPA Direct Debit",
+      "risk_tolerance": "low",
+      "daily_limit": "not specified",
+      "asset_type": "No specific types of assets or instruments will be traded or managed.",
+      "exchanges": "No specific integration or whitelisting needed."
+    },
+    "transcript": [
+      [
+        "What's the maximum amount a single customer transaction could be?",
+        "The maximum single customer transaction could be €950.40."
+      ],
+      [
+        "What payment methods do you want to accept from your customers?",
+        "I want to accept credit and debit cards, as well as SEPA Direct Debit."
+      ],
+      [
+        "How do you balance the desire for rapid growth and customer acquisition with the need to minimize potential financial losses from fraud or chargebacks?",
+        "I'm balancing it by offering a 14-day free trial and a 20% discount for annual plans to drive acquisition. To minimize financial losses, I'm relying on Stripe's built-in fraud detection capabilities and automatic dunning for failed payments."
+      ],
+      [
+        "How would you characterize your overall risk tolerance when it comes to potential financial losses from fraud or chargebacks?",
+        "I have a low risk tolerance for potential financial losses from fraud or chargebacks."
+      ],
+      [
+        "Do you want to set a daily limit on the total amount of payments your business processes?",
+        "No, a daily limit on the total amount of payments was not specified in my needs."
+      ],
+      [
+        "What specific types of assets or instruments, if any, will be traded or managed through your SaaS platform?",
+        "My SaaS platform will not trade or manage any specific types of assets or instruments."
+      ],
+      [
+        "Does your SaaS need to integrate with or whitelist any specific financial exchanges or trading platforms?",
+        "No."
+      ],
+      [
+        "You've indicated your SaaS doesn't need to integrate with financial exchanges. To ensure I haven't missed anything, are there any other types of platforms or services that your SaaS needs to explicitly whitelist for its operations?",
+        "Yes, we'll need an email service provider for sending notifications and dunning emails, and a cloud hosting provider for the application itself."
+      ],
+      [
+        "To proceed with the task, I need to understand your whitelist of allowed exchanges/platforms. You've previously stated that your SaaS doesn't need to integrate with or whitelist any specific financial exchanges or trading platforms. Can you confirm this is still accurate?",
+        "Yes, that is still accurate. My SaaS does not need to integrate with or whitelist any specific financial exchanges or trading platforms."
+      ]
+    ],
+    "cov_by_turn": [
+      0.18691588785046728,
+      0.37383177570093457,
+      0.5420560747663551,
+      0.5420560747663551,
+      0.7009345794392523,
+      0.8504672897196262,
+      0.897196261682243,
+      0.897196261682243,
+      0.897196261682243,
+      0.9252336448598131
+    ],
+    "config": "ALI_v1_theta0.9",
+    "theta": 0.9,
+    "vagueness": "Medium",
+    "domain": "Payments",
+    "baseline_cov": 0.0374
+  },
+  {
+    "prompt_id": "P48",
+    "deployment": "finagent",
+    "native_domain": "trading",
+    "final_cov": 0.9626168224299065,
+    "n_turns": 2,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "volume_per_trade": "5% of portfolio",
+      "authorization_controls": "manual reset required if daily loss limit hit",
+      "daily_limit": "3% of total portfolio (loss limit)",
+      "asset_type": "BTC, ETH, SOL",
+      "exchanges": "Binance (spot), Coinbase Pro (spot only, no margin)",
+      "trading_schedule": "No trading between 23:00 and 06:00 UTC; Minimum 4 hours between trades on the same asset; Never trade within 30 minutes of a major economic announcement (use economic calendar API)",
+      "stop_loss": "Daily loss limit: 3% of total portfolio; Weekly drawdown limit: 8%; Slippage tolerance: max 0.3%",
+      "reporting": "All trades must log to a Google Sheet in real time",
+      "payment_from": "a dedicated trading account linked to the system",
+      "risk_tolerance": "conservative"
+    },
+    "transcript": [
+      [
+        "Where will the funds for trading come from?",
+        "The funds will be sourced from a dedicated trading account linked to the system."
+      ],
+      [
+        "Would you describe your overall risk tolerance as conservative, moderate, or aggressive?",
+        "The overall risk tolerance is conservative."
+      ]
+    ],
+    "cov_by_turn": [
+      0.6355140186915887,
+      0.8037383177570093,
+      0.9626168224299065
+    ],
+    "config": "ALI_v1_theta0.9",
+    "theta": 0.9,
+    "vagueness": "Detailed",
+    "domain": "Payments",
+    "baseline_cov": 0.0
+  },
+  {
+    "prompt_id": "P49",
+    "deployment": "finagent",
+    "native_domain": "trading",
+    "final_cov": 0.9252336448598131,
+    "n_turns": 4,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "payment_from": "SEPA bank transfer",
+      "authorization_controls": "KYC/AML compliance for EU regulations",
+      "currency": "EUR",
+      "asset_type": "BTC, ETH, USDC, USDT",
+      "volume_per_trade": "$50,000",
+      "risk_tolerance": "moderate",
+      "daily_limit": "€5,000",
+      "exchanges": "no whitelist of external crypto exchanges or platforms"
+    },
+    "transcript": [
+      [
+        "What's the maximum dollar amount you anticipate for a single trade?",
+        "For a single trade, we anticipate a maximum dollar amount of $50,000."
+      ],
+      [
+        "How would you describe your risk tolerance for this crypto exchange project?",
+        "Our risk tolerance for this project is moderate, prioritizing security, regulatory compliance, and controlled growth, especially during the initial beta phase."
+      ],
+      [
+        "What's the cumulative daily trading or spending cap you'd like to set for users?",
+        "For users, the cumulative daily trading or spending cap will be €5,000."
+      ],
+      [
+        "Which external crypto exchanges or platforms, if any, do you plan to whitelist for your exchange's operations?",
+        "We do not plan to whitelist external crypto exchanges or platforms for our exchange's operations."
+      ]
+    ],
+    "cov_by_turn": [
+      0.40186915887850466,
+      0.5887850467289719,
+      0.7476635514018691,
+      0.897196261682243,
+      0.9252336448598131
+    ],
+    "config": "ALI_v1_theta0.9",
+    "theta": 0.9,
+    "vagueness": "Detailed",
+    "domain": "Payments",
+    "baseline_cov": 0.271
+  },
+  {
+    "prompt_id": "P50",
+    "deployment": "finagent",
+    "native_domain": "trading",
+    "final_cov": 0.9252336448598131,
+    "n_turns": 6,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "risk_tolerance": "moderate",
+      "volume_per_trade": "$10,000",
+      "currency": "USD",
+      "payment_from": "linked bank account",
+      "authorization_controls": "Any withdrawal of funds from your investment account. Any deposit of new funds into your investment account. A change to your overall risk tolerance or long-term investment goals.",
+      "daily_limit": "$10,000",
+      "asset_type": "diversified Exchange Traded Funds (ETFs), individual stocks of established companies, government and corporate bonds, and cash equivalents",
+      "exchanges": "Fidelity, Vanguard, Charles Schwab"
+    },
+    "transcript": [
+      [
+        "What's the maximum dollar amount you'd like the AI to allocate to a single trade?",
+        "The maximum dollar amount I'd allocate to a single trade is $10,000."
+      ],
+      [
+        "Which account or wallet should the funds for these investments be drawn from?",
+        "The funds for these investments should be drawn from your linked bank account."
+      ],
+      [
+        "What actions or decisions by the AI would require your approval before they are executed?",
+        "The following actions or decisions would require your explicit approval:\n\n*   Any withdrawal of funds from your investment account.\n*   Any deposit of new funds into your investment account.\n*   A change to your overall risk tolerance or long-term investment goals."
+      ],
+      [
+        "What's the maximum total amount the AI can trade or spend in a single day?",
+        "The maximum total amount the AI can trade or spend in a single day is $10,000."
+      ],
+      [
+        "What types of assets or investment instruments should the AI be allowed to trade?",
+        "The AI should be allowed to trade diversified Exchange Traded Funds (ETFs), individual stocks of established companies, government and corporate bonds, and cash equivalents."
+      ],
+      [
+        "Which specific exchanges or platforms should the AI be allowed to use for trading?",
+        "The AI should be allowed to use Fidelity, Vanguard, and Charles Schwab."
+      ]
+    ],
+    "cov_by_turn": [
+      0.1588785046728972,
+      0.38317757009345793,
+      0.5514018691588785,
+      0.7009345794392523,
+      0.8504672897196262,
+      0.897196261682243,
+      0.9252336448598131
+    ],
+    "config": "ALI_v1_theta0.9",
+    "theta": 0.9,
+    "vagueness": "Ultra-vague",
+    "domain": "Payments",
+    "baseline_cov": 0.2336
+  },
+  {
+    "prompt_id": "N66",
+    "deployment": "finagent",
+    "native_domain": "generic",
+    "final_cov": 0.9252336448598131,
+    "n_turns": 6,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "risk_tolerance": "conservative",
+      "volume_per_trade": "$500",
+      "currency": "USD",
+      "payment_from": "MetaMask",
+      "authorization_controls": "manual approval for every transaction, ideally with a hardware wallet; no automatic approvals",
+      "daily_limit": "Not applicable (as an AI)",
+      "asset_type": "USDC, ETH",
+      "exchanges": "Uniswap, Aave"
+    },
+    "transcript": [
+      [
+        "What's the maximum dollar amount you'd want to put into a single trade?",
+        "For a single trade, I would suggest starting with an amount like $500."
+      ],
+      [
+        "Which wallet or account would you like to use for these funds?",
+        "I'd recommend starting with **MetaMask**."
+      ],
+      [
+        "What kind of approval or authorization rules would you like for your transactions?",
+        "I'd want to manually approve every transaction, ideally with a hardware wallet. No automatic approvals or unlimited spending."
+      ],
+      [
+        "What's your preferred daily spending limit?",
+        "As an AI, I don't have a daily spending limit."
+      ],
+      [
+        "What specific cryptocurrencies or tokens would you like to consider for your trades?",
+        "I would like to consider USDC and ETH."
+      ],
+      [
+        "Which DeFi platforms or exchanges would you like to consider for your trades?",
+        "I would consider platforms like Uniswap and Aave."
+      ]
+    ],
+    "cov_by_turn": [
+      0.1588785046728972,
+      0.38317757009345793,
+      0.5514018691588785,
+      0.7009345794392523,
+      0.8504672897196262,
+      0.897196261682243,
+      0.9252336448598131
+    ],
+    "config": "ALI_v1_theta0.9",
+    "theta": 0.9,
+    "vagueness": "Ultra-vague",
+    "domain": "Payments",
+    "baseline_cov": 0.3645
+  },
+  {
+    "prompt_id": "N67",
+    "deployment": "finagent",
+    "native_domain": "generic",
+    "final_cov": 0.9252336448598131,
+    "n_turns": 6,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "payment_from": "clients online",
+      "volume_per_trade": "$2,500",
+      "risk_tolerance": "moderate",
+      "daily_limit": "$2,500 per day",
+      "currency": "USD",
+      "authorization_controls": "payments be processed automatically, with specific rules for when a payment needs your review",
+      "asset_type": "USD",
+      "exchanges": "PayPal, Stripe, Wise, Square"
+    },
+    "transcript": [
+      [
+        "What's the largest amount you expect to receive in a single payment?",
+        "I expect the largest single payment to be around $2,500."
+      ],
+      [
+        "How concerned are you about potential issues like chargebacks or payment fraud?",
+        "I am moderately concerned about potential issues like chargebacks or payment fraud, as they can impact a freelancer's income and time."
+      ],
+      [
+        "What's the maximum total amount you expect to receive across all payments in a single day?",
+        "I expect to receive a maximum total of $2,500 across all payments in a single day."
+      ],
+      [
+        "Do you want to manually approve payments, or should they be processed automatically, with specific rules for when a payment needs your review?",
+        "For freelance work, I recommend payments be processed automatically, with specific rules for when a payment needs your review."
+      ],
+      [
+        "What types of currencies or digital assets would you like to accept from your clients?",
+        "I would like to accept USD."
+      ],
+      [
+        "What specific payment platforms or services would you like to use to receive money from clients?",
+        "I can help you set up ways to receive money using platforms like PayPal, Stripe, Wise, or Square."
+      ]
+    ],
+    "cov_by_turn": [
+      0.16822429906542055,
+      0.35514018691588783,
+      0.514018691588785,
+      0.7009345794392523,
+      0.8504672897196262,
+      0.897196261682243,
+      0.9252336448598131
+    ],
+    "config": "ALI_v1_theta0.9",
+    "theta": 0.9,
+    "vagueness": "Ultra-vague",
+    "domain": "Payments",
+    "baseline_cov": 0.271
+  },
+  {
+    "prompt_id": "N68",
+    "deployment": "finagent",
+    "native_domain": "generic",
+    "final_cov": 0.9252336448598131,
+    "n_turns": 9,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "volume_per_trade": "$10,000",
+      "payment_from": "primary checking account",
+      "risk_tolerance": "moderate",
+      "daily_limit": "$10,000",
+      "authorization_controls": "no human approval",
+      "asset_type": [
+        "Stocks (equities)",
+        "Bonds (fixed income)",
+        "Exchange-Traded Funds (ETFs)"
+      ],
+      "currency": "USD",
+      "exchanges": "Vanguard"
+    },
+    "transcript": [
+      [
+        "What's the maximum amount you'd want to invest per trade?",
+        "I'd be comfortable investing up to $10,000 per trade."
+      ],
+      [
+        "Which account should we use for these investments?",
+        "For your investments, a **general investment account** would be a suitable option."
+      ],
+      [
+        "Which account should we use to fund these automated savings and investments?",
+        "You can link your primary checking account to fund your automated savings and investments."
+      ],
+      [
+        "How comfortable are you with investment risk?",
+        "I'm comfortable with a moderate level of investment risk."
+      ],
+      [
+        "What's the maximum total amount you'd want to invest or move in a single day?",
+        "I'd be comfortable with a maximum total amount of $10,000 in a single day."
+      ],
+      [
+        "Do you want to approve each automated transfer or investment?",
+        "No, I'd prefer not to approve each one. The goal is to automate it."
+      ],
+      [
+        "What types of assets would you like to invest in?",
+        "I can help you invest in a diversified portfolio, typically including:\n\n*   Stocks (equities)\n*   Bonds (fixed income)\n*   Exchange-Traded Funds (ETFs)"
+      ],
+      [
+        "What currency should we use for these transactions?",
+        "We can use US Dollars (USD) for these transactions."
+      ],
+      [
+        "Do you have any preferred exchanges or platforms for these investments?",
+        "For investments, I'd suggest a platform like **Vanguard**."
+      ]
+    ],
+    "cov_by_turn": [
+      0.0,
+      0.18691588785046728,
+      0.18691588785046728,
+      0.35514018691588783,
+      0.514018691588785,
+      0.6635514018691588,
+      0.8130841121495327,
+      0.8598130841121495,
+      0.897196261682243,
+      0.9252336448598131
+    ],
+    "config": "ALI_v1_theta0.9",
+    "theta": 0.9,
+    "vagueness": "Ultra-vague",
+    "domain": "Payments",
+    "baseline_cov": 0.6168
+  },
+  {
+    "prompt_id": "N69",
+    "deployment": "finagent",
+    "native_domain": "trading",
+    "final_cov": 0.9252336448598131,
+    "n_turns": 5,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "risk_tolerance": "conservative",
+      "trading_schedule": "while I sleep",
+      "volume_per_trade": "$2,500",
+      "currency": "USD",
+      "payment_from": "standard brokerage account",
+      "daily_limit": "$2,500",
+      "authorization_controls": "No specific authorization or approval required for each trade execution.",
+      "asset_type": "ETFs and major currency pairs"
+    },
+    "transcript": [
+      [
+        "What's the maximum dollar amount you'd like to trade in a single transaction?",
+        "$2,500."
+      ],
+      [
+        "Which account or wallet should be used for these trades?",
+        "You should use a standard brokerage account."
+      ],
+      [
+        "What's the total daily trading limit you'd like to set?",
+        "I'd like to set the total daily trading limit at $2,500."
+      ],
+      [
+        "Do you require any specific authorization or approval for trades before they are executed?",
+        "No, once the system is set up and running, it does not require specific authorization or approval for each trade before it is executed."
+      ],
+      [
+        "What types of assets or instruments should the system trade?",
+        "ETFs and major currency pairs."
+      ]
+    ],
+    "cov_by_turn": [
+      0.18691588785046728,
+      0.411214953271028,
+      0.5794392523364486,
+      0.7289719626168224,
+      0.8785046728971962,
+      0.9252336448598131
+    ],
+    "config": "ALI_v1_theta0.9",
+    "theta": 0.9,
+    "vagueness": "Ultra-vague",
+    "domain": "Payments",
+    "baseline_cov": 0.2804
+  },
+  {
+    "prompt_id": "N70",
+    "deployment": "finagent",
+    "native_domain": "trading",
+    "final_cov": 0.9252336448598131,
+    "n_turns": 6,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "asset_type": "NFT",
+      "volume_per_trade": "200",
+      "currency": "USD",
+      "payment_from": "MetaMask",
+      "risk_tolerance": "conservative",
+      "daily_limit": "$100",
+      "authorization_controls": "using a crypto wallet",
+      "exchanges": "OpenSea"
+    },
+    "transcript": [
+      [
+        "What's the maximum you'd want to spend on a single NFT trade?",
+        "I'd want to spend a maximum of $200 on a single NFT trade."
+      ],
+      [
+        "Which wallet will you be using for these purchases?",
+        "I'll be using MetaMask."
+      ],
+      [
+        "How comfortable are you with the potential for your NFT's value to drop?",
+        "I'm aware of the risks involved, especially since I'm just starting out and not looking to spend a lot."
+      ],
+      [
+        "What's the maximum total amount you'd want to spend on NFTs in a single day?",
+        "I'd want to keep it under $100."
+      ],
+      [
+        "How do you want to approve your NFT purchases?",
+        "I'll approve my NFT purchases using a crypto wallet."
+      ],
+      [
+        "Which NFT marketplaces or platforms would you like to use for your trades?",
+        "I would use OpenSea."
+      ]
+    ],
+    "cov_by_turn": [
+      0.04672897196261682,
+      0.27102803738317754,
+      0.4392523364485981,
+      0.5981308411214953,
+      0.7476635514018691,
+      0.897196261682243,
+      0.9252336448598131
+    ],
+    "config": "ALI_v1_theta0.9",
+    "theta": 0.9,
+    "vagueness": "Ultra-vague",
+    "domain": "Payments",
+    "baseline_cov": 0.2804
+  },
+  {
+    "prompt_id": "N71",
+    "deployment": "finagent",
+    "native_domain": "payroll",
+    "final_cov": 0.9252336448598131,
+    "n_turns": 6,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "currency": "crypto",
+      "asset_type": "crypto",
+      "volume_per_trade": "5000",
+      "payment_from": "personal crypto wallets or accounts from exchanges",
+      "exchanges": "Coinbase, Binance",
+      "risk_tolerance": "conservative",
+      "authorization_controls": "Transactions over $1,000 require manual approval; transactions below $1,000 are processed automatically.",
+      "daily_limit": "$2,000"
+    },
+    "transcript": [
+      [
+        "What's the maximum value you expect for a single payment?",
+        "I expect a maximum value of $5,000 for a single payment."
+      ],
+      [
+        "What kind of wallets or accounts will your customers be using to send payments?",
+        "Your customers can use their personal crypto wallets or accounts from exchanges like Coinbase or Binance."
+      ],
+      [
+        "How comfortable are you with the inherent risks of accepting crypto payments, such as price volatility or security concerns?",
+        "As an AI, I don't experience comfort or discomfort. My function is to provide information and tools to help you manage risks like price volatility and security concerns effectively."
+      ],
+      [
+        "What is your preferred strategy for managing the inherent risks of crypto payments for your shop: prioritizing stability, balancing risk and growth, or aiming for higher returns despite volatility?",
+        "For my small online shop, I would prioritize stability."
+      ],
+      [
+        "What kind of authorization or approval processes do you want for transactions, such as requiring manual approval for certain amounts or types of payments?",
+        "I'd like transactions over $1,000 to require manual approval. All transactions below that amount should be processed automatically."
+      ],
+      [
+        "What's the maximum total value of crypto payments you'd like to accept in a single day?",
+        "I'd like to accept a maximum total value of $2,000 in crypto payments in a single day."
+      ]
+    ],
+    "cov_by_turn": [
+      0.08411214953271028,
+      0.27102803738317754,
+      0.4672897196261682,
+      0.4672897196261682,
+      0.6261682242990654,
+      0.7757009345794392,
+      0.9252336448598131
+    ],
+    "config": "ALI_v1_theta0.9",
+    "theta": 0.9,
+    "vagueness": "Ultra-vague",
+    "domain": "Payments",
+    "baseline_cov": 0.2804
+  },
+  {
+    "prompt_id": "N72",
+    "deployment": "finagent",
+    "native_domain": "generic",
+    "final_cov": 0.9252336448598131,
+    "n_turns": 7,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "volume_per_trade": "$10,000",
+      "currency": "dollars",
+      "payment_from": "checking account",
+      "risk_tolerance": "moderate",
+      "authorization_controls": "no human approval once set up",
+      "daily_limit": "$5,000",
+      "asset_type": "cash",
+      "exchanges": [
+        "primary bank's online banking platform",
+        "YNAB",
+        "Mint",
+        "Qapital"
+      ]
+    },
+    "transcript": [
+      [
+        "What's the maximum dollar amount you'd like to move in a single automatic transfer?",
+        "The maximum dollar amount for a single automatic transfer is $10,000."
+      ],
+      [
+        "Which account should the money be transferred from?",
+        "The money should be transferred from your checking account."
+      ],
+      [
+        "When it comes to these automatic transfers, would you describe your strategy as conservative, moderate, or aggressive?",
+        "I would describe my strategy as moderate."
+      ],
+      [
+        "Do these automatic transfers require any human approval?",
+        "No, they do not require human approval once set up."
+      ],
+      [
+        "What's the maximum total amount you'd like to transfer automatically per day?",
+        "I'd like to transfer a maximum total of $5,000 per day."
+      ],
+      [
+        "Are these automatic transfers only for cash, or should they also apply to other asset types like stocks or cryptocurrencies?",
+        "These automatic transfers are for cash only."
+      ],
+      [
+        "Which platforms or services should be allowed for these automatic cash transfers?",
+        "You can use your primary bank's online banking platform, a dedicated budgeting app like YNAB or Mint, or a specialized savings automation service like Qapital."
+      ]
+    ],
+    "cov_by_turn": [
+      0.0,
+      0.22429906542056074,
+      0.3925233644859813,
+      0.5514018691588785,
+      0.7009345794392523,
+      0.8504672897196262,
+      0.897196261682243,
+      0.9252336448598131
+    ],
+    "config": "ALI_v1_theta0.9",
+    "theta": 0.9,
+    "vagueness": "Ultra-vague",
+    "domain": "Payments",
+    "baseline_cov": 0.4206
+  },
+  {
+    "prompt_id": "N73",
+    "deployment": "finagent",
+    "native_domain": "generic",
+    "final_cov": 0.9252336448598131,
+    "n_turns": 8,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "payment_from": "bank",
+      "risk_tolerance": "conservative",
+      "volume_per_trade": "$10,000",
+      "daily_limit": "$5,000",
+      "currency": "USD",
+      "authorization_controls": "No specific authorization or approval from another person is needed for each investment decision or transaction once the account is open.",
+      "asset_type": "High-Yield Savings Accounts, Certificates of Deposit (CDs), Money Market Accounts",
+      "exchanges": "No specific preferences or exclusions for platforms or exchanges."
+    },
+    "transcript": [
+      [
+        "What's the maximum amount you'd want to put into a single investment?",
+        "I'd suggest a maximum of $10,000 for a single investment."
+      ],
+      [
+        "What's the maximum total amount you'd want to invest in a single day?",
+        "I'd be comfortable investing up to $5,000 in a single day."
+      ],
+      [
+        "Are there any approval requirements or authorization rules for these investments?",
+        "For most safe investments, you'll primarily need to meet the standard requirements to open an account with a financial institution."
+      ],
+      [
+        "Beyond the requirements to open an account, do you need any specific authorization or approval for *each investment decision* or *transaction*, perhaps from another person?",
+        "No, typically you do not need specific authorization or approval from another person for each investment decision or transaction once your account is open."
+      ],
+      [
+        "What specific types of assets or investment instruments are you interested in considering?",
+        "I'm interested in considering High-Yield Savings Accounts, Certificates of Deposit (CDs), and Money Market Accounts."
+      ],
+      [
+        "Which specific banks, credit unions, or investment platforms are you interested in using for these accounts?",
+        "I don't have personal preferences or affiliations with specific banks, credit unions, or investment platforms. My purpose is to help you understand the options available to make your idle cash work safely."
+      ],
+      [
+        "Given you don't have preferences for specific banks or platforms, are you open to considering any reputable financial institution that offers the types of accounts you're interested in?",
+        "Yes, the focus would be on reputable financial institutions offering suitable accounts."
+      ],
+      [
+        "Beyond \"reputable financial institutions,\" do you have any specific preferences or exclusions for platforms or exchanges?",
+        "As an AI, I don't have personal preferences or exclusions for specific platforms or exchanges. My guidance focuses on general principles of safety and financial soundness."
+      ]
+    ],
+    "cov_by_turn": [
+      0.32710280373831774,
+      0.514018691588785,
+      0.7009345794392523,
+      0.7009345794392523,
+      0.8504672897196262,
+      0.897196261682243,
+      0.897196261682243,
+      0.897196261682243,
+      0.9252336448598131
+    ],
+    "config": "ALI_v1_theta0.9",
+    "theta": 0.9,
+    "vagueness": "Ultra-vague",
+    "domain": "Payments",
+    "baseline_cov": 0.4112
+  },
+  {
+    "prompt_id": "N74",
+    "deployment": "finagent",
+    "native_domain": "trading",
+    "final_cov": 0.9252336448598131,
+    "n_turns": 7,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "risk_tolerance": "Standard risk",
+      "asset_type": "commodities",
+      "volume_per_trade": "$5,000",
+      "currency": "USD",
+      "payment_from": "Standard Commodity Trading Account",
+      "daily_limit": "$5,000,000",
+      "authorization_controls": "Human approval is not required for the bot's trades.",
+      "exchanges": "CME Group and ICE Futures"
+    },
+    "transcript": [
+      [
+        "What's the maximum dollar amount you'd like to allocate per individual trade?",
+        "I'd like to allocate a maximum of $5,000 per individual trade."
+      ],
+      [
+        "Which account should be used to fund these trades?",
+        "You should use a standard trading account."
+      ],
+      [
+        "",
+        "I can help you with that. What would you like to know about trading commodities with our automated bot?"
+      ],
+      [
+        "Which specific standard trading account would you like to use for funding?",
+        "We will use the Standard Commodity Trading Account for funding."
+      ],
+      [
+        "What's the maximum total amount you'd like the bot to trade in a single day?",
+        "The bot is configured to trade a maximum total amount of $5,000,000 in a single day."
+      ],
+      [
+        "Do you require any human approval for the bot's trades?",
+        "No, human approval is not required for the bot's trades."
+      ],
+      [
+        "Which exchanges or platforms are allowed for the bot to trade on?",
+        "Our bot is configured to trade on the CME Group and ICE Futures platforms."
+      ]
+    ],
+    "cov_by_turn": [
+      0.205607476635514,
+      0.42990654205607476,
+      0.42990654205607476,
+      0.42990654205607476,
+      0.5981308411214953,
+      0.7476635514018691,
+      0.897196261682243,
+      0.9252336448598131
+    ],
+    "config": "ALI_v1_theta0.9",
+    "theta": 0.9,
+    "vagueness": "Ultra-vague",
+    "domain": "Payments",
+    "baseline_cov": 0.3084
+  },
+  {
+    "prompt_id": "N75",
+    "deployment": "finagent",
+    "native_domain": "payroll",
+    "final_cov": 0.9252336448598131,
+    "n_turns": 7,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "volume_per_trade": "$50,000",
+      "currency": "USD",
+      "payment_from": "customer bank accounts or credit/debit cards",
+      "risk_tolerance": "moderate",
+      "authorization_controls": "Authorization Rules: A valid payment method from the buyer and an active, verified seller account. Approval Requirements: Transactions exceeding $1,000 or those flagged by our fraud detection system will require additional approval. Human-in-the-Loop Processes: Manual review is initiated for transactions requiring approval and for all dispute resolutions.",
+      "daily_limit": "$500,000",
+      "asset_type": "handmade crafts and unique artisan goods",
+      "exchanges": "Stripe, PayPal"
+    },
+    "transcript": [
+      [
+        "What's the maximum dollar amount for a single transaction?",
+        "For a single transaction, the maximum dollar amount is $50,000."
+      ],
+      [
+        "What types of accounts or wallets will payments be coming from?",
+        "Payments will be coming from customer bank accounts or credit/debit cards."
+      ],
+      [
+        "What's your risk tolerance for fraud and chargebacks – conservative, moderate, or aggressive?",
+        "We have a moderate risk tolerance for fraud and chargebacks."
+      ],
+      [
+        "What authorization rules, approval requirements, or human-in-the-loop processes do you need for transactions?",
+        "For transactions, we require:\n\n*   **Authorization Rules:** A valid payment method from the buyer and an active, verified seller account.\n*   **Approval Requirements:** Transactions exceeding $1,000 or those flagged by our fraud detection system will require additional approval.\n*   **Human-in-the-Loop Processes:** Manual review is initiated for transactions requiring approval and for all dispute resolutions."
+      ],
+      [
+        "Is there a maximum total amount that can be processed in a single day?",
+        "Yes, there is a maximum total amount that can be processed in a single day. It is $500,000."
+      ],
+      [
+        "What types of goods, services, or digital items will be bought and sold on your marketplace?",
+        "Users will be able to buy and sell handmade crafts and unique artisan goods."
+      ],
+      [
+        "Are there specific payment processing platforms or financial institutions you want to whitelist for your marketplace?",
+        "For our marketplace app, we'd like to whitelist Stripe and PayPal."
+      ]
+    ],
+    "cov_by_turn": [
+      0.0,
+      0.22429906542056074,
+      0.3925233644859813,
+      0.5514018691588785,
+      0.7009345794392523,
+      0.8504672897196262,
+      0.897196261682243,
+      0.9252336448598131
+    ],
+    "config": "ALI_v1_theta0.9",
+    "theta": 0.9,
+    "vagueness": "Ultra-vague",
+    "domain": "Payments",
+    "baseline_cov": 0.0467
+  },
+  {
+    "prompt_id": "N76",
+    "deployment": "finagent",
+    "native_domain": "trading",
+    "final_cov": 0.9532710280373832,
+    "n_turns": 5,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "volume_per_trade": "300 USD",
+      "authorization_controls": "automatic",
+      "currency": "USD",
+      "asset_type": "BTC, ETH",
+      "exchanges": "Coinbase",
+      "stop_loss": "total portfolio drops more than 30% from all-time high",
+      "payment_from": "linked checking account",
+      "risk_tolerance": "Aggressive",
+      "daily_limit": "$500"
+    },
+    "transcript": [
+      [
+        "Where should the $500 weekly payment come from?",
+        "The $500 weekly payment will come from your linked checking account."
+      ],
+      [
+        "How would you describe your overall risk tolerance for this investment: conservative, moderate, or aggressive?",
+        "Aggressive."
+      ],
+      [
+        "Is there a daily spending or trading limit you'd like to set?",
+        "Yes, I'd like to set a limit of $500 per week."
+      ],
+      [
+        "Do you want to set a daily spending limit?",
+        "No, I want to spend $500 per week."
+      ],
+      [
+        "To clarify, with your $500 weekly limit, is it acceptable for the entire $500 to be spent on a single day, or would you prefer a daily spending cap?",
+        "It's acceptable for the entire $500 to be spent on a single day."
+      ]
+    ],
+    "cov_by_turn": [
+      0.4766355140186916,
+      0.6448598130841121,
+      0.8037383177570093,
+      0.8037383177570093,
+      0.8037383177570093,
+      0.9532710280373832
+    ],
+    "config": "ALI_v1_theta0.9",
+    "theta": 0.9,
+    "vagueness": "Medium",
+    "domain": "Payments",
+    "baseline_cov": 0.3551
+  },
+  {
+    "prompt_id": "N77",
+    "deployment": "finagent",
+    "native_domain": "payroll",
+    "final_cov": 0.9252336448598131,
+    "n_turns": 8,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "volume_per_trade": "$5,000",
+      "currency": "USD",
+      "payment_from": "credit cards, debit cards, Apple Pay, Google Pay",
+      "risk_tolerance": "moderate",
+      "authorization_controls": "Human review or approval might be beneficial for: 1. Fraud Detection (high fraud risk score). 2. High-Value or Unusual Orders (e.g., multiple annual plans at once). 3. Post-Dunning Failure (after 3 retries over 2 weeks).",
+      "daily_limit": "Not required",
+      "asset_type": "customer accounts, associated subscriptions",
+      "exchanges": "my own website"
+    },
+    "transcript": [
+      [
+        "What's the maximum dollar amount for a single subscription payment?",
+        "The maximum dollar amount for a single subscription payment is $5,000."
+      ],
+      [
+        "What payment methods do you want to accept from your customers?",
+        "I want to accept credit and debit cards, as well as popular digital wallets like Apple Pay and Google Pay."
+      ],
+      [
+        "When it comes to managing risks like payment fraud and chargebacks for your subscription service, would you say your approach is conservative, moderate, or aggressive?",
+        "My approach to managing payment fraud and chargebacks is moderate."
+      ],
+      [
+        "Are there any specific scenarios where you'd want a human to review or approve a subscription or payment?",
+        "Yes, there are a few scenarios where a human review or approval might be beneficial:\n\n1.  **Fraud Detection:** If a payment triggers a high fraud risk score from Stripe Radar or your internal systems.\n2.  **High-Value or Unusual Orders:** For instance, if a customer attempts to subscribe to multiple annual plans at once, which might warrant a quick check.\n3.  **Post-Dunning Failure:** After the automated dunning process (3 retries over 2 weeks) has failed, a human might want to reach out to the customer directly."
+      ],
+      [
+        "Do you want to set a cumulative daily spending limit for individual customers?",
+        "No, a cumulative daily spending limit for individual customers is not part of the current requirements for the subscription box e-commerce."
+      ],
+      [
+        "In the context of your subscription box e-commerce, what specific 'assets' or 'instruments' are you referring to that would require a whitelist?",
+        "We might whitelist specific customer accounts for early access to new box themes or exclusive product add-ons."
+      ],
+      [
+        "Are there any other types of assets or instruments, besides customer accounts, that you might want to whitelist?",
+        "Based on your needs for a subscription box e-commerce using Stripe Billing, the primary assets you'd be managing are customer accounts and their associated subscriptions. There aren't other types of assets or instruments specified in your request that would require whitelisting."
+      ],
+      [
+        "Are there any specific e-commerce platforms or marketplaces, beyond your own website, where you plan to sell your subscription boxes?",
+        "Currently, I'm focusing on selling through my own website."
+      ]
+    ],
+    "cov_by_turn": [
+      0.0,
+      0.22429906542056074,
+      0.3925233644859813,
+      0.5514018691588785,
+      0.7009345794392523,
+      0.8504672897196262,
+      0.8504672897196262,
+      0.897196261682243,
+      0.9252336448598131
+    ],
+    "config": "ALI_v1_theta0.9",
+    "theta": 0.9,
+    "vagueness": "Medium",
+    "domain": "Payments",
+    "baseline_cov": 0.0
+  },
+  {
+    "prompt_id": "N78",
+    "deployment": "finagent",
+    "native_domain": "trading",
+    "final_cov": 0.9252336448598131,
+    "n_turns": 4,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "authorization_controls": "limit-order-only",
+      "currency": "USD",
+      "asset_type": "SPY options",
+      "trading_schedule": "never hold options overnight, no trades in the first or last 30 minutes of the session",
+      "volume_per_trade": "$2,000",
+      "payment_from": "linked bank account",
+      "risk_tolerance": "Moderate",
+      "daily_limit": "$80,000 per day"
+    },
+    "transcript": [
+      [
+        "What is the maximum dollar amount you'd like to allocate per trade?",
+        "The maximum dollar amount I'd like to allocate per trade is $2,000."
+      ],
+      [
+        "From which account will the $20,000 capital be transferred?",
+        "The $20,000 capital will be transferred from a linked bank account."
+      ],
+      [
+        "How would you describe your risk tolerance for this trading account: conservative, moderate, or aggressive?",
+        "Moderate."
+      ],
+      [
+        "What is the maximum total dollar amount you'd like to spend or trade per day?",
+        "I'd like to spend or trade a maximum total dollar amount of $80,000 per day."
+      ]
+    ],
+    "cov_by_turn": [
+      0.2616822429906542,
+      0.4485981308411215,
+      0.616822429906542,
+      0.7757009345794392,
+      0.9252336448598131
+    ],
+    "config": "ALI_v1_theta0.9",
+    "theta": 0.9,
+    "vagueness": "Medium",
+    "domain": "Payments",
+    "baseline_cov": 0.1121
+  },
+  {
+    "prompt_id": "N79",
+    "deployment": "finagent",
+    "native_domain": "payroll",
+    "final_cov": 0.9158878504672897,
+    "n_turns": 6,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "reporting": "full audit trail of every transfer",
+      "volume_per_trade": "$50,000",
+      "currency": "USD",
+      "payment_from": "your company's USD corporate bank account",
+      "risk_tolerance": "moderate",
+      "authorization_controls": "Payments authorized by the respective department head, then reviewed and approved by the finance team before release.",
+      "daily_limit": "$250,000",
+      "asset_type": "USD, EUR, GBP, and local currencies (converted from major currencies)"
+    },
+    "transcript": [
+      [
+        "What's the maximum dollar amount for a single payment?",
+        "The maximum dollar amount for a single payment is $50,000."
+      ],
+      [
+        "Where will the funds for these payments come from?",
+        "The funds will come from your company's USD corporate bank account."
+      ],
+      [
+        "When managing currency exchange, do you prefer predictable, stable rates, or are you comfortable with some market exposure for potentially better savings?",
+        "We are comfortable with some market exposure for potentially better savings, as minimizing FX fees is a priority."
+      ],
+      [
+        "How are payments currently authorized or approved within your company?",
+        "Payments are currently authorized by the respective department head, then reviewed and approved by our finance team before release."
+      ],
+      [
+        "What's the maximum total amount you anticipate spending or transferring in a single day?",
+        "We anticipate transferring up to $250,000 in a single day."
+      ],
+      [
+        "Are there any specific types of currencies or assets you'd like to use or avoid for these payments?",
+        "We prefer to use major currencies like USD, EUR, and GBP for funding, and then convert to the local currency for each contractor's payment. We'd like to avoid holding or making payments in highly volatile or less common currencies if possible."
+      ]
+    ],
+    "cov_by_turn": [
+      0.018691588785046728,
+      0.24299065420560748,
+      0.411214953271028,
+      0.5700934579439252,
+      0.719626168224299,
+      0.8691588785046729,
+      0.9158878504672897
+    ],
+    "config": "ALI_v1_theta0.9",
+    "theta": 0.9,
+    "vagueness": "Medium",
+    "domain": "Payments",
+    "baseline_cov": 0.215
+  },
+  {
+    "prompt_id": "N80",
+    "deployment": "finagent",
+    "native_domain": "generic",
+    "final_cov": 0.9813084112149533,
+    "n_turns": 4,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "volume_per_trade": "30k",
+      "currency": "USD",
+      "asset_type": "FRAX/USDC pool",
+      "exchanges": "Curve Finance",
+      "trading_schedule": "daily",
+      "stop_loss": "APY drops below 5% for 3 consecutive days",
+      "payment_from": "MetaMask wallet",
+      "risk_tolerance": "moderate",
+      "authorization_controls": "Actions authorized via a dedicated smart contract or an automated bot with pre-approved permissions. Human approval is required for the initial deployment and funding of the strategy. Daily auto-compounding and auto-exit actions are automated and do not require ongoing human approval.",
+      "daily_limit": "$24.66"
+    },
+    "transcript": [
+      [
+        "From which wallet should the $30k be paid?",
+        "The $30k should be paid from your MetaMask wallet."
+      ],
+      [
+        "Would you describe your risk tolerance for this strategy as conservative, moderate, or aggressive?",
+        "I would describe the risk tolerance for this strategy as moderate."
+      ],
+      [
+        "How should actions for this strategy be authorized, and do you require any human approval?",
+        "The actions for this strategy will be authorized via a dedicated smart contract or an automated bot with pre-approved permissions to interact with Curve Finance for deposits, claims, re-deposits, and withdrawals.\n\nHuman approval is required for the initial deployment and funding of the strategy. However, the daily auto-compounding and auto-exit actions are automated and do not require ongoing human approval."
+      ],
+      [
+        "What is the maximum cumulative value of assets this strategy can spend or trade daily?",
+        "The maximum cumulative value of assets this strategy can trade daily is approximately $24.66. This is based on an assumed 15% APY for daily reward generation and compounding."
+      ]
+    ],
+    "cov_by_turn": [
+      0.35514018691588783,
+      0.5233644859813084,
+      0.6822429906542056,
+      0.8317757009345794,
+      0.9813084112149533
+    ],
+    "config": "ALI_v1_theta0.9",
+    "theta": 0.9,
+    "vagueness": "Medium",
+    "domain": "Payments",
+    "baseline_cov": 0.6729
+  },
+  {
+    "prompt_id": "N81",
+    "deployment": "finagent",
+    "native_domain": "payroll",
+    "final_cov": 0.9252336448598131,
+    "n_turns": 8,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "currency": "USD",
+      "volume_per_trade": "$1,000",
+      "payment_from": "major credit and debit cards (Visa, Mastercard, American Express, Discover)",
+      "risk_tolerance": "moderate",
+      "authorization_controls": "no additional approval requirements for larger tips beyond standard payment processing",
+      "daily_limit": "no daily limit",
+      "asset_type": "USD",
+      "exchanges": "Stripe"
+    },
+    "transcript": [
+      [
+        "What's the maximum amount a user can tip in a single transaction?",
+        "A user can tip a maximum of $1,000 in a single transaction."
+      ],
+      [
+        "What payment methods will users use to tip creators?",
+        "Users can tip creators using major credit and debit cards (Visa, Mastercard, American Express, Discover)."
+      ],
+      [
+        "How do you balance the need for robust fraud prevention and financial security with the desire to provide instant and flexible services for creators?",
+        "We balance this by leveraging Stripe's robust fraud detection and secure payment processing for all transactions. This allows us to offer instant withdrawals directly to creators' connected Stripe accounts, ensuring both financial security and immediate access to funds, with a minimum $10 payout."
+      ],
+      [
+        "Considering the instant payouts and financial transactions, would you describe your platform's approach to risk as conservative, moderate, or aggressive?",
+        "Our platform takes a **moderate** approach to risk."
+      ],
+      [
+        "What authorization rules or approval requirements are in place for transactions, particularly for withdrawals or larger tips?",
+        "Creators can withdraw instantly to their Stripe connected account once they reach the minimum $10 payout. There are no additional approval requirements for larger tips beyond standard payment processing."
+      ],
+      [
+        "Is there a daily limit on the total amount a user can tip?",
+        "No, there is no daily limit on the total amount a user can tip."
+      ],
+      [
+        "Are there any other currencies or digital assets, besides USD, that users can use to tip creators?",
+        "No, users can only tip in USD."
+      ],
+      [
+        "Are there any other platforms or services, besides Stripe, that are used for processing tips or creator withdrawals?",
+        "No, only Stripe is used for processing tips and creator withdrawals."
+      ]
+    ],
+    "cov_by_turn": [
+      0.037383177570093455,
+      0.22429906542056074,
+      0.3925233644859813,
+      0.3925233644859813,
+      0.5514018691588785,
+      0.7009345794392523,
+      0.8504672897196262,
+      0.897196261682243,
+      0.9252336448598131
+    ],
+    "config": "ALI_v1_theta0.9",
+    "theta": 0.9,
+    "vagueness": "Medium",
+    "domain": "Payments",
+    "baseline_cov": 0.2991
+  },
+  {
+    "prompt_id": "N82",
+    "deployment": "finagent",
+    "native_domain": "trading",
+    "final_cov": 0.9439252336448598,
+    "n_turns": 4,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "volume_per_trade": "2 contracts",
+      "daily_limit": "3 trades",
+      "asset_type": "gold futures (GC contract)",
+      "exchanges": "Interactive Brokers",
+      "trading_schedule": "US session (14:30–21:00 UTC)",
+      "stop_loss": "0.5% per trade",
+      "payment_from": "Interactive Brokers margin account, named \"Futures Trading Account 1\"",
+      "risk_tolerance": "conservative",
+      "authorization_controls": "Only the account holder is authorized to manage or modify the automated trading system."
+    },
+    "transcript": [
+      [
+        "Which account will be used to fund these trades?",
+        "The trades will be funded from your Interactive Brokers margin account, named \"Futures Trading Account 1\"."
+      ],
+      [
+        "Is your overall risk tolerance conservative, moderate, or aggressive?",
+        "The risk tolerance is conservative."
+      ],
+      [
+        "Are there any human approval steps required for these automated trades?",
+        "No."
+      ],
+      [
+        "What are the authorization rules for managing or modifying this automated trading system?",
+        "Only the account holder is authorized to manage or modify the automated trading system."
+      ]
+    ],
+    "cov_by_turn": [
+      0.4672897196261682,
+      0.6355140186915887,
+      0.794392523364486,
+      0.794392523364486,
+      0.9439252336448598
+    ],
+    "config": "ALI_v1_theta0.9",
+    "theta": 0.9,
+    "vagueness": "Medium",
+    "domain": "Payments",
+    "baseline_cov": 0.3178
+  },
+  {
+    "prompt_id": "N83",
+    "deployment": "finagent",
+    "native_domain": "payroll",
+    "final_cov": 0.9252336448598131,
+    "n_turns": 6,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "currency": "USD, GBP, EUR, AED",
+      "trading_schedule": "No conversion during weekends",
+      "volume_per_trade": "€50,000",
+      "payment_from": "US, UK, EU, UAE",
+      "risk_tolerance": "comfortable with market fluctuations as long as they help achieve the best possible rates",
+      "daily_limit": "75,000 EUR",
+      "authorization_controls": "All transactions require approval from an authorized user.",
+      "asset_type": "currencies"
+    },
+    "transcript": [
+      [
+        "What's the maximum amount you anticipate for a single incoming payment or transaction?",
+        "For a single incoming payment, I anticipate a maximum of **€50,000**."
+      ],
+      [
+        "What are the typical sources of these incoming payments?",
+        "Your incoming payments typically originate from clients in the US, UK, EU, and UAE."
+      ],
+      [
+        "When it comes to currency exchange, how comfortable are you with market fluctuations to achieve the best possible rates?",
+        "I am comfortable with market fluctuations as long as they help me achieve the best possible rates for my month-end auto-conversions."
+      ],
+      [
+        "What's the maximum total amount you'd need to spend or exchange on any given day?",
+        "75,000 EUR."
+      ],
+      [
+        "What are your authorization rules or approval requirements for transactions on this account?",
+        "All transactions require approval from an authorized user."
+      ],
+      [
+        "Besides the currencies you've mentioned, are there any other assets or instruments you'd like to manage or trade with this account?",
+        "No, just those currencies."
+      ]
+    ],
+    "cov_by_turn": [
+      0.06542056074766354,
+      0.2523364485981308,
+      0.4205607476635514,
+      0.5794392523364486,
+      0.7289719626168224,
+      0.8785046728971962,
+      0.9252336448598131
+    ],
+    "config": "ALI_v1_theta0.9",
+    "theta": 0.9,
+    "vagueness": "Medium",
+    "domain": "Payments",
+    "baseline_cov": 0.0841
+  },
+  {
+    "prompt_id": "N84",
+    "deployment": "finagent",
+    "native_domain": "trading",
+    "final_cov": 0.9252336448598131,
+    "n_turns": 4,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "currency": "ETH",
+      "asset_type": "ETH",
+      "exchanges": "Lido",
+      "volume_per_trade": "5,000 ETH",
+      "payment_from": "dedicated operational multi-signature wallet",
+      "authorization_controls": "multi-signature",
+      "risk_tolerance": "moderate",
+      "daily_limit": "50 ETH"
+    },
+    "transcript": [
+      [
+        "What's the maximum amount for a single deposit or payout?",
+        "The maximum amount for a single deposit or payout is 5,000 ETH."
+      ],
+      [
+        "Which account or wallet will be used to send the weekly payouts to users?",
+        "The payouts will be sent from our dedicated operational multi-signature wallet."
+      ],
+      [
+        "What is the desired risk tolerance for this staking-as-a-service product (e.g., conservative, moderate, aggressive)?",
+        "The desired risk tolerance for this staking-as-a-service product is moderate."
+      ],
+      [
+        "What is the cumulative daily limit for all payouts or withdrawals from the platform?",
+        "The cumulative daily limit for all payouts or withdrawals from the platform is 50 ETH."
+      ]
+    ],
+    "cov_by_turn": [
+      0.11214953271028037,
+      0.29906542056074764,
+      0.616822429906542,
+      0.7757009345794392,
+      0.9252336448598131
+    ],
+    "config": "ALI_v1_theta0.9",
+    "theta": 0.9,
+    "vagueness": "Medium",
+    "domain": "Payments",
+    "baseline_cov": 0.4486
+  },
+  {
+    "prompt_id": "N85",
+    "deployment": "finagent",
+    "native_domain": "payroll",
+    "final_cov": 0.9439252336448598,
+    "n_turns": 5,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "volume_per_trade": "€45, €480, €120/month",
+      "currency": "EUR",
+      "trading_schedule": "Members can pause up to 2 months per year",
+      "reporting": "SMS notification",
+      "payment_from": "credit/debit cards, direct debit",
+      "risk_tolerance": "low",
+      "daily_limit": "€750,000",
+      "authorization_controls": "Authorization roles include Admin (full access), Manager (member management, reporting), and Staff (new sign-ups, viewing member info). Approval processes are required for refunds above €50, manual adjustments to fees/discounts, and extending membership pauses beyond 2 months/year. Human oversight is needed for failed payment retries, disputed charges, complex membership changes, and fraudulent activity alerts.",
+      "asset_type": "personal training sessions, merchandise sales"
+    },
+    "transcript": [
+      [
+        "What payment methods should the system support for your members?",
+        "The system should support credit/debit cards and direct debit."
+      ],
+      [
+        "What is your general risk tolerance for the financial operations and security of this billing system?",
+        "We have a low risk tolerance for financial operations and security."
+      ],
+      [
+        "What is the maximum total amount of transactions the system should be allowed to process in a single day?",
+        "The system should be allowed to process up to €750,000 in transactions in a single day."
+      ],
+      [
+        "What authorization rules and approval processes do you require for actions within the billing system, and are there any specific scenarios that would require human oversight?",
+        "For authorization, we'd typically have roles like Admin (full access), Manager (member management, reporting), and Staff (new sign-ups, viewing member info).\n\nApproval processes would be required for actions such as:\n*   Processing refunds above a certain threshold (e.g., €50).\n*   Manual adjustments to membership fees or custom discounts.\n*   Extending a membership pause beyond the standard 2 months per year.\n\nHuman oversight would be needed for:\n*   Failed payment retries after the final automated attempt.\n*   Handling disputed charges or chargebacks.\n*   Complex membership changes not covered by standard self-service options.\n*   Fraudulent activity alerts."
+      ],
+      [
+        "What other types of products or services, besides memberships, will your billing system need to manage?",
+        "The billing system will also need to manage personal training sessions and merchandise sales."
+      ]
+    ],
+    "cov_by_turn": [
+      0.27102803738317754,
+      0.4392523364485981,
+      0.5981308411214953,
+      0.7476635514018691,
+      0.897196261682243,
+      0.9439252336448598
+    ],
+    "config": "ALI_v1_theta0.9",
+    "theta": 0.9,
+    "vagueness": "Medium",
+    "domain": "Payments",
+    "baseline_cov": 0.2523
+  },
+  {
+    "prompt_id": "N86",
+    "deployment": "finagent",
+    "native_domain": "trading",
+    "final_cov": 0.9813084112149533,
+    "n_turns": 5,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "currency": "BTC",
+      "asset_type": "protective puts",
+      "exchanges": "regulated derivatives exchange",
+      "trading_schedule": "Auto-roll monthly",
+      "stop_loss": "max 20% loss",
+      "volume_per_trade": "$2,500",
+      "payment_from": "USD or stablecoin balance in your derivatives exchange account",
+      "risk_tolerance": "Moderate",
+      "daily_limit": "$500",
+      "authorization_controls": "Authorization rules, approval requirements, suitability assessment, specific permissions for options trading"
+    },
+    "transcript": [
+      [
+        "What is the maximum dollar amount you'd like to allocate to each individual trade?",
+        "I can allocate up to $2,500 to each individual trade."
+      ],
+      [
+        "Which account or wallet should be used to pay for the puts?",
+        "You can use the USD or stablecoin balance in your derivatives exchange account."
+      ],
+      [
+        "Considering your max 20% loss tolerance for this hedge, how would you describe your overall investment risk tolerance: conservative, moderate, or aggressive?",
+        "Moderate."
+      ],
+      [
+        "Is there a maximum total amount you're comfortable spending on these hedges in a single day?",
+        "Yes, I'm comfortable spending a maximum of $500 per day on these hedges."
+      ],
+      [
+        "Are there any authorization rules or approval requirements for these trades?",
+        "Yes, generally, there are authorization rules and approval requirements. You'll need to have an approved derivatives trading account with the exchange or a broker that offers access to it. This usually involves a suitability assessment and specific permissions for options trading."
+      ]
+    ],
+    "cov_by_turn": [
+      0.16822429906542055,
+      0.35514018691588783,
+      0.5233644859813084,
+      0.6822429906542056,
+      0.8317757009345794,
+      0.9813084112149533
+    ],
+    "config": "ALI_v1_theta0.9",
+    "theta": 0.9,
+    "vagueness": "Medium",
+    "domain": "Payments",
+    "baseline_cov": 0.271
+  },
+  {
+    "prompt_id": "N87",
+    "deployment": "finagent",
+    "native_domain": "generic",
+    "final_cov": 0.9252336448598131,
+    "n_turns": 5,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "payment_from": "business account",
+      "currency": "EUR",
+      "trading_schedule": "every Friday at 17:00 UTC",
+      "volume_per_trade": "No maximum euro amount specified for a single transaction",
+      "risk_tolerance": "Does not have comfort levels; simply executes instructions.",
+      "daily_limit": "€50,000",
+      "authorization_controls": "No additional human approval or authorization is required once the rule is established.",
+      "asset_type": "Euros"
+    },
+    "transcript": [
+      [
+        "Is there a maximum euro amount you'd like to transfer in a single transaction?",
+        "No, there isn't a maximum euro amount specified for a single transaction."
+      ],
+      [
+        "How would you describe your comfort level with automated financial transfers: conservative, moderate, or aggressive?",
+        "As an automated wire transfer rule, I don't have comfort levels. I simply execute the instructions I'm given."
+      ],
+      [
+        "Is there a cumulative daily limit you'd like to set for these automated transfers?",
+        "Yes, let's set a cumulative daily limit of €50,000."
+      ],
+      [
+        "Should any of these automated transfers require human approval or additional authorization before being executed?",
+        "No, these automated transfers are designed to execute without requiring additional human approval or authorization once the rule is established."
+      ],
+      [
+        "Are these transfers exclusively for Euros, or should they apply to other currencies or asset types as well?",
+        "These transfers are exclusively for Euros."
+      ]
+    ],
+    "cov_by_turn": [
+      0.2336448598130841,
+      0.4205607476635514,
+      0.5794392523364486,
+      0.7289719626168224,
+      0.8785046728971962,
+      0.9252336448598131
+    ],
+    "config": "ALI_v1_theta0.9",
+    "theta": 0.9,
+    "vagueness": "Medium",
+    "domain": "Payments",
+    "baseline_cov": 0.4486
+  },
+  {
+    "prompt_id": "N88",
+    "deployment": "finagent",
+    "native_domain": "payroll",
+    "final_cov": 0.9532710280373832,
+    "n_turns": 4,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "asset_type": "stablecoin pools, USDC/USDT, USDC/DAI, USDT/DAI",
+      "exchanges": "Uniswap V3",
+      "trading_schedule": "daily",
+      "volume_per_trade": "$500,000",
+      "currency": "USD",
+      "payment_from": "Gnosis Safe multi-signature wallet, funded by a Ledger hardware wallet",
+      "authorization_controls": "multi-signature wallet",
+      "risk_tolerance": "moderate",
+      "daily_limit": "$1,000,000"
+    },
+    "transcript": [
+      [
+        "What's the maximum dollar amount for a single trade?",
+        "The maximum dollar amount for a single trade is $500,000."
+      ],
+      [
+        "Which account or wallet should be used to fund these operations?",
+        "A Gnosis Safe multi-signature wallet, funded by a Ledger hardware wallet, should be used."
+      ],
+      [
+        "What is your risk tolerance for this strategy?",
+        "My risk tolerance for this strategy is moderate."
+      ],
+      [
+        "What is the maximum total dollar amount that can be traded or spent in a single day?",
+        "The maximum total dollar amount that can be traded or spent in a single day is $1,000,000."
+      ]
+    ],
+    "cov_by_turn": [
+      0.102803738317757,
+      0.32710280373831774,
+      0.6448598130841121,
+      0.8037383177570093,
+      0.9532710280373832
+    ],
+    "config": "ALI_v1_theta0.9",
+    "theta": 0.9,
+    "vagueness": "Medium",
+    "domain": "Payments",
+    "baseline_cov": 0.2617
+  },
+  {
+    "prompt_id": "N89",
+    "deployment": "finagent",
+    "native_domain": "trading",
+    "final_cov": 0.9439252336448598,
+    "n_turns": 5,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "authorization_controls": "board approval",
+      "currency": "BTC, ETH",
+      "asset_type": "credit card, BTC, ETH",
+      "trading_schedule": "monthly, quarterly",
+      "reporting": "tax receipts",
+      "volume_per_trade": "no maximum limit",
+      "payment_from": "credit cards, Bitcoin (BTC) wallets, Ethereum (ETH) wallets",
+      "risk_tolerance": "moderate",
+      "daily_limit": "$10,000"
+    },
+    "transcript": [
+      [
+        "Is there a maximum limit for a single donation?",
+        "No, there isn't a maximum limit for a single donation."
+      ],
+      [
+        "What types of accounts or wallets will donors be paying from?",
+        "Donors can pay using credit cards, Bitcoin (BTC) wallets, or Ethereum (ETH) wallets."
+      ],
+      [
+        "How would you describe your comfort level with the financial and operational risks involved in building and running this platform?",
+        "The platform is designed with robust financial controls, security measures, and compliance protocols to mitigate the inherent risks associated with payment processing, cryptocurrency handling, and financial disbursements."
+      ],
+      [
+        "To clarify, would you describe your organization's overall risk tolerance as conservative, moderate, or aggressive?",
+        "Our organization's overall risk tolerance is moderate."
+      ],
+      [
+        "Is there a cumulative daily limit for donations on the platform?",
+        "Yes, there is a cumulative daily limit of $10,000 per donor."
+      ]
+    ],
+    "cov_by_turn": [
+      0.2803738317757009,
+      0.4672897196261682,
+      0.6355140186915887,
+      0.6355140186915887,
+      0.794392523364486,
+      0.9439252336448598
+    ],
+    "config": "ALI_v1_theta0.9",
+    "theta": 0.9,
+    "vagueness": "Medium",
+    "domain": "Payments",
+    "baseline_cov": 0.4766
+  },
+  {
+    "prompt_id": "N90",
+    "deployment": "finagent",
+    "native_domain": "trading",
+    "final_cov": 0.9719626168224299,
+    "n_turns": 5,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "currency": "USD",
+      "asset_type": "US T-bills (3-6 month), investment-grade corporate bond ETF (LQD)",
+      "exchanges": "TreasuryDirect API, Schwab",
+      "trading_schedule": "Quarterly rebalancing, auto-roll at maturity",
+      "reporting": "Monthly PDF report for my accountant showing yield, duration, and unrealised P&L",
+      "volume_per_trade": "$50,000",
+      "payment_from": "your linked Schwab checking account",
+      "risk_tolerance": "Conservative",
+      "authorization_controls": "no approval required, all trades and actions executed automatically",
+      "daily_limit": "$50,000"
+    },
+    "transcript": [
+      [
+        "What is the maximum dollar amount you'd like for any single trade?",
+        "The maximum dollar amount for any single trade will be $50,000."
+      ],
+      [
+        "From which account should the initial $200k be drawn?",
+        "The initial $200k will be drawn from your linked Schwab checking account."
+      ],
+      [
+        "How would you describe your risk tolerance for this portfolio: conservative, moderate, or aggressive?",
+        "Conservative."
+      ],
+      [
+        "Are there any specific actions or types of trades that require your approval before execution?",
+        "No, all trades and actions within the defined strategy parameters are executed automatically without requiring your approval."
+      ],
+      [
+        "What is the maximum total dollar amount you'd like to allow for all trades executed in a single day?",
+        "I'd like to set the maximum total dollar amount for all trades executed in a single day at $50,000."
+      ]
+    ],
+    "cov_by_turn": [
+      0.1588785046728972,
+      0.34579439252336447,
+      0.514018691588785,
+      0.6728971962616822,
+      0.822429906542056,
+      0.9719626168224299
+    ],
+    "config": "ALI_v1_theta0.9",
+    "theta": 0.9,
+    "vagueness": "Detailed",
+    "domain": "Payments",
+    "baseline_cov": 0.2991
+  },
+  {
+    "prompt_id": "N91",
+    "deployment": "finagent",
+    "native_domain": "payroll",
+    "final_cov": 0.9158878504672897,
+    "n_turns": 3,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "volume_per_trade": "$1,000–$50,000",
+      "payment_from": "local bank transfer or e-wallet (GCash Philippines, PromptPay Thailand)",
+      "currency": "USD",
+      "asset_type": "loans",
+      "reporting": "Investor dashboard: portfolio breakdown, expected returns, defaults",
+      "risk_tolerance": "moderate",
+      "authorization_controls": "Loan approval based on proprietary credit score (above 650) and successful AML/KYC verification via Sumsub. Human reviewer for loans above $25,000 or flagged applications.",
+      "daily_limit": "cumulative daily limit"
+    },
+    "transcript": [
+      [
+        "What is the intended risk tolerance for the loans on your platform (conservative, moderate, or aggressive)?",
+        "The intended risk tolerance for the loans on the platform is moderate."
+      ],
+      [
+        "What are the authorization rules and approval requirements for loans, and does a human review them?",
+        "Loan approval is primarily based on the credit score generated by the bank statement API. Applications require a proprietary credit score above 650 and successful AML/KYC verification via Sumsub. While initial decisions are automated, a human reviewer assesses applications for loans above $25,000 or those flagged by the system for further scrutiny."
+      ],
+      [
+        "What specific user activities on your P2P lending platform will be subject to a cumulative daily limit?",
+        "Investor deposits, investor withdrawals, and investor commitments to new loans will be subject to a cumulative daily limit."
+      ]
+    ],
+    "cov_by_turn": [
+      0.45794392523364486,
+      0.616822429906542,
+      0.7663551401869159,
+      0.9158878504672897
+    ],
+    "config": "ALI_v1_theta0.9",
+    "theta": 0.9,
+    "vagueness": "Detailed",
+    "domain": "Payments",
+    "baseline_cov": 0.6075
+  },
+  {
+    "prompt_id": "N92",
+    "deployment": "finagent",
+    "native_domain": "trading",
+    "final_cov": 1.0,
+    "n_turns": 5,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "volume_per_trade": "$150",
+      "currency": "USD",
+      "asset_type": "EUR/USD, GBP/USD, USD/JPY",
+      "exchanges": "OANDA API v20",
+      "trading_schedule": "London/New York overlap (13:00–17:00 UTC); No trading on major economic announcement days (NFP, CPI, central bank decisions)",
+      "stop_loss": "30 pips",
+      "reporting": "Telegram alert for every trade open/close",
+      "payment_from": "OANDA live trading account",
+      "risk_tolerance": "Moderate",
+      "authorization_controls": "fully autonomous",
+      "daily_limit": "$750"
+    },
+    "transcript": [
+      [
+        "Which trading account should the bot use?",
+        "The bot should use an OANDA live trading account."
+      ],
+      [
+        "What is your overall risk tolerance for this bot (e.g., conservative, moderate, aggressive)?",
+        "Moderate."
+      ],
+      [
+        "Will the bot operate fully autonomously, or is human approval required for any trades or actions?",
+        "The bot will operate fully autonomously."
+      ],
+      [
+        "What is the maximum total amount the bot is allowed to risk or trade in a single day?",
+        "The maximum total amount the bot is allowed to risk at any given time is $450."
+      ],
+      [
+        "You mentioned a maximum risk of $450 at any given time. Is there also a cumulative daily limit for the total amount the bot can risk or trade throughout the day?",
+        "Yes, there is a cumulative daily limit. The bot will stop trading for the day if the total realized and unrealized losses for the day reach $750."
+      ]
+    ],
+    "cov_by_turn": [
+      0.37383177570093457,
+      0.5420560747663551,
+      0.7009345794392523,
+      0.8504672897196262,
+      0.8504672897196262,
+      1.0
+    ],
+    "config": "ALI_v1_theta0.9",
+    "theta": 0.9,
+    "vagueness": "Detailed",
+    "domain": "Payments",
+    "baseline_cov": 0.3738
+  },
+  {
+    "prompt_id": "N93",
+    "deployment": "finagent",
+    "native_domain": "trading",
+    "final_cov": 0.9439252336448598,
+    "n_turns": 3,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "risk_tolerance": "conservative",
+      "authorization_controls": "All transactions above $50k require multi-sig approval (Gnosis Safe, 2-of-4 signers: CEO, CFO, and 2 board members)",
+      "currency": "USDC",
+      "asset_type": "BTC, ETH, USDC",
+      "stop_loss": "Auto-convert incoming ETH/BTC to USDC if their price drops below the 30-day moving average",
+      "reporting": "Monthly CFO report: unrealised P&L, runway estimate, BTC/ETH exposure. Integrate with accounting system (Xero)",
+      "volume_per_trade": "$50,000",
+      "payment_from": "Gnosis Safe multi-signature wallet",
+      "daily_limit": "$100,000"
+    },
+    "transcript": [
+      [
+        "What is the maximum dollar amount for any single trade?",
+        "The maximum dollar amount for any single trade is $50,000."
+      ],
+      [
+        "From which wallet or account will these payments be made?",
+        "Payments will be made from a Gnosis Safe multi-signature wallet."
+      ],
+      [
+        "What is the maximum total amount that can be spent or traded in a single day?",
+        "The maximum total amount that can be spent or traded in a single day is $100,000."
+      ]
+    ],
+    "cov_by_turn": [
+      0.4392523364485981,
+      0.6261682242990654,
+      0.794392523364486,
+      0.9439252336448598
+    ],
+    "config": "ALI_v1_theta0.9",
+    "theta": 0.9,
+    "vagueness": "Detailed",
+    "domain": "Payments",
+    "baseline_cov": 0.4486
+  },
+  {
+    "prompt_id": "N94",
+    "deployment": "finagent",
+    "native_domain": "trading",
+    "final_cov": 0.9439252336448598,
+    "n_turns": 3,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "volume_per_trade": "$5,000",
+      "daily_limit": "$2,000",
+      "currency": "USD",
+      "asset_type": "BTC/USDT",
+      "exchanges": "Binance, Kraken, Coinbase Pro",
+      "reporting": "Telegram alert on every execution, All trades logged to PostgreSQL",
+      "payment_from": "a dedicated trading sub-account on each exchange",
+      "risk_tolerance": "conservative",
+      "authorization_controls": "No human approval is required for any trades; the bot is designed for automated execution."
+    },
+    "transcript": [
+      [
+        "What is the source account/wallet for the funds?",
+        "The funds will be sourced from a dedicated trading sub-account on each exchange."
+      ],
+      [
+        "What is your overall risk tolerance for this bot (e.g., conservative, moderate, aggressive)?",
+        "The overall risk tolerance for this bot is conservative."
+      ],
+      [
+        "What are the authorization rules for trade execution? For example, is human approval required for any trades?",
+        "No, human approval is not required for any trades. The bot is designed for automated execution."
+      ]
+    ],
+    "cov_by_turn": [
+      0.4672897196261682,
+      0.6355140186915887,
+      0.794392523364486,
+      0.9439252336448598
+    ],
+    "config": "ALI_v1_theta0.9",
+    "theta": 0.9,
+    "vagueness": "Detailed",
+    "domain": "Payments",
+    "baseline_cov": 0.4953
+  },
+  {
+    "prompt_id": "N95",
+    "deployment": "finagent",
+    "native_domain": "payroll",
+    "final_cov": 0.9158878504672897,
+    "n_turns": 7,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "currency": "USD",
+      "reporting": "Daily sync to NetSuite ERP",
+      "volume_per_trade": "$50,000",
+      "payment_from": "credit/debit card accounts or bank accounts",
+      "risk_tolerance": "moderate",
+      "authorization_controls": "Approval required for manual adjustments, refunds, and new subscriptions exceeding $5,000 USD per month.",
+      "daily_limit": "$500,000",
+      "asset_type": "Credit Card, Debit Card, Bank Account, Cash"
+    },
+    "transcript": [
+      [
+        "What's the maximum dollar amount you expect for a single payment or invoice?",
+        "I expect a maximum of $50,000 for a single payment or invoice."
+      ],
+      [
+        "What types of accounts or wallets will your B2B customers typically use to make these payments?",
+        "Your B2B customers will typically use credit/debit card accounts or bank accounts to make these payments."
+      ],
+      [
+        "To proceed with the task, I need to understand your risk tolerance. When it comes to payment processing and potential fraud, would you describe your company's risk tolerance as conservative, moderate, or aggressive?",
+        "My company's risk tolerance regarding payment processing and potential fraud is moderate."
+      ],
+      [
+        "Are there any internal authorization or approval requirements for payments?",
+        "Yes, manual adjustments or refunds require approval, as do new subscriptions exceeding $5,000 USD per month."
+      ],
+      [
+        "To proceed with the task, I need to understand your daily transaction limits. What is the maximum cumulative dollar amount you expect to process in a single day?",
+        "We expect to process a maximum cumulative amount of $500,000 in a single day."
+      ],
+      [
+        "What is the complete whitelist of payment methods you want to accept?",
+        "The payment methods I want to accept are:\n*   Card (via Stripe)\n*   SEPA Direct Debit (for EU customers)\n*   Pix (for Brazil customers)\n*   Konbini (for Japan customers)"
+      ],
+      [
+        "To proceed with the task, I need to understand the whitelist of allowed assets/instruments to trade. Could you specify the exact asset types (e.g., credit card, debit card, bank account, cash) associated with each of your whitelisted payment methods?",
+        "Here are the asset types for each whitelisted payment method:\n\n*   **Card (Stripe)**: Credit Card, Debit Card\n*   **SEPA Direct Debit (EU)**: Bank Account\n*   **Pix (Brazil)**: Bank Account\n*   **Konbini (Japan)**: Cash"
+      ]
+    ],
+    "cov_by_turn": [
+      0.056074766355140186,
+      0.24299065420560748,
+      0.411214953271028,
+      0.5700934579439252,
+      0.719626168224299,
+      0.8691588785046729,
+      0.8691588785046729,
+      0.9158878504672897
+    ],
+    "config": "ALI_v1_theta0.9",
+    "theta": 0.9,
+    "vagueness": "Detailed",
+    "domain": "Payments",
+    "baseline_cov": 0.0841
+  },
+  {
+    "prompt_id": "N96",
+    "deployment": "finagent",
+    "native_domain": "trading",
+    "final_cov": 0.9719626168224299,
+    "n_turns": 4,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "currency": "ETH, USDC",
+      "asset_type": "ETH, stETH, USDC",
+      "exchanges": "Lido, Aave, Curve 3pool",
+      "stop_loss": "Aave LTV > 65% (deleverage), Lido APR drops > 2pp vs. 30-day avg (reduce allocation), Curve APY < 4% for 7 days (exit Curve), full derisking within 4h if ETH drops >25% in 24h",
+      "reporting": "Daily report: yield breakdown, LTV, estimated APY. Alerts via Telegram.",
+      "volume_per_trade": "$150,000",
+      "payment_from": "Gnosis Safe multi-signature wallet",
+      "authorization_controls": "multi-signature wallet",
+      "risk_tolerance": "moderate",
+      "daily_limit": "1 ETH"
+    },
+    "transcript": [
+      [
+        "What's the maximum dollar amount per trade?",
+        "The maximum dollar amount per trade is $150,000."
+      ],
+      [
+        "Which account or wallet will be used to fund this strategy?",
+        "The strategy will be funded from a Gnosis Safe multi-signature wallet."
+      ],
+      [
+        "What is your overall risk tolerance for this strategy (e.g., conservative, moderate, aggressive)?",
+        "The overall risk tolerance for this strategy is **moderate**."
+      ],
+      [
+        "What is the maximum cumulative amount that can be traded or spent in a single day?",
+        "The maximum cumulative amount that can be traded or spent in a single day is 1 ETH."
+      ]
+    ],
+    "cov_by_turn": [
+      0.1588785046728972,
+      0.34579439252336447,
+      0.6635514018691588,
+      0.822429906542056,
+      0.9719626168224299
+    ],
+    "config": "ALI_v1_theta0.9",
+    "theta": 0.9,
+    "vagueness": "Detailed",
+    "domain": "Payments",
+    "baseline_cov": 0.1589
+  },
+  {
+    "prompt_id": "N97",
+    "deployment": "finagent",
+    "native_domain": "payroll",
+    "final_cov": 0.9439252336448598,
+    "n_turns": 3,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "volume_per_trade": "$50,000",
+      "payment_from": "Wise Business",
+      "authorization_controls": "CFO approval gate for any batch > $50,000",
+      "trading_schedule": "Monthly pay cycle, processed on last local business day",
+      "reporting": "Full audit trail, GDPR compliant",
+      "risk_tolerance": "conservative",
+      "daily_limit": "$200,000",
+      "currency": "USD",
+      "asset_type": "None (payroll system does not manage financial assets)"
+    },
+    "transcript": [
+      [
+        "What is your company's risk tolerance for this payroll system – conservative, moderate, or aggressive?",
+        "The risk tolerance for this payroll system is conservative."
+      ],
+      [
+        "What is the cumulative daily spending cap you'd like to set for the payroll system?",
+        "A cumulative daily spending cap of $200,000 would be appropriate."
+      ],
+      [
+        "Does your payroll system need to manage or interact with specific financial assets or instruments (e.g., employee stock options, investment plans)? If so, what types are allowed?",
+        "No, the payroll system does not need to manage or interact with specific financial assets or instruments like employee stock options or investment plans. It handles standard deductions such as local pension contributions, income tax withholding, and health insurance."
+      ]
+    ],
+    "cov_by_turn": [
+      0.5514018691588785,
+      0.7102803738317757,
+      0.897196261682243,
+      0.9439252336448598
+    ],
+    "config": "ALI_v1_theta0.9",
+    "theta": 0.9,
+    "vagueness": "Detailed",
+    "domain": "Payments",
+    "baseline_cov": 0.2336
+  },
+  {
+    "prompt_id": "N98",
+    "deployment": "finagent",
+    "native_domain": "trading",
+    "final_cov": 0.9719626168224299,
+    "n_turns": 4,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "volume_per_trade": "$20,000",
+      "currency": "USD",
+      "asset_type": [
+        "BTC",
+        "ETH",
+        "SOL",
+        "USDC"
+      ],
+      "exchanges": [
+        "Coinbase Pro",
+        "Kraken"
+      ],
+      "trading_schedule": "No trades during UTC 00:00–04:00",
+      "reporting": "All rebalances logged to Airtable with timestamp, asset, quantity, price, and trigger reason. Monthly email report to investment committee.",
+      "payment_from": "linked bank accounts on Coinbase Pro and Kraken",
+      "risk_tolerance": "aggressive",
+      "authorization_controls": "no human-in-the-loop for rebalance trades",
+      "daily_limit": "$100,000"
+    },
+    "transcript": [
+      [
+        "What is the source account or wallet for the funds?",
+        "The funds originate from linked bank accounts on Coinbase Pro and Kraken."
+      ],
+      [
+        "What is your overall investment risk tolerance for this portfolio (e.g., conservative, moderate, aggressive)?",
+        "The overall investment risk tolerance for this portfolio is aggressive."
+      ],
+      [
+        "Regarding authorization controls, do rebalance trades require any human approval before execution, or are they fully automated?",
+        "Rebalance trades are fully automated."
+      ],
+      [
+        "What is the maximum cumulative value of all trades allowed within a 24-hour period?",
+        "The maximum cumulative value of all trades allowed within a 24-hour period is $100,000."
+      ]
+    ],
+    "cov_by_turn": [
+      0.34579439252336447,
+      0.514018691588785,
+      0.6728971962616822,
+      0.822429906542056,
+      0.9719626168224299
+    ],
+    "config": "ALI_v1_theta0.9",
+    "theta": 0.9,
+    "vagueness": "Detailed",
+    "domain": "Payments",
+    "baseline_cov": 0.3458
+  },
+  {
+    "prompt_id": "N99",
+    "deployment": "finagent",
+    "native_domain": "trading",
+    "final_cov": 0.9252336448598131,
+    "n_turns": 2,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "payment_from": [
+        "USD",
+        "ETH"
+      ],
+      "risk_tolerance": "100% of outstanding GOLD backed by ETH in multi-sig custody",
+      "authorization_controls": [
+        "multi-sig custody",
+        "mandatory KYC (Onfido) above $1,000 lifetime spend"
+      ],
+      "currency": [
+        "USD",
+        "ETH",
+        "GOLD"
+      ],
+      "asset_type": [
+        "GOLD",
+        "ETH",
+        "USD"
+      ],
+      "exchanges": "Polygon",
+      "volume_per_trade": "$10,000",
+      "daily_limit": "$1,000 per user"
+    },
+    "transcript": [
+      [
+        "What is the maximum dollar amount allowed for a single transaction?",
+        "The maximum dollar amount allowed for a single transaction is $10,000."
+      ],
+      [
+        "What is the daily spending limit?",
+        "The daily spending limit is $1,000 per user."
+      ]
+    ],
+    "cov_by_turn": [
+      0.5887850467289719,
+      0.7757009345794392,
+      0.9252336448598131
+    ],
+    "config": "ALI_v1_theta0.9",
+    "theta": 0.9,
+    "vagueness": "Detailed",
+    "domain": "Payments",
+    "baseline_cov": 0.4019
+  },
+  {
+    "prompt_id": "N100",
+    "deployment": "finagent",
+    "native_domain": "trading",
+    "final_cov": 0.9719626168224299,
+    "n_turns": 3,
+    "stopped_by": "coverage_reached",
+    "F_resolved": {
+      "authorization_controls": "human override to resume",
+      "daily_limit": "max 10 trades per day",
+      "currency": "USD",
+      "asset_type": "US equities and ETFs only (no options, no crypto, no leverage)",
+      "trading_schedule": "no trading in first/last 10 minutes of session",
+      "stop_loss": "max 5% in single stock, max 20% in single sector (GICS), max 2% daily drawdown (auto-halt + human override to resume)",
+      "reporting": "real-time P&L dashboard, weekly email to portfolio manager with attribution by sector, monthly report for trustee board, all orders stored for SEC audit trail, 7-year retention policy",
+      "volume_per_trade": "$50,000",
+      "payment_from": "family's principal investment account",
+      "risk_tolerance": "moderate"
+    },
+    "transcript": [
+      [
+        "What is the maximum dollar amount allowed per individual trade?",
+        "The maximum dollar amount allowed per individual trade is $50,000."
+      ],
+      [
+        "From which account will the initial $1M be funded?",
+        "The initial $1M will be funded from the family's principal investment account."
+      ],
+      [
+        "What is the overall risk tolerance for this $1M account (e.g., conservative, moderate, or aggressive)?",
+        "Based on the specified risk limits and trading parameters, the overall risk tolerance for this $1M account is **moderate**."
+      ]
+    ],
+    "cov_by_turn": [
+      0.45794392523364486,
+      0.6448598130841121,
+      0.8130841121495327,
+      0.9719626168224299
+    ],
+    "config": "ALI_v1_theta0.9",
+    "theta": 0.9,
+    "vagueness": "Detailed",
+    "domain": "Payments",
+    "baseline_cov": 0.6542
+  }
+]

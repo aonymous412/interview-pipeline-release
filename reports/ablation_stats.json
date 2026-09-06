@@ -1,0 +1,307 @@
+{
+  "n_paired": 30,
+  "prompt_ids": [
+    "N06",
+    "N07",
+    "N11",
+    "N13",
+    "N20",
+    "N26",
+    "N29",
+    "N33",
+    "N35",
+    "N41",
+    "N42",
+    "N46",
+    "N48",
+    "N55",
+    "N61",
+    "N64",
+    "N68",
+    "N70",
+    "N76",
+    "N77",
+    "N81",
+    "N83",
+    "N90",
+    "N96",
+    "N99",
+    "P14",
+    "P18",
+    "P20",
+    "P34",
+    "P49"
+  ],
+  "alpha": 0.05,
+  "tost_delta": {
+    "final_cov": 0.02,
+    "n_turns": 1.0
+  },
+  "methods": {
+    "ci": "bootstrap percentile, 10000 resamples, seed 42 (idem evaluate.py)",
+    "paired_test": "Wilcoxon signed-rank, bilateral, full vs variante",
+    "multiplicity": "Holm-Bonferroni sur les 4 comparaisons, par metrique",
+    "equivalence": "TOST non parametrique (2 Wilcoxon unilateraux decales de +/-delta)",
+    "power": "test t apparie bilateral, alpha=0.05, puissance 0.8, loi t non centrale"
+  },
+  "descriptive": {
+    "full": {
+      "final_cov": {
+        "n": 30,
+        "mean": 0.9031,
+        "std": 0.0467,
+        "ci95": [
+          0.8861,
+          0.9188
+        ]
+      },
+      "n_turns": {
+        "n": 30,
+        "mean": 6.3333,
+        "std": 3.3045,
+        "ci95": [
+          5.2333,
+          7.5333
+        ]
+      }
+    },
+    "no_c2": {
+      "final_cov": {
+        "n": 30,
+        "mean": 0.8994,
+        "std": 0.0461,
+        "ci95": [
+          0.8823,
+          0.9146
+        ]
+      },
+      "n_turns": {
+        "n": 30,
+        "mean": 6.4,
+        "std": 3.328,
+        "ci95": [
+          5.2667,
+          7.5667
+        ]
+      }
+    },
+    "no_priority": {
+      "final_cov": {
+        "n": 30,
+        "mean": 0.902,
+        "std": 0.0463,
+        "ci95": [
+          0.8851,
+          0.917
+        ]
+      },
+      "n_turns": {
+        "n": 30,
+        "mean": 6.1333,
+        "std": 2.7384,
+        "ci95": [
+          5.2,
+          7.1
+        ]
+      }
+    },
+    "c1_random": {
+      "final_cov": {
+        "n": 30,
+        "mean": 0.9018,
+        "std": 0.0429,
+        "ci95": [
+          0.886,
+          0.916
+        ]
+      },
+      "n_turns": {
+        "n": 30,
+        "mean": 6.5,
+        "std": 2.8858,
+        "ci95": [
+          5.5333,
+          7.5333
+        ]
+      }
+    },
+    "c3_tier1_only": {
+      "final_cov": {
+        "n": 30,
+        "mean": 0.904,
+        "std": 0.0499,
+        "ci95": [
+          0.8855,
+          0.9206
+        ]
+      },
+      "n_turns": {
+        "n": 30,
+        "mean": 6.5667,
+        "std": 3.1038,
+        "ci95": [
+          5.5,
+          7.6333
+        ]
+      }
+    }
+  },
+  "paired_vs_full": {
+    "final_cov": {
+      "no_c2": {
+        "mean_diff": -0.0037,
+        "diff_ci95": [
+          -0.0098,
+          0.0023
+        ],
+        "sd_diff": 0.0173,
+        "wilcoxon_p": 0.309712,
+        "tost": {
+          "delta": 0.02,
+          "p_lower": 1.1e-05,
+          "p_upper": 6e-06,
+          "p_tost": 1.1e-05,
+          "equivalent": true
+        },
+        "min_detectable_effect": 0.009151,
+        "wilcoxon_p_holm": 1.0,
+        "significant_holm": false
+      },
+      "no_priority": {
+        "mean_diff": -0.0012,
+        "diff_ci95": [
+          -0.0071,
+          0.0036
+        ],
+        "sd_diff": 0.0153,
+        "wilcoxon_p": 1.0,
+        "tost": {
+          "delta": 0.02,
+          "p_lower": 5e-06,
+          "p_upper": 0.0,
+          "p_tost": 5e-06,
+          "equivalent": true
+        },
+        "min_detectable_effect": 0.008106,
+        "wilcoxon_p_holm": 1.0,
+        "significant_holm": false
+      },
+      "c1_random": {
+        "mean_diff": -0.0013,
+        "diff_ci95": [
+          -0.0067,
+          0.0037
+        ],
+        "sd_diff": 0.0148,
+        "wilcoxon_p": 0.609523,
+        "tost": {
+          "delta": 0.02,
+          "p_lower": 1e-06,
+          "p_upper": 0.0,
+          "p_tost": 1e-06,
+          "equivalent": true
+        },
+        "min_detectable_effect": 0.007812,
+        "wilcoxon_p_holm": 1.0,
+        "significant_holm": false
+      },
+      "c3_tier1_only": {
+        "mean_diff": 0.0008,
+        "diff_ci95": [
+          -0.0095,
+          0.0106
+        ],
+        "sd_diff": 0.0277,
+        "wilcoxon_p": 0.766898,
+        "tost": {
+          "delta": 0.02,
+          "p_lower": 6e-06,
+          "p_upper": 1e-05,
+          "p_tost": 1e-05,
+          "equivalent": true
+        },
+        "min_detectable_effect": 0.014679,
+        "wilcoxon_p_holm": 1.0,
+        "significant_holm": false
+      }
+    },
+    "n_turns": {
+      "no_c2": {
+        "mean_diff": 0.0667,
+        "diff_ci95": [
+          -0.4333,
+          0.5667
+        ],
+        "sd_diff": 1.4368,
+        "wilcoxon_p": 0.90588,
+        "tost": {
+          "delta": 1.0,
+          "p_lower": 0.00038,
+          "p_upper": 0.001192,
+          "p_tost": 0.001192,
+          "equivalent": true
+        },
+        "min_detectable_effect": 0.760401,
+        "wilcoxon_p_holm": 1.0,
+        "significant_holm": false
+      },
+      "no_priority": {
+        "mean_diff": -0.2,
+        "diff_ci95": [
+          -0.7,
+          0.2667
+        ],
+        "sd_diff": 1.3746,
+        "wilcoxon_p": 0.456025,
+        "tost": {
+          "delta": 1.0,
+          "p_lower": 0.002173,
+          "p_upper": 8.4e-05,
+          "p_tost": 0.002173,
+          "equivalent": true
+        },
+        "min_detectable_effect": 0.727512,
+        "wilcoxon_p_holm": 1.0,
+        "significant_holm": false
+      },
+      "c1_random": {
+        "mean_diff": 0.1667,
+        "diff_ci95": [
+          -0.3333,
+          0.7
+        ],
+        "sd_diff": 1.4641,
+        "wilcoxon_p": 0.496037,
+        "tost": {
+          "delta": 1.0,
+          "p_lower": 0.00038,
+          "p_upper": 0.003622,
+          "p_tost": 0.003622,
+          "equivalent": true
+        },
+        "min_detectable_effect": 0.77487,
+        "wilcoxon_p_holm": 1.0,
+        "significant_holm": false
+      },
+      "c3_tier1_only": {
+        "mean_diff": 0.2333,
+        "diff_ci95": [
+          -0.3667,
+          0.9333
+        ],
+        "sd_diff": 1.8323,
+        "wilcoxon_p": 0.670556,
+        "tost": {
+          "delta": 1.0,
+          "p_lower": 0.000453,
+          "p_upper": 0.00316,
+          "p_tost": 0.00316,
+          "equivalent": true
+        },
+        "min_detectable_effect": 0.96974,
+        "wilcoxon_p_holm": 1.0,
+        "significant_holm": false
+      }
+    }
+  }
+}

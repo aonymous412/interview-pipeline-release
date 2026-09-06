@@ -1,0 +1,76 @@
+{
+  "generated_at": "2026-07-18T02:09:21.742770+00:00",
+  "seed": 42,
+  "max_turns": 15,
+  "scorer": "gemini-2.5-flash",
+  "oracle": "claude-haiku-4-5 (Anthropic API)",
+  "models": {
+    "claude-opus-4-8_multiturn": {
+      "n_total": 150,
+      "n_valid": 150,
+      "overall": {
+        "mean_cov": 0.5838,
+        "std_cov": 0.178,
+        "median_cov": 0.5874,
+        "min_cov": 0.0374,
+        "max_cov": 1.0,
+        "mean_turns": 6.7,
+        "done_rate": 1.0
+      },
+      "by_domain": {
+        "Consulting": {
+          "n": 50,
+          "mean_cov": 0.5727,
+          "std_cov": 0.1006,
+          "mean_turns": 6.9
+        },
+        "Medical": {
+          "n": 50,
+          "mean_cov": 0.5429,
+          "std_cov": 0.2041,
+          "mean_turns": 6.4
+        },
+        "Payments": {
+          "n": 50,
+          "mean_cov": 0.6357,
+          "std_cov": 0.1969,
+          "mean_turns": 6.9
+        }
+      },
+      "by_vagueness": {
+        "Ultra-vague": {
+          "n": 43,
+          "mean_cov": 0.5288,
+          "std_cov": 0.1724
+        },
+        "Medium": {
+          "n": 62,
+          "mean_cov": 0.574,
+          "std_cov": 0.1611
+        },
+        "Detailed": {
+          "n": 45,
+          "mean_cov": 0.6497,
+          "std_cov": 0.1845
+        }
+      }
+    }
+  },
+  "interviewer_api": "anthropic",
+  "thinking": "adaptive",
+  "prompt_set": "Exp2 150-prompt set (50 json + 100 csv)",
+  "n_scoring_failed": 0,
+  "cost_estimate": {
+    "per_model_tokens": {
+      "claude-opus-4-8": {
+        "input": 1235855,
+        "output": 235276
+      },
+      "claude-haiku-4-5": {
+        "input": 593985,
+        "output": 79760
+      }
+    },
+    "estimated_usd": 13.05
+  }
+}

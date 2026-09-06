@@ -1,0 +1,83 @@
+{
+  "judge_model": "claude-sonnet-5",
+  "n_prompts_judged": 36,
+  "n_rows": 516,
+  "claude_vs_human": {
+    "overall": 0.4649,
+    "n": 516,
+    "by_domain": {
+      "Consulting": {
+        "kappa": 0.5291,
+        "n": 170
+      },
+      "Medical": {
+        "kappa": 0.6047,
+        "n": 170
+      },
+      "Payments": {
+        "kappa": 0.2942,
+        "n": 176
+      }
+    },
+    "by_class": {
+      "ABSENT": 0.6537,
+      "MENTIONED": 0.1825,
+      "RESOLVED": 0.4189
+    },
+    "raw_agreement": 0.6647
+  },
+  "gemini_vs_human": {
+    "overall": 0.7488,
+    "n": 516,
+    "by_domain": {
+      "Consulting": {
+        "kappa": 0.7577,
+        "n": 170
+      },
+      "Medical": {
+        "kappa": 0.9684,
+        "n": 170
+      },
+      "Payments": {
+        "kappa": 0.5393,
+        "n": 176
+      }
+    },
+    "by_class": {
+      "ABSENT": 0.9147,
+      "MENTIONED": 0.4233,
+      "RESOLVED": 0.7072
+    },
+    "raw_agreement": 0.8508
+  },
+  "claude_vs_gemini": {
+    "overall": 0.6116,
+    "n": 516,
+    "by_domain": {
+      "Consulting": {
+        "kappa": 0.6317,
+        "n": 170
+      },
+      "Medical": {
+        "kappa": 0.6122,
+        "n": 170
+      },
+      "Payments": {
+        "kappa": 0.5894,
+        "n": 176
+      }
+    },
+    "by_class": {
+      "ABSENT": 0.7287,
+      "MENTIONED": 0.3887,
+      "RESOLVED": 0.6392
+    },
+    "raw_agreement": 0.7616
+  },
+  "cost_estimate": {
+    "input_tokens": 86068,
+    "output_tokens": 40168,
+    "estimated_usd": 0.86
+  },
+  "reference": "Gemini scorer pre-registered thresholds: overall \u03ba>=0.65; known values 0.749 overall / 0.539 Payments"
+}
